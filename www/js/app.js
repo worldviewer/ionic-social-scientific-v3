@@ -128,6 +128,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/headers/electric-joule-heating-header.jpg"],
     definition: "Electric joule heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic plasma phenomena.",
     status: "Electric joule heating is not widely known, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Electric joule heating is a natural implication of the Electric Universe paradigm.",
+    search_hit: null,
 
     children: [2,3,4,5,6,7,8,9,10,11,12],
     next: 2,
@@ -151,6 +152,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "There has been a debate over how to model cosmic plasmas (such as the solar wind) for more than half a century between the Astrophysical Journal and IEEE's Transactions on Plasma Science.",
     status: null,
+    search_hit: null,
 
     children: null, // FILL!
     next: 3,
@@ -174,6 +176,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "Conventional theory models this flow of charged particles fundamentally as a fluid, but these models have been in dispute since their inception.",
     status: null,
+    search_hit: null,
 
     children: null, // FILL!
     next: 4,
@@ -197,6 +200,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "Electric joule heating stems from the idea that these moving charges are an electric current, and advocates point to the fact that the solar wind is oftentimes guided by planetary magnetic fields into the poles.",
     status: null,
+    search_hit: null,
 
     children: null, // FILL!
     next: 5,
@@ -220,6 +224,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "The presence of hot spots at the poles of Enceladus, Neptune and Venus, in particular, are suggestive of the simple idea that these moving charged particles can heat up the planets.",
     status: null,    
+    search_hit: null,
 
     children: null, // FILL!
     next: 6,
@@ -243,6 +248,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "It was noted in 2005 by NASA that Mars' ice caps had also been diminishing for three summers in a row.",
     status: null,
+    search_hit: null,
 
     children: null, // FILL!
     next: 7,
@@ -266,6 +272,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null,
     definition: "Pluto has continued to warm up even as it moves away from the Sun.",
     status: null,
+    search_hit: null,
 
     children: null, // FILL!
     next: 8,
@@ -289,6 +296,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "Many atmospheric circulation models are unable to reproduce the observed polar stratospheric winds (aka the polar vortex).",
     status: null,
+    search_hit: null,
 
     children: null,
     next: 9,
@@ -312,6 +320,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "The observed splitting of the polar vortex on both Earth and Venus is an expected feature of laboratory plasmas when they are conducting electrical currents, yet climate and planetary scientists claim to not understand either observation.",
     status: null,
+    search_hit: null,
 
     children: null, // FILL!
     next: 10,
@@ -335,6 +344,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "The solar wind intensity correlates with lightning strikes, raising questions about lightning's underlying cause, and suggesting that the Earth is part of a larger electrical circuit.",
     status: null,
+    search_hit: null,
 
     children: null, // FILL!
     next: 11,
@@ -358,6 +368,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "Sunspot numbers appear to correlate with lower stratosphere temperature anomalies, minus the temporal effects of volcanic eruptions -- suggesting that the sunspots are related to these electrical flows. Laboratory plasma terrella experiments appear to confirm this suspicion.",
     status: null,
+    search_hit: null,
 
     children: null, // FILL!
     next: 12,
@@ -381,6 +392,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "Electric field variability can significantly increase the amount of Joule heating, yet existing general circulation models assume a smooth field in both space and time.  In other words, the current climate models do not take electric joule heating into account.",
     status: null,
+    search_hit: null,
 
     children: null,
     next: null,
@@ -404,6 +416,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/critiques/electric-joule-heating-lsvalgaard.jpg"],
     definition: null,
     status: null,
+    search_hit: null,
 
     children: null,
     next: null,
@@ -427,6 +440,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: "img/concept-maps/electric-joule-heating-cmap-small.jpg",
     definition: null,
     status: null,
+    search_hit: null,
 
     children: null,
     next: 15,
@@ -460,6 +474,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: null,
     status: null,
+    search_hit: null,
 
     children: null,
     next: 16,
@@ -483,6 +498,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: null,
     status: null,
+    search_hit: null,
 
     children: null,
     next: 17,
@@ -506,6 +522,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: null,
     status: null,
+    search_hit: null,
 
     children: null,
     next: 18,
@@ -529,6 +546,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: null,
     status: null,
+    search_hit: null,
 
     children: null,
     next: null,
@@ -554,6 +572,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       "img/articles/wuwt-03-energy-variations.jpg"],
     definitions: null,
     status: null,
+    search_hit: null,
 
     children: null,
     next: 20,
@@ -577,6 +596,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/articles/sun-power-surge.jpg"],
     definitions: null,
     status: null,
+    search_hit: null,
 
     children: null,
     next: 21,
@@ -600,6 +620,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/articles/thornhill-on-climatologists-1.jpg", "img/articles/thornhill-on-climatologists-2.jpg"],
     definitions: null,
     status: null,
+    search_hit: null,
 
     children: null,
     next: null,
@@ -623,6 +644,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null,
     definitions: null,
     status: null,
+    search_hit: null,
 
     children: null,
     next: null,
@@ -649,6 +671,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/papers/electric-joule-heating-1.jpg", "img/papers/electric-joule-heating-2.jpg", "img/papers/electric-joule-heating-3.jpg", "img/papers/electric-joule-heating-4.jpg"],
     definitions: null,
     status: null,
+    search_hit: null,
 
     children: null,
     next: null,
@@ -673,6 +696,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null,
     definitions: null,
     status: null,
+    search_hit: null,
 
     children: null,
     next: null,
@@ -698,6 +722,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null,
     definitions: null,
     status: null,
+    search_hit: null,
 
     children: null,
     next: null,
@@ -722,6 +747,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null,
     definitions: null,
     status: null,
+    search_hit: null,
 
     children: null,
     next: null,
@@ -749,6 +775,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null,
     definitions: null,
     status: null,
+    search_hit: null,
 
     children: null, // FILL!
     next: null,
@@ -773,6 +800,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null,
     definitions: null,
     status: null,
+    search_hit: null,
 
     children: null, // FILL!
     next: null,
@@ -797,6 +825,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null,
     definitions: null,
     status: null,
+    search_hit: null,
 
     children: null, // FILL!
     next: null,
@@ -821,6 +850,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null,
     definitions: null,
     status: null,
+    search_hit: null,
 
     children: null, // FILL!
     next: null,
@@ -1013,32 +1043,76 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       var resourceStart = [];
       var resourceContain = [];
       var card = {};
+      var textLocation = 0;
+
+      var cardTemp1 = {};
+      var cardTemp2 = {};
+      var cardTemp3 = {};
+      var cardTemp4 = {};
 
       for (var i=0; i < cards.length; i++) {
           card = cards[i];
 
           switch(card.type) {
-
-            // 2.  Capture all Controversy titles that START with typed letters.
-
-            // 3.  Capture all Controversy titles that CONTAIN typed letters.
-
-            // 8.  Capture all Controversy and Construct descriptions that CONTAIN 
-            //     typed letters.
-
-            // 9.  Capture all Controversy and Construct text that CONTAIN typed
-            //     letters.
-
             case "Model":
+                textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
+
                 if (card.controversy) {
-                  if (card.title.toLowerCase().indexOf(lowerSnippet) === 0) {
-                    contStart.push(card);
-                  } else if (card.title.toLowerCase().indexOf(lowerSnippet) !== -1) {
-                    contContain.push(card);
+
+                  // 2.  Capture all Controversy titles that START with typed letters.
+                  if (textLocation === 0) {
+
+                    // Use angular.copy because JavaScript passes objects by reference;
+                    // We don't want these different search hits referencing one
+                    // another ...
+                    cardTemp = Object.create(null)
+                    angular.copy(card, cardTemp);
+                    cardTemp['search_hit'] = card.title;
+                    contStart.push(cardTemp);
+ 
+                  // 3.  Capture all Controversy titles that CONTAIN typed letters.
+                  } else if (textLocation !== -1) {
+
+                    cardTemp = Object.create(null)
+                    angular.copy(card, cardTemp);
+                    cardTemp['search_hit'] = card.title;
+                    contContain.push(cardTemp);
                   }
-
-
                 }
+
+                // 8.  Capture all Controversy and Construct descriptions that CONTAIN 
+                //     typed letters.  When this type of thing happens, we're going to
+                //     need to highlight for the user what caused the hit.  So, we need
+                //     to add that information in.
+
+                textLocation = card.definition.toLowerCase().indexOf(lowerSnippet);
+                if (textLocation !== -1) {
+
+                    cardTemp = Object.create(null)
+                    angular.copy(card, cardTemp);
+                    cardTemp['search_hit'] = card.definition;
+                    contConstructDescContain.push(cardTemp);
+                }
+
+                // 9.  Capture all Controversy and Construct text that CONTAIN typed
+                //     letters.
+
+                // card.text is an array of objects, with format {quote:string, 
+                // page_start:int, page_end:int}, so we should cycle through them
+
+                if (!!card.text) {
+                  card.text.forEach(function(section) {
+                    textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
+                    if (textLocation !== -1) {
+
+                        cardTemp = Object.create(null)
+                        angular.copy(card, cardTemp);
+                        cardTemp['search_hit'] = section.quote;
+                        contstructTitleContain.push(cardTemp);
+                    }
+                  });
+                }
+
               break;
 
             // 4.  Capture all Construct titles (Concept, Proposition, Model) that 
@@ -1047,6 +1121,19 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
             // 5.  Capture all Construct titles that CONTAIN typed letters.
 
             case "Claim":
+
+                if (card.text) {
+                  card.text.forEach(function(section) {
+                    textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
+                    if (textLocation !== -1) {
+
+                        cardTemp = Object.create(null)
+                        angular.copy(card, cardTemp);
+                        cardTemp['search_hit'] = section.quote;
+                        contConstructTextContain.push(cardTemp);
+                    }
+                  });
+                }
 
               break;
 
@@ -1086,6 +1173,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
             case "Book":
 
+                if (card.text) {
+                  card.text.forEach(function(section) {
+                    textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
+                    if (textLocation !== -1) {
+
+                        cardTemp = Object.create(null)
+                        angular.copy(card, cardTemp);
+                        cardTemp['search_hit'] = section.quote;
+                        resourceContain.push(cardTemp);
+                    }
+                  });
+                }
+
+
               break;
 
             case "Video":
@@ -1100,7 +1201,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
           }
 
-          results = contStart.concat(contContain);
+          results = contStart.concat(contContain, contConstructDescContain, contConstructTextContain, resourceContain, constructTitleContain);
 
       }
 
