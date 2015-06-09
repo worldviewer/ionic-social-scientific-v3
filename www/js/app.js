@@ -21,7 +21,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   });
 })
 
-.controller('SearchCtrl', function ($scope, Construct) {
+.controller('SearchCtrl', ['$scope', 'Construct', function ($scope, Construct) {
 
   $scope.callbackMethod = function (query) {
 
@@ -36,58 +36,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     //     ]
     // }
 
-    // Search results should return as follows:
-
-    // 1.  Do not return results for less than 3 characters.  Also consider
-    //     a half-second delay (later).
-
-    //     Eventually: Sort results by rankings.
-
-    // 2.  Capture all Controversy titles that START with typed letters.
-
-    // 3.  Capture all Controversy titles that CONTAIN typed letters.
-
-    // 4.  Capture all Construct titles (Concept, Proposition, Model) that 
-    //     START with typed letters.
-
-    // 5.  Capture all Construct titles that CONTAIN typed letters.
-
-    // 6.  Capture all Expert names, Journal names, Forum names, Article 
-    //     names, Article authors, Paper titles, Paper authors, Book titles, 
-    //     Book authors, Media titles, Media authors that START with 
-    //     typed letters.
-
-    // 7.  Capture all Expert names, Journal names, Forum names, Article 
-    //     names, Article authors, Paper titles, Paper authors, Book titles, 
-    //     Book authors, Media titles, Media authors that CONTAIN
-    //     typed letters.
-
-    // 8.  Capture all Controversy and Construct descriptions that CONTAIN 
-    //     typed letters.
-
-    // 9.  Capture all Controversy and Construct text that CONTAIN typed
-    //     letters.
-
-    // 10. Capture all concept map titles that CONTAIN typed letters.
-
-    var results = { "items": [] };
-
-
-
-    var results = {
-      "items": [{
-        "id": 0,
-        "type": "Model",
-        "name": "Electric Joule Heating",
-        "header_images": ["img/headers/electric-joule-heating-header.jpg"],
-        "short_definition": "Electric joule heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic plasma phenomena."
-      }]
-    }  
-
-    return results;
+    return Construct.find(query, function(results) {
+      return {"items": results};
+    });
   }
 
-})
+}])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -150,7 +104,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
 })
 
-.factory("Construct", [function() {
+.service("Construct", [function() {
 
   // The data model will involve constructs, which are collections of cards.
   // A card is defined as a collection of content with a scope that is easy
@@ -160,11 +114,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   // Some cards are parents, in which case they have a children array that
   // defines all of the subtopics for that topic.
 
-  // There are also superordinate cards, whose children are also parents.
+  // There are also controversy cards, whose children are also parents.
 
   var cards = [{
     id: 1,
-    superordinate: true,
+    controversy: true,
     parent: true,
     type: "Model",
     display: true,
@@ -187,7 +141,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 2,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Claim",
     display: true,
@@ -210,7 +164,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 3,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Claim",
     display: true,
@@ -233,7 +187,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 4,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Claim",
     display: true,
@@ -256,7 +210,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 5,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Claim",
     display: true,
@@ -279,7 +233,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 6,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Claim",
     display: true,
@@ -302,7 +256,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 7,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Claim",
     display: true,
@@ -325,7 +279,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 8,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Claim",
     display: true,
@@ -348,7 +302,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 9,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Claim",
     display: true,
@@ -371,7 +325,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 10,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Claim",
     display: true,
@@ -394,7 +348,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 11,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Claim",
     display: true,
@@ -417,7 +371,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 12,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Claim",
     display: true,
@@ -440,7 +394,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 13,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Critique",
     display: true,
@@ -463,7 +417,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 14,
-    superordinate: false,
+    controversy: false,
     parent: false,
     type: "Concept Map",
     display: true,
@@ -496,7 +450,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 15,
-    superordinate: false,
+    controversy: false,
     parent: false,
     type: "Concept Map",
     display: true,
@@ -519,7 +473,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 16,
-    superordinate: false,
+    controversy: false,
     parent: false,
     type: "Concept Map",
     display: true,
@@ -542,7 +496,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 17,
-    superordinate: false,
+    controversy: false,
     parent: false,
     type: "Concept Map",
     display: true,
@@ -565,7 +519,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 18,
-    superordinate: false,
+    controversy: false,
     parent: false,
     type: "Concept Map",
     display: true,
@@ -588,7 +542,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 19,
-    superordinate: false,
+    controversy: false,
     parent: false,
     type: "Article",
     display: true,
@@ -613,7 +567,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 20,
-    superordinate: false,
+    controversy: false,
     parent: false,
     type: "Article",
     display: true,
@@ -636,7 +590,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 21,
-    superordinate: false,
+    controversy: false,
     parent: false,
     type: "Article",
     display: true,
@@ -659,7 +613,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 22,
-    superordinate: false,
+    controversy: false,
     parent: false,
     type: "Forum",
     display: true,
@@ -685,7 +639,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     // http://www.ann-geophys.net/19/773/2001/angeo-19-773-2001.pdf
 
     id: 23,
-    superordinate: false,
+    controversy: false,
     parent: false,
     type: "Paper",
     display: true,
@@ -709,7 +663,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 24,
-    superordinate: false,
+    controversy: false,
     parent: false,
     type: "Book",
     display: true,
@@ -734,7 +688,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 25,
-    superordinate: false,
+    controversy: false,
     parent: false,
     type: "Book",
     display: true,
@@ -758,7 +712,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 26,
-    superordinate: false,
+    controversy: false,
     parent: false,
     type: "Book",
     display: true,
@@ -785,7 +739,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     // Add in video at https://www.youtube.com/watch?v=HeCqcKYj9Oc on Climate Scientist Murry Salby Demolishes the Global Warming Alarm
 
     id: 27,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Video",
     display: true,
@@ -809,7 +763,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 28,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Video",
     display: true,
@@ -833,7 +787,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 29,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Video",
     display: true,
@@ -857,7 +811,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     id: 30,
-    superordinate: false,
+    controversy: false,
     parent: true,
     type: "Video",
     display: true,
@@ -1029,21 +983,134 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       // Add in article at https://www.nasa.gov/mission_pages/themis/news/themis_leaky_shield.html#.VXNBYDTF8vE
 
   this.all = function(cb) {
-      return cb(constructs);
+      return cb(cards);
   };
 
-  this.find = function(constructname, cb) {
-      for (var i=0; i < constructs.length; i++) {
-          var construct = constructs[i];
-          if (construct.name.toLowerCase() === constructname.toLowerCase()) {
-              return cb(construct);
+  // Search results should return as follows:
+
+  // 1.  Do not return results for less than 3 characters.  Also consider
+  //     a half-second delay (later).
+
+  //     Eventually: Sort results by rankings.
+
+  this.find = function(snippet, cb) {
+
+      var results = [];
+      var lowerSnippet = snippet.toLowerCase();
+
+      var contStart = [];
+      var contContain = [];
+
+      var contConstructDescContain = [];
+      var contConstructTextContain = [];
+
+      var constructTitleStart = [];
+      var constructTitleContain = [];
+
+      var cmapCritiqueTitleContain = [];
+      var critiqueTextContain = [];
+
+      var resourceStart = [];
+      var resourceContain = [];
+      var card = {};
+
+      for (var i=0; i < cards.length; i++) {
+          card = cards[i];
+
+          switch(card.type) {
+
+            // 2.  Capture all Controversy titles that START with typed letters.
+
+            // 3.  Capture all Controversy titles that CONTAIN typed letters.
+
+            // 8.  Capture all Controversy and Construct descriptions that CONTAIN 
+            //     typed letters.
+
+            // 9.  Capture all Controversy and Construct text that CONTAIN typed
+            //     letters.
+
+            case "Model":
+                if (card.controversy) {
+                  if (card.title.toLowerCase().indexOf(lowerSnippet) === 0) {
+                    contStart.push(card);
+                  } else if (card.title.toLowerCase().indexOf(lowerSnippet) !== -1) {
+                    contContain.push(card);
+                  }
+
+
+                }
+              break;
+
+            // 4.  Capture all Construct titles (Concept, Proposition, Model) that 
+            //     START with typed letters.
+
+            // 5.  Capture all Construct titles that CONTAIN typed letters.
+
+            case "Claim":
+
+              break;
+
+            // 10. Capture all concept map and critique titles that CONTAIN typed letters.
+
+            // 11. Capture all critique text that CONTAIN typed letters.
+
+            case "Critique":
+
+              break;
+
+            case "Concept Map":
+
+              break;
+
+            // 6.  Capture all Expert names, Journal names, Forum names, Article 
+            //     names, Article authors, Paper titles, Paper authors, Book titles, 
+            //     Book authors, Media titles, Media authors that START with 
+            //     typed letters.
+
+            // 7.  Capture all Expert names, Journal names, Forum names, Article 
+            //     names, Article authors, Paper titles, Paper authors, Book titles, 
+            //     Book authors, Media titles, Media authors that CONTAIN
+            //     typed letters.
+
+            case "Article":
+
+              break;
+
+            case "Forum":
+
+              break;
+
+            case "Paper":
+
+              break;
+
+            case "Book":
+
+              break;
+
+            case "Video":
+
+              break;
+
+            case "Audio":
+
+              break;
+
+            default:
+
           }
+
+          results = contStart.concat(contContain);
+
       }
 
-      return cb(false);
+      if (results.length > 0) {
+        return cb(results);
+      } else {
+        return cb(false);
+      }
   };
 
   return this;
 
 }]);
-

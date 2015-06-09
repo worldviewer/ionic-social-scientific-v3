@@ -1,11 +1,13 @@
-<ion-view view-title="Dashboard">
+<ion-view view-title="Search">
+
+  <ion-nav-buttons side="right">
+  	<a class="button button-icon icon ion-search" ion-autocomplete ng-model="model" items-method="callbackMethod(query)" 
+			items-method-value-key="items" item-view-value-key="title" item-value-key="id"></a>
+  </ion-nav-buttons>
+
   <ion-content class="padding">
-  	<div class="list">
 
-	<!-- ion-autocomplete usage with the element restriction -->
-	<ion-autocomplete ng-model="model" items-method="callbackMethod(query)" items-method-value-key="items" item-value-key="id" item-view-value-key="name" />
 
-	</div>
   </ion-content>
 </ion-view>
 

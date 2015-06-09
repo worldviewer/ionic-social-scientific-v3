@@ -68,7 +68,6 @@ angular.module('ion-autocomplete', []).directive('ionAutocomplete', [
                 };
 
                 // the search container template
-                // NOTE: I HAVE REMOVED THE modal PROPERTY FROM <div class="ion-autocomplete-container modal">
                 var searchContainerTemplate = [
                     '<div class="ion-autocomplete-container modal">',
                     '<div class="bar bar-header item-input-inset">',
