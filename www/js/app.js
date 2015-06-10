@@ -141,7 +141,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     children: [2,3,4,5,6,7,8,9,10,11,12],
     next: 2,
-    avatar: null, // FILL!
+    avatar: "img/avatars/electric-joule-avatar.jpg",
     url: null,
     text: null,
     expert_ids: [0],
@@ -1091,11 +1091,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   if (textLocation === 0) {
 
                     contStart.push(this.addSearchHit(card, card.title, textLocation));
+                    break;
  
                   // 3.  Capture all Controversy titles that CONTAIN typed letters.
                   } else if (textLocation !== -1) {
 
                     contContain.push(this.addSearchHit(card, card.title, textLocation));
+                    break;
                   }
                 }
 
