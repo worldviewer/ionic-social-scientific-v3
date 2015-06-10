@@ -7,6 +7,10 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ion-autocomplete'])
 
+.filter("sanitize", ['$sce', function($sce) {return function(htmlCode){
+        return $sce.trustAsHtml(htmlCode);}
+}])
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -22,6 +26,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 })
 
 .controller('SearchCtrl', ['$scope', 'Construct', function ($scope, Construct) {
+
+  $scope.isModel = function(item) {
+    if (item.type === "Model") { return true; }
+    else { return false; }
+  };
 
   $scope.callbackMethod = function (query) {
 
@@ -1023,6 +1032,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   //     Eventually: Sort results by rankings.
 
+
+
+  this.addSearchHit = function(card, hit, location) {
+    var cardTemp = Object.create(null);
+
+    // Use angular.copy because JavaScript passes objects by reference;
+    // We don't want these different search hits referencing one
+    // another ...
+    angular.copy(card, cardTemp);
+
+    // For any hit that pertains to a larger run of text, we will want
+    // to strip out two lines of context that the hit exists within
+
+
+
+    cardTemp['search_hit'] = hit;
+    return cardTemp;
+  };
+
   this.find = function(snippet, cb) {
 
       var results = [];
@@ -1062,21 +1090,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   // 2.  Capture all Controversy titles that START with typed letters.
                   if (textLocation === 0) {
 
-                    // Use angular.copy because JavaScript passes objects by reference;
-                    // We don't want these different search hits referencing one
-                    // another ...
-                    cardTemp = Object.create(null)
-                    angular.copy(card, cardTemp);
-                    cardTemp['search_hit'] = card.title;
-                    contStart.push(cardTemp);
+                    contStart.push(this.addSearchHit(card, card.title, textLocation));
  
                   // 3.  Capture all Controversy titles that CONTAIN typed letters.
                   } else if (textLocation !== -1) {
 
-                    cardTemp = Object.create(null)
-                    angular.copy(card, cardTemp);
-                    cardTemp['search_hit'] = card.title;
-                    contContain.push(cardTemp);
+                    contContain.push(this.addSearchHit(card, card.title, textLocation));
                   }
                 }
 
@@ -1087,11 +1106,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
                 textLocation = card.definition.toLowerCase().indexOf(lowerSnippet);
                 if (textLocation !== -1) {
-
-                    cardTemp = Object.create(null)
-                    angular.copy(card, cardTemp);
-                    cardTemp['search_hit'] = card.definition;
-                    contConstructDescContain.push(cardTemp);
+                    contConstructDescContain.push(this.addSearchHit(card, card.definition, textLocation));
                 }
 
                 // 9.  Capture all Controversy and Construct text that CONTAIN typed
@@ -1104,11 +1119,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   card.text.forEach(function(section) {
                     textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
                     if (textLocation !== -1) {
-
-                        cardTemp = Object.create(null)
-                        angular.copy(card, cardTemp);
-                        cardTemp['search_hit'] = section.quote;
-                        contstructTitleContain.push(cardTemp);
+                        contstructTitleContain.push(this.addSearchHit(card, section.quote, textLocation));
                     }
                   });
                 }
@@ -1126,11 +1137,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   card.text.forEach(function(section) {
                     textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
                     if (textLocation !== -1) {
-
-                        cardTemp = Object.create(null)
-                        angular.copy(card, cardTemp);
-                        cardTemp['search_hit'] = section.quote;
-                        contConstructTextContain.push(cardTemp);
+                        contConstructTextContain.push(this.addSearchHit(card, section.quote, textLocation));
                     }
                   });
                 }
@@ -1173,15 +1180,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
             case "Book":
 
+                // Careful: the value of 'this' changes inside of the Array method
+                var that = this;
+
                 if (card.text) {
                   card.text.forEach(function(section) {
                     textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
                     if (textLocation !== -1) {
-
-                        cardTemp = Object.create(null)
-                        angular.copy(card, cardTemp);
-                        cardTemp['search_hit'] = section.quote;
-                        resourceContain.push(cardTemp);
+                        resourceContain.push(that.addSearchHit(card, section.quote, textLocation));
                     }
                   });
                 }
