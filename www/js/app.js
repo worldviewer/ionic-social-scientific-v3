@@ -158,7 +158,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Cosmic Plasma Debate",
     sourcename: null,
 
-    images: null, // FILL!
+    images: "img/headers/AJ-vs-IEEE.jpg",
     definition: "There has been a debate over how to model cosmic plasmas (such as the solar wind) for more than half a century between the Astrophysical Journal and IEEE's Transactions on Plasma Science.",
     status: null,
     search_hit: null,
@@ -576,9 +576,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Solar Wind Surprise",
     sourcename: "Wattsupwiththat Blog",
 
-    images: ["img/articles/wuwt-01-energy-transfer.jpg",
-      "img/articles/wuwt-02-major-surprise.jpg",
-      "img/articles/wuwt-03-energy-variations.jpg"],
+    images: ["img/articles/wuwt-solar-wind-surprise.jpg"],
     definitions: null,
     status: null,
     search_hit: null,
@@ -626,7 +624,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Science, Politics and Global Warming",
     sourcename: "Holoscience",
 
-    images: ["img/articles/thornhill-on-climatologists-1.jpg", "img/articles/thornhill-on-climatologists-2.jpg"],
+    images: ["img/articles/thornhill-on-climatologists.jpg"],
     definitions: null,
     status: null,
     search_hit: null,
@@ -771,7 +769,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   }, {
 
     // Add in video at https://www.nasa.gov/mission_pages/themis/news/themis_leaky_shield.html#.VXNBYDTF8vE
-    // Add in video at https://www.youtube.com/watch?v=HeCqcKYj9Oc on Climate Scientist Murry Salby Demolishes the Global Warming Alarm
 
     id: 27,
     controversy: false,
@@ -1091,12 +1088,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   if (textLocation === 0) {
 
                     contStart.push(this.addSearchHit(card, card.title, textLocation));
+
+                    // Exit, in order to avoid adding this card twice
                     break;
  
                   // 3.  Capture all Controversy titles that CONTAIN typed letters.
                   } else if (textLocation !== -1) {
 
                     contContain.push(this.addSearchHit(card, card.title, textLocation));
+
+                    // Exit, in order to avoid adding this card twice
                     break;
                   }
                 }
