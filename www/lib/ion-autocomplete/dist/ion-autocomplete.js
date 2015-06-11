@@ -95,6 +95,7 @@ angular.module('ion-autocomplete', []).directive('ionAutocomplete', [
                     // '</ion-content>',
                     // '</div>'
 
+                    // This is the search box
                     '<div class="ion-autocomplete-container modal">',
                     '<div class="bar bar-header item-input-inset">',
                     '<label class="item-input-wrapper">',
@@ -103,20 +104,41 @@ angular.module('ion-autocomplete', []).directive('ionAutocomplete', [
                     '</label>',
                     '<button class="ion-autocomplete-cancel button button-clear">{{cancelLabel}}</button>',
                     '</div>',
+
+                    // This is necessary: It creates the list
                     '<ion-content class="has-header has-header">',
                     '<ion-list class="item-text-wrap">',
-                    '<ion-item class="item-divider" ng-show="selectedItems.length > 0">{{selectedItemsLabel}}</ion-item>',
-                    '<ion-item class="item-divider" ng-hide="items.length">No matches</ion-item>',
-                    '<ion-item ng-repeat="selectedItem in selectedItems" type="item-text-wrap" class="item-icon-left item-icon-right">',
-                    '<i class="icon ion-checkmark"></i>',
-                    '{{getItemValue(selectedItem, itemViewValueKey)}}',
-                    '<i class="icon ion-trash-a" style="cursor:pointer" ng-click="removeItem($index)"></i>',
-                    '</ion-item>',
+
+                    // This is multiple selection stuff (IGNORE!)
+                    // '<ion-item class="item-divider" ng-show="selectedItems.length > 0">{{selectedItemsLabel}}</ion-item>',
+
+                    // '<ion-item ng-repeat="selectedItem in selectedItems" type="item-text-wrap" class="item-icon-left item-icon-right">',
+                    // '<i class="icon ion-checkmark"></i>',
+                    // '{{getItemValue(selectedItem, itemViewValueKey)}}',
+                    // '<i class="icon ion-trash-a" style="cursor:pointer" ng-click="removeItem($index)"></i>',
+                    // '</ion-item>',
+
+                    // This is single section stuff
                     '<ion-item class="item-divider" ng-show="items.length > 0">{{selectItemsLabel}}</ion-item>',
-                    '<ion-item ng-repeat="item in items" item-width="100%" type="item-text-wrap" ng-click="selectItem(item)">',
-                    '<div ng-if="!item.controversy" ng-bind-html="getItemValue(item, itemViewValueKey) | sanitize"></div>',
+                    '<ion-item class="item-divider" ng-hide="items.length">No matches</ion-item>',
+                    // '<ion-item ng-repeat="item in items" item-width="100%" type="item-text-wrap" ng-click="selectItem(item)">',
+
+                    // '</ion-item>',
+                    '</ion-list>',
+
+                    // Start list over here, so that we are not creating lists within lists!
+                    '<ion-list ng-repeat="item in items" item-width="100%" type="item-text-wrap" ng-click="selectItem(item)">',
+
+                    // If the item is neither a controversy nor an expert
+                    '<ion-item ng-if="!item.controversy && !item.isExpert" ng-bind-html="getItemValue(item, itemViewValueKey) | sanitize"></ion-item>',
+
+                    // if the item is an expert
+                    '<a ng-if="item.isExpert" class="item item-avatar"><img ng-src="{{item.image}}"><p ng-bind-html="getItemValue(item, itemViewValueKey)"></p></a>',
+
+                    // if the item is a controversy
                     '<ion-item ng-if="item.controversy" class="item-thumbnail-left"><img ng-src="{{item.avatar}}"><p ng-bind-html="getItemValue(item, itemViewValueKey) | sanitize"></p></ion-item>',
-                    '</ion-item>',
+
+                    // '</ion-item>',
                     '</ion-list>',
                     '</ion-content>',
                     '</div>'

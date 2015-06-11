@@ -711,7 +711,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: "http://www.amazon.com/Manic-Sun-Weather-Theories-Confounded/dp/1899044116/",
     text: [{quote: "The solar physicists cared just as much as the official climatologists, about keeping the world safe for their grandchildren.  <span style='background-color:yellow'>They said it was rash to suppose that every possible variation in the Sun&#39;s output of light had been seen by the satellites in the course of a single solar cycle. The solar-terrestrial physicists, for their part, pleaded for consideration of other ways in which the Sun might affect the Earth via the solar wind -- auroras, that sort of thing</span>. They were awfully vague, though, about how it could happen.", page_start: 18, page_end: 18}, 
         {quote: "To achieve its remarkable projection of future temperatures, the report had to argue that the global warming of the twentieth century was largely due to carbon dioxide and other greenhouse gases. The role of the Sun had to be minimized.  The commentary concentrated entirely on changes in the output of radiant energy from the visible disk.  <span style='background-color:yellow'>As for the invisible heliosphere that embraced the Earth in the solar wind, and might contain other possible ways of changing the climate, for Houghton&#39;s group it did not exist.</span>", page_start: 41, page_end: 42}],
-    expert_ids: 10,
+    expert_ids: [10],
     nodes: null,
     year: 2007, // ADD TO OTHERS?
     postscript: null                
@@ -923,7 +923,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     id: 7,
     name: "@BCGlorfindel",
     title: "Computer Scientist, Slashdot Comments",
-    image: null
+    image: "img/experts/anon.png"
 
   },{
 
@@ -1098,182 +1098,238 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
       // card is the current card we're looking at
       var card = {};
+      var expert = {};
 
       // this is the location of the hit from indexOf()
       var textLocation = 0;
 
-      // First, check if this is an author search
-
+      // First, check if this is an author search; our author searches will produce
+      // circular icons to differentiate people on the social network from controversies
       if (lowerSnippet.indexOf('@') === 0) {
-        
-      }
 
-      for (var i=0; i < cards.length; i++) {
-          card = cards[i];
+        // First the authors ...
+        for (var j=0; j < experts.length; j++) {
 
-          switch(card.type) {
-            case "Model":
-                textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
+          if (!!expert) {
+            expert = experts[j];
 
-                if (card.controversy) {
+            if (expert.name.toLowerCase().indexOf(lowerSnippet) !== -1) {
 
-                  // 2.  Capture all Controversy titles that START with typed letters.
-                  //     These should of course display at the top of the search results.
-                  if (textLocation === 0) {
+              expertTemp = Object.create(null);
+              angular.copy(expert, expertTemp);
+              expertTemp['isExpert'] = true;
+              expertTemp['search_hit'] = '<b>'+expert.name+'</b><br>'+expert.title;
 
-                    contStart.push(this.addSearchHit(card, 
-                      '<b>Controversy:</b><br>'+card.title, textLocation));
-
-                    // Exit, in order to avoid adding this card twice
-                    break;
- 
-                  // 3.  Capture all Controversy titles that CONTAIN typed letters.
-                  } else if (textLocation !== -1) {
-
-                    contContain.push(this.addSearchHit(card, 
-                      '<b>Controversy:</b><br>'+card.title, textLocation));
-
-                    // Exit, in order to avoid adding this card twice
-                    break;
-                  }
-                }
-
-                // 4.  Capture all non-controversy Model titles that START with typed letters 
-                //     (Model-specific/non-controversy case).
-
-                textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
-                if (textLocation === 0) {
-                  constructTitleStart.push(this.addSearchHit(card, 
-                    '<b>'+card.type+':</b> '+card.title, textLocation));
-
-                // 5.  Capture all Construct titles that CONTAIN typed letters (Model-specific/
-                //     non-controversy case).
-
-                } else if (textLocation !== -1) {
-                  constructTitleContain.push(this.addSearchHit(card, 
-                    '<b>'+card.type+':</b> '+card.title, textLocation));
-                }
-
-                // 6. and 7. are for expert and all of the various resource names (see further down)
-
-                // 8.  Capture all non-controversy Construct descriptions that CONTAIN 
-                //     typed letters.  When this type of thing happens, we're going to
-                //     need to highlight for the user what caused the hit.  So, we need
-                //     to add that information in.
-
-                textLocation = card.definition.toLowerCase().indexOf(lowerSnippet);
-                if (textLocation !== -1) {
-                    contConstructDescContain.push(this.addSearchHit(card, 
-                      '<b>Controversy Description:</b><br>'+card.definition, textLocation));
-                }
-
-                // 9.  Capture all non-controversy Construct text that CONTAIN typed
-                //     letters.
-
-                // card.text is an array of objects, with format {quote:string, 
-                // page_start:int, page_end:int}, so we should cycle through them
-
-                if (!!card.text) {
-                  card.text.forEach(function(section) {
-                    textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
-                    if (textLocation !== -1) {
-                        constructTitleContain.push(this.addSearchHit(card, 
-                          '<b>Quote:</b> '+section.quote, textLocation));
-                    }
-                  });
-                }
-
-              break;
-
-            // Some types can be treated the same; critiques and claims are an example
-
-            case "Critique":
-            case "Claim":
-
-                // 9.  Capture all non-Model Construct text (Concept, Proposition) that CONTAIN 
-                //     typed letters.
-
-                if (card.text) {
-                  card.text.forEach(function(section) {
-                    textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
-                    if (textLocation !== -1 && textLocation !== 0) {
-                        contConstructTextContain.push(this.addSearchHit(card, 
-                          '<b>Quote:</b> '+section.quote, textLocation));
-                    }
-                  });
-                }
-
-                // 4.  Capture all non-Model Construct titles (Concept, Proposition) that 
-                //     START with typed letters.
-
-                textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
-                if (textLocation === 0) {
-                  constructTitleStart.push(this.addSearchHit(card, 
-                    '<b>'+card.type+':</b> '+card.title, textLocation));
-
-                } else if (textLocation !== -1) {
-
-                // 5.  Capture all non-Model Construct titles that CONTAIN typed letters.
-
-                  constructTitleContain.push(this.addSearchHit(card, 
-                    '<b>'+card.type+':</b> '+card.title, textLocation));
-                }
-              break;
-
-            // 10. Capture all concept map + forum titles that CONTAIN typed letters.
-
-            case "Forum":
-            case "Concept Map":
-
-                textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
-                if (textLocation !== -1) {
-                  cmapForumTitleContain.push(this.addSearchHit(card, 
-                    '<b>'+card.type+':</b> '+card.title, textLocation));
-                }
-
-              break;
-
-            // 6.  Capture all Journal names, Forum names, Article 
-            //     names, Article authors, Paper titles, Paper authors, Book titles, 
-            //     Book authors, Media titles, Media authors that START with 
-            //     typed letters.
-
-            // 7.  Capture all Journal names, Forum names, Article 
-            //     names, Article authors, Paper titles, Paper authors, Book titles, 
-            //     Book authors, Media titles, Media authors that CONTAIN
-            //     typed letters.
-
-            case "Video":
-            case "Audio":
-            case "Article":
-            case "Paper":
-            case "Book":
-
-                // Careful: the value of 'this' changes inside of the Array method
-                var that = this;
-
-                if (card.text) {
-                  card.text.forEach(function(section) {
-                    textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
-                    if (textLocation !== -1) {
-                        resourceContain.push(that.addSearchHit(card, 
-                          '<b>Quote:</b> '+section.quote, textLocation));
-                    }
-                  });
-                }
-
-
-              break;
-
-            default:
+              results.push(expertTemp);
+            }
 
           }
 
-          results = contStart.concat(contContain, contConstructDescContain, 
-                    contConstructTextContain, constructTitleStart, constructTitleContain, 
-                    cmapForumTitleContain, resourceStart, resourceContain);
+        }
 
-      } // End of the for loop
+        // Now, if there is only one expert listed, also list his creations ...
+
+        if (results.length === 1) {
+
+          // First, grab the expert id ...
+          var expertId = results[0].id;
+
+          // Then list their works ...
+          for (var k=0; k < cards.length; k++) {
+            card = cards[k];
+
+            if (card.expert_ids) {
+              if (card.expert_ids.indexOf(expertId) !== -1) {
+
+                results.push(this.addSearchHit(card, '<b>Contribution:</b> '+card.title, 0));
+
+              }
+            }
+          } // End loop through all author works
+        } // End if only one author match
+
+      } else {
+
+        for (var i=0; i < cards.length; i++) {
+            card = cards[i];
+
+            switch(card.type) {
+              case "Model":
+                  textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
+
+                  if (card.controversy) {
+
+                    // 2.  Capture all Controversy titles that START with typed letters.
+                    //     These should of course display at the top of the search results.
+                    if (textLocation === 0) {
+
+                      contStart.push(this.addSearchHit(card, 
+                        '<b>Controversy:</b><br>'+card.title, textLocation));
+
+                      // Exit, in order to avoid adding this card twice
+                      break;
+   
+                    // 3.  Capture all Controversy titles that CONTAIN typed letters.
+                    } else if (textLocation !== -1) {
+
+                      contContain.push(this.addSearchHit(card, 
+                        '<b>Controversy:</b><br>'+card.title, textLocation));
+
+                      // Exit, in order to avoid adding this card twice
+                      break;
+                    }
+                  }
+
+                  // 4.  Capture all non-controversy Model titles that START with typed letters 
+                  //     (Model-specific/non-controversy case).
+
+                  textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
+                  if (textLocation === 0) {
+                    constructTitleStart.push(this.addSearchHit(card, 
+                      '<b>'+card.type+':</b> '+card.title, textLocation));
+
+                  // 5.  Capture all Construct titles that CONTAIN typed letters (Model-specific/
+                  //     non-controversy case).
+
+                  } else if (textLocation !== -1) {
+                    constructTitleContain.push(this.addSearchHit(card, 
+                      '<b>'+card.type+':</b> '+card.title, textLocation));
+                  }
+
+                  // 6. and 7. are for expert and all of the various resource names (see further down)
+
+                  // 8.  Capture all non-controversy Construct descriptions that CONTAIN 
+                  //     typed letters.  When this type of thing happens, we're going to
+                  //     need to highlight for the user what caused the hit.  So, we need
+                  //     to add that information in.
+
+                  textLocation = card.definition.toLowerCase().indexOf(lowerSnippet);
+                  if (textLocation !== -1) {
+                      contConstructDescContain.push(this.addSearchHit(card, 
+                        '<b>Controversy Description:</b><br>'+card.definition, textLocation));
+                  }
+
+                  // 9.  Capture all non-controversy Construct text that CONTAIN typed
+                  //     letters.
+
+                  // card.text is an array of objects, with format {quote:string, 
+                  // page_start:int, page_end:int}, so we should cycle through them
+
+                  if (!!card.text) {
+                    card.text.forEach(function(section) {
+                      textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
+                      if (textLocation !== -1) {
+                          constructTitleContain.push(this.addSearchHit(card, 
+                            '<b>Quote:</b> '+section.quote, textLocation));
+                      }
+                    });
+                  }
+
+                break;
+
+              // Some types can be treated the same; critiques and claims are an example
+
+              case "Critique":
+              case "Claim":
+
+                  // 9.  Capture all non-Model Construct text (Concept, Proposition) that CONTAIN 
+                  //     typed letters.
+
+                  if (card.text) {
+                    card.text.forEach(function(section) {
+                      textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
+                      if (textLocation !== -1 && textLocation !== 0) {
+                          contConstructTextContain.push(this.addSearchHit(card, 
+                            '<b>Quote:</b> '+section.quote, textLocation));
+                      }
+                    });
+                  }
+
+                  // 4.  Capture all non-Model Construct titles (Concept, Proposition) that 
+                  //     START with typed letters.
+
+                  textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
+                  if (textLocation === 0) {
+                    constructTitleStart.push(this.addSearchHit(card, 
+                      '<b>'+card.type+':</b> '+card.title, textLocation));
+
+                  } else if (textLocation !== -1) {
+
+                  // 5.  Capture all non-Model Construct titles that CONTAIN typed letters.
+
+                    constructTitleContain.push(this.addSearchHit(card, 
+                      '<b>'+card.type+':</b> '+card.title, textLocation));
+                  }
+                break;
+
+              // 10. Capture all concept map + forum titles that CONTAIN typed letters.
+
+              case "Forum":
+              case "Concept Map":
+
+                  textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
+                  if (textLocation !== -1) {
+                    cmapForumTitleContain.push(this.addSearchHit(card, 
+                      '<b>'+card.type+':</b> '+card.title, textLocation));
+                  }
+
+                break;
+
+              case "Video":
+              case "Audio":
+              case "Article":
+              case "Paper":
+              case "Book":
+
+                  // 6.  Capture all Journal names, Forum names, Article 
+                  //     names, Article authors, Paper titles, Paper authors, Book titles, 
+                  //     Book authors, Media titles, Media authors that START with 
+                  //     typed letters.
+
+                  textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
+                  if (textLocation === 0) {
+                    resourceStart.push(this.addSearchHit(card, 
+                      '<b>'+card.type+':</b> '+card.title, textLocation));
+
+                  // 7.  Capture all Journal names, Forum names, Article 
+                  //     names, Article authors, Paper titles, Paper authors, Book titles, 
+                  //     Book authors, Media titles, Media authors that CONTAIN
+                  //     typed letters.
+
+                  } else if (textLocation !== -1) {
+
+                    resourceContain.push(this.addSearchHit(card, 
+                      '<b>'+card.type+':</b> '+card.title, textLocation));
+
+                  }
+
+                  // Careful: the value of 'this' changes inside of the Array method
+                  var that = this;
+
+                  if (card.text) {
+                    card.text.forEach(function(section) {
+                      textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
+                      if (textLocation !== -1) {
+                          resourceContain.push(that.addSearchHit(card, 
+                            '<b>Quote:</b> '+section.quote, textLocation));
+                      }
+                    });
+                  }
+
+                break;
+
+              default:
+
+            } // End of switch() statement on card.type
+
+            // Now, stitch all of these results into the correct order of relevance
+            results = contStart.concat(contContain, contConstructDescContain, 
+                      contConstructTextContain, constructTitleStart, constructTitleContain, 
+                      cmapForumTitleContain, resourceStart, resourceContain);
+
+        } // End of the for loop
+
+      } // End of if-statement on author search
 
       if (results.length > 0) {
         return cb(results);
