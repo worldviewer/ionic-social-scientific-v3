@@ -790,7 +790,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     text: null,
     expert_ids: [12],
     nodes: null,
-    year: null, // FILL!
+    year: 2014,
     postscript: null                
 
   }, {
@@ -801,7 +801,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     type: "Video",
     display: true,
     title: "Electric Earth, Electric Weather",
-    sourcename: null,
+    sourcename: "2013 Electric Universe Conference: Albuquerque, January 3-6",
 
     images: null,
     definitions: null,
@@ -811,11 +811,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     children: null, // FILL!
     next: null,
     avatar: "img/audio-video/bill-nichols-video.png",
-    url: "https://www.youtube.com/watch?v=USQIPY3YMfU",
+    url: "https://www.youtube.com/watch?v=jqIo4WJJL90",
     text: null,
     expert_ids: [1],
     nodes: null,
-    year: null, // FILL!
+    year: 2013,
     postscript: null                
 
   }, {
