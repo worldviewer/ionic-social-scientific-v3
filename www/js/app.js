@@ -1050,9 +1050,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   this.find = function(snippet, cb) {
 
+      // results will be the concatenation of a dozen individual, prioritized searches
       var results = [];
+
+      // Ignore case
       var lowerSnippet = snippet.toLowerCase();
 
+      // These are the individual search results
       var contStart = [];
       var contContain = [];
 
@@ -1062,18 +1066,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       var constructTitleStart = [];
       var constructTitleContain = [];
 
-      var cmapCritiqueTitleContain = [];
-      var critiqueTextContain = [];
+      var cmapTitleContain = [];
 
       var resourceStart = [];
       var resourceContain = [];
-      var card = {};
-      var textLocation = 0;
 
-      var cardTemp1 = {};
-      var cardTemp2 = {};
-      var cardTemp3 = {};
-      var cardTemp4 = {};
+      // card is the current card we're looking at
+      var card = {};
+
+      // this is the location of the hit from indexOf()
+      var textLocation = 0;
 
       for (var i=0; i < cards.length; i++) {
           card = cards[i];
@@ -1085,9 +1087,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                 if (card.controversy) {
 
                   // 2.  Capture all Controversy titles that START with typed letters.
+                  //     These should of course display at the top of the search results.
                   if (textLocation === 0) {
 
-                    contStart.push(this.addSearchHit(card, card.title, textLocation));
+                    contStart.push(this.addSearchHit(card, '<b>Controversy:</b><br>'+card.title, textLocation));
 
                     // Exit, in order to avoid adding this card twice
                     break;
@@ -1095,24 +1098,40 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   // 3.  Capture all Controversy titles that CONTAIN typed letters.
                   } else if (textLocation !== -1) {
 
-                    contContain.push(this.addSearchHit(card, card.title, textLocation));
+                    contContain.push(this.addSearchHit(card, '<b>Controversy:</b><br>'+card.title, textLocation));
 
                     // Exit, in order to avoid adding this card twice
                     break;
                   }
                 }
 
-                // 8.  Capture all Controversy and Construct descriptions that CONTAIN 
+                // 4.  Capture all non-controversy Model titles that START with typed letters 
+                //     (Model-specific/non-controversy case).
+
+                textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
+                if (textLocation === 0) {
+                  constructTitleStart.push(this.addSearchHit(card, '<b>'+card.type+':</b> '+card.title, textLocation));
+
+                // 5.  Capture all Construct titles that CONTAIN typed letters (Model-specific/
+                //     non-controversy case).
+
+                } else if (textLocation !== -1) {
+                  constructTitleContain.push(this.addSearchHit(card, '<b>'+card.type+':</b> '+card.title, textLocation));
+                }
+
+                // 6. and 7. are for expert and all of the various resource names (see further down)
+
+                // 8.  Capture all non-controversy Construct descriptions that CONTAIN 
                 //     typed letters.  When this type of thing happens, we're going to
                 //     need to highlight for the user what caused the hit.  So, we need
                 //     to add that information in.
 
                 textLocation = card.definition.toLowerCase().indexOf(lowerSnippet);
                 if (textLocation !== -1) {
-                    contConstructDescContain.push(this.addSearchHit(card, card.definition, textLocation));
+                    contConstructDescContain.push(this.addSearchHit(card, '<b>Controversy Description:</b><br>'+card.definition, textLocation));
                 }
 
-                // 9.  Capture all Controversy and Construct text that CONTAIN typed
+                // 9.  Capture all non-controversy Construct text that CONTAIN typed
                 //     letters.
 
                 // card.text is an array of objects, with format {quote:string, 
@@ -1122,65 +1141,65 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   card.text.forEach(function(section) {
                     textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
                     if (textLocation !== -1) {
-                        contstructTitleContain.push(this.addSearchHit(card, section.quote, textLocation));
+                        constructTitleContain.push(this.addSearchHit(card, '<b>Quote:</b> '+section.quote, textLocation));
                     }
                   });
                 }
 
               break;
 
-            // 4.  Capture all Construct titles (Concept, Proposition, Model) that 
-            //     START with typed letters.
+            // Some types can be treated the same; critiques and claims are an example
 
-            // 5.  Capture all Construct titles that CONTAIN typed letters.
-
+            case "Critique":
             case "Claim":
+
+                // 9.  Capture all non-Model Construct text (Concept, Proposition) that CONTAIN 
+                //     typed letters.
 
                 if (card.text) {
                   card.text.forEach(function(section) {
                     textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
-                    if (textLocation !== -1) {
-                        contConstructTextContain.push(this.addSearchHit(card, section.quote, textLocation));
+                    if (textLocation !== -1 && textLocation !== 0) {
+                        contConstructTextContain.push(this.addSearchHit(card, '<b>Quote:</b> '+section.quote, textLocation));
                     }
                   });
                 }
 
+                // 4.  Capture all non-Model Construct titles (Concept, Proposition) that 
+                //     START with typed letters.
+
+                textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
+                if (textLocation === 0) {
+                  constructTitleStart.push(this.addSearchHit(card, '<b>'+card.type+':</b> '+card.title, textLocation));
+                } else if (textLocation !== -1) {
+
+                // 5.  Capture all non-Model Construct titles that CONTAIN typed letters.
+
+                  constructTitleContain.push(this.addSearchHit(card, '<b>'+card.type+':</b> '+card.title, textLocation));
+                }
               break;
 
-            // 10. Capture all concept map and critique titles that CONTAIN typed letters.
+            // 10. Capture all concept map titles that CONTAIN typed letters.
 
-            // 11. Capture all critique text that CONTAIN typed letters.
-
-            case "Critique":
-
-              break;
-
+            case "Forum":
             case "Concept Map":
 
               break;
 
-            // 6.  Capture all Expert names, Journal names, Forum names, Article 
+            // 6.  Capture all Journal names, Forum names, Article 
             //     names, Article authors, Paper titles, Paper authors, Book titles, 
             //     Book authors, Media titles, Media authors that START with 
             //     typed letters.
 
-            // 7.  Capture all Expert names, Journal names, Forum names, Article 
+            // 7.  Capture all Journal names, Forum names, Article 
             //     names, Article authors, Paper titles, Paper authors, Book titles, 
             //     Book authors, Media titles, Media authors that CONTAIN
             //     typed letters.
 
+            case "Video":
+            case "Audio":
             case "Article":
-
-              break;
-
-            case "Forum":
-
-              break;
-
             case "Paper":
-
-              break;
-
             case "Book":
 
                 // Careful: the value of 'this' changes inside of the Array method
@@ -1190,7 +1209,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   card.text.forEach(function(section) {
                     textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
                     if (textLocation !== -1) {
-                        resourceContain.push(that.addSearchHit(card, section.quote, textLocation));
+                        resourceContain.push(that.addSearchHit(card, '<b>Quote:</b> '+section.quote, textLocation));
                     }
                   });
                 }
@@ -1198,21 +1217,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
               break;
 
-            case "Video":
-
-              break;
-
-            case "Audio":
-
-              break;
-
             default:
 
           }
 
-          results = contStart.concat(contContain, contConstructDescContain, contConstructTextContain, resourceContain, constructTitleContain);
+          results = contStart.concat(contContain, contConstructDescContain, contConstructTextContain, 
+                    constructTitleStart, constructTitleContain, cmapTitleContain, resourceStart, 
+                    resourceContain);
 
-      }
+      } // End of the for loop
 
       if (results.length > 0) {
         return cb(results);

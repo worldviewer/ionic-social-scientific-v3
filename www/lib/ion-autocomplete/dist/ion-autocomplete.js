@@ -114,7 +114,7 @@ angular.module('ion-autocomplete', []).directive('ionAutocomplete', [
                     '<ion-item class="item-divider" ng-show="items.length > 0">{{selectItemsLabel}}</ion-item>',
                     '<ion-item ng-repeat="item in items" item-width="100%" type="item-text-wrap" ng-click="selectItem(item)">',
                     '<div ng-if="!item.controversy" ng-bind-html="getItemValue(item, itemViewValueKey) | sanitize"></div>',
-                    '<ion-item ng-if="item.controversy" class="item-thumbnail-left"><img ng-src="{{item.avatar}}"><p>{{getItemValue(item, itemViewValueKey)}}</p></ion-item>',
+                    '<ion-item ng-if="item.controversy" class="item-thumbnail-left"><img ng-src="{{item.avatar}}"><p ng-bind-html="getItemValue(item, itemViewValueKey) | sanitize"></p></ion-item>',
                     '</ion-item>',
                     '</ion-list>',
                     '</ion-content>',
