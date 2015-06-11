@@ -106,6 +106,7 @@ angular.module('ion-autocomplete', []).directive('ionAutocomplete', [
                     '<ion-content class="has-header has-header">',
                     '<ion-list class="item-text-wrap">',
                     '<ion-item class="item-divider" ng-show="selectedItems.length > 0">{{selectedItemsLabel}}</ion-item>',
+                    '<ion-item class="item-divider" ng-hide="items.length">No matches</ion-item>',
                     '<ion-item ng-repeat="selectedItem in selectedItems" type="item-text-wrap" class="item-icon-left item-icon-right">',
                     '<i class="icon ion-checkmark"></i>',
                     '{{getItemValue(selectedItem, itemViewValueKey)}}',

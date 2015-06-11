@@ -1048,6 +1048,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     return cardTemp;
   };
 
+  // This find() method is extremely important for the app, insofar as it must prioritize
+  // the search results in order to facilitate a truly rapid access to scientific
+  // controversies.  This will permit people to use the app to facilitate argumentation
+  // insofar as a person can take a pre-existing, lengthy presentation of a scientific
+  // controversy, and jump straight into the middle of it to the part that is needed.
+
   this.find = function(snippet, cb) {
 
       // results will be the concatenation of a dozen individual, prioritized searches
@@ -1055,6 +1061,19 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
       // Ignore case
       var lowerSnippet = snippet.toLowerCase();
+
+      // I'm going to want to add in several search features which are designed
+      // to mimic the system that Google uses to do searching:
+
+      // 1) buttons that restrict the search by type
+      // 2) "" searches for exact phrase
+      // 3) or produces hits that include either word
+      // 4) - excludes search results with a particular word or phrase
+      // 5) and is implied by default search w/ multiple words
+      // 6) starting a search term with an @ indicates an author name,
+      //    and author names should therefore include no spaces
+
+      // ALSO: Post search explanation beneath search box when search box is empty
 
       // These are the individual search results
       var contStart = [];
@@ -1066,16 +1085,28 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       var constructTitleStart = [];
       var constructTitleContain = [];
 
-      var cmapTitleContain = [];
+      var cmapForumTitleContain = [];
 
       var resourceStart = [];
       var resourceContain = [];
+
+      // When somebody searches on an author, it's a special situation, because we want
+      // to first show a link to the author's bio page, and then we want to display all
+      // of the works that they've been associated with.  We know that the search is for
+      // an author because it must start with an @ symbol.
+      var authorContain = [];
 
       // card is the current card we're looking at
       var card = {};
 
       // this is the location of the hit from indexOf()
       var textLocation = 0;
+
+      // First, check if this is an author search
+
+      if (lowerSnippet.indexOf('@') === 0) {
+        
+      }
 
       for (var i=0; i < cards.length; i++) {
           card = cards[i];
@@ -1090,7 +1121,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   //     These should of course display at the top of the search results.
                   if (textLocation === 0) {
 
-                    contStart.push(this.addSearchHit(card, '<b>Controversy:</b><br>'+card.title, textLocation));
+                    contStart.push(this.addSearchHit(card, 
+                      '<b>Controversy:</b><br>'+card.title, textLocation));
 
                     // Exit, in order to avoid adding this card twice
                     break;
@@ -1098,7 +1130,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   // 3.  Capture all Controversy titles that CONTAIN typed letters.
                   } else if (textLocation !== -1) {
 
-                    contContain.push(this.addSearchHit(card, '<b>Controversy:</b><br>'+card.title, textLocation));
+                    contContain.push(this.addSearchHit(card, 
+                      '<b>Controversy:</b><br>'+card.title, textLocation));
 
                     // Exit, in order to avoid adding this card twice
                     break;
@@ -1110,13 +1143,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
                 textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
                 if (textLocation === 0) {
-                  constructTitleStart.push(this.addSearchHit(card, '<b>'+card.type+':</b> '+card.title, textLocation));
+                  constructTitleStart.push(this.addSearchHit(card, 
+                    '<b>'+card.type+':</b> '+card.title, textLocation));
 
                 // 5.  Capture all Construct titles that CONTAIN typed letters (Model-specific/
                 //     non-controversy case).
 
                 } else if (textLocation !== -1) {
-                  constructTitleContain.push(this.addSearchHit(card, '<b>'+card.type+':</b> '+card.title, textLocation));
+                  constructTitleContain.push(this.addSearchHit(card, 
+                    '<b>'+card.type+':</b> '+card.title, textLocation));
                 }
 
                 // 6. and 7. are for expert and all of the various resource names (see further down)
@@ -1128,7 +1163,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
                 textLocation = card.definition.toLowerCase().indexOf(lowerSnippet);
                 if (textLocation !== -1) {
-                    contConstructDescContain.push(this.addSearchHit(card, '<b>Controversy Description:</b><br>'+card.definition, textLocation));
+                    contConstructDescContain.push(this.addSearchHit(card, 
+                      '<b>Controversy Description:</b><br>'+card.definition, textLocation));
                 }
 
                 // 9.  Capture all non-controversy Construct text that CONTAIN typed
@@ -1141,7 +1177,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   card.text.forEach(function(section) {
                     textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
                     if (textLocation !== -1) {
-                        constructTitleContain.push(this.addSearchHit(card, '<b>Quote:</b> '+section.quote, textLocation));
+                        constructTitleContain.push(this.addSearchHit(card, 
+                          '<b>Quote:</b> '+section.quote, textLocation));
                     }
                   });
                 }
@@ -1160,7 +1197,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   card.text.forEach(function(section) {
                     textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
                     if (textLocation !== -1 && textLocation !== 0) {
-                        contConstructTextContain.push(this.addSearchHit(card, '<b>Quote:</b> '+section.quote, textLocation));
+                        contConstructTextContain.push(this.addSearchHit(card, 
+                          '<b>Quote:</b> '+section.quote, textLocation));
                     }
                   });
                 }
@@ -1170,19 +1208,28 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
                 textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
                 if (textLocation === 0) {
-                  constructTitleStart.push(this.addSearchHit(card, '<b>'+card.type+':</b> '+card.title, textLocation));
+                  constructTitleStart.push(this.addSearchHit(card, 
+                    '<b>'+card.type+':</b> '+card.title, textLocation));
+
                 } else if (textLocation !== -1) {
 
                 // 5.  Capture all non-Model Construct titles that CONTAIN typed letters.
 
-                  constructTitleContain.push(this.addSearchHit(card, '<b>'+card.type+':</b> '+card.title, textLocation));
+                  constructTitleContain.push(this.addSearchHit(card, 
+                    '<b>'+card.type+':</b> '+card.title, textLocation));
                 }
               break;
 
-            // 10. Capture all concept map titles that CONTAIN typed letters.
+            // 10. Capture all concept map + forum titles that CONTAIN typed letters.
 
             case "Forum":
             case "Concept Map":
+
+                textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
+                if (textLocation !== -1) {
+                  cmapForumTitleContain.push(this.addSearchHit(card, 
+                    '<b>'+card.type+':</b> '+card.title, textLocation));
+                }
 
               break;
 
@@ -1209,7 +1256,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   card.text.forEach(function(section) {
                     textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
                     if (textLocation !== -1) {
-                        resourceContain.push(that.addSearchHit(card, '<b>Quote:</b> '+section.quote, textLocation));
+                        resourceContain.push(that.addSearchHit(card, 
+                          '<b>Quote:</b> '+section.quote, textLocation));
                     }
                   });
                 }
@@ -1221,9 +1269,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
           }
 
-          results = contStart.concat(contContain, contConstructDescContain, contConstructTextContain, 
-                    constructTitleStart, constructTitleContain, cmapTitleContain, resourceStart, 
-                    resourceContain);
+          results = contStart.concat(contContain, contConstructDescContain, 
+                    contConstructTextContain, constructTitleStart, constructTitleContain, 
+                    cmapForumTitleContain, resourceStart, resourceContain);
 
       } // End of the for loop
 
