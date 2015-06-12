@@ -26,8 +26,15 @@ div.list .item-complex .item-content {
 
 .highlighter {
 	background-color: yellow;
+	z-index: 3;
 }
 
 .warning-background {
 	background-color: #FFF0F0;
+}
+
+.search-hit {
+	color: white;
+	background-color: red;
+	z-index: 4;
 }

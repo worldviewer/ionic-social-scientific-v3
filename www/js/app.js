@@ -144,6 +144,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: "img/avatars/electric-joule-avatar.jpg",
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [0],
     nodes: null,
     postscript: null
@@ -168,6 +169,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: "img/journals/IEEE.png",
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [8],
     nodes: null,
     postscript: null
@@ -192,6 +194,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [9],
     nodes: null,
     postscript: null
@@ -216,6 +219,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [5,6],
     nodes: null,
     postscript: null
@@ -240,6 +244,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [5,6],
     nodes: null,
     postscript: null
@@ -264,6 +269,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [5,6],
     nodes: null,
     postscript: null
@@ -288,6 +294,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [5,6],
     nodes: null,
     postscript: null
@@ -312,6 +319,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [5,6],
     nodes: null,
     postscript: null
@@ -336,6 +344,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [5,6],
     nodes: null,
     postscript: null
@@ -360,6 +369,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [5,6],
     nodes: null,
     postscript: null
@@ -384,6 +394,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [5,6],
     nodes: null,
     postscript: null
@@ -408,6 +419,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [5,6],
     nodes: null,
     postscript: null
@@ -432,6 +444,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: ["http://wattsupwiththat.com/2013/12/26/new-paper-clouds-blown-by-the-solar-wind/#more-99909"],
     text: null, // FILL!
+    highighter: null,
     expert_ids: [4],
     nodes: null,
     postscript: null
@@ -456,6 +469,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [0,1],
 
     // May need to create multiple maps for differing image sizes
@@ -490,6 +504,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [0],
     nodes: null,
     postscript: null
@@ -514,6 +529,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [0],
     nodes: null,
     postscript: null
@@ -538,6 +554,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [0],
     nodes: null,
     postscript: null
@@ -562,6 +579,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: null, // FILL!
     url: null,
     text: null,
+    highighter: null,
     expert_ids: [0],
     nodes: null,
     postscript: null
@@ -586,6 +604,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: "/img/articles/solar-wind-surprise.png",
     url: "http://wattsupwiththat.com/2009/09/10/solar-wind-suprise-this-discovery-is-like-finding-it-got-hotter-when-the-sun-went-down/",
     text: null,
+    highighter: null,
     expert_ids: [5,6],
     nodes: null,
     postscript: null
@@ -610,6 +629,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: "img/articles/changing-sun-in-xrays.jpg",
     url: "http://www.holoscience.com/wp/global-warming-in-a-climate-of-ignorance/",
     text: null,
+    highighter: null,
     expert_ids: [9],
     nodes: null,
     postscript: null
@@ -634,6 +654,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: "img/articles/AGW-cartoon.png",
     url: "http://www.holoscience.com/wp/science-politics-and-global-warming/",
     text: null,
+    highighter: null,
     expert_ids: [9],
     nodes: null,
     postscript: null
@@ -658,6 +679,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: "img/forums/earth-sun-connected.jpg",
     url: "http://wattsupwiththat.com/2015/04/30/how-plasma-connects-the-sun-to-the-climate/",
     text: null,
+    highighter: null,
     expert_ids: null,
     nodes: null,
     postscript: "Note that WUWT has a policy against running stories that relate to the Electric Universe, but they appear to have made an exception in this case."
@@ -685,6 +707,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: "img/journals/journal-geophysical-research.png",
     url: "http://nldr.library.ucar.edu/repository/assets/osgc/OSGC-000-000-004-001.pdf",
     text: null,
+    highighter: null,
     expert_ids: null,
     nodes: null,
     year: 2007, // ADD TO OTHERS?
@@ -709,8 +732,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     next: null,
     avatar: "img/books/manic-sun.png",
     url: "http://www.amazon.com/Manic-Sun-Weather-Theories-Confounded/dp/1899044116/",
-    text: [{quote: "The solar physicists cared just as much as the official climatologists, about keeping the world safe for their grandchildren.  <span style='background-color:yellow'>They said it was rash to suppose that every possible variation in the Sun&#39;s output of light had been seen by the satellites in the course of a single solar cycle. The solar-terrestrial physicists, for their part, pleaded for consideration of other ways in which the Sun might affect the Earth via the solar wind -- auroras, that sort of thing</span>. They were awfully vague, though, about how it could happen.", page_start: 18, page_end: 18}, 
-        {quote: "To achieve its remarkable projection of future temperatures, the report had to argue that the global warming of the twentieth century was largely due to carbon dioxide and other greenhouse gases. The role of the Sun had to be minimized.  The commentary concentrated entirely on changes in the output of radiant energy from the visible disk.  <span style='background-color:yellow'>As for the invisible heliosphere that embraced the Earth in the solar wind, and might contain other possible ways of changing the climate, for Houghton&#39;s group it did not exist.</span>", page_start: 41, page_end: 42}],
+    text: [{quote: "The solar physicists cared just as much as the official climatologists, about keeping the world safe for their grandchildren.  They said it was rash to suppose that every possible variation in the Sun's output of light had been seen by the satellites in the course of a single solar cycle. The solar-terrestrial physicists, for their part, pleaded for consideration of other ways in which the Sun might affect the Earth via the solar wind -- auroras, that sort of thing. They were awfully vague, though, about how it could happen.", page_start: 18, page_end: 18}, 
+        {quote: "To achieve its remarkable projection of future temperatures, the report had to argue that the global warming of the twentieth century was largely due to carbon dioxide and other greenhouse gases. The role of the Sun had to be minimized.  The commentary concentrated entirely on changes in the output of radiant energy from the visible disk.  As for the invisible heliosphere that embraced the Earth in the solar wind, and might contain other possible ways of changing the climate, for Houghton's group it did not exist.", page_start: 41, page_end: 42}],
+    highighter: [[128,342],[343,177]],
     expert_ids: [10],
     nodes: null,
     year: 2007, // ADD TO OTHERS?
@@ -736,6 +760,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: "img/books/a-vast-machine.png",
     url: "http://www.amazon.com/Vast-Machine-Computer-Politics-Infrastructures/dp/0262518635/",
     text: null,
+    highighter: null,
     expert_ids: [11],
     nodes: null,
     year: null, // FILL!
@@ -761,6 +786,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: "img/books/the-electric-universe.png",
     url: "http://www.amazon.com/Electric-Universe-Wallace-Thornhill-Talbott/dp/0977285138/",
     text: null,
+    highighter: null,
     expert_ids: [9],
     nodes: null,
     year: null, // FILL!
@@ -788,6 +814,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: "img/audio-video/space-news.png",
     url: "https://www.youtube.com/watch?v=VIAp_6FAXCY",
     text: null,
+    highighter: null,
     expert_ids: [12],
     nodes: null,
     year: 2014,
@@ -813,6 +840,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: "img/audio-video/bill-nichols-video.png",
     url: "https://www.youtube.com/watch?v=jqIo4WJJL90",
     text: null,
+    highighter: null,
     expert_ids: [1],
     nodes: null,
     year: 2013,
@@ -838,6 +866,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: "img/audio-video/piers-corbyn-video.png",
     url: "https://www.youtube.com/watch?v=6R26PXRrgds",
     text: null,
+    highighter: null,
     expert_ids: [2],
     nodes: null,
     year: null, // FILL!
@@ -863,6 +892,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     avatar: "img/audio-video/bob-johnson-video.png",
     url: "https://www.youtube.com/watch?v=XdrDg-Nuxdg",
     text: null,
+    highighter: null,
     expert_ids: [3],
     nodes: null,
     year: null, // FILL!
@@ -1029,9 +1059,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   //     Eventually: Sort results by rankings.
 
+  // This function checks the current section of text for highlights, and
+  // if the current section has any marker in it, it will apply it
+  this.highlight = function(region, highlights, startIndex) {
 
 
-  this.addSearchHit = function(card, hit, location) {
+
+    return region;
+  };
+
+  this.addSearchHit = function(card, prefix, hit, location, searchLength, highlightRegion) {
     var cardTemp = Object.create(null);
 
     // Use angular.copy because JavaScript passes objects by reference;
@@ -1039,12 +1076,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     // another ...
     angular.copy(card, cardTemp);
 
-    // For any hit that pertains to a larger run of text, we will want
-    // to strip out two lines of context that the hit exists within
+    // I'd really like to highlight in white-text-on-red-background the
+    // search hit
 
+    var highlightedText = prefix + this.highlight(hit.substring(0, location), highlightRegion, 0) + 
+      '<span class="search-hit">' +
+      this.highlight(hit.substring(location, location+searchLength), highlightRegion, location) + '</span>' +
+      this.highlight(hit.substring(location+searchLength), highlightRegion, location+searchLength);
 
-
-    cardTemp['search_hit'] = hit;
+    // cardTemp['search_hit'] = hit;
+    cardTemp['search_hit'] = highlightedText;
     return cardTemp;
   };
 
@@ -1061,6 +1102,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
       // Ignore case
       var lowerSnippet = snippet.toLowerCase();
+      var snippetLength = snippet.length;
 
       // I'm going to want to add in several search features which are designed
       // to mimic the system that Google uses to do searching:
@@ -1115,6 +1157,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
             if (expert.name.toLowerCase().indexOf(lowerSnippet) !== -1) {
 
+              // Do not use addSearchHit() for the experts because we don't want to
+              // highlight the hits for experts or their contributions
               expertTemp = Object.create(null);
               angular.copy(expert, expertTemp);
               expertTemp['isExpert'] = true;
@@ -1128,7 +1172,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
 
         // Now, if there is only one expert listed, also list his creations ...
-
         if (results.length === 1) {
 
           // First, grab the expert id ...
@@ -1141,14 +1184,21 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
             if (card.expert_ids) {
               if (card.expert_ids.indexOf(expertId) !== -1) {
 
-                results.push(this.addSearchHit(card, '<b>Contribution:</b> '+card.title, 0));
+                // Do not use addSearchHit() for the experts because we don't want to
+                // highlight the hits for experts or their contributions
+                expertTemp = Object.create(null);
+                angular.copy(expert, expertTemp);
+                expertTemp['search_hit'] = '<b>'+card.type+':</b> '+card.title;
+
+                results.push(expertTemp);
 
               }
             }
           } // End loop through all author works
         } // End if only one author match
 
-      } else {
+      // Only perform a search when the non-expert search query is 3 or more characters
+      } else if (snippetLength > 2) {
 
         for (var i=0; i < cards.length; i++) {
             card = cards[i];
@@ -1163,8 +1213,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                     //     These should of course display at the top of the search results.
                     if (textLocation === 0) {
 
-                      contStart.push(this.addSearchHit(card, 
-                        '<b>Controversy:</b><br>'+card.title, textLocation));
+                      contStart.push(this.addSearchHit(card, '<b>Controversy:</b><br>', 
+                        card.title, textLocation, snippetLength, []));
 
                       // Exit, in order to avoid adding this card twice
                       break;
@@ -1172,8 +1222,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                     // 3.  Capture all Controversy titles that CONTAIN typed letters.
                     } else if (textLocation !== -1) {
 
-                      contContain.push(this.addSearchHit(card, 
-                        '<b>Controversy:</b><br>'+card.title, textLocation));
+                      contContain.push(this.addSearchHit(card, '<b>Controversy:</b><br>', 
+                        card.title, textLocation, snippetLength, []));
 
                       // Exit, in order to avoid adding this card twice
                       break;
@@ -1185,15 +1235,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
                   textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
                   if (textLocation === 0) {
-                    constructTitleStart.push(this.addSearchHit(card, 
-                      '<b>'+card.type+':</b> '+card.title, textLocation));
+                    constructTitleStart.push(this.addSearchHit(card, '<b>'+card.type+':</b> ', 
+                      card.title, textLocation, snippetLength, []));
 
                   // 5.  Capture all Construct titles that CONTAIN typed letters (Model-specific/
                   //     non-controversy case).
 
                   } else if (textLocation !== -1) {
-                    constructTitleContain.push(this.addSearchHit(card, 
-                      '<b>'+card.type+':</b> '+card.title, textLocation));
+                    constructTitleContain.push(this.addSearchHit(card, '<b>'+card.type+':</b> ', 
+                      card.title, textLocation, snippetLength, []));
                   }
 
                   // 6. and 7. are for expert and all of the various resource names (see further down)
@@ -1206,7 +1256,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   textLocation = card.definition.toLowerCase().indexOf(lowerSnippet);
                   if (textLocation !== -1) {
                       contConstructDescContain.push(this.addSearchHit(card, 
-                        '<b>Controversy Description:</b><br>'+card.definition, textLocation));
+                        '<b>Controversy Description:</b><br>', card.definition, textLocation, 
+                        snippetLength, []));
                   }
 
                   // 9.  Capture all non-controversy Construct text that CONTAIN typed
@@ -1216,11 +1267,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   // page_start:int, page_end:int}, so we should cycle through them
 
                   if (!!card.text) {
-                    card.text.forEach(function(section) {
+                    card.text.forEach(function(section, index) {
                       textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
                       if (textLocation !== -1) {
+
+                          // Note that we only send the piece of highlighter that corresponds
+                          // with current text
                           constructTitleContain.push(this.addSearchHit(card, 
-                            '<b>Quote:</b> '+section.quote, textLocation));
+                            '<b>Quote:</b> ', section.quote, textLocation, snippetLength,
+                            card.highlighter[index]));
                       }
                     });
                   }
@@ -1236,11 +1291,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   //     typed letters.
 
                   if (card.text) {
-                    card.text.forEach(function(section) {
+                    card.text.forEach(function(section, index) {
                       textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
                       if (textLocation !== -1 && textLocation !== 0) {
                           contConstructTextContain.push(this.addSearchHit(card, 
-                            '<b>Quote:</b> '+section.quote, textLocation));
+                            '<b>Quote:</b> ', section.quote, textLocation, snippetLength,
+                            card.highlighter[index]));
                       }
                     });
                   }
@@ -1250,15 +1306,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
                   textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
                   if (textLocation === 0) {
-                    constructTitleStart.push(this.addSearchHit(card, 
-                      '<b>'+card.type+':</b> '+card.title, textLocation));
+                    constructTitleStart.push(this.addSearchHit(card, '<b>'+card.type+':</b> ', 
+                      card.title, textLocation, snippetLength, []));
 
                   } else if (textLocation !== -1) {
 
                   // 5.  Capture all non-Model Construct titles that CONTAIN typed letters.
 
-                    constructTitleContain.push(this.addSearchHit(card, 
-                      '<b>'+card.type+':</b> '+card.title, textLocation));
+                    constructTitleContain.push(this.addSearchHit(card, '<b>'+card.type+':</b> ', 
+                      card.title, textLocation, snippetLength, []));
                   }
                 break;
 
@@ -1269,8 +1325,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
                   textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
                   if (textLocation !== -1) {
-                    cmapForumTitleContain.push(this.addSearchHit(card, 
-                      '<b>'+card.type+':</b> '+card.title, textLocation));
+                    cmapForumTitleContain.push(this.addSearchHit(card, '<b>'+card.type+':</b> ', 
+                      card.title, textLocation, snippetLength, []));
                   }
 
                 break;
@@ -1288,8 +1344,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
                   textLocation = card.title.toLowerCase().indexOf(lowerSnippet);
                   if (textLocation === 0) {
-                    resourceStart.push(this.addSearchHit(card, 
-                      '<b>'+card.type+':</b> '+card.title, textLocation));
+                    resourceStart.push(this.addSearchHit(card, '<b>'+card.type+':</b> ', 
+                      card.title, textLocation, snippetLength, []));
 
                   // 7.  Capture all Journal names, Forum names, Article 
                   //     names, Article authors, Paper titles, Paper authors, Book titles, 
@@ -1298,8 +1354,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
                   } else if (textLocation !== -1) {
 
-                    resourceContain.push(this.addSearchHit(card, 
-                      '<b>'+card.type+':</b> '+card.title, textLocation));
+                    resourceContain.push(this.addSearchHit(card, '<b>'+card.type+':</b> ', 
+                      card.title, textLocation, snippetLength, []));
 
                   }
 
@@ -1307,11 +1363,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                   var that = this;
 
                   if (card.text) {
-                    card.text.forEach(function(section) {
+                    card.text.forEach(function(section, index) {
                       textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
                       if (textLocation !== -1) {
-                          resourceContain.push(that.addSearchHit(card, 
-                            '<b>Quote:</b> '+section.quote, textLocation));
+                          resourceContain.push(that.addSearchHit(card, '<b>Quote:</b> ', 
+                            section.quote, textLocation, snippetLength, card.highlighter[index]));
                       }
                     });
                   }

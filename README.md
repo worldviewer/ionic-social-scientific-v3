@@ -4,6 +4,10 @@ A mobile app that helps people to think like a scientist about current events.
 
 I've decided to pivot on my interface.  This third version will include a smart autocomplete search box which will traverse all of the content's text, but do so according to a prioritization scheme.
 
+<p align="center">
+  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/screens.png" /></a>
+</p>
+
 Once the user selects a particular list item, it will give them the option of either browsing the entire selection using slide boxes, or alternatively they can seek to browse a particular claim or media format.
 
 Once I get this basic search and infrastructure in place, I'll be more thoughtfully addressing the various issues associated with image sizes.  That's a necessary next step before I can break my infographics into parts.
