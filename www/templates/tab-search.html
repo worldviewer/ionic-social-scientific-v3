@@ -5,7 +5,45 @@
 			items-method-value-key="items" item-view-value-key="search_hit" item-value-key="id"></a>
   </ion-nav-buttons>
 
+<!-- 
+<div class="scroll-content has-header" overflow-scroll="true">
+    <div class="scroll"> here my long content </div>
+</div>
+ -->
 
+<!-- 
+<ion-scroll zooming="true" direction="xy" style="width: 500px; height: 500px">
+  <div style="width: 5000px; height: 5000px; background: url('https://upload.wikimedia.org/wikipedia/commons/a/ad/Europe_geological_map-en.jpg') repeat"></div>
+ </ion-scroll>
+ -->
+
+	<ion-slide-box>
+
+    <ion-slide>
+    	<ion-scroll direction="y" class="theroot">
+
+				<div style="width: 460px; height: 960px; background: url('img/articles/wuwt-solar-wind-surprise.jpg')"></div>
+
+			</ion-scroll>
+    </ion-slide>
+
+    <ion-slide>
+    	<div class="scroll-content has-header" overflow-scroll="true">
+    		<div class="scroll">
+	        <img style="width: 100%" src="img/articles/sun-power-surge.jpg">
+	      </div>
+       </div>
+    </ion-slide>
+
+    <ion-slide>
+    	<div class="scroll-content has-header" overflow-scroll="true">
+    		<div class="scroll">
+	        <img style="width: 100%" src="img/articles/thornhill-on-climatologists.jpg">
+	      </div>
+      </div>
+    </ion-slide>
+
+	</ion-slide-box>
 
 </ion-view>
 

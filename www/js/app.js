@@ -220,7 +220,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: null,
     text: null,
     highighter: null,
-    expert_ids: [5,6],
+    expert_ids: [0],
     nodes: null,
     postscript: null
 
@@ -245,7 +245,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: null,
     text: null,
     highighter: null,
-    expert_ids: [5,6],
+    expert_ids: [0],
     nodes: null,
     postscript: null
 
@@ -270,7 +270,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: null,
     text: null,
     highighter: null,
-    expert_ids: [5,6],
+    expert_ids: [0],
     nodes: null,
     postscript: null
 
@@ -295,7 +295,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: null,
     text: null,
     highighter: null,
-    expert_ids: [5,6],
+    expert_ids: [0],
     nodes: null,
     postscript: null
 
@@ -320,7 +320,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: null,
     text: null,
     highighter: null,
-    expert_ids: [5,6],
+    expert_ids: [0],
     nodes: null,
     postscript: null
 
@@ -345,7 +345,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: null,
     text: null,
     highighter: null,
-    expert_ids: [5,6],
+    expert_ids: [0],
     nodes: null,
     postscript: null
 
@@ -370,7 +370,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: null,
     text: null,
     highighter: null,
-    expert_ids: [5,6],
+    expert_ids: [0],
     nodes: null,
     postscript: null
 
@@ -395,7 +395,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: null,
     text: null,
     highighter: null,
-    expert_ids: [5,6],
+    expert_ids: [0],
     nodes: null,
     postscript: null
 
@@ -420,7 +420,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: null,
     text: null,
     highighter: null,
-    expert_ids: [5,6],
+    expert_ids: [0],
     nodes: null,
     postscript: null
 
@@ -734,7 +734,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: "http://www.amazon.com/Manic-Sun-Weather-Theories-Confounded/dp/1899044116/",
     text: [{quote: "The solar physicists cared just as much as the official climatologists, about keeping the world safe for their grandchildren.  They said it was rash to suppose that every possible variation in the Sun's output of light had been seen by the satellites in the course of a single solar cycle. The solar-terrestrial physicists, for their part, pleaded for consideration of other ways in which the Sun might affect the Earth via the solar wind -- auroras, that sort of thing. They were awfully vague, though, about how it could happen.", page_start: 18, page_end: 18}, 
         {quote: "To achieve its remarkable projection of future temperatures, the report had to argue that the global warming of the twentieth century was largely due to carbon dioxide and other greenhouse gases. The role of the Sun had to be minimized.  The commentary concentrated entirely on changes in the output of radiant energy from the visible disk.  As for the invisible heliosphere that embraced the Earth in the solar wind, and might contain other possible ways of changing the climate, for Houghton's group it did not exist.", page_start: 41, page_end: 42}],
-    highighter: [[128,342],[343,177]],
+    highighter: [ [{start:128, end:342}], [{start:343, end:177}] ],
     expert_ids: [10],
     nodes: null,
     year: 2007, // ADD TO OTHERS?
@@ -1061,11 +1061,55 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   // This function checks the current section of text for highlights, and
   // if the current section has any marker in it, it will apply it
+
+  // region == substring
+  // startIndex == characters from start of original string to start of substring
+  // highlights[0] == characters from start of original string to highlight
+  // highlights[1] == characters to highlight
+  // (startIndex + region.length) == end of substring
   this.highlight = function(region, highlights, startIndex) {
 
+    var highlighted = region;
 
+    if (highlights.length > 0) {
+      // Our comparison will use the beginning of the original string as its
+      // frame of reference
 
-    return region;
+      // NEVER GETS HERE
+      // return 'blah';
+
+      var substringEnd = startIndex + region.length;
+
+      // End of highlighting, from start of original string
+      var highlightEnd = highlights.start + highlights.end;
+
+      // If highlight starts inside of this region ...
+      if (highlights.start < substringEnd) {
+
+        // If highlight also ends inside of this region ...
+        if ((highlights.start + highlights.end) < substringEnd) {
+
+          highlighted = region.substring(0, highlights.start) + '<span class="highlighter">' +
+            region.substring(highlights.start, highlightEnd) +
+            '</span>' + region.substring(highlightEnd);
+
+        // If highlight does not end inside of this region, then we need to
+        // end it at the end the span at the end of the string
+        } else {
+
+          highlighted = region.substring(0, highlights.start) + '<span class="highlighter">' +
+            region.substring(highlights.start) + '</span>';
+
+        }
+
+      // Highlighting is not in this region
+      } else {
+        return region;
+      }
+    }
+
+    // return '<span class="highlighter">'+region+'</span>';
+    return highlighted;
   };
 
   this.addSearchHit = function(card, prefix, hit, location, searchLength, highlightRegion) {
@@ -1079,10 +1123,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     // I'd really like to highlight in white-text-on-red-background the
     // search hit
 
-    var highlightedText = prefix + this.highlight(hit.substring(0, location), highlightRegion, 0) + 
-      '<span class="search-hit">' +
-      this.highlight(hit.substring(location, location+searchLength), highlightRegion, location) + '</span>' +
-      this.highlight(hit.substring(location+searchLength), highlightRegion, location+searchLength);
+    // var highlightedText = prefix + this.highlight(hit.substring(0, location), highlightRegion, 0) + 
+    //   '<span class="search-hit">' +
+    //   this.highlight(hit.substring(location, location+searchLength), highlightRegion, location) + '</span>' +
+    //   this.highlight(hit.substring(location+searchLength), highlightRegion, location+searchLength);
+
+    var highlightedText = prefix + hit.substring(0, location) + '<span class="search-hit">' +
+      hit.substring(location, location+searchLength) + '</span>' +
+      hit.substring(location+searchLength);
 
     // cardTemp['search_hit'] = hit;
     cardTemp['search_hit'] = highlightedText;
@@ -1275,7 +1323,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                           // with current text
                           constructTitleContain.push(this.addSearchHit(card, 
                             '<b>Quote:</b> ', section.quote, textLocation, snippetLength,
-                            card.highlighter[index]));
+                            
+                            card.highlighter ? card.highlighter[index] : []));
                       }
                     });
                   }
@@ -1296,7 +1345,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                       if (textLocation !== -1 && textLocation !== 0) {
                           contConstructTextContain.push(this.addSearchHit(card, 
                             '<b>Quote:</b> ', section.quote, textLocation, snippetLength,
-                            card.highlighter[index]));
+
+                            card.highlighter ? card.highlighter[index] : []));
                       }
                     });
                   }
@@ -1367,7 +1417,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                       textLocation = section.quote.toLowerCase().indexOf(lowerSnippet);
                       if (textLocation !== -1) {
                           resourceContain.push(that.addSearchHit(card, '<b>Quote:</b> ', 
-                            section.quote, textLocation, snippetLength, card.highlighter[index]));
+                            section.quote, textLocation, snippetLength, 
+
+                            // First check to see that there is a highlighter array,
+                            // before trying to access it
+                            // card.highlighter ? card.highlighter[index] : []));
+                            {start:0, end:1}));
                       }
                     });
                   }

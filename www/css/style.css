@@ -38,3 +38,6 @@ div.list .item-complex .item-content {
 	background-color: red;
 	z-index: 4;
 }
+
+.slider { height: 100%; text-align: center }
+.scroll { height: 100% }
