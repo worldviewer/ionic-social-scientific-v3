@@ -25,7 +25,35 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   });
 })
 
-.controller('SearchCtrl', ['$scope', 'Construct', function ($scope, Construct) {
+// Controller for constructs; this is where people end up after selecting a search result
+.controller('ConstructCtrl', ['$scope', '$state', '$stateParams', 'Construct', 
+  function ($scope, $state, $stateParams, Construct) {
+
+  var cardId = $stateParams.controversyId;
+  console.log(cardId);
+
+  Construct.getById(cardId, function(foundCardById) {
+    if (foundCardById) {
+      $scope.card = foundCardById;
+    } else {
+      $scope.none = "Error!";
+    }
+  });
+
+}])
+
+.controller('SearchCtrl', ['$scope', '$state', '$stateParams', 'Construct', 
+  function ($scope, $state, $stateParams, Construct) {
+
+  $scope.openCard = function (callback) {
+      // print out the selected item
+      console.log(callback.item); 
+
+      // Evaluate what kind of card it is, and then transition the state to the
+      // appropriate ui-router state, based upon the card.type; Use $stateParams to
+      // send the construct card to render, according to id
+      $state.go('tab.controversy', {controversyId: callback.item.id}, {inherit: true});
+  }
 
   $scope.isModel = function(item) {
     if (item.type === "Model") { return true; }
@@ -79,12 +107,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
+  .state('tab.controversy', {
+      url: '/controversies/:controversyId',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-controversy': {
+          templateUrl: 'templates/tab-controversy.html',
+          controller: 'ConstructCtrl'
         }
       }
     })
@@ -126,7 +154,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   // There are also controversy cards, whose children are also parents.
 
   var cards = [{
-    id: 1,
+    id: 0,
     controversy: true,
     parent: true,
     type: "Model",
@@ -139,8 +167,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: "Electric joule heating is not widely known, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Electric joule heating is a natural implication of the Electric Universe paradigm.",
     search_hit: null,
 
-    children: [2,3,4,5,6,7,8,9,10,11,12],
-    next: 2,
+    children: [1,2,3,4,5,6,7,8,9,10,11],
+    next: 1,
     avatar: "img/avatars/electric-joule-avatar.jpg",
     url: null,
     text: null,
@@ -151,7 +179,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 2,
+    id: 1,
     controversy: false,
     parent: true,
     type: "Claim",
@@ -165,7 +193,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     search_hit: null,
 
     children: null, // FILL!
-    next: 3,
+    next: 2,
     avatar: "img/journals/IEEE.png",
     url: null,
     text: null,
@@ -176,7 +204,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 3,
+    id: 2,
     controversy: false,
     parent: true,
     type: "Claim",
@@ -190,8 +218,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     search_hit: null,
 
     children: null, // FILL!
-    next: 4,
-    avatar: null, // FILL!
+    next: 3,
+    avatar: "img/avatars/plasma-not-fluids.jpg",
     url: null,
     text: null,
     highighter: null,
@@ -201,7 +229,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 4,
+    id: 3,
     controversy: false,
     parent: true,
     type: "Claim",
@@ -215,8 +243,33 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     search_hit: null,
 
     children: null, // FILL!
+    next: 4,
+    avatar: "img/avatars/solar-wind-current.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [0],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 4,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Polar Hot Spots",
+    sourcename: null,
+
+    images: null, // FILL!
+    definition: "The presence of hot spots at the poles of Enceladus, Neptune and Venus, in particular, are suggestive of the simple idea that these moving charged particles can heat up the planets.",
+    status: null,    
+    search_hit: null,
+
+    children: null, // FILL!
     next: 5,
-    avatar: null, // FILL!
+    avatar: "img/avatars/polar-hotspots.jpg",
     url: null,
     text: null,
     highighter: null,
@@ -231,17 +284,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Polar Hot Spots",
+    title: "Warming Martian Ice Caps",
     sourcename: null,
 
     images: null, // FILL!
-    definition: "The presence of hot spots at the poles of Enceladus, Neptune and Venus, in particular, are suggestive of the simple idea that these moving charged particles can heat up the planets.",
-    status: null,    
+    definition: "It was noted in 2005 by NASA that Mars' ice caps had also been diminishing for three summers in a row.",
+    status: null,
     search_hit: null,
 
     children: null, // FILL!
     next: 6,
-    avatar: null, // FILL!
+    avatar: "img/avatars/warming-martian-ice-caps.jpg",
     url: null,
     text: null,
     highighter: null,
@@ -256,17 +309,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Warming Martian Ice Caps",
+    title: "Pluto's Anomalous Warming",
     sourcename: null,
 
-    images: null, // FILL!
-    definition: "It was noted in 2005 by NASA that Mars' ice caps had also been diminishing for three summers in a row.",
+    images: null,
+    definition: "Pluto has continued to warm up even as it moves away from the Sun.",
     status: null,
     search_hit: null,
 
     children: null, // FILL!
     next: 7,
-    avatar: null, // FILL!
+    avatar: "img/avatars/pluto-warming.jpg",
     url: null,
     text: null,
     highighter: null,
@@ -281,17 +334,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Pluto's Anomalous Warming",
+    title: "The Polar Vortex is Tricky to Model",
     sourcename: null,
 
-    images: null,
-    definition: "Pluto has continued to warm up even as it moves away from the Sun.",
+    images: null, // FILL!
+    definition: "Many atmospheric circulation models are unable to reproduce the observed polar stratospheric winds (aka the polar vortex).",
     status: null,
     search_hit: null,
 
-    children: null, // FILL!
+    children: null,
     next: 8,
-    avatar: null, // FILL!
+    avatar: "img/avatars/polar-vortex.jpg",
     url: null,
     text: null,
     highighter: null,
@@ -306,17 +359,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "The Polar Vortex is Tricky to Model",
+    title: "Dipolar Vortices Suggest Electrical Plasmas",
     sourcename: null,
 
     images: null, // FILL!
-    definition: "Many atmospheric circulation models are unable to reproduce the observed polar stratospheric winds (aka the polar vortex).",
+    definition: "The observed splitting of the polar vortex on both Earth and Venus is an expected feature of laboratory plasmas when they are conducting electrical currents, yet climate and planetary scientists claim to not understand either observation.",
     status: null,
     search_hit: null,
 
-    children: null,
+    children: null, // FILL!
     next: 9,
-    avatar: null, // FILL!
+    avatar: "img/avatars/dipolar-vortex.jpg",
     url: null,
     text: null,
     highighter: null,
@@ -331,17 +384,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Dipolar Vortices Suggest Electrical Plasmas",
+    title: "Solar Wind Intensity Correlates With Lightning Strikes",
     sourcename: null,
 
     images: null, // FILL!
-    definition: "The observed splitting of the polar vortex on both Earth and Venus is an expected feature of laboratory plasmas when they are conducting electrical currents, yet climate and planetary scientists claim to not understand either observation.",
+    definition: "The solar wind intensity correlates with lightning strikes, raising questions about lightning's underlying cause, and suggesting that the Earth is part of a larger electrical circuit.",
     status: null,
     search_hit: null,
 
     children: null, // FILL!
     next: 10,
-    avatar: null, // FILL!
+    avatar: "img/avatars/solar-wind-lightning.jpg",
     url: null,
     text: null,
     highighter: null,
@@ -356,17 +409,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Solar Wind Intensity Correlates With Lightning Strikes",
+    title: "Sunspots Correlate With Lower Stratosphere Temperature Anomalies",
     sourcename: null,
 
     images: null, // FILL!
-    definition: "The solar wind intensity correlates with lightning strikes, raising questions about lightning's underlying cause, and suggesting that the Earth is part of a larger electrical circuit.",
+    definition: "Sunspot numbers appear to correlate with lower stratosphere temperature anomalies, minus the temporal effects of volcanic eruptions -- suggesting that the sunspots are related to these electrical flows. Laboratory plasma terrella experiments appear to confirm this suspicion.",
     status: null,
     search_hit: null,
 
     children: null, // FILL!
     next: 11,
-    avatar: null, // FILL!
+    avatar: "img/avatars/sunspots-stratosphere.jpg",
     url: null,
     text: null,
     highighter: null,
@@ -381,31 +434,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Sunspots Correlate With Lower Stratosphere Temperature Anomalies",
-    sourcename: null,
-
-    images: null, // FILL!
-    definition: "Sunspot numbers appear to correlate with lower stratosphere temperature anomalies, minus the temporal effects of volcanic eruptions -- suggesting that the sunspots are related to these electrical flows. Laboratory plasma terrella experiments appear to confirm this suspicion.",
-    status: null,
-    search_hit: null,
-
-    children: null, // FILL!
-    next: 12,
-    avatar: null, // FILL!
-    url: null,
-    text: null,
-    highighter: null,
-    expert_ids: [0],
-    nodes: null,
-    postscript: null
-
-  }, {
-
-    id: 12,
-    controversy: false,
-    parent: true,
-    type: "Claim",
-    display: true,
     title: "Electric Joule Heating Is Not Fully Captured by Existing Models",
     sourcename: null,
 
@@ -416,7 +444,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     children: null,
     next: null,
-    avatar: null, // FILL!
+    avatar: "img/avatars/general-circulation-models.jpg",
     url: null,
     text: null,
     highighter: null,
@@ -426,7 +454,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 13,
+    id: 12,
     controversy: false,
     parent: true,
     type: "Critique",
@@ -441,7 +469,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     children: null,
     next: null,
-    avatar: null, // FILL!
+    avatar: "img/experts/lief-svalgaard.png",
     url: ["http://wattsupwiththat.com/2013/12/26/new-paper-clouds-blown-by-the-solar-wind/#more-99909"],
     text: null, // FILL!
     highighter: null,
@@ -451,7 +479,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 14,
+    id: 13,
     controversy: false,
     parent: false,
     type: "Concept Map",
@@ -465,8 +493,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     search_hit: null,
 
     children: null,
-    next: 15,
-    avatar: null, // FILL!
+    next: 14,
+    avatar: "img/avatars/primitive-equations.jpg",
     url: null,
     text: null,
     highighter: null,
@@ -486,12 +514,37 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 15,
+    id: 14,
     controversy: false,
     parent: false,
     type: "Concept Map",
     display: true,
     title: "Electric Joule Heating, E-fields and Magnetic Fields Explained",
+    sourcename: null,
+
+    images: null, // FILL!
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    children: null,
+    next: 15,
+    avatar: null, // FILL!
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [0],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 15,
+    controversy: false,
+    parent: false,
+    type: "Concept Map",
+    display: true,
+    title: "What is a Plasma? And Why Does It Matter?",
     sourcename: null,
 
     images: null, // FILL!
@@ -516,7 +569,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Concept Map",
     display: true,
-    title: "What is a Plasma? And Why Does It Matter?",
+    title: "What is a General Circulation Model?",
     sourcename: null,
 
     images: null, // FILL!
@@ -541,31 +594,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Concept Map",
     display: true,
-    title: "What is a General Circulation Model?",
-    sourcename: null,
-
-    images: null, // FILL!
-    definition: null,
-    status: null,
-    search_hit: null,
-
-    children: null,
-    next: 18,
-    avatar: null, // FILL!
-    url: null,
-    text: null,
-    highighter: null,
-    expert_ids: [0],
-    nodes: null,
-    postscript: null
-
-  }, {
-
-    id: 18,
-    controversy: false,
-    parent: false,
-    type: "Concept Map",
-    display: true,
     title: "What is Top of the Atmosphere Model Tuning?",
     sourcename: null,
 
@@ -586,7 +614,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 19,
+    id: 18,
     controversy: false,
     parent: false,
     type: "Article",
@@ -600,7 +628,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     search_hit: null,
 
     children: null,
-    next: 20,
+    next: 19,
     avatar: "/img/articles/solar-wind-surprise.png",
     url: "http://wattsupwiththat.com/2009/09/10/solar-wind-suprise-this-discovery-is-like-finding-it-got-hotter-when-the-sun-went-down/",
     text: null,
@@ -611,7 +639,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 20,
+    id: 19,
     controversy: false,
     parent: false,
     type: "Article",
@@ -625,7 +653,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     search_hit: null,
 
     children: null,
-    next: 21,
+    next: 20,
     avatar: "img/articles/changing-sun-in-xrays.jpg",
     url: "http://www.holoscience.com/wp/global-warming-in-a-climate-of-ignorance/",
     text: null,
@@ -636,7 +664,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 21,
+    id: 20,
     controversy: false,
     parent: false,
     type: "Article",
@@ -661,7 +689,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 22,
+    id: 21,
     controversy: false,
     parent: false,
     type: "Forum",
@@ -689,7 +717,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     // Another paper on this topic here:
     // http://www.ann-geophys.net/19/773/2001/angeo-19-773-2001.pdf
 
-    id: 23,
+    id: 22,
     controversy: false,
     parent: false,
     type: "Paper",
@@ -715,7 +743,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 24,
+    id: 23,
     controversy: false,
     parent: false,
     type: "Book",
@@ -734,7 +762,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: "http://www.amazon.com/Manic-Sun-Weather-Theories-Confounded/dp/1899044116/",
     text: [{quote: "The solar physicists cared just as much as the official climatologists, about keeping the world safe for their grandchildren.  They said it was rash to suppose that every possible variation in the Sun's output of light had been seen by the satellites in the course of a single solar cycle. The solar-terrestrial physicists, for their part, pleaded for consideration of other ways in which the Sun might affect the Earth via the solar wind -- auroras, that sort of thing. They were awfully vague, though, about how it could happen.", page_start: 18, page_end: 18}, 
         {quote: "To achieve its remarkable projection of future temperatures, the report had to argue that the global warming of the twentieth century was largely due to carbon dioxide and other greenhouse gases. The role of the Sun had to be minimized.  The commentary concentrated entirely on changes in the output of radiant energy from the visible disk.  As for the invisible heliosphere that embraced the Earth in the solar wind, and might contain other possible ways of changing the climate, for Houghton's group it did not exist.", page_start: 41, page_end: 42}],
-    highighter: [ [{start:128, end:342}], [{start:343, end:177}] ],
+    fancy_text: [{quote: "The solar physicists cared just as much as the official climatologists, about keeping the world safe for their grandchildren.  <span style='background-color:yellow'>They said it was rash to suppose that every possible variation in the Sun&#39;s output of light had been seen by the satellites in the course of a single solar cycle. The solar-terrestrial physicists, for their part, pleaded for consideration of other ways in which the Sun might affect the Earth via the solar wind -- auroras, that sort of thing</span>. They were awfully vague, though, about how it could happen. -p18", page_start: 18, page_end: 18}, 
+        {quote: "To achieve its remarkable projection of future temperatures, the report had to argue that the global warming of the twentieth century was largely due to carbon dioxide and other greenhouse gases. The role of the Sun had to be minimized.  The commentary concentrated entirely on changes in the output of radiant energy from the visible disk.  <span style='background-color:yellow'>As for the invisible heliosphere that embraced the Earth in the solar wind, and might contain other possible ways of changing the climate, for Houghton&#39;s group it did not exist.</span> -p41-42", page_start: 41, page_end: 42}],
+    // highighter: [ [{start:128, end:342}], [{start:343, end:177}] ],
     expert_ids: [10],
     nodes: null,
     year: 2007, // ADD TO OTHERS?
@@ -742,7 +772,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 25,
+    id: 24,
     controversy: false,
     parent: false,
     type: "Book",
@@ -768,7 +798,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 26,
+    id: 25,
     controversy: false,
     parent: false,
     type: "Book",
@@ -796,7 +826,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     // Add in video at https://www.nasa.gov/mission_pages/themis/news/themis_leaky_shield.html#.VXNBYDTF8vE
 
-    id: 27,
+    id: 26,
     controversy: false,
     parent: true,
     type: "Video",
@@ -822,7 +852,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 28,
+    id: 27,
     controversy: false,
     parent: true,
     type: "Video",
@@ -848,7 +878,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 29,
+    id: 28,
     controversy: false,
     parent: true,
     type: "Video",
@@ -874,7 +904,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   }, {
 
-    id: 30,
+    id: 29,
     controversy: false,
     parent: true,
     type: "Video",
@@ -1135,6 +1165,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     // cardTemp['search_hit'] = hit;
     cardTemp['search_hit'] = highlightedText;
     return cardTemp;
+  };
+
+  this.getById = function(id, cb) {
+    result = cards[id];
+
+    if (result) {
+      return cb(result);
+    } else {
+      return cb(false);
+    }    
   };
 
   // This find() method is extremely important for the app, insofar as it must prioritize

@@ -135,6 +135,11 @@ angular.module('ion-autocomplete', []).directive('ionAutocomplete', [
                     // if the item is an expert
                     '<a ng-if="item.isExpert" class="item item-avatar"><img ng-src="{{item.image}}"><p ng-bind-html="getItemValue(item, itemViewValueKey)"></p></a>',
 
+                    // This is not that important, but would like to implement ... Maybe solution at ...???
+                    // http://stackoverflow.com/questions/16023451/binding-variables-from-service-factory-to-controllers
+                    // http://fdietz.github.io/recipes-with-angular-js/controllers/sharing-code-between-controllers-using-services.html
+                    // '<ion-item class="item-divider" ng-show="items.justOneExpert">Or select one of this expert\'s contributions ...</ion-item>',
+ 
                     // if the item is a controversy
                     '<ion-item ng-if="item.controversy" class="item-thumbnail-left"><img ng-src="{{item.avatar}}"><p ng-bind-html="getItemValue(item, itemViewValueKey) | sanitize"></p></ion-item>',
 
