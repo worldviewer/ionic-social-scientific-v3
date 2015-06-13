@@ -110,7 +110,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('tab.controversy', {
       url: '/controversies/:controversyId',
       views: {
-        'tab-controversy': {
+        'tab-search': {
           templateUrl: 'templates/tab-controversy.html',
           controller: 'ConstructCtrl'
         }
