@@ -23,7 +23,7 @@
             <div class="row small-button">
                 <div class="col small-button-left" ng-click="scrollToAnchorWithinCurrentPage('questions')">
                     <a class="button button-calm button-full item item-icon-left small-button-anchor">
-                        <i class="icon ion-help-circled"></i>Questions</a>
+                        <i class="icon ion-help-circled"></i>Key Q's</a>
                 </div>
                 <div class="col small-button-right" ng-click="scrollToAnchorWithinCurrentPage('tests')">
                     <a class="button button-calm button-full item item-icon-left small-button-anchor">
@@ -114,7 +114,7 @@
                     <a class="item item-avatar blue-ion-pane">
                         <img ng-src="{{getExpertById(expert).image}}">
                         <h2>{{getExpertById(expert).name}}</h2>
-                        <p>{{getExpertById(expert).title}}</p>
+                        <h4>{{getExpertById(expert).title}}</h4>
                     </a>
 
                 </div>
@@ -135,7 +135,7 @@
                         <a class="item item-avatar blue-ion-pane">
                             <img ng-src="{{getExpertById(critic).image}}">
                             <h2>{{getExpertById(critic).name}}</h2>
-                            <p>{{getExpertById(critic).title}}</p>
+                            <h4>{{getExpertById(critic).title}}</h4>
                         </a>
 
                     </div>
@@ -151,7 +151,7 @@
 
                     <div ng-show="critique.text" ng-repeat="paragraph in critique.text">
                         <blockquote>
-                            <div ng-bind-html="paragraph | sanitize">
+                            <div ng-bind-html="paragraph | sanitize"></div>
                         </blockquote>
                     </div>
 
@@ -205,7 +205,7 @@
                 <ion-item class="item-thumbnail-left" href="#">
                     <img ng-src="{{getCardById(cmap).avatar}}">
                     <h2>{{getCardById(cmap).title}}</h2>
-                    <p>{{getExpertById(getCardById(cmap).expert_ids[0]).name}}</p>
+                    <h4>{{getExpertById(getCardById(cmap).expert_ids[0]).name}}</h4>
                 </ion-item>
             </div>
 
@@ -223,7 +223,7 @@
                     <h2>{{getCardById(article).title}}</h2>
 
                     <div ng-repeat="expert in getCardById(article).expert_ids">
-                        <p>{{getExpertById(expert).name}}</p>
+                        <h4>{{getExpertById(expert).name}}</h4>
                     </div>
 
                     <p>{{getCardById(article).sourcename}}</p>
@@ -239,7 +239,7 @@
 
             <div ng-show="getCardById(article).text" ng-repeat="paragraph in getCardById(article).text">
                 <blockquote>
-                    <div ng-bind-html="paragraph | sanitize">
+                    <div ng-bind-html="paragraph | sanitize"></div>
                 </blockquote>
             </div>
 
@@ -297,7 +297,7 @@
 
             <div ng-show="getCardById(paper).text" ng-repeat="paragraph in getCardById(paper).text">
                 <blockquote>
-                    <div ng-bind-html="paragraph | sanitize">
+                    <div ng-bind-html="paragraph | sanitize"></div>
                 </blockquote>
             </div>
 
@@ -325,7 +325,7 @@
                     <h2>{{getCardById(book).title}}</h2>
 
                     <div ng-repeat="expert in getCardById(book).expert_ids">
-                        <p>{{getExpertById(expert).name}}</p>
+                        <h4>{{getExpertById(expert).name}}</h4>
                     </div>
                 </ion-item>
             </ion-list>
@@ -363,7 +363,10 @@
                 <ion-item class="item-thumbnail-left" href="{{resource.url}}">
                     <img ng-src="{{getCardById(resource).avatar}}">
                     <h2>{{getCardById(resource).title}}</h2>
-                    <p>{{getCardById(resource).author}}</p>
+
+                    <div ng-repeat="expert in getCardById(resource).expert_ids">
+                        <h4>{{getExpertById(expert).name}}</h4>
+                    </div>
                 </ion-item>
 
                 <div ng-show="getCardById(resource).postscript" class="row">
@@ -374,8 +377,51 @@
                 </div>
 
             </div>
-
         </ion-list>
+
+
+
+        <h3 id="questions">Focus Questions</h3>
+        <div>
+            <ion-list class="item-text-wrap">
+
+                <div ng-repeat="question in card.question_ids">
+
+                    <ion-list class="item-text-wrap">
+                            <div ng-repeat="thinker in getQuestionById(question).expert_ids">
+                                <a class="item item-avatar blue-ion-pane">
+                                    <img ng-src="{{getExpertById(thinker).image}}">
+                                    <h2>{{getExpertById(thinker).name}}</h2>
+                                    <h4>{{getExpertById(thinker).title}}</h4>
+                                    <p><b>Q:</b> {{getQuestionById(question).title}}</p>
+                                </a>
+                            </div>
+
+                            <!-- Options to ... Learn More (ion-chevron-right) + Disagree (ion-arrow-expand) + 
+                                 Comment (ion-chatbox), and on the page itself, Add Evidence (ion-arrow-shrink) -->
+
+                    </ion-list>
+
+
+<!--                     <div ng-show="getQuestionById(question).images" ng-repeat="pic in getQuestionById(question).images">
+                        <a href="{{getQuestionById(question).url}}">
+                            <img width="100%" ng-src="{{pic}}">
+                        </a>
+                    </div>
+ -->
+
+<!--                     <div ng-show="critique.postscript" class="row">
+                        <div class="col-10">
+                            <i class="icon ion-asterisk"></i>
+                        </div>
+                        <div class="col-90" ng-bind-html="critique.postscript | sanitize"></div>
+                    </div>
+ -->
+                 </div>
+
+            </ion-list>
+        </div>
+
     </ion-content>
 </ion-view>
 

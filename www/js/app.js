@@ -63,6 +63,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     });
   };
 
+  $scope.getQuestionById = function(questionId) {
+    return Construct.getQuestionById(questionId, function(foundQuestionById) {
+      if (foundQuestionById) {
+        return foundQuestionById;
+      } else {
+        $scope.none = "Error!";
+      }
+    });
+  };
+
   $scope.scrollToAnchorWithinCurrentPage = function(anchor) 
   {
     $location.hash(anchor);
@@ -411,6 +421,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     paper_ids: [22],
     book_ids: [23,24,25],
     media_ids: [26,27,28,29],
+    question_ids: [0,1,2,3,4],
     next: 1,
     avatar: "img/avatars/electric-joule-avatar.jpg",
     url: null,
