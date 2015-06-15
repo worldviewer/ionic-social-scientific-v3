@@ -41,3 +41,33 @@ div.list .item-complex .item-content {
 
 .slider { height: 100%; text-align: center }
 .scroll { height: 100% }
+
+div.small-button {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+div.small-button-left {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+div.small-button-right {
+	padding-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+div.col > a.small-button-anchor {
+	margin-top: 0px;
+	margin-bottom: 15px;
+}

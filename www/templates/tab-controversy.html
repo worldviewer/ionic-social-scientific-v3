@@ -1,70 +1,382 @@
 <ion-view title="{{card.type}}: {{card.title}}">
 
-    <ion-content padding="true" class="has-header">
+    <ion-content padding="true" class="has-header" delegate-handle="content" overflow-scroll="true">
 
-        <h3>{{card.title}}</h3>
+        <h2>{{card.title}}</h2>
 
         <div>
             <p><strong>{{card.definition}}</strong></p>
 
+            <!-- I want browsing to be possible, but I also don't want to force them to scroll -->
+
+            <div class="row small-button">
+                <div class="col small-button-left" ng-click="scrollToAnchorWithinCurrentPage('claims')">
+                    <a class="button button-calm button-full item item-icon-left small-button-anchor">
+                        <i class="icon ion-quote"></i>Claims</a>
+                </div>
+                <div class="col small-button-right" ng-click="scrollToAnchorWithinCurrentPage('critiques')">
+                    <a class="button button-calm button-full item item-icon-left small-button-anchor">
+                        <i class="icon ion-android-warning"></i>Critiques</a>
+                </div>
+            </div>            
+
+            <div class="row small-button">
+                <div class="col small-button-left" ng-click="scrollToAnchorWithinCurrentPage('questions')">
+                    <a class="button button-calm button-full item item-icon-left small-button-anchor">
+                        <i class="icon ion-help-circled"></i>Questions</a>
+                </div>
+                <div class="col small-button-right" ng-click="scrollToAnchorWithinCurrentPage('tests')">
+                    <a class="button button-calm button-full item item-icon-left small-button-anchor">
+                        <i class="icon ion-checkmark-circled"></i>Tests</a>
+                </div>
+            </div>            
+
+            <div class="row small-button">
+                <div class="col small-button-left" ng-click="scrollToAnchorWithinCurrentPage('papers')">
+                    <a class="button button-calm button-full item item-icon-left small-button-anchor">
+                        <i class="icon ion-ios-flask"></i>Papers</a>
+                </div>
+                <div class="col small-button-right" ng-click="scrollToAnchorWithinCurrentPage('articles')">
+                    <a class="button button-calm button-full item item-icon-left small-button-anchor">
+                        <i class="icon ion-document"></i>Articles</a>
+                </div>
+            </div>
+
+            <div class="row small-button">
+                <div class="col small-button-left" ng-click="scrollToAnchorWithinCurrentPage('threads')">
+                    <a class="button button-calm button-full item item-icon-left small-button-anchor">
+                        <i class="icon ion-chatboxes"></i>Threads</a>
+                </div>
+                <div class="col small-button-right" ng-click="scrollToAnchorWithinCurrentPage('cmaps')">
+                    <a class="button button-calm button-full item item-icon-left small-button-anchor">
+                        <i class="icon ion-network"></i>CMaps</a>
+                </div>
+            </div>
+
+            <div class="row small-button">
+                <div class="col small-button-left" ng-click="scrollToAnchorWithinCurrentPage('books')">
+                    <a class="button button-calm button-full item item-icon-left small-button-anchor">
+                        <i class="icon ion-ios-book"></i>Books</a>
+                </div>
+                <div class="col small-button-right" ng-click="scrollToAnchorWithinCurrentPage('media')">
+                    <a class="button button-calm button-full item item-icon-left small-button-anchor">
+                        <i class="icon ion-play"></i>Media</a>
+                </div>
+            </div>
+
+            <div class="row small-button">
+                <div class="col small-button-left" ng-click="scrollToAnchorWithinCurrentPage('experts')">
+                    <a class="button button-calm button-full item item-icon-left small-button-anchor">
+                        <i class="icon ion-university"></i>Experts</a>
+                </div>
+                <div class="col small-button-right" ng-click="scrollToAnchorWithinCurrentPage('status')">
+                    <a class="button button-calm button-full item item-icon-left small-button-anchor">
+                        <i class="icon ion-information-circled"></i>Status</a>
+                </div>
+            </div>            
+
             <div ng-show="card.images" ng-repeat="headerimage in card.images">
-                <img ng-src="{{headerimage}}">
+                <img width="100%" ng-src="{{headerimage}}">
             </div>
 
             <!-- For now, just mock the proposition id's with $index -->
 
-            <h4>Key Propositions</h4>
+            <h3 id="claims">Key Propositions</h3>
             <ion-list class="item-text-wrap">
-                <div ng-repeat="point in card.children track by $index">
+                <div ng-repeat="point in card.claim_ids track by $index">
 
-                    <a href="#/tab/propositions/{{$index}}" class="blue-ion-pane item item-icon-right">
-                        <p>{{card[point].title}}</p>
-                        <i class="icon ion-chevron-right"></i>
-                    </a>
+                    <ion-item class="item-thumbnail-left" class="blue-ion-pane" href="#/tab/propositions/{{$index}}">
+                        <img ng-src="{{getCardById(point).avatar}}">
+                        <h2>{{getCardById(point).title}}</h2>
+                        <p>{{getCardById(point).definition}}</p>
+                    </ion-item>
 
                 </div>
             </ion-list>
 
-            <ion-list>
-
-                <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-quote"></i>
-                See more claims ...</a>
-            </ion-list>
         </div>
 
 
 
-        <h3>Status</h3>
+        <h3 id="status">Status</h3>
         <div>
             <p>{{card.status}}</p>
         </div>
 
 
 
-        <h3>Advocates / Experts</h3>
+        <h3 id="experts">Advocates / Experts</h3>
         <div>
             <ion-list class="item-text-wrap">
 
                 <div ng-repeat="expert in card.expert_ids">
-                    <ion-item class="item-thumbnail-left"
-                        href="#">
-                        <img ng-src="{{experts[expert].image}}">
-                        <h2>{{experts[expert].name}}</h2>
-                        <p>{{experts[expert].title}}</p>
-                    </ion-item>
+
+                    <a class="item item-avatar blue-ion-pane">
+                        <img ng-src="{{getExpertById(expert).image}}">
+                        <h2>{{getExpertById(expert).name}}</h2>
+                        <p>{{getExpertById(expert).title}}</p>
+                    </a>
+
                 </div>
 
-                <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-university"></i>
-                See more experts ...</a>
             </ion-list>
         </div>
 
 
 
+        <h3 id="critiques">Critiques</h3>
+        <div>
+            <ion-list class="item-text-wrap">
+
+                <div ng-repeat="critique in card.critique_ids">
+
+                    <div ng-repeat="critic in getCardById(critique).expert_ids">
+
+                        <a class="item item-avatar blue-ion-pane">
+                            <img ng-src="{{getExpertById(critic).image}}">
+                            <h2>{{getExpertById(critic).name}}</h2>
+                            <p>{{getExpertById(critic).title}}</p>
+                        </a>
+
+                    </div>
+
+                    <div ng-show="getCardById(critique).images" ng-repeat="pic in getCardById(critique).images">
+                        <a href="{{getCardById(critique).url}}">
+                            <img width="100%" ng-src="{{pic}}">
+                        </a>
+                    </div>
+
+                    <!-- Note usage of ng-bind-html, which is used
+                         with the sanitize .filter service -->
+
+                    <div ng-show="critique.text" ng-repeat="paragraph in critique.text">
+                        <blockquote>
+                            <div ng-bind-html="paragraph | sanitize">
+                        </blockquote>
+                    </div>
 
 
+                    <div ng-show="critique.postscript" class="row">
+                        <div class="col-10">
+                            <i class="icon ion-asterisk"></i>
+                        </div>
+                        <div class="col-90" ng-bind-html="critique.postscript | sanitize"></div>
+                    </div>
+                </div>
+
+            </ion-list>
+        </div>
+
+<!--            Note for future reference that post-MVP should handle
+        the scaling of images, as explained at:
+
+        http://stackoverflow.com/questions/21000338/angular-js-data-bind-background-images-using-media-queries -->
+
+
+
+        <h3 id="cmaps">Key Concepts</h3>
+        <div ng-repeat="cmap in card.cmap_ids | filter:getCardById(cmap).display">
+
+                <img ng-src="{{getCardById(cmap).images[0]}}" width="100%">
+
+    <!--
+                <img ng-src="{{getCardById(cmap).images[0]}}" width="100%" usemap="#CMap">
+                    <map name='CMap' id='CMap'>
+                    <div ng-show="cmap.nodes" ng-repeat="node in cmap.nodes">
+                        <area alt="{{node.alt}}" title="{{node.title}}" href="{{node.href}}" shape="{{node.rect}}" coords="{{node.coords}}" />
+                    </div>
+                </map>
+    -->
+                <div ng-show="getCardById(cmap).postscript" class="row">
+                    <div class="col-10">
+                        <i class="icon ion-asterisk"></i>
+                    </div>
+                    <div class="col-90" ng-bind-html="getCardById(cmap).postscript | sanitize"></div>
+                </div>
+
+
+        </div>
+
+        <h3>All Concept Maps</h3>
+
+        <ion-list class="item-text-wrap">
+
+            <div ng-repeat="cmap in card.cmap_ids">
+                <ion-item class="item-thumbnail-left" href="#">
+                    <img ng-src="{{getCardById(cmap).avatar}}">
+                    <h2>{{getCardById(cmap).title}}</h2>
+                    <p>{{getExpertById(getCardById(cmap).expert_ids[0]).name}}</p>
+                </ion-item>
+            </div>
+
+        </ion-list>
+
+
+
+        <h3 id="articles">Popular Science Articles</h3>
+
+        <div ng-repeat="article in card.article_ids">
+
+            <ion-list class="item-text-wrap">
+                <ion-item class="item-thumbnail-left" href="#">
+                    <img ng-src="{{getCardById(article).avatar}}">
+                    <h2>{{getCardById(article).title}}</h2>
+
+                    <div ng-repeat="expert in getCardById(article).expert_ids">
+                        <p>{{getExpertById(expert).name}}</p>
+                    </div>
+
+                    <p>{{getCardById(article).sourcename}}</p>
+                </ion-item>
+            </ion-list>
+
+            <div ng-show="getCardById(article).images" ng-repeat="image in getCardById(article).images">
+                <a href="{{getCardById(article).url}}"><img ng-src="{{image}}" width="100%"></a>
+            </div>
+
+            <!-- Note usage of ng-bind-html, which is used
+                 with the sanitize .filter service -->
+
+            <div ng-show="getCardById(article).text" ng-repeat="paragraph in getCardById(article).text">
+                <blockquote>
+                    <div ng-bind-html="paragraph | sanitize">
+                </blockquote>
+            </div>
+
+            <div ng-show="getCardById(article).postscript" class="row">
+                <div class="col-10">
+                    <i class="icon ion-asterisk"></i>
+                </div>
+                <div class="col-90" ng-bind-html="article.postscript | sanitize"></div>
+            </div>
+
+        </div>
+
+
+
+        <h3 id="threads">Best Forum Threads</h3>
+        <ion-list class="item-text-wrap">
+
+            <div ng-repeat="forum in card.forum_ids">
+                <ion-item class="item-thumbnail-left" href="{{getCardById(forum).url}}">
+                    <img ng-src="{{getCardById(forum).avatar}}">
+                    <h2>{{getCardById(forum).sourcename}}</h2>
+                    <p>{{getCardById(forum).title}}</p>
+                </ion-item>
+
+                <div ng-show="getCardById(forum).postscript" class="row">
+                    <div class="col-10">
+                        <i class="icon ion-asterisk"></i>
+                    </div>
+                    <div class="col-90" ng-bind-html="getCardById(forum).postscript | sanitize"></div>
+                </div>
+
+            </div>
+
+        </ion-list>
+
+
+
+        <h3 id="papers">Peer-Reviewed Research</h3>
+
+        <div ng-repeat="paper in card.paper_ids">
+            <ion-list class="item-text-wrap">
+
+                <ion-item class="item-thumbnail-left" href="{{getCardById(paper).url}}">
+                    <img ng-src="{{getCardById(paper).avatar}}">
+                    <h2>{{getCardById(paper).title}}</h2>
+                    <p>{{getCardById(paper).sourcename}}, {{getCardById(paper).year}}</p>
+                </ion-item>
+                <br>
+
+            </ion-list>
+
+
+            <!-- Note usage of ng-bind-html, which is used
+                 with the sanitize .filter service -->
+
+            <div ng-show="getCardById(paper).text" ng-repeat="paragraph in getCardById(paper).text">
+                <blockquote>
+                    <div ng-bind-html="paragraph | sanitize">
+                </blockquote>
+            </div>
+
+            <div ng-show="getCardById(paper).images" ng-repeat="image in getCardById(paper).images">
+                <img ng-src="{{image}}" width="100%">
+            </div>
+
+            <div ng-show="getCardById(paper).postscript" class="row">
+                <div class="col-10">
+                    <i class="icon ion-asterisk"></i>
+                </div>
+                <div class="col-90" ng-bind-html="getCardById(paper).postscript | sanitize"></div>
+            </div>
+
+        </div>
+
+
+
+        <h3 id="books">Suggested Books</h3>
+
+        <div ng-repeat="book in card.book_ids">
+            <ion-list class="item-text-wrap">
+                <ion-item class="item-thumbnail-left" href="{{getCardById(book).url}}">
+                    <img ng-src="{{getCardById(book).avatar}}">
+                    <h2>{{getCardById(book).title}}</h2>
+
+                    <div ng-repeat="expert in getCardById(book).expert_ids">
+                        <p>{{getExpertById(expert).name}}</p>
+                    </div>
+                </ion-item>
+            </ion-list>
+
+            <div ng-show="getCardById(book).fancy_text" ng-repeat="fancyQuote in getCardById(book).fancy_text"><br>
+
+            <!-- Note usage of ng-bind-html, which is used
+                 with the sanitize .filter service -->
+
+                <blockquote>
+                    <div ng-bind-html="fancyQuote.quote | sanitize">
+                    </div>
+                </blockquote>
+            </div>
+
+            <div ng-show="getCardById(book).images" ng-repeat="image in getCardById(book).images"><br>
+                <img ng-src="{{image}}">
+            </div>
+
+            <div ng-show="getCardById(book).postscript" class="row">
+                <div class="col-10">
+                    <i class="icon ion-asterisk"></i>
+                </div>
+                <div class="col-90" ng-bind-html="getCardById(book).postscript | sanitize"></div>
+            </div>
+
+        </div>
+
+
+
+        <h3 id="media">Audio / Video</h3>
+        <ion-list class="item-text-wrap">
+
+            <div ng-repeat="resource in card.media_ids">
+                <ion-item class="item-thumbnail-left" href="{{resource.url}}">
+                    <img ng-src="{{getCardById(resource).avatar}}">
+                    <h2>{{getCardById(resource).title}}</h2>
+                    <p>{{getCardById(resource).author}}</p>
+                </ion-item>
+
+                <div ng-show="getCardById(resource).postscript" class="row">
+                    <div class="col-10">
+                        <i class="icon ion-asterisk"></i>
+                    </div>
+                    <div class="col-90" ng-bind-html="getCardById(resource).postscript | sanitize"></div>
+                </div>
+
+            </div>
+
+        </ion-list>
     </ion-content>
-
 </ion-view>
 
 <!-- <ion-view view-title="Dashboard">

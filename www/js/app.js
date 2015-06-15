@@ -25,16 +25,136 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   });
 })
 
-// Controller for constructs; this is where people end up after selecting a search result
-.controller('ConstructCtrl', ['$scope', '$state', '$stateParams', 'Construct', 
+// Controller for constructs; this is where people end up after selecting a model as
+// the search result
+.controller('ControversyCtrl', ['$scope', '$state', '$stateParams', 'Construct',
+  '$location', '$anchorScroll', '$ionicScrollDelegate', 
+  function ($scope, $state, $stateParams, Construct, 
+    $location, $anchorScroll, $ionicScrollDelegate) {
+
+  var cardId = $stateParams.cardId;
+  console.log(cardId);
+
+  Construct.getCardById(cardId, function(foundCardById) {
+    if (foundCardById) {
+      $scope.card = foundCardById;
+    } else {
+      $scope.none = "Error!";
+    }
+  });
+
+  $scope.getCardById = function(cardId) {
+    return Construct.getCardById(cardId, function(foundCardById) {
+      if (foundCardById) {
+        return foundCardById;
+      } else {
+        $scope.none = "Error!";
+      }
+    });
+  };
+
+  $scope.getExpertById = function(expertId) {
+    return Construct.getExpertById(expertId, function(foundExpertById) {
+      if (foundExpertById) {
+        return foundExpertById;
+      } else {
+        $scope.none = "Error!";
+      }
+    });
+  };
+
+  $scope.scrollToAnchorWithinCurrentPage = function(anchor) 
+  {
+    $location.hash(anchor);
+    var handle = $ionicScrollDelegate.$getByHandle('content');
+    handle.anchorScroll();
+  };
+
+}])
+
+// Controller for constructs; this is where people end up after selecting a model as
+// the search result
+.controller('ModelCtrl', ['$scope', '$state', '$stateParams', 'Construct', 
   function ($scope, $state, $stateParams, Construct) {
 
   var cardId = $stateParams.controversyId;
   console.log(cardId);
 
-  Construct.getById(cardId, function(foundCardById) {
+  Construct.getCardById(cardId, function(foundCardById) {
     if (foundCardById) {
       $scope.card = foundCardById;
+    } else {
+      $scope.none = "Error!";
+    }
+  });
+
+}])
+
+// Controller for constructs; this is where people end up after selecting a model as
+// the search result
+.controller('ClaimCtrl', ['$scope', '$state', '$stateParams', 'Construct', 
+  function ($scope, $state, $stateParams, Construct) {
+
+  var cardId = $stateParams.cardId;
+  console.log(cardId);
+
+  Construct.getCardById(cardId, function(foundCardById) {
+    if (foundCardById) {
+      $scope.card = foundCardById;
+    } else {
+      $scope.none = "Error!";
+    }
+  });
+
+}])
+
+// Controller for constructs; this is where people end up after selecting a model as
+// the search result
+.controller('QuestionCtrl', ['$scope', '$state', '$stateParams', 'Construct', 
+  function ($scope, $state, $stateParams, Construct) {
+
+  var questionId = $stateParams.questionId;
+  console.log(questionId);
+
+  Construct.getQuestionById(questionId, function(foundQuestionById) {
+    if (foundQuestionById) {
+      $scope.card = foundQuestionById;
+    } else {
+      $scope.none = "Error!";
+    }
+  });
+
+}])
+
+// Controller for constructs; this is where people end up after selecting a model as
+// the search result
+.controller('ExpertCtrl', ['$scope', '$state', '$stateParams', 'Construct', 
+  function ($scope, $state, $stateParams, Construct) {
+
+  var expertId = $stateParams.expertId;
+  console.log(expertId);
+
+  Construct.getExpertById(expertId, function(foundExpertById) {
+    if (foundExpertById) {
+      $scope.card = foundExpertById;
+    } else {
+      $scope.none = "Error!";
+    }
+  });
+
+}])
+
+// Controller for constructs; this is where people end up after selecting a model as
+// the search result
+.controller('AnnotationCtrl', ['$scope', '$state', '$stateParams', 'Construct', 
+  function ($scope, $state, $stateParams, Construct) {
+
+  var annotationId = $stateParams.annotationId;
+  console.log(annotationId);
+
+  Construct.getAnnotationById(annotationId, function(foundAnnotationById) {
+    if (foundAnnotationById) {
+      $scope.annotation = foundAnnotationById;
     } else {
       $scope.none = "Error!";
     }
@@ -52,7 +172,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       // Evaluate what kind of card it is, and then transition the state to the
       // appropriate ui-router state, based upon the card.type; Use $stateParams to
       // send the construct card to render, according to id
-      $state.go('tab.controversy', {controversyId: callback.item.id}, {inherit: true});
+      $state.go('tab.controversy', {cardId: callback.item.id}, {inherit: true});
   }
 
   $scope.isModel = function(item) {
@@ -108,14 +228,65 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   })
 
   .state('tab.controversy', {
-      url: '/controversies/:controversyId',
+      url: '/controversies/:cardId',
       views: {
         'tab-search': {
           templateUrl: 'templates/tab-controversy.html',
-          controller: 'ConstructCtrl'
+          controller: 'ControversyCtrl'
         }
       }
     })
+
+  .state('tab.model', {
+      url: '/models/:cardId',
+      views: {
+        'tab-search': {
+          templateUrl: 'templates/tab-model.html',
+          controller: 'ModelCtrl'
+        }
+      }
+    })
+
+  .state('tab.claim', {
+      url: '/claims/:cardId',
+      views: {
+        'tab-search': {
+          templateUrl: 'templates/tab-claim.html',
+          controller: 'ClaimCtrl'
+        }
+      }
+    })
+
+  .state('tab.question', {
+      url: '/questions/:questionId',
+      views: {
+        'tab-search': {
+          templateUrl: 'templates/tab-question.html',
+          controller: 'Question1Ctrl'
+        }
+      }
+    })
+
+  .state('tab.expert', {
+      url: '/experts/:expertId',
+      views: {
+        'tab-search': {
+          templateUrl: 'templates/tab-expert.html',
+          controller: 'ExpertCtrl'
+        }
+      }
+    })
+
+  .state('tab.annotation', {
+      url: '/annotations/:annotationId',
+      views: {
+        'tab-search': {
+          templateUrl: 'templates/tab-annotation.html',
+          controller: 'AnnotationCtrl'
+        }
+      }
+    })
+
     .state('tab.chat-detail', {
       url: '/chats/:chatId',
       views: {
@@ -141,7 +312,73 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
 })
 
+// This service will source the data model mock, until the data model design becomes sufficiently fixed that it
+// is no longer changing
 .service("Construct", [function() {
+
+  var questions = [{
+    id: 0,
+    expert_ids: [3],
+    title: "Are winds partly driven by electromagnetic forces acting on the charged particles in the air?",
+    origin: ["https://youtu.be/XdrDg-Nuxdg?t=2228"],
+    supporting_claims: [30,31,32,33,34],
+    conventional_answers: null,
+    anomalous_observations: null,
+    resources: null,
+    related_questions: null
+
+  }, {
+
+    id: 1,
+    expert_ids: [3],
+    title: "Are cyclones and tornados partly driven by electromagnetic forces acting on the charged water droplets?",
+    origin: ["https://youtu.be/XdrDg-Nuxdg?t=2228"],
+    supporting_claims: [35],
+    conventional_answers: null,
+    anomalous_observations: null,
+    resources: [{reference: "Tinsley, B. A., 2008. The global atmospheric electric circuit and its effects on cloud microphysics. Reports on Progress in Physics, 71(6), 066801.", 
+      URL: "http://gacc.nifc.gov/sacc/predictive/SOLAR_WEATHER-CLIMATE_STUDIES/GCR%20Solar%20Wind%20Influence%20on%20Global%20Electric%20Circuit%20and%20Cloud%20Microphysics%20Tinsley%202008.pdf"}],
+    related_questions: null
+
+  }, {
+
+    id: 2,
+    expert_ids: [3],
+    title: "Are the jet streams primarily plasma effects whose locations are determined partly by their interactions with the ionospheric current systems above?",
+    origin: ["https://youtu.be/XdrDg-Nuxdg?t=2285"],
+    supporting_claims: [36],
+    conventional_answers: ["The jet streams are assumed to be the result of fluid motions driven by pressure changes in the atmosphere related to Hadley Cell circulation and modified by the Coriolis effect."],
+    anomalous_observations: ["It's not known why the jet stream jets are concentrated in such narrow bands."],
+    resources: null,
+    related_questions: null
+
+  }, {
+
+    id: 3,
+    expert_ids: [3],
+    title: "Do ionospheric changes cause the climate cycles by altering the Global Electric Circuit?",
+    origin: ["https://youtu.be/XdrDg-Nuxdg?t=2397"],
+    supporting_claims: [37,38,39,40],
+    conventional_answers: [],
+    anomalous_observations: [],
+    resources: null,
+    related_questions: null
+
+  }, {
+
+    id: 4,
+    expert_ids: [3],
+    title: "Can ionospheric current changes induce changes in ocean circulation? Can this be the cause of the 20-to-30-year Pacific Decadal Oscillation?",
+    origin: ["https://youtu.be/XdrDg-Nuxdg?t=2397"],
+    supporting_claims: [],
+    conventional_answers: [],
+    anomalous_observations: [],
+    resources: null,
+    related_questions: null
+
+  }];
+
+  var annotations = [{}];
 
   // The data model will involve constructs, which are collections of cards.
   // A card is defined as a collection of content with a scope that is easy
@@ -166,14 +403,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     definition: "Electric joule heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic plasma phenomena.",
     status: "Electric joule heating is not widely known, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Electric joule heating is a natural implication of the Electric Universe paradigm.",
     search_hit: null,
-
-    children: [1,2,3,4,5,6,7,8,9,10,11],
+    claim_ids: [1,2,3,4,5,6,7,8,9,10,11],
+    critique_ids: [12],
+    cmap_ids: [13,14,15,16,17],
+    article_ids: [18,19,20],
+    forum_ids: [21],
+    paper_ids: [22],
+    book_ids: [23,24,25],
+    media_ids: [26,27,28,29],
     next: 1,
     avatar: "img/avatars/electric-joule-avatar.jpg",
     url: null,
     text: null,
     highighter: null,
-    expert_ids: [0],
+    expert_ids: [0,3,9],
     nodes: null,
     postscript: null
 
@@ -192,7 +435,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null, // FILL!
+    claim_ids: null, // FILL!
+    critique_ids: null,
     next: 2,
     avatar: "img/journals/IEEE.png",
     url: null,
@@ -217,7 +461,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null, // FILL!
+    claim_ids: null, // FILL!
+    critique_ids: null,
     next: 3,
     avatar: "img/avatars/plasma-not-fluids.jpg",
     url: null,
@@ -242,7 +487,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null, // FILL!
+    claim_ids: null, // FILL!
+    critique_ids: null,
     next: 4,
     avatar: "img/avatars/solar-wind-current.jpg",
     url: null,
@@ -267,7 +513,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,    
     search_hit: null,
 
-    children: null, // FILL!
+    claim_ids: null, // FILL!
+    critique_ids: null,
     next: 5,
     avatar: "img/avatars/polar-hotspots.jpg",
     url: null,
@@ -292,7 +539,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null, // FILL!
+    claim_ids: null, // FILL!
+    critique_ids: null,
     next: 6,
     avatar: "img/avatars/warming-martian-ice-caps.jpg",
     url: null,
@@ -317,7 +565,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null, // FILL!
+    claim_ids: null, // FILL!
+    critique_ids: null,
     next: 7,
     avatar: "img/avatars/pluto-warming.jpg",
     url: null,
@@ -342,7 +591,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: 8,
     avatar: "img/avatars/polar-vortex.jpg",
     url: null,
@@ -367,7 +617,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null, // FILL!
+    claim_ids: null, // FILL!
+    critique_ids: null,
     next: 9,
     avatar: "img/avatars/dipolar-vortex.jpg",
     url: null,
@@ -392,7 +643,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null, // FILL!
+    claim_ids: null, // FILL!
+    critique_ids: null,
     next: 10,
     avatar: "img/avatars/solar-wind-lightning.jpg",
     url: null,
@@ -417,7 +669,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null, // FILL!
+    claim_ids: null, // FILL!
+    critique_ids: null,
     next: 11,
     avatar: "img/avatars/sunspots-stratosphere.jpg",
     url: null,
@@ -442,7 +695,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: null,
     avatar: "img/avatars/general-circulation-models.jpg",
     url: null,
@@ -467,7 +721,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: null,
     avatar: "img/experts/lief-svalgaard.png",
     url: ["http://wattsupwiththat.com/2013/12/26/new-paper-clouds-blown-by-the-solar-wind/#more-99909"],
@@ -484,15 +739,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Concept Map",
     display: true,
-    title: "The Primitive Equations Ignore Charge Phenomena Changes",
+    title: "The Primitive Equations Ignore Charge Change Phenomena",
     sourcename: "Private Communications",
 
-    images: "img/concept-maps/electric-joule-heating-cmap-small.jpg",
+    images: ["img/concept-maps/electric-joule-heating-optimized.svg"],
     definition: null,
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: 14,
     avatar: "img/avatars/primitive-equations.jpg",
     url: null,
@@ -527,9 +783,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: 15,
-    avatar: null, // FILL!
+    avatar: "img/avatars/electric-joule-avatar.jpg",
     url: null,
     text: null,
     highighter: null,
@@ -552,9 +809,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: 16,
-    avatar: null, // FILL!
+    avatar: "img/avatars/plasma-ball.jpg",
     url: null,
     text: null,
     highighter: null,
@@ -577,9 +835,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: 17,
-    avatar: null, // FILL!
+    avatar: "img/avatars/general-circulation-models.jpg",
     url: null,
     text: null,
     highighter: null,
@@ -602,9 +861,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: null,
-    avatar: null, // FILL!
+    avatar: "img/avatars/toa-model-tuning.jpg",
     url: null,
     text: null,
     highighter: null,
@@ -627,7 +887,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: 19,
     avatar: "/img/articles/solar-wind-surprise.png",
     url: "http://wattsupwiththat.com/2009/09/10/solar-wind-suprise-this-discovery-is-like-finding-it-got-hotter-when-the-sun-went-down/",
@@ -652,7 +913,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: 20,
     avatar: "img/articles/changing-sun-in-xrays.jpg",
     url: "http://www.holoscience.com/wp/global-warming-in-a-climate-of-ignorance/",
@@ -677,7 +939,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: null,
     avatar: "img/articles/AGW-cartoon.png",
     url: "http://www.holoscience.com/wp/science-politics-and-global-warming/",
@@ -702,7 +965,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: null,
     avatar: "img/forums/earth-sun-connected.jpg",
     url: "http://wattsupwiththat.com/2015/04/30/how-plasma-connects-the-sun-to-the-climate/",
@@ -725,12 +989,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Possible reasons for underestimating Joule heating in global models: E-Field variability, spatial resolution and vertical velocity",
     sourcename: "Journal of Geophysical Research",
 
-    images: ["img/papers/electric-joule-heating-1.jpg", "img/papers/electric-joule-heating-2.jpg", "img/papers/electric-joule-heating-3.jpg", "img/papers/electric-joule-heating-4.jpg"],
+    images: ["img/papers/electric-joule-heating.jpg"],
     definitions: null,
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: null,
     avatar: "img/journals/journal-geophysical-research.png",
     url: "http://nldr.library.ucar.edu/repository/assets/osgc/OSGC-000-000-004-001.pdf",
@@ -756,7 +1021,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: null,
     avatar: "img/books/manic-sun.png",
     url: "http://www.amazon.com/Manic-Sun-Weather-Theories-Confounded/dp/1899044116/",
@@ -785,7 +1051,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: null,
     avatar: "img/books/a-vast-machine.png",
     url: "http://www.amazon.com/Vast-Machine-Computer-Politics-Infrastructures/dp/0262518635/",
@@ -811,7 +1078,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null,
+    claim_ids: null,
+    critique_ids: null,
     next: null,
     avatar: "img/books/the-electric-universe.png",
     url: "http://www.amazon.com/Electric-Universe-Wallace-Thornhill-Talbott/dp/0977285138/",
@@ -839,7 +1107,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null, // FILL!
+    claim_ids: null, // FILL!
+    critique_ids: null,
     next: null,
     avatar: "img/audio-video/space-news.png",
     url: "https://www.youtube.com/watch?v=VIAp_6FAXCY",
@@ -865,7 +1134,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null, // FILL!
+    claim_ids: null, // FILL!
+    critique_ids: null,
     next: null,
     avatar: "img/audio-video/bill-nichols-video.png",
     url: "https://www.youtube.com/watch?v=jqIo4WJJL90",
@@ -891,7 +1161,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null, // FILL!
+    claim_ids: null, // FILL!
+    critique_ids: null,
     next: null,
     avatar: "img/audio-video/piers-corbyn-video.png",
     url: "https://www.youtube.com/watch?v=6R26PXRrgds",
@@ -917,7 +1188,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    children: null, // FILL!
+    claim_ids: null, // FILL!
+    critique_ids: null,
     next: null,
     avatar: "img/audio-video/bob-johnson-video.png",
     url: "https://www.youtube.com/watch?v=XdrDg-Nuxdg",
@@ -928,7 +1200,307 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     year: null, // FILL!
     postscript: null                
 
+  }, {
+
+    id: 30,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Air is a Weak Plasma",
+    sourcename: null,
+
+    images: null,
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/solar-wind-lightning.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [3],
+    nodes: null,
+    year: null,
+    postscript: null                
+
+  }, {
+
+    id: 31,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Charged particles in an electro-osmotic fluid can observably drag neutral particles with them.",
+    sourcename: null,
+
+    images: null,
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/electro-osmotic-pump.png",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [3],
+    nodes: null,
+    year: null,
+    postscript: null                
+
+  }, {
+
+    id: 32,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Ionic lifters demonstrate that the movement of charged particles in air can drag along the surrounding neutral gas, creating wind.",
+    sourcename: null,
+
+    images: null,
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/lifter.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [3],
+    nodes: null,
+    year: null,
+    postscript: null                
+
+  }, {
+
+    id: 33,
+    controversy: false,
+    parent: false,
+    type: "Concept",
+    display: true,
+    title: "Marklund convection is an observed plasma physics process whereby the movement of charged particles indirectly induces a movement of neutral matter.",
+    sourcename: null,
+
+    images: ["img/articles/Marklund-convection.gif"],
+    definitions: ["In the plasma laboratory, Marklund convection is a natural plasma convection process occurring in filamentary currents that causes ions and electrons to move inwards towards a central twisting filamentary axis.  In a partially ionized plasma, electromagnetic forces act on the non-ionized material indirectly through the viscosity between the ionized and non-ionized material.  The resulting temperature gradient within the plasma can also cause chemical separation based on different ionization potentials."],
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/Marklund-convection.jpg",
+    url: ["http://www.plasma-universe.com/Marklund_convection", "https://www.youtube.com/watch?v=sIQRBrmEIXo"],
+    text: null,
+    highighter: null,
+    expert_ids: [0,3,13],
+    nodes: null,
+    year: null,
+    postscript: null                
+
+  }, {
+
+    id: 34,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Any variations in the global electric field pattern may help to generate winds.",
+    sourcename: null,
+
+    images: null,
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/global-electric-field.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [3],
+    nodes: null,
+    year: null,
+    postscript: null                
+
+  }, {
+
+    id: 35,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Water droplets in clouds can also become charged either positively or negatively by up to 90 units of charge",
+    sourcename: null,
+
+    images: null,
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/charged-water-droplets.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [3],
+    nodes: null,
+    year: null,
+    postscript: null                
+
+  }, {
+
+    id: 36,
+    controversy: false,
+    parent: false,
+    type: "Concept",
+    display: true,
+    title: "The Equatorial Electrojet (EEJ) is an eastward current in the E-region of the ionosphere, around 100-130 km above the surface in the plane of the magnetic equator.",
+    sourcename: null,
+
+    images: null,
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/EEJ.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [3],
+    nodes: null,
+    year: null,
+    postscript: null                
+
+  }, {
+
+    id: 37,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Seawater is an excellent conductor.",
+    sourcename: null,
+
+    images: null,
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/seawater-conductor.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [3],
+    nodes: null,
+    year: null,
+    postscript: null                
+
+  }, {
+
+    id: 38,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "El Nino, La Nina and the ENSO cycle appear to sync with solar activity, and influence the jet stream position.",
+    sourcename: null,
+
+    images: null,
+    definitions: ["During El Nino events, the subtropical jet stream is displaced either to the north or south", 
+      "This displacement is similar to the way in which the auororal ring displaces downwards in response to increased solar wind activity."],
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/elnino-lanina.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [3],
+    nodes: null,
+    year: null,
+    postscript: null                
+
+  }, {
+
+    id: 39,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "ENSO and NAO are controlled by air pressure",
+    sourcename: null,
+
+    images: null,
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/barometer.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [3],
+    nodes: null,
+    year: null,
+    postscript: null                
+
+  }, {
+
+    id: 40,
+    controversy: false,
+    parent: false,
+    type: "Concept",
+    display: true,
+    title: "The Burns Effect links barometric pressure to the strength of the fair weather electric current density",
+    sourcename: null,
+
+    images: null,
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/fair-weather-electric-current-density.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [3],
+    nodes: null,
+    year: null,
+    postscript: null                
+
   }];
+
+
 
   var experts = [{
     id: 0,
@@ -1019,6 +1591,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@SpaceNews",
     title: "Electric Universe Video Briefs", 
     image: "img/audio-video/space-news.png"
+
+  },{
+
+    id: 13,
+    name: "@IanTresman",
+    title: "http://plasma-universe.com Wiki", 
+    image: "img/experts/ian-tresman.jpg"
 
   }];
 
@@ -1167,7 +1746,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     return cardTemp;
   };
 
-  this.getById = function(id, cb) {
+  this.getCardById = function(id, cb) {
     result = cards[id];
 
     if (result) {
@@ -1176,6 +1755,37 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       return cb(false);
     }    
   };
+
+  this.getExpertById = function(id, cb) {
+    result = experts[id];
+
+    if (result) {
+      return cb(result);
+    } else {
+      return cb(false);
+    }    
+  };
+
+  this.getQuestionById = function(id, cb) {
+    result = questions[id];
+
+    if (result) {
+      return cb(result);
+    } else {
+      return cb(false);
+    }    
+  };
+
+  this.getAnnotationById = function(id, cb) {
+    result = annotations[id];
+
+    if (result) {
+      return cb(result);
+    } else {
+      return cb(false);
+    }    
+  };
+
 
   // This find() method is extremely important for the app, insofar as it must prioritize
   // the search results in order to facilitate a truly rapid access to scientific
