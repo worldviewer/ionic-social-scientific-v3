@@ -182,7 +182,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       // Evaluate what kind of card it is, and then transition the state to the
       // appropriate ui-router state, based upon the card.type; Use $stateParams to
       // send the construct card to render, according to id
-      $state.go('tab.controversy', {cardId: callback.item.id}, {inherit: true});
+      $state.go('tab.controversy', {cardId: callback.item.id});
   }
 
   $scope.isModel = function(item) {
@@ -210,6 +210,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
 }])
 
+.controller('TrendingCtrl', ['$scope', '$state', '$stateParams', 'Construct', 
+  function ($scope, $state, $stateParams, Construct) {
+
+}])
+
+.controller('PostCtrl', ['$scope', '$state', '$stateParams', 'Construct', 
+  function ($scope, $state, $stateParams, Construct) {
+
+}])
+
 .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
@@ -219,10 +229,30 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   $stateProvider
 
   // setup an abstract state for the tabs directive
-    .state('tab', {
+  .state('tab', {
     url: "/tab",
     abstract: true,
     templateUrl: "templates/tabs.html"
+  })
+
+  .state('tab.trending', {
+    url: '/trending',
+    views: {
+      'tab-trending': {
+        templateUrl: 'templates/tab-trending.html',
+        controller: 'TrendingCtrl'
+      }
+    }
+  })
+
+  .state('tab.post', {
+    url: '/post',
+    views: {
+      'tab-post': {
+        templateUrl: 'templates/tab-post.html',
+        controller: 'PostCtrl'
+      }
+    }
   })
 
   // Each tab has its own nav history stack:
@@ -250,7 +280,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('tab.model', {
       url: '/models/:cardId',
       views: {
-        'tab-search': {
+        'tab-construct': {
           templateUrl: 'templates/tab-model.html',
           controller: 'ModelCtrl'
         }
@@ -260,7 +290,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('tab.claim', {
       url: '/claims/:cardId',
       views: {
-        'tab-search': {
+        'tab-construct': {
           templateUrl: 'templates/tab-claim.html',
           controller: 'ClaimCtrl'
         }
@@ -270,7 +300,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('tab.question', {
       url: '/questions/:questionId',
       views: {
-        'tab-search': {
+        'tab-construct': {
           templateUrl: 'templates/tab-question.html',
           controller: 'Question1Ctrl'
         }
@@ -280,7 +310,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('tab.expert', {
       url: '/experts/:expertId',
       views: {
-        'tab-search': {
+        'tab-construct': {
           templateUrl: 'templates/tab-expert.html',
           controller: 'ExpertCtrl'
         }
@@ -290,19 +320,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('tab.annotation', {
       url: '/annotations/:annotationId',
       views: {
-        'tab-search': {
+        'tab-construct': {
           templateUrl: 'templates/tab-annotation.html',
           controller: 'AnnotationCtrl'
-        }
-      }
-    })
-
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
         }
       }
     })

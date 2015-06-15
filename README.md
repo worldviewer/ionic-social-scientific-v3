@@ -1,22 +1,36 @@
 # ThePeer.Reviews Worldviewer
 
-A mobile app that helps people to think like a scientist about current events and ongoing scientific controversies.
+(Please note that this app is a work-in-progress; there may be links which do not work.  For a typical workflow, search on "electric joule heating", and click the controversy that pops up.)
 
-I've decided to pivot on my interface.  This third version will include a smart autocomplete search box which will traverse all of the content's text, but do so according to a prioritization scheme.
+This is a mobile app that helps people to think like a scientist about current events and ongoing scientific controversies.  It's based upon the premise that authentic scientific thinking is not possible when the answers are simply handed to you.  In order to truly think like a scientist, a person must become accustomed to the process of engaging ongoing scientific controversies.
+
+This idea is based upon a decade of ...
+
+(a) Running arguments back-and-forth between a group of against-the-mainstream scientific theorists and their biggest critics;
+
+(b) Running claims in online forums against laypeople, and watching their reactions closely;
+
+(c) Creating graphics on the desktop environment which strive to explain some complex scientific controversy in a manner that regular people can get the gist of the controversy or claim; and
+
+(d) Checking peoples' responses against psychological and sociological theories.  The theoretical basis is explained in pretty good detail below.  In two sentences, the problem is as follows:
+
+*It takes far too long to investigate scientific controversies, which leads to a psychological phenomenon known as associative coherence (a simple form of emotion-based pattern-matching).  But, since this simple pattern-matching system is not a form of rational thought, and is typically inadequate for addressing the complexity of scientific controversies, we must design a system which simplifies and speeds access to information about scientific controversies.*
+
+The app begins with a search box, like this ...
 
 <p align="center">
   <img src="https://github.com/worldviewer/ionic-social-scientific-v3/blob/master/www/img/readme/screens.png" /></a>
 </p>
 
-Once the user selects a particular list item, it will give them the option of either browsing the entire selection using slide boxes, or alternatively they can seek to browse a particular claim or media format.
+All site content is searched with this single interface, but the results are prioritized for the domain of scientific controversies.
 
-Once I get this basic search and infrastructure in place, I'll be more thoughtfully addressing the various issues associated with image sizes.  That's a necessary next step before I can break my infographics into parts.
+Users can also click the Trending or Post tabs, to either observe what controversies are currently in the news, or to check in on the site's recent user activities.
 
-## Critical To-do List
+## What I am Working on Right Now
 
-* There needs to be a way for users to track new content.  One of the tabs at the bottom should be reserved for this.
+* There needs to be a way for users to track trending stories and new user content.
 * There needs to be a way for users to submit new content, and post comments.
-* There needs to be a way for users to rate one another's comments according to the values of each of the levels of discourse.
+* There needs to be a way for users to rate one another's comments according to the values of each of the levels of discourse (these levels of discourse are explained below).
 
 ## Defining the Problem of Modern Scientific Discourse
 
