@@ -1,6 +1,6 @@
 # ThePeer.Reviews Worldviewer
 
-A mobile app that helps people to think like a scientist about current events.
+A mobile app that helps people to think like a scientist about current events and ongoing scientific controversies.
 
 I've decided to pivot on my interface.  This third version will include a smart autocomplete search box which will traverse all of the content's text, but do so according to a prioritization scheme.
 
@@ -11,6 +11,12 @@ I've decided to pivot on my interface.  This third version will include a smart 
 Once the user selects a particular list item, it will give them the option of either browsing the entire selection using slide boxes, or alternatively they can seek to browse a particular claim or media format.
 
 Once I get this basic search and infrastructure in place, I'll be more thoughtfully addressing the various issues associated with image sizes.  That's a necessary next step before I can break my infographics into parts.
+
+## Critical To-do List
+
+* There needs to be a way for users to track new content.  One of the tabs at the bottom should be reserved for this.
+* There needs to be a way for users to submit new content, and post comments.
+* There needs to be a way for users to rate one another's comments according to the values of each of the levels of discourse.
 
 ## Defining the Problem of Modern Scientific Discourse
 
