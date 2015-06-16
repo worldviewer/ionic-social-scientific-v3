@@ -491,7 +491,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     claim_ids: [1,2,3,4,5,6,7,8,9,10,11],
     critique_ids: [12,45,46],
     cmap_ids: [13,14,15,16,17],
-    article_ids: [18,19,20],
+    article_ids: [18,19,20,47],
     forum_ids: [21],
     paper_ids: [22],
     book_ids: [23,24,25],
@@ -521,7 +521,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: [41,42,43,44],
+    claim_ids: [41,42,43,44,48,49],
     comment_ids: [0,1],
     critique_ids: null,
     next: 2,
@@ -1747,6 +1747,87 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     year: null,
     postscript: null
 
+ }, {
+
+    id: 47,
+    controversy: false,
+    parent: false,
+    type: "Article",
+    display: true,
+    title: "Solar physicists have traditionally assumed that the Sun's output is perfectly constant.",
+    sourcename: null,
+
+    images: ["img/articles/eddy-on-keeping-sun-perfect.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/maunder-minimum.jpg",
+    url: "http://www.aip.org/history/climate/solar.htm",
+    text: null,
+    highighter: null,
+    expert_ids: [19],
+    nodes: null,
+    year: null,
+    postscript: null
+
+ }, {
+
+    id: 48,
+    controversy: false,
+    parent: false,
+    type: "Article",
+    display: true,
+    title: "Astrophysicists have a lengthy history of favoring mathematics over experimentation.",
+    sourcename: null,
+
+    images: ["img/articles/birkeland-current-history-2.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/birkeland-terrella.png",
+    url: "https://www.thunderbolts.info/wp/2014/06/30/currents-of-thought-2/",
+    text: null,
+    highighter: null,
+    expert_ids: [20],
+    nodes: null,
+    year: null,
+    postscript: null
+
+ }, {
+
+    id: 49,
+    controversy: false,
+    parent: false,
+    type: "Article",
+    display: true,
+    title: "The debate over how to model cosmic plasmas can be dated back to much earlier attempts to dismiss Kristian Birkeland's terrella experiments.",
+    sourcename: null,
+
+    images: ["img/articles/birkeland-current-history-1.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/birkeland-terrella.png",
+    url: "http://en.wikipedia.org/wiki/User:Richfj/test",
+    text: null,
+    highighter: null,
+    expert_ids: [21],
+    nodes: null,
+    year: null,
+    postscript: null
+
  }];
 
   var experts = [{
@@ -1880,6 +1961,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@Anonymous",
     title: "Unknown",
     image: "img/experts/anon.png"
+
+  },{
+
+    id: 19,
+    name: "@JackEddy",
+    title: "Astronomer",
+    image: "img/experts/jack-eddy.png"
+
+  },{
+
+    id: 20,
+    name: "@RensvanderSluijs",
+    title: "Comparative Mythologist",
+    image: "img/experts/rens-van-der-sluijs.png"
+
+  },{
+
+    id: 21,
+    name: "@FrederickJRich",
+    title: "Astrophysics / Climatology / Remote Sensing, PhD",
+    image: "img/experts/frederick-j-rich.png"
 
   }];
 

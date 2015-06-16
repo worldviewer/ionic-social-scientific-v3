@@ -1,6 +1,8 @@
 # ThePeer.Reviews Worldviewer
 
-(Please note that this app is a work-in-progress; there may be links which do not work.  For a typical workflow, search on "electric joule heating", and click the controversy that pops up.)
+> Please note that this app is a work-in-progress; there may be links which do
+> not work.  For a typical workflow, search on "electric joule heating", and 
+> click the controversy that pops up.
 
 This is a mobile app that helps people to think like a scientist about current events and ongoing scientific controversies.  It's based upon the premise that authentic scientific thinking is not possible when the answers are simply handed to you.  In order to truly think like a scientist, a person must become accustomed to the process of engaging ongoing scientific controversies.
 
@@ -25,6 +27,13 @@ The app begins with a search box, like this ...
 All site content is searched with this single interface, but the results are prioritized for the domain of scientific controversies.
 
 Users can also click the Trending or Post tabs, to either observe what controversies are currently in the news, or to check in on the site's recent user activities.
+
+## Technology Stack
+
+* Angular.js
+* Ionic Hybrid Mobile Framework
+* guylabs' ion-autocomplete Ionic/Angular directive (https://github.com/guylabs/ion-autocomplete); this code was extensively modified, as needed.
+* (The database is currently being mocked with an Angular service.)
 
 ## What I am Working on Right Now
 
