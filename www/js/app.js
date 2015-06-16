@@ -489,7 +489,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: "Electric joule heating is not widely known, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Electric joule heating is a natural implication of the Electric Universe paradigm.",
     search_hit: null,
     claim_ids: [1,2,3,4,5,6,7,8,9,10,11],
-    critique_ids: [12],
+    critique_ids: [12,45,46],
     cmap_ids: [13,14,15,16,17],
     article_ids: [18,19,20],
     forum_ids: [21],
@@ -1693,7 +1693,61 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     year: null,
     postscript: null
 
-  }];
+ }, {
+
+    id: 45,
+    controversy: false,
+    parent: false,
+    type: "Critique",
+    display: true,
+    title: "Near surface temperatures and statistical correlations do no support electric joule heating.",
+    sourcename: "Google+ comments",
+
+    images: ["img/critiques/gplus-upper-atmosphere.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/forums/gplus.png",
+    url: "https://plus.google.com/+NASAEarthObservatory/posts/TG9itAM7MZm",
+    text: null,
+    highighter: null,
+    expert_ids: [17],
+    nodes: null,
+    year: null,
+    postscript: null
+
+ }, {
+
+    id: 46,
+    controversy: false,
+    parent: false,
+    type: "Critique",
+    display: true,
+    title: "Navier Stokes calculations suggest that electric joule heating is negligible by 5 orders of magnitude.",
+    sourcename: "Slashdot comments",
+
+    images: ["img/critiques/navier-stokes-critique.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/navier-stokes.png",
+    url: "http://news.slashdot.org/comments.pl?sid=7511261&cid=49848193",
+    text: null,
+    highighter: null,
+    expert_ids: [18],
+    nodes: null,
+    year: null,
+    postscript: null
+
+ }];
 
   var experts = [{
     id: 0,
@@ -1812,6 +1866,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@BrianKoberlein",
     title: "RIT Astrophysicist / Professor",
     image: "img/experts/brian-koberlein.jpg"
+
+  },{
+
+    id: 17,
+    name: "@ScottBarnden",
+    title: "Nanotechnology / Physics / Business",
+    image: "img/experts/scott-barnden-gplus.png"
+
+  },{
+
+    id: 18,
+    name: "@Anonymous",
+    title: "Unknown",
+    image: "img/experts/anon.png"
 
   }];
 
