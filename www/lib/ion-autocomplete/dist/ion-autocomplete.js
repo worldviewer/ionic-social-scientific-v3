@@ -96,8 +96,8 @@ angular.module('ion-autocomplete', []).directive('ionAutocomplete', [
                     // '</div>'
 
                     // This is the search box
-                    '<div class="ion-autocomplete-container modal">',
-                    '<div class="bar bar-header item-input-inset">',
+                    '<div class="ion-autocomplete-container modal" width="100%">',
+                    '<div class="bar bar-header item-input-inset" width="100%">',
                     '<label class="item-input-wrapper">',
                     '<i class="icon ion-search placeholder-icon"></i>',
                     '<input type="search" class="ion-autocomplete-search" ng-model="searchQuery" placeholder="{{placeholder}}"/>',

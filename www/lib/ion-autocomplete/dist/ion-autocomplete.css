@@ -6,6 +6,7 @@
     left: 0;
     z-index: 20;
     display: hidden;
+    width: 100%;
 }
 
 input.ion-autocomplete[readonly] {
