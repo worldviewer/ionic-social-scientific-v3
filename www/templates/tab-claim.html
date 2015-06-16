@@ -1,98 +1,212 @@
-<ion-view title="{{card.type}}: {{card.title}}">
+<ion-view title="{{proposition.type}}: {{proposition.title}}">
 
     <ion-content padding="true" class="has-header">
 
-        <h3>{{card.title}}</h3>
+        <h3>{{proposition.title}}</h3>
 
-        <div>
-            <p><strong>{{card.definition}}</strong></p>
+		<div>
+			<p><strong>{{proposition.definition}}</strong></p>
 
-            <div ng-show="card.images" ng-repeat="headerimage in card.images">
-                <img ng-src="{{headerimage}}">
-            </div>
+			<div ng-repeat="image in proposition.images" ng-show="proposition.images">
+				<img ng-src="{{image}}" width="100%">
+	            <div class="spacer" style="width: 300px; height: 10px;"></div>
+			</div>
 
-            <!-- For now, just mock the proposition id's with $index -->
+           <ion-list class="item-text-wrap">
 
-            <h4>Key Propositions</h4>
-            <ion-list class="item-text-wrap">
-                <div ng-repeat="point in card.children track by $index">
+                <div ng-repeat="point in proposition.claim_ids">
+                    <ion-item class="item-thumbnail-left"
+                        href="{{getCardById(point).url}}">
+                        <img ng-src="{{getCardById(point).avatar}}">
+                        <h2>{{getCardById(point).title}}</h2>
+                        <h4>{{getCardById(point).sourcename}}</h4>
+                        <h4>{{getExpertById(getCardById(point).expert_ids[0]).name}}</h4>
+                    </ion-item>
 
-                    <a href="#/tab/propositions/{{$index}}" class="blue-ion-pane item item-icon-right">
-                        <p>{{card[point].title}}</p>
+		            <div class="spacer" style="width: 300px; height: 10px;"></div>
+
+                    <div ng-show="getCardById(point).images" ng-repeat="image in getCardById(point).images">
+                        <img ng-src="{{image}}" width="100%">
+                    </div>
+
+	                <div ng-show="point.postscript" class="row">
+	                    <div class="col-10">
+	                        <i class="icon ion-asterisk"></i>
+	                    </div>
+	                    <div class="col-90" ng-bind-html="point.postscript | sanitize"></div>
+	                </div>
+
+					<!-- Replace the following three links with actual 
+					links -->
+
+		           	<a class="blue-ion-pane item item-icon-left item-icon-right item-text-wrap">
+
+						<i class="icon ion-alert-circled"></i>
+                        <p>I Can Counter That</p>
                         <i class="icon ion-chevron-right"></i>
+
+		            </a>
+
+		            <a class="blue-ion-pane item item-icon-left item-icon-right item-text-wrap">
+
+						<i class="icon ion-lightbulb"></i>
+                        <p>There's a Larger Pattern</p>
+                        <i class="icon ion-chevron-right"></i>
+
+		            </a>
+
+		            <a class="blue-ion-pane item item-icon-left item-icon-right item-text-wrap">
+
+						<i class="icon ion-speakerphone"></i>
+                        <p>Jump to Conclusions!</p>
+                        <i class="icon ion-chevron-right"></i>
+
+		            </a>
+
+		            <div class="spacer" style="width: 300px; height: 10px;"></div>
+                </div>
+
+				<form ng-submit="addComment()">
+					<div class="list">
+						<label class="item item-input">
+							<textarea rows="5" placeholder="Comment"></textarea>
+						</label>
+					</div>
+
+	                <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-android-add"></i>
+	                Add Another Source ...</a>
+                </form>
+
+            </ion-list>
+
+		</div>
+
+		<div ng-show="{{proposition.comment_ids}}">
+
+            <div class="spacer" style="width: 300px; height: 10px;"></div>
+
+			<h3>Suggestions</h3>
+
+			<!-- Guidelines for Suggestions -->
+
+			<ion-list class="item-text-wrap">
+
+                <ion-item class="row warning-background">
+                    <div class="col-10">
+                        <i class="icon ion-asterisk"></i>
+                    </div>
+                    <div class="col-90">
+
+                    	<p>This space is specifically reserved for collecting resources that <b>support</b> this claim.  For debate, go to<br><br><span class='blue-pane'><i class='icon ion-alert-circled'></i>&emsp;&emsp;I Can Counter That&emsp;&emsp;<i class='icon ion-chevron-right'></i></span></p><br>
+
+                    </div>
+				</ion-item>
+			
+				<ion-item class="row warning-background">
+                    <div class="col-10">
+                        <i class="icon ion-asterisk"></i>
+                    </div>
+                    <div class="col-90">
+
+                   		<p>You can use HTML to add <b>bold</b> or <span class="highlighter">highlighter</span>, if it helps others to better skim your content.</p>
+
+                    </div>
+                </ion-item>
+
+				<ion-item class="row warning-background">
+                    <div class="col-10">
+                        <i class="icon ion-asterisk"></i>
+                    </div>
+                    <div class="col-90">
+
+                    	<p>Vote on resources you like by clicking the <i class='icon ion-plus-circled'></i>; this will help us to rank them.</p>
+
+                    </div>
+                </ion-item>
+			</ion-list>
+
+			<div class="spacer" style="width: 300px; height: 40px;"></div>
+
+			<!-- First do the suggestions that are not moderated -->
+
+			<ion-list class="item-text-wrap">
+
+				<!-- <div ng-repeat="comment in proposition.comment_ids | filter : !!getCommentById(comment).moderate | orderBy : getCommentById(comment).score"> -->
+				<div ng-repeat="comment in proposition.comment_ids">
+
+					<!-- Make this clickable later, so that each comment can be debated at the worldview level -->
+
+                    <a class="item item-avatar blue-ion-pane">
+                        <img ng-src="{{getExpertById(getCommentById(comment).expert_id).image}}">
+                        <h2>{{getCommentById(comment).title}}</h2>
+                        <h4>{{getExpertById(getCommentById(comment).expert_id).name}}</h4>
                     </a>
 
-                </div>
-            </ion-list>
+		            <div class="spacer" style="width: 300px; height: 10px;"></div>
 
-            <ion-list>
+	                <div class="col-90" ng-bind-html="getCommentById(comment).comment | sanitize"></div>
 
-                <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-quote"></i>
-                See more claims ...</a>
-            </ion-list>
-        </div>
+		            <div class="spacer" style="width: 300px; height: 10px;"></div>
 
+					<!-- Fix this link -->
 
+		           	<a class="blue-ion-pane item item-icon-left item-icon-right item-text-wrap">
 
-        <h3>Status</h3>
-        <div>
-            <p>{{card.status}}</p>
-        </div>
+						<i class="icon ion-alert-circled"></i>
+                        <p>I Can Counter That</p>
+                        <i class="icon ion-chevron-right"></i>
 
+		            </a>
 
+	                <div ng-show="getCommentById(comment).postscript" class="row">
+	                    <div class="col-10">
+	                        <i class="icon ion-asterisk"></i>
+	                    </div>
+	                    <div class="col-90" ng-bind-html="getCommentById(comment).postscript | sanitize"></div>
+	                </div>
 
-        <h3>Advocates / Experts</h3>
-        <div>
-            <ion-list class="item-text-wrap">
+		            <div class="spacer" style="width: 300px; height: 10px;"></div>
 
-                <div ng-repeat="expert in card.expert_ids">
-                    <ion-item class="item-thumbnail-left"
-                        href="#">
-                        <img ng-src="{{experts[expert].image}}">
-                        <h2>{{experts[expert].name}}</h2>
-                        <p>{{experts[expert].title}}</p>
-                    </ion-item>
-                </div>
+				</div> <!-- ng-repeat end -->
 
-                <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-university"></i>
-                See more experts ...</a>
-            </ion-list>
-        </div>
+			</ion-list>
 
+			<!-- Next, do those posts that have been moderated -->
 
+			<ion-list class="item-text-wrap">
 
+				<div ng-repeat="comment in proposition.comment_ids | filter : !getCommentById(comment).moderate">
 
+					<!-- Make this clickable later, so that each comment can be debated at the worldview level -->
+
+	                <ion-item class="item-thumbnail-left"
+	                    href="#">
+	                    <img ng-src="{{getCommentById(comment).avatar}}">
+	                    <h2>{{getCommentById(comment).title}}</h2>
+	                    <p>{{getCommentById(comment).author}}</p>
+	                </ion-item>
+
+		            <div class="spacer" style="width: 300px; height: 10px;"></div>
+
+	                <span style="color:#BCCACA"><div class="col-90" ng-bind-html="getCommentById(comment).comment | sanitize"></div></span>
+
+		            <div class="spacer" style="width: 300px; height: 10px;"></div>
+
+	                <div ng-show="getCommentById(comment).postscript" class="row warning-background moderator">
+	                    <div class="col-10">
+	                        <i class="icon ion-asterisk"></i>
+	                    </div>
+	                    <div class="col-90" ng-bind-html="getCommentById(comment).postscript | sanitize"></div>
+	                </div>
+
+		            <div class="spacer" style="width: 300px; height: 10px;"></div>
+
+				</div>
+
+			</ion-list>
+
+		</div>
 
     </ion-content>
 
 </ion-view>
-
-<!-- <ion-view view-title="Dashboard">
-  <ion-content class="padding">
-    <div class="list card">
-      <div class="item item-divider">Recent Updates</div>
-      <div class="item item-body">
-        <div>
-          There is a fire in <b>sector 3</b>
-        </div>
-      </div>
-    </div>
-    <div class="list card">
-      <div class="item item-divider">Health</div>
-      <div class="item item-body">
-        <div>
-          You ate an apple today!
-        </div>
-      </div>
-    </div>
-    <div class="list card">
-      <div class="item item-divider">Upcoming</div>
-      <div class="item item-body">
-        <div>
-          You have <b>29</b> meetings on your calendar tomorrow.
-        </div>
-      </div>
-    </div>
-  </ion-content>
-</ion-view>
- -->

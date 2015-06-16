@@ -110,11 +110,51 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   Construct.getCardById(cardId, function(foundCardById) {
     if (foundCardById) {
-      $scope.card = foundCardById;
+      $scope.proposition = foundCardById;
     } else {
       $scope.none = "Error!";
     }
   });
+
+  $scope.getCommentById = function(commentId) {
+    return Construct.getCommentById(commentId, function(foundCommentById) {
+      if (foundCommentById) {
+        return foundCommentById;
+      } else {
+        $scope.none = "Error!";
+      }
+    });
+  };
+
+  $scope.getCardById = function(cardId) {
+    return Construct.getCardById(cardId, function(foundCardById) {
+      if (foundCardById) {
+        return foundCardById;
+      } else {
+        $scope.none = "Error!";
+      }
+    });
+  };
+
+  $scope.getExpertById = function(expertId) {
+    return Construct.getExpertById(expertId, function(foundExpertById) {
+      if (foundExpertById) {
+        return foundExpertById;
+      } else {
+        $scope.none = "Error!";
+      }
+    });
+  };
+
+  $scope.getQuestionById = function(questionId) {
+    return Construct.getQuestionById(questionId, function(foundQuestionById) {
+      if (foundQuestionById) {
+        return foundQuestionById;
+      } else {
+        $scope.none = "Error!";
+      }
+    });
+  };
 
 }])
 
@@ -182,7 +222,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       // Evaluate what kind of card it is, and then transition the state to the
       // appropriate ui-router state, based upon the card.type; Use $stateParams to
       // send the construct card to render, according to id
-      $state.go('tab.controversy', {cardId: callback.item.id});
+
+      // $state.go('tab.controversy', {cardId: callback.item.id});
+      $state.go('tab.controversy', {cardId: 0});
   }
 
   $scope.isModel = function(item) {
@@ -280,7 +322,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('tab.model', {
       url: '/models/:cardId',
       views: {
-        'tab-construct': {
+        'tab-search': {
           templateUrl: 'templates/tab-model.html',
           controller: 'ModelCtrl'
         }
@@ -290,7 +332,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('tab.claim', {
       url: '/claims/:cardId',
       views: {
-        'tab-construct': {
+        'tab-search': {
           templateUrl: 'templates/tab-claim.html',
           controller: 'ClaimCtrl'
         }
@@ -300,7 +342,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('tab.question', {
       url: '/questions/:questionId',
       views: {
-        'tab-construct': {
+        'tab-search': {
           templateUrl: 'templates/tab-question.html',
           controller: 'Question1Ctrl'
         }
@@ -310,7 +352,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('tab.expert', {
       url: '/experts/:expertId',
       views: {
-        'tab-construct': {
+        'tab-search': {
           templateUrl: 'templates/tab-expert.html',
           controller: 'ExpertCtrl'
         }
@@ -320,22 +362,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('tab.annotation', {
       url: '/annotations/:annotationId',
       views: {
-        'tab-construct': {
+        'tab-search': {
           templateUrl: 'templates/tab-annotation.html',
           controller: 'AnnotationCtrl'
         }
       }
-    })
-
-  .state('tab.account', {
-    url: '/account',
-    views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
-      }
-    }
-  });
+    });
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/search');
@@ -345,6 +377,29 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 // This service will source the data model mock, until the data model design becomes sufficiently fixed that it
 // is no longer changing
 .service("Construct", [function() {
+
+  var comments = [{
+    id: 0,
+    expert_id: 15,
+    title: "Peratt's Galactic Simulations",
+    comment: "What should probably be mentioned is that Peratt has used government supercomputers to simulate proper galactic rotation curves without the need for dark matter.  All that he did was fit the cosmic plasma models to laboratory plasma observations.\n\nSee <a href='http://www.plasma-universe.com/Galaxy_formation'>Ian Tresman's Plasma Wiki Page on Peratt</a>   <i class='icon ion-plus-circled'></i>.",
+    postscript: null,
+    date: "June 1, 2015 4:20 PM PST",
+    score: 10,
+    moderate: false
+
+  }, {
+
+    id: 1,
+    expert_id: 16,
+    title: "Bullshit",
+    comment: "The Electric Universe has been debunked.  Please stop the nonsense.",
+    postscript: "We kindly ask that you keep debate containered in the worldview pages.  This area is reserved for the accumulation of supporting resources.  For debate, go to<br><br><span class='blue-pane'><i class='icon ion-alert-circled'></i>\t&emsp;&emsp;I Can Counter That&emsp;&emsp;<i class='icon ion-chevron-right'></i></span><br><br>",
+    date: "June 3, 2015 10:01 PM EST",
+    score: 1,
+    moderate: true
+
+  }];
 
   var questions = [{
     id: 0,
@@ -461,12 +516,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Cosmic Plasma Debate",
     sourcename: null,
 
-    images: "img/headers/AJ-vs-IEEE.jpg",
+    images: ["img/headers/AJ-vs-IEEE.jpg"],
     definition: "There has been a debate over how to model cosmic plasmas (such as the solar wind) for more than half a century between the Astrophysical Journal and IEEE's Transactions on Plasma Science.",
     status: null,
     search_hit: null,
 
-    claim_ids: null, // FILL!
+    claim_ids: [41,42,43,44],
+    comment_ids: [0,1],
     critique_ids: null,
     next: 2,
     avatar: "img/journals/IEEE.png",
@@ -1529,14 +1585,120 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     year: null,
     postscript: null                
 
+ }, {
+
+    id: 41,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Some electrical theorists have claimed that astrophysicists have not been prepared to interpet electrical astronomical events",
+    sourcename: "The Electric Universe",
+
+    images: ["img/books/the-electric-universe-on-astrophysicists.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/astrophysicists-not-prepared.jpg",
+    url: "http://www.amazon.com/Electric-Universe-Wallace-Thornhill-Talbott/dp/0977285138/",
+    text: null,
+    highighter: null,
+    expert_ids: [9],
+    nodes: null,
+    year: null,
+    postscript: null
+
+ }, {
+
+    id: 42,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "IEEE is the world's largest technical professional society.",
+    sourcename: "IEEE's Website",
+
+    images: ["img/journals/IEEE-description.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/journals/IEEE.png",
+    url: "https://www.ieee.org/about/ieee_history.html",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    year: null,
+    postscript: null
+
+ }, {
+
+    id: 43,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The debate over how to model cosmic plasmas was begun by the Nobel laureate who invented the cosmic plasma models used by astrophysicists to this day.",
+    sourcename: "Edge Magazine (original article currently not online)",
+
+    images: ["img/articles/hannes-alfven-bio-small.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/alfven-getting-nobel.jpg",
+    url: "https://plus.google.com/108466508041843226480/posts/YoTuHGL16ur",
+    text: null,
+    highighter: null,
+    expert_ids: [8],
+    nodes: null,
+    year: null,
+    postscript: null
+
+ }, {
+
+    id: 44,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Some critics of electrical cosmology freely admit that they do not read IEEE's Transactions on Plasma Science, the journal which publishes on electrical cosmology.",
+    sourcename: "International Skeptics Forum",
+
+    images: ["img/forums/is-tim-thompson-on-ieee.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/the-galaxy-business.jpg",
+    url: "http://www.internationalskeptics.com/forums/showpost.php?s=808a20363648151505620e5b174cdc4c&p=4782369&postcount=8%EF%BB%BF",
+    text: null,
+    highighter: null,
+    expert_ids: [14],
+    nodes: null,
+    year: null,
+    postscript: null
+
   }];
-
-
 
   var experts = [{
     id: 0,
     name: "@ChrisReeve",
-    title: "Layperson Advocate",
+    title: "Electric Universe Layperson Advocate",
     image: "img/experts/chris-reeve.png"
 
   },{
@@ -1629,6 +1791,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@IanTresman",
     title: "http://plasma-universe.com Wiki", 
     image: "img/experts/ian-tresman.jpg"
+
+  },{
+
+    id: 14,
+    name: "@TimThompson",
+    title: "Electric Universe Critic / Astrophysicist",
+    image: "img/experts/tim-thompson.jpg"
+
+  },{
+
+    id: 15,
+    name: "@JimJohnson",
+    title: "Electric Universe Layperson Advocate",
+    image: "img/experts/jim-johnson.jpg"
+
+  },{
+
+    id: 16,
+    name: "@BrianKoberlein",
+    title: "RIT Astrophysicist / Professor",
+    image: "img/experts/brian-koberlein.jpg"
 
   }];
 
@@ -1779,6 +1962,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   this.getCardById = function(id, cb) {
     result = cards[id];
+
+    if (result) {
+      return cb(result);
+    } else {
+      return cb(false);
+    }    
+  };
+
+  this.getCommentById = function(id, cb) {
+    result = comments[id];
 
     if (result) {
       return cb(result);

@@ -79,13 +79,13 @@
                 <img width="100%" ng-src="{{headerimage}}">
             </div>
 
-            <!-- For now, just mock the proposition id's with $index -->
+            <!-- For now, just mock the proposition id's with the first -->
 
             <h3 id="claims">Key Propositions</h3>
             <ion-list class="item-text-wrap">
                 <div ng-repeat="point in card.claim_ids track by $index">
 
-                    <ion-item class="item-thumbnail-left" class="blue-ion-pane" href="#/tab/propositions/{{$index}}">
+                    <ion-item class="item-thumbnail-left" class="blue-ion-pane" ui-sref="tab.claim({cardId:1})">
                         <img ng-src="{{getCardById(point).avatar}}">
                         <h2>{{getCardById(point).title}}</h2>
                         <p>{{getCardById(point).definition}}</p>
@@ -360,7 +360,7 @@
         <ion-list class="item-text-wrap">
 
             <div ng-repeat="resource in card.media_ids">
-                <ion-item class="item-thumbnail-left" href="{{resource.url}}">
+                <ion-item class="item-thumbnail-left" href="{{getCardById(resource).url}}">
                     <img ng-src="{{getCardById(resource).avatar}}">
                     <h2>{{getCardById(resource).title}}</h2>
 
