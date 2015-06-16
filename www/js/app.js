@@ -2120,7 +2120,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         } // End if only one author match
 
       // Only perform a search when the non-expert search query is 3 or more characters
-      } else if (snippetLength > 2) {
+      // } else if (snippetLength > 2) {
+      } else if (snippetLength > 0) {
 
         for (var i=0; i < cards.length; i++) {
             card = cards[i];
