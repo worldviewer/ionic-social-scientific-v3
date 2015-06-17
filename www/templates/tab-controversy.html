@@ -175,9 +175,11 @@
 
 
         <h3 id="cmaps">Key Concepts</h3>
-        <div ng-repeat="cmap in card.cmap_ids | filter:getCardById(cmap).display">
 
-                <img ng-src="{{getCardById(cmap).images[0]}}" width="100%">
+        <!-- These filters do not properly grab the .display value; they generate blank div's -->
+        <!-- <div ng-repeat="cmap in card.cmap_ids | filter:getCardById(cmap).display"> -->
+
+                <img ng-src="{{getCardById(card.cmap_ids[0]).images[0]}}" width="100%">
 
     <!--
                 <img ng-src="{{getCardById(cmap).images[0]}}" width="100%" usemap="#CMap">
@@ -187,15 +189,14 @@
                     </div>
                 </map>
     -->
-                <div ng-show="getCardById(cmap).postscript" class="row">
+                <div ng-show="getCardById(card.cmap_ids[0]).postscript" class="row">
                     <div class="col-10">
                         <i class="icon ion-asterisk"></i>
                     </div>
-                    <div class="col-90" ng-bind-html="getCardById(cmap).postscript | sanitize"></div>
+                    <div class="col-90" ng-bind-html="getCardById(card.cmap_ids[0]).postscript | sanitize"></div>
                 </div>
 
-
-        </div>
+        <!-- </div> -->
 
         <h3>All Concept Maps</h3>
 

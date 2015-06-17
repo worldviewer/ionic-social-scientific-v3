@@ -490,7 +490,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     search_hit: null,
     claim_ids: [1,2,3,4,5,6,7,8,9,10,11],
     critique_ids: [12,45,46],
-    cmap_ids: [13,14,15,16,17],
+    cmap_ids: [13,14,15,16,17,50,51,52,53,54,55,56,57,58,59],
     article_ids: [18,19,20,47],
     forum_ids: [21],
     paper_ids: [22],
@@ -1826,6 +1826,256 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     expert_ids: [21],
     nodes: null,
     year: null,
+    postscript: null
+
+  }, {
+
+    id: 50,
+    controversy: false,
+    parent: false,
+    type: "Concept Map",
+    display: true,
+    title: "What are cosmic rays?  What is a Forbush decrease?  And how is it thought that they affect the climate?",
+    sourcename: null,
+
+    images: [null],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/forbush-decrease.png",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [0],
+    postscript: null
+
+  }, {
+
+    id: 51,
+    controversy: false,
+    parent: false,
+    type: "Concept Map",
+    display: true,
+    title: "What is the Equatorial Electrojet (EEJ)?  And why is it there?",
+    sourcename: null,
+
+    images: [null],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/EEJ.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [0],
+    postscript: null
+
+  }, {
+
+    id: 52,
+    controversy: false,
+    parent: false,
+    type: "Concept Map",
+    display: true,
+    title: "What is Marklund convection?  What planetary and astronomical processes might be explained by it?  What do we know about it, and how do we know?",
+    sourcename: null,
+
+    images: [null],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/Marklund-convection.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [0],
+    postscript: null
+
+  }, {
+
+    id: 53,
+    controversy: false,
+    parent: false,
+    type: "Concept Map",
+    display: true,
+    title: "How are clouds involved in fair weather electric current and the Global Electric Circuit?",
+    sourcename: null,
+
+    images: [null],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/charged-water-droplets.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [0],
+    postscript: null
+
+  }, {
+
+    id: 54,
+    controversy: false,
+    parent: false,
+    type: "Concept Map",
+    display: true,
+    title: "What is a sunspot?  And why are they thought to be associated with the Earth's climate?",
+    sourcename: null,
+
+    images: [null],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/sunspots-stratosphere.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [0],
+    postscript: null
+
+  }, {
+
+    id: 55,
+    controversy: false,
+    parent: false,
+    type: "Concept Map",
+    display: true,
+    title: "What is the solar wind?  How can the solar wind fail to appreciably decelerate even as it passes the Earth's orbit?",
+    sourcename: null,
+
+    images: [null],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/solar-wind.gif",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [0],
+    postscript: null
+
+  }, {
+
+    id: 56,
+    controversy: false,
+    parent: false,
+    type: "Concept Map",
+    display: true,
+    title: "What is the Interplanetary Magnetic Field (IMF)?  What is magnetic flux?  What makes the 'open' solar flux lines special?  And why do they change over time?",
+    sourcename: null,
+
+    images: [null],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/open-flux-lines.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [0],
+    postscript: null
+
+  }, {
+
+    id: 57,
+    controversy: false,
+    parent: false,
+    type: "Concept Map",
+    display: true,
+    title: "What are Navier-Stokes equations?  And what part do they play in climate modeling?",
+    sourcename: null,
+
+    images: [null],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/navier-stokes.png",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [0],
+    postscript: null
+
+  }, {
+
+    id: 58,
+    controversy: false,
+    parent: false,
+    type: "Concept Map",
+    display: true,
+    title: "Why do the oceans matter for climate modeling?",
+    sourcename: null,
+
+    images: [null],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/oceans.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [0],
+    postscript: null
+
+  }, {
+
+    id: 59,
+    controversy: false,
+    parent: false,
+    type: "Concept Map",
+    display: true,
+    title: "What is the Pacific Decadal Oscillation?  El Nino?  La Nina?",
+    sourcename: null,
+
+    images: [null],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/elnino-lanina.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [0],
     postscript: null
 
  }];
