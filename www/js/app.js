@@ -418,7 +418,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     expert_id: 16,
     title: "Bullshit",
     comment: "The Electric Universe has been debunked.  Please stop the nonsense.",
-    postscript: "We kindly ask that you keep debate containered in the worldview pages.  This area is reserved for the accumulation of supporting resources.  For debate, go to<br><br><span class='blue-pane'><i class='icon ion-alert-circled'></i>\t&emsp;&emsp;I Can Counter That&emsp;&emsp;<i class='icon ion-chevron-right'></i></span><br><br>",
+    postscript: "We kindly ask that you keep debate containered in the worldview pages.  This area is reserved for the accumulation of supporting resources.  For debate, go to<br><br><span class='blue-pane'>I Can Counter That</span><br><br>",
     date: "June 3, 2015 10:01 PM EST",
     score: 1,
     moderate: true

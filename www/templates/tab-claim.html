@@ -107,7 +107,7 @@
                     </div>
                     <div class="col-90">
 
-                    	<p>This space is specifically reserved for collecting resources that <b>support</b> this claim.  For debate, go to<br><br><span class='blue-pane'><i class='icon ion-alert-circled'></i>&emsp;&emsp;I Can Counter That&emsp;&emsp;<i class='icon ion-chevron-right'></i></span></p><br>
+                    	<p>This space is specifically reserved for collecting resources that <b>support</b> this claim.  For debate, go to<br><br><span class='blue-pane'>I Can Counter That</span></p><br>
 
                     </div>
 				</ion-item>
@@ -160,14 +160,16 @@
 
 					<!-- Fix this link -->
 
-		           	<a class="blue-ion-pane item item-icon-left item-icon-right item-text-wrap">
+		            <ion-tree-list items="tasks" collapsed="true"></ion-tree-list>
+		            <div class="spacer" style="width: 300px; height: 20px;"></div>
 
+<!--
+ 		           	<a class="blue-ion-pane item item-icon-left item-icon-right item-text-wrap">
 						<i class="icon ion-alert-circled"></i>
                         <p>I Can Counter That</p>
                         <i class="icon ion-chevron-right"></i>
-
 		            </a>
-
+ -->
 	                <div ng-show="getCommentById(comment).postscript" class="row">
 	                    <div class="col-10">
 	                        <i class="icon ion-asterisk"></i>

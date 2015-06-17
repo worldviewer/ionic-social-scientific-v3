@@ -206,7 +206,7 @@
         <ion-list class="item-text-wrap">
 
             <div ng-repeat="cmap in card.cmap_ids">
-                <ion-item class="item-thumbnail-left">
+                <ion-item class="item-thumbnail-left blue-ion-pane">
                     <img ng-src="{{getCardById(cmap).avatar}}">
                     <h2>{{getCardById(cmap).title}}</h2>
                     <h4>{{getExpertById(getCardById(cmap).expert_ids[0]).name}}</h4>
@@ -222,7 +222,7 @@
         <div ng-repeat="article in card.article_ids">
 
             <ion-list class="item-text-wrap">
-                <ion-item class="item-thumbnail-left">
+                <ion-item class="item-thumbnail-left blue-ion-pane">
                     <img ng-src="{{getCardById(article).avatar}}">
                     <h2>{{getCardById(article).title}}</h2>
 
