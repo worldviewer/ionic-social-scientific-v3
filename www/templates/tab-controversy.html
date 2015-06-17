@@ -162,6 +162,9 @@
                         </div>
                         <div class="col-90" ng-bind-html="critique.postscript | sanitize"></div>
                     </div>
+
+                    <ion-tree-list items="tasks" collapsed="true"></ion-tree-list>
+                    <div class="spacer" style="width: 300px; height: 20px;"></div>
                 </div>
 
             </ion-list>
@@ -251,6 +254,9 @@
                 <div class="col-90" ng-bind-html="article.postscript | sanitize"></div>
             </div>
 
+            <ion-tree-list items="tasks" collapsed="true"></ion-tree-list>
+            <div class="spacer" style="width: 300px; height: 20px;"></div>
+
         </div>
 
 
@@ -313,6 +319,9 @@
                 <div class="col-90" ng-bind-html="getCardById(paper).postscript | sanitize"></div>
             </div>
 
+            <ion-tree-list items="tasks" collapsed="true"></ion-tree-list>
+            <div class="spacer" style="width: 300px; height: 20px;"></div>
+
         </div>
 
 
@@ -331,7 +340,7 @@
                 </ion-item>
             </ion-list>
 
-            <div ng-show="getCardById(book).fancy_text" ng-repeat="fancyQuote in getCardById(book).fancy_text"><br>
+            <div ng-show="getCardById(book).fancy_text" ng-repeat="fancyQuote in getCardById(book).fancy_text"><br>            
 
             <!-- Note usage of ng-bind-html, which is used
                  with the sanitize .filter service -->
@@ -340,10 +349,18 @@
                     <div ng-bind-html="fancyQuote.quote | sanitize">
                     </div>
                 </blockquote>
+
+                <ion-tree-list items="tasks" collapsed="true"></ion-tree-list>
+                <div class="spacer" style="width: 300px; height: 20px;"></div>
+
             </div>
 
             <div ng-show="getCardById(book).images" ng-repeat="image in getCardById(book).images"><br>
                 <img ng-src="{{image}}">
+
+                <ion-tree-list items="tasks" collapsed="true"></ion-tree-list>
+                <div class="spacer" style="width: 300px; height: 20px;"></div>
+                
             </div>
 
             <div ng-show="getCardById(book).postscript" class="row">

@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ion-autocomplete'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ion-autocomplete', 'ion-tree-list'])
 
 .filter("sanitize", ['$sce', function($sce) {return function(htmlCode){
         return $sce.trustAsHtml(htmlCode);}
@@ -31,6 +31,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   '$location', '$anchorScroll', '$ionicScrollDelegate', 
   function ($scope, $state, $stateParams, Construct, 
     $location, $anchorScroll, $ionicScrollDelegate) {
+
+  $scope.tasks = [
+    {
+      name: "Let me respond...",
+      tree: [
+        {name: "I don't understand"},
+        {name: "I can counter that!"},
+        {name: "I've seen similar"},
+        {name: "Jump to conclusions!"}
+      ]
+    }
+  ];
 
   var cardId = $stateParams.cardId;
   console.log(cardId);
@@ -104,6 +116,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 // the search result
 .controller('ClaimCtrl', ['$scope', '$state', '$stateParams', 'Construct', 
   function ($scope, $state, $stateParams, Construct) {
+
+  $scope.tasks = [
+    {
+      name: "Let me respond...",
+      tree: [
+        {name: "I don't understand"},
+        {name: "I can counter that!"},
+        {name: "I've seen similar"},
+        {name: "Jump to conclusions!"}
+      ]
+    }
+  ];
 
   var cardId = $stateParams.cardId;
   console.log(cardId);
