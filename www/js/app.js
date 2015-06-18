@@ -572,7 +572,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: [60,62,61,63,65,66,67],
+    claim_ids: [60,62,61,63,65,66,67,68,69,70],
     critique_ids: null,
     next: 3,
     avatar: "img/avatars/plasma-not-fluids.jpg",
@@ -2302,6 +2302,80 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     expert_ids: [9],
     postscript: null
 
+  }, {
+
+    id: 68,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Hannes Alfven challenged the notion that cosmic electric fields could simply be calculated from magnetohydrodynamics (MHD) equations.",
+    sourcename: null,
+
+    images: ["img/papers/cosmic-electric-fields.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/MHD.jpg",
+    url: "http://plasmauniverse.info/downloads/LifeAlfven.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [22],
+    postscript: null
+
+  }, {
+
+    id: 69,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The concept of frozen-in magnetic field lines is a seductive implication of magnetohydrodynamics (MHD) which Hannes Alfven came to realize through study of the aurora was both unjustified and dangerously misleading.",
+    sourcename: null,
+
+    images: ["img/papers/frozen-in-field-lines.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/MHD.jpg",
+    url: "http://plasmauniverse.info/downloads/LifeAlfven.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [9],
+    postscript: null
+
+  }, {
+
+    id: 70,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Astrophysicists generally argue that there is no significant persistent large-scale electric field in a plasma.",
+    sourcename: "Conversations on Electric and Magnetic Fields in the Cosmos",
+
+    images: ["img/papers/electric-fields-parker.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/MHD.jpg",
+    url: "http://press.princeton.edu/chapters/s8454.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [26],
+    postscript: null
  }];
 
   var experts = [{
@@ -2484,6 +2558,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@GeorgeKParks",
     title: "Space Sciences Laboratories, University of California, Berkeley",
     image: "img/experts/george-k-parks.jpg"
+
+  },{
+
+    id: 26,
+    name: "@EugeneNParker",
+    title: "Solar Astrophysicist",
+    image: "img/experts/eugene-n-parker.jpg"
 
   }];
 
