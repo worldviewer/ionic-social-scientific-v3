@@ -20,7 +20,10 @@
                         <img ng-src="{{getCardById(point).avatar}}">
                         <h2>{{getCardById(point).title}}</h2>
                         <h4>{{getCardById(point).sourcename}}</h4>
-                        <h4>{{getExpertById(getCardById(point).expert_ids[0]).name}}</h4>
+
+						<div ng-repeat="expert in getCardById(point).expert_ids">
+	                        <h4>{{getExpertById(expert).name}}</h4>
+                        </div>
                     </ion-item>
 
 		            <div class="spacer" style="width: 300px; height: 10px;"></div>

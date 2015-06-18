@@ -83,9 +83,9 @@
 
             <h3 id="claims">Key Propositions</h3>
             <ion-list class="item-text-wrap">
-                <div ng-repeat="point in card.claim_ids track by $index">
+                <div ng-repeat="point in card.claim_ids">
 
-                    <ion-item class="item-thumbnail-left" class="blue-ion-pane" ui-sref="tab.claim({cardId:1})">
+                    <ion-item class="item-thumbnail-left" class="blue-ion-pane" ui-sref="tab.claim({cardId:point})">
                         <img ng-src="{{getCardById(point).avatar}}">
                         <h2>{{getCardById(point).title}}</h2>
                         <p>{{getCardById(point).definition}}</p>

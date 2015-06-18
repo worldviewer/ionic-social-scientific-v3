@@ -568,11 +568,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     sourcename: null,
 
     images: null, // FILL!
-    definition: "Conventional theory models this flow of charged particles fundamentally as a fluid, but these models have been in dispute since their inception.",
+    definition: "Conventional theory models this flow of charged particles fundamentally as a magnetized fluid, but these models have been in dispute since their inception.",
     status: null,
     search_hit: null,
 
-    claim_ids: null, // FILL!
+    claim_ids: [60,62,61,63,65,66,67],
     critique_ids: null,
     next: 3,
     avatar: "img/avatars/plasma-not-fluids.jpg",
@@ -2102,6 +2102,206 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     expert_ids: [0],
     postscript: null
 
+  }, {
+
+    id: 60,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Hannes Alfven used the occasion of his 1970 Nobel lecture to warn astrophysicists that their mathematically elegant plasma models were failing to take into account plasma's observable tendencies for filamentary electrical currents.",
+    sourcename: null,
+
+    images: ["img/papers/alfven-nobel-lecture.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/alfven-getting-nobel.jpg",
+    url: "http://www.nobelprize.org/nobel_prizes/physics/laureates/1970/alfven-lecture.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [22],
+    postscript: null
+
+  }, {
+
+    id: 61,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Fluids-based MHD models do not predict long-lived plasma filamentation",
+    sourcename: null,
+
+    images: ["img/papers/laboratory-plasma-filamentation-1.jpg", "img/papers/laboratory-plasma-filamentation-2.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/Marklund-convection.jpg",
+    url: "http://plasmauniverse.info/downloadsCosmo/KukushkinKartinovCos.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [23,24],
+    postscript: null
+
+  }, {
+
+    id: 62,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Plasma filamentation is commonly observed within the plasma laboratory.",
+    sourcename: null,
+
+    images: ["img/papers/plasma-filament-1.jpg", "img/papers/plasma-filament-2.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/Marklund-convection.jpg",
+    url: "http://hifweb.lbl.gov/ICC2000/Other/Rantsev-Kartinov_oral.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [23,24],
+    postscript: null
+
+  }, {
+
+    id: 63,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Plasma filaments can sometimes exhibit a fractal, self-repeating nature, occasionally referred to as heteromacs.",
+    sourcename: null,
+
+    images: ["img/papers/plasma-fractal.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/plasma-not-fluids.jpg",
+    url: "http://epsppd.epfl.ch/Praha/98icpp/A021PR.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [23,24],
+    postscript: null
+
+  }, {
+
+    id: 64,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Russian plasma physicists have claimed that Voyager photographed the Earth immersed in plasma filaments.",
+    sourcename: null,
+
+    images: ["img/papers/cosmic-dust-filamentation-1.jpg","img/papers/cosmic-dust-filamentation-2.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/plasma-not-fluids.jpg",
+    url: "http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=4287077&url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel5%2F27%2F4287017%2F04287077.pdf%3Farnumber%3D4287077",
+    text: null,
+    highighter: null,
+    expert_ids: [23,24],
+    postscript: null
+
+  }, {
+
+    id: 65,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Novelty plasma globes plainly exhibit twisting, conducting plasma filamentation; it is also apparent from these images that there are two different things happening here: There is both long-range attraction and short-range repulsion between the filaments, as they do not appear to combine.",
+    sourcename: null,
+
+    images: ["img/articles/plasma-globe-1.jpg", "img/articles/plasma-globe-2.jpg", "img/articles/plasma-globe-3.jpg", "img/articles/plasma-globe-4.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/plasma-ball.jpg",
+    url: "https://www.google.com/search?q=plasma+globe&biw=2327&bih=1183&source=lnms&tbm=isch&sa=X&ei=jxSDVemeM8TLsAX0oqfQBA&ved=0CAcQ_AUoAg",
+    text: null,
+    highighter: null,
+    expert_ids: [],
+    postscript: null
+
+  }, {
+
+    id: 66,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "'Questions have been raised from the beginning of the space era whether MHD theory can describe correctly space plasmas that are collisionless and rarely in thermal equilibrium.' -- George K Parks",
+    sourcename: null,
+
+    images: ["img/papers/space-physics-mhd.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/plasma-modes.jpg",
+    url: "http://link.springer.com/article/10.1023/B%3ASPAC.0000042941.14372.9b",
+    text: null,
+    highighter: null,
+    expert_ids: [25],
+    postscript: null
+
+  }, {
+
+    id: 67,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Although some plasma physicists can see the applications of their laboratory research to cosmic phenomena, they tend to assume that magnetohydrodynamics (MHD) is required to model cosmic phenomena because they assume that the astronomical phenomena are transitory, like their laboratory experiments.",
+    sourcename: null,
+
+    images: ["img/papers/IEEE-ICOPS-2006-1.jpg", "img/papers/IEEE-ICOPS-2006-2.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/MHD.jpg",
+    url: "https://www.thunderbolts.info/webnews/ieee_plasma_balllightening.htm",
+    text: null,
+    highighter: null,
+    expert_ids: [9],
+    postscript: null
+
  }];
 
   var experts = [{
@@ -2256,6 +2456,34 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@FrederickJRich",
     title: "Astrophysics / Climatology / Remote Sensing, PhD",
     image: "img/experts/frederick-j-rich.png"
+
+  },{
+
+    id: 22,
+    name: "@HannesAlfven",
+    title: "Nobel laureate / Inventor of magnetohydrodynamics (MHD) / Advocate for an experiment-driven approach to plasma physics",
+    image: "img/experts/hannes-alfven.jpg"
+
+  },{
+
+    id: 23,
+    name: "@ABKukushkin",
+    title: "Kurchatov Institute of Atomic Energy",
+    image: "img/experts/kurchatov-institute-of-atomic-energy.jpg"
+
+  },{
+
+    id: 24,
+    name: "@VARantsev-Kartonov",
+    title: "Kurchatov Institute of Atomic Energy",
+    image: "img/experts/kurchatov-institute-of-atomic-energy.jpg"
+
+  },{
+
+    id: 25,
+    name: "@GeorgeKParks",
+    title: "Space Sciences Laboratories, University of California, Berkeley",
+    image: "img/experts/george-k-parks.jpg"
 
   }];
 
