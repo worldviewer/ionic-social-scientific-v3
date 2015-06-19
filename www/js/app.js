@@ -652,7 +652,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: [71,72,73,74,75,76],
+    claim_ids: [71,72,73,74,75,76,77],
     critique_ids: null,
     next: 6,
     avatar: "img/avatars/warming-martian-ice-caps.jpg",
@@ -2422,7 +2422,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     claim_ids: null,
     critique_ids: null,
     next: null,
-    avatar: "img/experts/habibullo-abdussamatov.jpg",
+    avatar: "img/journals/national-geographic.jpg",
     url: "http://news.nationalgeographic.com/news/2007/02/070228-mars-warming.html",
     text: null,
     highighter: null,
@@ -2511,7 +2511,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "The SkepticalScience website appears to ignore any claims about the Martian ice caps, and instead argues against a long-term trend in Martian albedo.",
+    title: "The SkepticalScience website argues against a long-term trend in Martian albedo.",
     sourcename: "SkepticalScience.com Website",
 
     images: ["img/articles/mars-warming.jpg"],
@@ -2522,8 +2522,33 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     claim_ids: null,
     critique_ids: null,
     next: null,
-    avatar: "img/avatars/martian-dust-devil.jpg",
+    avatar: "img/journals/skeptical-science.png",
     url: "http://www.skepticalscience.com/Climate-Change-on-Mars.html",
+    text: null,
+    highighter: null,
+    expert_ids: [31],
+    postscript: null
+
+  }, {
+
+    id: 77,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The SkepticalScience website explains observable warming on Mars with orbital eccentricity, thermal inertia, global dust storms and lack of data.",
+    sourcename: "SkepticalScience.com Website",
+
+    images: ["img/articles/mars-warming-6.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/journals/skeptical-science.png",
+    url: "https://www.skepticalscience.com/global-warming-on-mars.htm",
     text: null,
     highighter: null,
     expert_ids: [31],
