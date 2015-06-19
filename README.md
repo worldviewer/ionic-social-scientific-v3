@@ -33,6 +33,7 @@ Users can also click the Trending or Post tabs, to either observe what controver
 * Angular.js
 * Ionic Hybrid Mobile Framework
 * guylabs' ion-autocomplete Ionic/Angular directive (https://github.com/guylabs/ion-autocomplete); this code was extensively modified, as needed.
+* fer's ion-tree-list Ionic/Angular directive (https://github.com/fer/ion-tree-list); this code is currently used for the ratings dropdown list, but the directive is not designed with multiple such lists on a page, so I'll have to figure out how to adapt this code at some point
 * (The database is currently being mocked with an Angular service.)
 
 ## What I am Working on Right Now

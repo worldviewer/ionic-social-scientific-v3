@@ -39,7 +39,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         {name: "I don't understand"},
         {name: "I can counter that!"},
         {name: "I've seen similar"},
-        {name: "Jump to conclusions!"}
+        {name: "Jump to conclusions!"},
+        {name: "Remember this card"}
       ]
     }
   ];
@@ -124,7 +125,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         {name: "I don't understand"},
         {name: "I can counter that!"},
         {name: "I've seen similar"},
-        {name: "Jump to conclusions!"}
+        {name: "Jump to conclusions!"},
+        {name: "Remember this card"}
       ]
     }
   ];
@@ -645,19 +647,19 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Warming Martian Ice Caps",
     sourcename: null,
 
-    images: null, // FILL!
+    images: ["img/headers/martian-polar-ice-cap.jpg"],
     definition: "It was noted in 2005 by NASA that Mars' ice caps had also been diminishing for three summers in a row.",
     status: null,
     search_hit: null,
 
-    claim_ids: null, // FILL!
+    claim_ids: [71,72,73,74,75,76],
     critique_ids: null,
     next: 6,
     avatar: "img/avatars/warming-martian-ice-caps.jpg",
     url: null,
     text: null,
     highighter: null,
-    expert_ids: [0],
+    expert_ids: [27],
     nodes: null,
     postscript: null
 
@@ -2376,6 +2378,157 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     highighter: null,
     expert_ids: [26],
     postscript: null
+
+  }, {
+
+    id: 71,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The head of the Russian side of the International Space Station published a scientific paper suggesting an impending ice age, based upon the current sunspot trends.  In this article, he pointed to data suggesting that Mars might be losing its ice caps.",
+    sourcename: "Russian journal 'Nauka i Zhizn' ('Science and Life'), 2009, N1, pp. 34-42.",
+
+    images: ["img/papers/the-sun-defines-the-climate-1.jpg", "img/papers/the-sun-defines-the-climate-2.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/experts/habibullo-abdussamatov.jpg",
+    url: "http://www.gao.spb.ru/english/astrometr/abduss_nkj_2009.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [27],
+    postscript: null
+
+  }, {
+
+    id: 72,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Habibullo Abdussamatov's claims were run in a National Geographic article.  Many critics of anthropogenic warming have pointed to this quote within this publication.",
+    sourcename: "National Geographic",
+
+    images: ["img/articles/mars-heating.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/experts/habibullo-abdussamatov.jpg",
+    url: "http://news.nationalgeographic.com/news/2007/02/070228-mars-warming.html",
+    text: null,
+    highighter: null,
+    expert_ids: [28],
+    postscript: null
+
+  }, {
+
+    id: 73,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The admission that Mars might be heating up in recent years sources to an April 2007 Nature Letter",
+    sourcename: "Nature Letters",
+
+    images: ["img/papers/mars-warming-3.jpg", "img/papers/mars-warming-1.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/journals/nature.jpg",
+    url: "http://humbabe.arc.nasa.gov/~fenton/pdf/fenton/nature05718.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [29],
+    postscript: null
+
+  }, {
+
+    id: 74,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "While it may indeed be true that albedo is playing a role in Martian heating, a commonly overlooked set of observations relates to the unexpectedly filamentary nature of the global dust storms.",
+    sourcename: "Thunderbolts.info Website",
+
+    images: ["img/articles/mars-global-dust-storm-2.jpg", "img/articles/mars-global-dust-storm-3.jpg", "img/articles/mars-global-dust-storm-1.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/martian-dust-devil.jpg",
+    url: "https://www.thunderbolts.info/tpod/2007/arch07/071025dustdevils.htm",
+    text: null,
+    highighter: null,
+    expert_ids: [8,9],
+    postscript: null
+
+  }, {
+
+    id: 75,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Planteary scientists will occasionally mention the role of electric fields in Martian dust devil formation, but they rarely point to direct observation of luminosities at dust devil cores by landers; nor the possibility that dark tracks might be burn marks; nor the argument that the Martian atmosphere is not thick enough to support their mechanistic explanation of Martian dust devils.",
+    sourcename: "Thunderbolts.info Website",
+
+    images: ["img/articles/mars-dust-devils-1.jpg", "img/articles/mars-dust-devils-2.jpg", "img/articles/mars-dust-devils-3.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/martian-dust-devil.jpg",
+    url: "https://www.thunderbolts.info/wp/2014/03/26/electric-devils-3/",
+    text: null,
+    highighter: null,
+    expert_ids: [30],
+    postscript: null
+
+  }, {
+
+    id: 76,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The SkepticalScience website appears to ignore any claims about the Martian ice caps, and instead argues against a long-term trend in Martian albedo.",
+    sourcename: "SkepticalScience.com Website",
+
+    images: ["img/articles/mars-warming.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/martian-dust-devil.jpg",
+    url: "http://www.skepticalscience.com/Climate-Change-on-Mars.html",
+    text: null,
+    highighter: null,
+    expert_ids: [31],
+    postscript: null
+
  }];
 
   var experts = [{
@@ -2565,6 +2718,41 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@EugeneNParker",
     title: "Solar Astrophysicist",
     image: "img/experts/eugene-n-parker.jpg"
+
+  },{
+
+    id: 27,
+    name: "@HabibulloAbdussamatov",
+    title: "Head of Space research laboratory of the Pulkovo Observatory, and Head of the Russian segment of the International Space Station",
+    image: "img/experts/habibullo-abdussamatov.jpg"
+
+  },{
+
+    id: 28,
+    name: "@KateRavilious",
+    title: "National Geographic Science Journalist",
+    image: "img/experts/kate-ravilious.jpg"
+
+  },{
+
+    id: 29,
+    name: "@LoriKFenton",
+    title: "Planetary Scientist",
+    image: "img/experts/lori-k-fenton.jpg"
+
+  },{
+
+    id: 30,
+    name: "@StephenSmith",
+    title: "Science Journalist / Electric Universe Advocate",
+    image: "img/experts/stephen-smith.jpg"
+
+  },{
+
+    id: 31,
+    name: "@JohnCook",
+    title: "Self-employed Cartoonist / Web Programmer",
+    image: "img/experts/john-cook.jpg"
 
   }];
 
