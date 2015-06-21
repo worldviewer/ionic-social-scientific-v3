@@ -592,15 +592,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "The Solar Wind is an Electric Current",
+    title: "The Solar Wind Can Conduct Electric Currents",
     sourcename: null,
 
     images: null, // FILL!
-    definition: "Electric joule heating stems from the idea that these moving charges are an electric current, and advocates point to the fact that the solar wind is oftentimes guided by planetary magnetic fields into the poles.",
+    definition: "Electric joule heating stems from the idea that the solar wind can support the flow of electric currents, and advocates point to the fact that the solar wind is oftentimes guided by planetary magnetic fields into the poles.",
     status: null,
     search_hit: null,
 
-    claim_ids: null, // FILL!
+    claim_ids: [80,78,81,79,82,83],
     critique_ids: null,
     next: 4,
     avatar: "img/avatars/solar-wind-current.jpg",
@@ -2554,6 +2554,156 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     expert_ids: [31],
     postscript: null
 
+  }, {
+
+    id: 78,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Throughout most of the volume of a glow discharge the plasma is nearly neutral, with almost equal numbers of protons and electrons.  Yet, plasma glow discharges are very commonly used for lighting, and we power them by running an electric current through them.  So, by basic observation of a common lamp, charge neutrality cannot be a gauge of whether or not a plasma is conducting.",
+    sourcename: null,
+
+    images: ["img/articles/glow-discharge-curves.svg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/grow-lamp.jpg",
+    url: "https://upload.wikimedia.org/wikipedia/commons/6/66/Glow_discharge_structure_-_English.svg",
+    text: null,
+    highighter: null,
+    expert_ids: [8,9],
+    postscript: null
+
+  }, {
+
+    id: 79,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "When a plasma has the same number of plus and minus charge, it is said to be quasi-neutral.  However, it is commonly mistakenly thought that quasi-neutrality is equivalent to non-conductivity.  This is not the case because in a plasma, unlike in a neutral solid, the charge carriers are free to move about.",
+    sourcename: null,
+
+    images: ["img/articles/quasi-neutral.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/grow-lamp.jpg",
+    url: "http://www.thunderbolts.info/faq/quasineutral.htm",
+    text: null,
+    highighter: null,
+    expert_ids: [8,9],
+    postscript: null
+
+  }, {
+
+    id: 80,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "There exists a common misconception that the solar wind cannot carry electric currents for the simple reason that it generally exhibits the same number of electrons and protons.",
+    sourcename: null,
+
+    images: ["img/forums/cosmoquest-solar-wind.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/grow-lamp.jpg",
+    url: "http://cosmoquest.org/forum/showthread.php?20051-Solar-Wind-as-an-electric-current&s=8bd4b18dec956bed33cfda9b95c87829&p=451127#post451127",
+    text: null,
+    highighter: null,
+    expert_ids: [13],
+    postscript: null
+
+  }, {
+
+    id: 81,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Solar experts and planetary scientists will occasionally point out that the solar wind is an excellent conductor; the issue of whether or not it is conducting an electrical current is a slightly different question.",
+    sourcename: null,
+
+    images: ["img/articles/ask-a-solar-physicist-excellent-conductor.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/grow-lamp.jpg",
+    url: "http://solar-center.stanford.edu/FAQ/Qsolwindcomp.html",
+    text: null,
+    highighter: null,
+    expert_ids: [32],
+    postscript: null
+
+  }, {
+
+    id: 82,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Scientists directly witnessed in May of 2007 an electrical current from the Sun connecting with the Earth over the solar wind medium.",
+    sourcename: null,
+
+    images: ["img/articles/themis-magnetic-ropes-pic.jpg", "img/articles/themis-magnetic-ropes.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/solar-wind-current.jpg",
+    url: "http://www.nasa.gov/mission_pages/themis/auroras/northern_lights.html#.VYZGlDTF8vE",
+    text: null,
+    highighter: null,
+    expert_ids: [33],
+    postscript: null
+
+  }, {
+
+    id: 83,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The fact that the solar wind fails to appreciably decelerate even as it passes the Earth's orbit is really quite unexpected for a thermonuclear Sun, and it supports the notion that we are possibly part of a much larger electrodynamic system.",
+    sourcename: null,
+
+    images: ["img/articles/solar-electric-field.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/grow-lamp.jpg",
+    url: "https://www.thunderbolts.info/tpod/2005/arch05/050427sun.htm",
+    text: null,
+    highighter: null,
+    expert_ids: [8,9],
+    postscript: null
+
  }];
 
   var experts = [{
@@ -2778,6 +2928,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@JohnCook",
     title: "Self-employed Cartoonist / Web Programmer",
     image: "img/experts/john-cook.jpg"
+
+  },{
+
+    id: 32,
+    name: "@AmaraGraps",
+    title: "Planetary Scientist",
+    image: "img/experts/amara-graps.jpg"
+
+  },{
+
+    id: 33,
+    name: "@NASA",
+    title: "National Aeronautics and Space Agency",
+    image: "img/experts/nasa.jpg"
 
   }];
 
