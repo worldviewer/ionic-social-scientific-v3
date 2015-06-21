@@ -756,7 +756,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: null, // FILL!
+    claim_ids: [84,86,85,87,89,88,90],
     critique_ids: null,
     next: 10,
     avatar: "img/avatars/solar-wind-lightning.jpg",
@@ -2704,7 +2704,183 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     expert_ids: [8,9],
     postscript: null
 
+  }, {
+
+    id: 84,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The textbook theory on lightning is that the charge is generated within the thunderclouds, and that the electrical circuit is largely confined to the Earth, like a closed, looping electrical system.",
+    sourcename: null,
+
+    images: ["img/articles/fair-weather-current-0.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/solar-wind-lightning.jpg",
+    url: "http://science.nasa.gov/science-news/science-at-nasa/1999/essd15jun99_1/",
+    text: null,
+    highighter: null,
+    expert_ids: [33],
+    postscript: null
+
+  }, {
+
+    id: 85,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Fair weather electric current is an ambient electric current that spans the entire globe at all times.  It is driven by a global electric field that spans the vertical height of the Earth's atmosphere from ground to ionosphere, and scientists today recognize that it is related to thunderstorms, the magnetosphere and especially the electrical activity at the polar regions, where the magnetosphere's reach is closest to the Earth's surface.",
+    sourcename: null,
+
+    images: ["img/articles/fair-weather-current-diagram.jpg", "img/articles/fair-weather-current.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/solar-wind-lightning.jpg",
+    url: "http://science.nasa.gov/science-news/science-at-nasa/1999/essd15jun99_1/",
+    text: null,
+    highighter: null,
+    expert_ids: [33],
+    postscript: null
+
+  }, {
+
+    id: 86,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The textbook theory on lightning remains speculative insofar as the electric fields that are observed in the thunderclouds appear insufficient to induce the discharge, so researchers believe that there must be something else that seeds the event.",
+    sourcename: null,
+
+    images: ["img/articles/lightning-mystery.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/solar-wind-lightning.jpg",
+    url: "http://www.bbc.com/future/story/20120926-what-causes-lightening",
+    text: null,
+    highighter: null,
+    expert_ids: [34],
+    postscript: null
+
+  }, {
+
+    id: 87,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "One problem with the hypothesis that the charge separation is created within the thunderclouds is the fact that we today understand that there are forms of lightning called upper-atmosphere lightning which basically connect to space.  This opens up the possibility that the thundercloud is simply a conduit for a far larger electrical circuit.",
+    sourcename: null,
+
+    images: ["img/articles/upper-atmosphere-lightning-sprite.jpg", "img/articles/upper-atmosphere-lightning-sprite-2.jpg", "img/articles/upper-atmosphere-lightning-diagram.jpg", "img/articles/lightning-to-space.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/solar-wind-lightning.jpg",
+    url: "http://rense.com/general68/gint.htm",
+    text: null,
+    highighter: null,
+    expert_ids: [35],
+    postscript: null
+
+  }, {
+
+    id: 88,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Yet another problem with the idea that charge separation is created within the clouds is the simple fact that gamma rays and anti-matter are observed to be associated with lightning bursts -- problem being is that the energies required to create such waves are an order of magnitude larger than the textbook theory's ability to make them.",
+    sourcename: null,
+
+    images: ["img/articles/lightning-gamma-rays.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/solar-wind-lightning.jpg",
+    url: "http://space.io9.com/lightning-mysterious-gamma-ray-bursts-1549723614",
+    text: null,
+    highighter: null,
+    expert_ids: [36],
+    postscript: null
+
+  }, {
+
+    id: 89,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Supporting the hypothesis that lightning is a part of a much larger electrical circuit is the observation that lightning strikes can clear out the inner region of the Van Allen Radiation Belts.",
+    sourcename: null,
+
+    images: ["img/articles/lightning-van-allen-belts.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/solar-wind-lightning.jpg",
+    url: "http://www.nasa.gov/home/hqnews/2005/mar/HQ_05070_radiation_belt.html",
+    text: null,
+    highighter: null,
+    expert_ids: [33],
+    postscript: null
+
+  }, {
+
+    id: 90,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "It appears that the seed which lightning researchers are looking for has already been found -- the Solar Wind.",
+    sourcename: null,
+
+    images: ["img/articles/solar-wind-lightning.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/solar-wind-lightning.jpg",
+    url: "http://www.bbc.com/news/science-environment-27406358",
+    text: null,
+    highighter: null,
+    expert_ids: [37],
+    postscript: null
+
  }];
+
 
   var experts = [{
     id: 0,
@@ -2943,7 +3119,37 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "National Aeronautics and Space Agency",
     image: "img/experts/nasa.jpg"
 
+
+  },{
+
+    id: 34,
+    name: "@PhilipBall",
+    title: "Science Writer",
+    image: "img/experts/philip-ball.jpg"
+
+  },{
+
+    id: 35,
+    name: "@MelAcheson",
+    title: "Philosopher / Electric Universe Advocate",
+    image: "img/experts/mel-acheson.jpg"
+
+  },{
+
+    id: 36,
+    name: "@MikaMcKinnon",
+    title: "Geophysicist / disaster researcher / scifi science consultant / journalist / public speaker / irrepressible educator",
+    image: "img/experts/mika-mckinnon.jpg"
+
+  },{
+
+    id: 37,
+    name: "@RebeccaMorelle",
+    title: "Science Correspondent, BBC News",
+    image: "img/experts/rebecca-morelle.jpg"
+
   }];
+
 
   // I'm going to maintain two separate data structures: The cards will be
   // kept separate from the constructs, so that I can use the constructs
