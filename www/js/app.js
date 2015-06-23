@@ -517,7 +517,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     claim_ids: [1,2,3,4,5,6,7,8,9,10,11],
     critique_ids: [12,45,46],
     cmap_ids: [13,14,15,16,17,50,51,52,53,54,55,56,57,58,59],
-    article_ids: [18,19,20,47],
+    article_ids: [18,19,20,47,91],
     forum_ids: [21],
     paper_ids: [22],
     book_ids: [23,24,25],
@@ -678,7 +678,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: null, // FILL!
+    claim_ids: [92,93],
     critique_ids: null,
     next: 7,
     avatar: "img/avatars/pluto-warming.jpg",
@@ -2839,7 +2839,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Supporting the hypothesis that lightning is a part of a much larger electrical circuit is the observation that lightning strikes can clear out the inner region of the Van Allen Radiation Belts.",
     sourcename: null,
 
-    images: ["img/articles/lightning-van-allen-belts.jpg"],
+    images: ["img/articles/lightning-van-allen-belts-diagram.jpg", "img/articles/lightning-van-allen-belts.jpg"],
     definition: null,
     status: null,
     search_hit: null,
@@ -2861,7 +2861,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "It appears that the seed which lightning researchers are looking for has already been found -- the Solar Wind.",
+    title: "The observed correlation between solar wind intensity and lightning strikes suggests a research direction for lightning discharge's seed.",
     sourcename: null,
 
     images: ["img/articles/solar-wind-lightning.jpg"],
@@ -2877,6 +2877,81 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     text: null,
     highighter: null,
     expert_ids: [37],
+    postscript: null
+
+  }, {
+
+    id: 91,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Astrophysicist Piers Corbyn claims to accurately predict the weather with an 80-85% accuracy rate by simply correlating present solar plasma activity with past solar plasma activity, and then checking to see what impact that past solar activity had upon the Earth's upper atmosphere systems and jet stream.",
+    sourcename: null,
+
+    images: ["img/articles/piers-corbyn.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/experts/piers-corbyn.jpg",
+    url: "http://www.telegraph.co.uk/comment/columnists/borisjohnson/8213058/The-man-who-repeatedly-beats-the-Met-Office-at-its-own-game.html",
+    text: null,
+    highighter: null,
+    expert_ids: [2,38],
+    postscript: null
+
+  }, {
+
+    id: 92,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Although we really only have two vague data points, it appears that Pluto's atmosphere has been going through dramatic transformations over the past few decades.",
+    sourcename: null,
+
+    images: ["img/articles/pluto-warming.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/pluto-warming.jpg",
+    url: "http://www.space.com/3159-global-warming-pluto-puzzles-scientists.html",
+    text: null,
+    highighter: null,
+    expert_ids: [39],
+    postscript: null
+
+  }, {
+
+    id: 93,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "A variety of arguments are used to cast simultaneous warming on other planets, like Pluto, as a climate myth: a claim that the Sun's energy output has not increased since direct measurements began in 1978; that it's a chance observation due to independent localized planetary warmings; that it's too early to start drawing conclusions; and it is speculated that Pluto's warming might actually be a delayed greenhouse effect.",
+    sourcename: null,
+
+    images: ["img/articles/TSI-decreasing.jpg", "img/articles/mars-and-pluto.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/pluto-warming.jpg",
+    url: "http://www.newscientist.com/article/dn11642-climate-myths-mars-and-pluto-are-warming-too.html#.VYjQGDTF8vE",
+    text: null,
+    highighter: null,
+    expert_ids: [40],
     postscript: null
 
  }];
@@ -3148,8 +3223,28 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Science Correspondent, BBC News",
     image: "img/experts/rebecca-morelle.jpg"
 
-  }];
+  },{
 
+    id: 38,
+    name: "@BorisJohnson",
+    title: "Mayor of London, former journalist and member of UK Parliament",
+    image: "img/experts/boris-johnson.jpg"
+
+  },{
+
+    id: 39,
+    name: "@RobertRoyBritt",
+    title: "responsible for the editorial operations of news content on Purch sites, particularly SPACE.com, LiveScience.com and TechNewsDaily.com",
+    image: "img/experts/robert-roy-britt.jpg"
+
+  },{
+
+    id: 40,
+    name: "@MichaelLePage",
+    title: "features editor at New Scientist magazine",
+    image: "img/experts/michael-le-page.png"
+
+  }];
 
   // I'm going to maintain two separate data structures: The cards will be
   // kept separate from the constructs, so that I can use the constructs
