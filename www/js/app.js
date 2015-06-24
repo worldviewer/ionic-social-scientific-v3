@@ -514,7 +514,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     definition: "Electric joule heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic plasma phenomena.",
     status: "Electric joule heating is not widely known, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Electric joule heating is a natural implication of the Electric Universe paradigm.",
     search_hit: null,
-    claim_ids: [1,2,3,4,5,6,7,8,9,10,11],
+    claim_ids: [1,2,3,4,5,6,7,8,9,10,94],
     critique_ids: [12,45,46],
     cmap_ids: [13,14,15,16,17,50,51,52,53,54,55,56,57,58,59],
     article_ids: [18,19,20,47,91],
@@ -782,7 +782,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: null, // FILL!
+    claim_ids: [95,96,97],
     critique_ids: null,
     next: 11,
     avatar: "img/avatars/sunspots-stratosphere.jpg",
@@ -797,7 +797,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 11,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "Electric Joule Heating Is Not Fully Captured by Existing Models",
@@ -2954,6 +2954,106 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     expert_ids: [40],
     postscript: null
 
+   }, {
+
+    id: 94,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Top-of-the-Atmosphere Drivers",
+    sourcename: null,
+
+    images: null,
+    definition: "Conventional meteorology assumes that weather drives weather, and it arguably minimizes the effect of top-of-the-atmosphere drivers.",
+    status: null,
+    search_hit: null,
+
+    claim_ids: [11],
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/toa-model-tuning.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [2],
+    postscript: null
+
+   }, {
+
+    id: 95,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "When making the case that the Sun cannot be the cause for recent Earth temperature changes, the sunspot number is oftentimes used as an indicator of solar activity.",
+    sourcename: null,
+
+    images: ["img/papers/geomagnetic-activity-1.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/sunspots-stratosphere.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [41],
+    postscript: null
+
+   }, {
+
+    id: 96,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Sunspots are not a consistent indicator of solar activity because there are particular phases of the solar cycle where coronal holes (CH's) emit very fast solar wind, and the sunspot activity would not reflect this activity.",
+    sourcename: null,
+
+    images: ["img/papers/geomagnetic-activity-5-pic.jpg", "img/papers/geomagnetic-activity-6-pic.gif", "img/papers/geomagnetic-activity-0.jpg", "img/papers/geomagnetic-activity-2.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/coronal-hole.png",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [41],
+    postscript: null
+
+   }, {
+
+    id: 97,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "When solar activity is represented by the ak index of geomagnetic activity rather than sunspots, the Earth's global temperature changes correlate well with solar activity.",
+    sourcename: null,
+
+    images: ["img/papers/geomagnetic-activity-3.jpg", "img/papers/geomagnetic-activity-4.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/coronal-hole.png",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [41],
+    postscript: null
+
  }];
 
 
@@ -3234,15 +3334,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 39,
     name: "@RobertRoyBritt",
-    title: "responsible for the editorial operations of news content on Purch sites, particularly SPACE.com, LiveScience.com and TechNewsDaily.com",
+    title: "Responsible for the editorial operations of news content on Purch sites, particularly SPACE.com, LiveScience.com and TechNewsDaily.com",
     image: "img/experts/robert-roy-britt.jpg"
 
   },{
 
     id: 40,
     name: "@MichaelLePage",
-    title: "features editor at New Scientist magazine",
+    title: "Features Editor at New Scientist magazine",
     image: "img/experts/michael-le-page.png"
+
+  },{
+
+    id: 41,
+    name: "@KatyaGeorgieva",
+    title: "Climatology, Meteorology, Paleoclimatology, Bulgarian Academy of Sciences",
+    image: "img/experts/katya-georgieva.jpg"
 
   }];
 
