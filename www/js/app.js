@@ -507,12 +507,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Model",
     display: true,
-    title: "Electric Joule Heating",
+    title: "Plasma-Coupled Heating",
     sourcename: null,
 
     images: ["img/headers/electric-joule-heating-header.jpg"],
-    definition: "Electric joule heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic plasma phenomena.",
-    status: "Electric joule heating is not widely known, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Electric joule heating is a natural implication of the Electric Universe paradigm.",
+    definition: "Plasma-coupled heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic plasma phenomena.",
+    status: "Plasma-coupled heating is not widely known, has no particular conceptual label, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Plasma-coupled heating is a natural implication of the Electric Universe paradigm.",
     search_hit: null,
     claim_ids: [1,2,3,4,5,6,7,8,9,10,94],
     critique_ids: [12,45,46],
@@ -596,7 +596,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     sourcename: null,
 
     images: null, // FILL!
-    definition: "Electric joule heating stems from the idea that the solar wind can support the flow of electric currents, and advocates point to the fact that the solar wind is oftentimes guided by planetary magnetic fields into the poles.",
+    definition: "Plasma-coupled heating stems from the idea that the solar wind can support the flow of electric currents, and advocates point to the fact that the solar wind is oftentimes guided by planetary magnetic fields into the poles.",
     status: null,
     search_hit: null,
 
@@ -774,15 +774,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Sunspots Correlate With Lower Stratosphere Temperature Anomalies",
+    title: "The Sun's Electromagnetic Activity Can Be Correlated with the Earth's Temperature Anomalies",
     sourcename: null,
 
     images: null, // FILL!
-    definition: "Sunspot numbers appear to correlate with lower stratosphere temperature anomalies, minus the temporal effects of volcanic eruptions -- suggesting that the sunspots are related to these electrical flows. Laboratory plasma terrella experiments appear to confirm this suspicion.",
+    definition: "Both Show Up in Tandem, as a Variety of Overlapping Solar Cycles",
     status: null,
     search_hit: null,
 
-    claim_ids: [95,96,97],
+    claim_ids: [98,95,96,97,99,100],
     critique_ids: null,
     next: 11,
     avatar: "img/avatars/sunspots-stratosphere.jpg",
@@ -800,7 +800,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "Electric Joule Heating Is Not Fully Captured by Existing Models",
+    title: "Plasma-Coupled Heating Is Not Captured by Existing Models",
     sourcename: null,
 
     images: null, // FILL!
@@ -2961,7 +2961,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Top-of-the-Atmosphere Drivers",
+    title: "Top-of-the-Atmosphere Drivers Cannot Be Ignored",
     sourcename: null,
 
     images: null,
@@ -2986,7 +2986,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "When making the case that the Sun cannot be the cause for recent Earth temperature changes, the sunspot number is oftentimes used as an indicator of solar activity.",
+    title: "The sunspot number has traditionally been used as an indicator of solar activity even though it does not fully represent solar activity.",
     sourcename: null,
 
     images: ["img/papers/geomagnetic-activity-1.jpg"],
@@ -2998,7 +2998,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     critique_ids: null,
     next: null,
     avatar: "img/avatars/sunspots-stratosphere.jpg",
-    url: null,
+    url: "http://sait.oat.ts.astro.it/MmSAI/76/PDF/969.pdf",
     text: null,
     highighter: null,
     expert_ids: [41],
@@ -3023,7 +3023,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     critique_ids: null,
     next: null,
     avatar: "img/avatars/coronal-hole.png",
-    url: null,
+    url: "http://sait.oat.ts.astro.it/MmSAI/76/PDF/969.pdf",
     text: null,
     highighter: null,
     expert_ids: [41],
@@ -3036,10 +3036,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "When solar activity is represented by the ak index of geomagnetic activity rather than sunspots, the Earth's global temperature changes correlate well with solar activity.",
-    sourcename: null,
+    title: "When solar activity is represented by the ak index of geomagnetic activity rather than sunspots alone, the Earth's global temperature changes correlate surprisingly well with solar activity.",
+    sourcename: "Paper: Once Again About Global Warming and Solar Activity + Book: The Neglected Sun",
 
-    images: ["img/papers/geomagnetic-activity-3.jpg", "img/papers/geomagnetic-activity-4.jpg"],
+    images: ["img/papers/geomagnetic-activity-3.jpg", "img/papers/geomagnetic-activity-4.jpg", "img/books/neglected-sun-sunspot-vs-solar-magnetic-field.jpg"],
     definition: null,
     status: null,
     search_hit: null,
@@ -3048,10 +3048,85 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     critique_ids: null,
     next: null,
     avatar: "img/avatars/coronal-hole.png",
-    url: null,
+    url: "http://sait.oat.ts.astro.it/MmSAI/76/PDF/969.pdf",
     text: null,
     highighter: null,
     expert_ids: [41],
+    postscript: null
+
+   }, {
+
+    id: 98,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Sunspot numbers appear to generally correlate with lower stratosphere temperature anomalies, minus the temporal effects of volcanic eruptions -- suggesting that the sunspots are somehow related to these electrical flows.",
+    sourcename: null,
+
+    images: ["img/articles/sunspot-lower-troposphere.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/sunspots-stratosphere.jpg",
+    url: "https://www.youtube.com/watch?v=VIAp_6FAXCY",
+    text: null,
+    highighter: null,
+    expert_ids: [42],
+    postscript: null
+
+   }, {
+
+    id: 99,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The two fundamental modes of solar wind heating appear to correspond with two of the states observed by Kristian Birkeland's terrella experiments -- a fundamental electromagnetic laboratory plasma physics form which appears to apply to both the Sun and the Earth.",
+    sourcename: null,
+
+    images: ["img/headers/birkeland-terrella-1.jpg", "img/articles/auroral-currents.jpg", "img/articles/birkeland-terrella-2.jpg", "img/articles/equatorial-tubes.jpg", "img/articles/solar-plasmoid-top.jpg", "img/articles/solar-plasmoid-side.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/birkeland-terrella.png",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [9],
+    postscript: null
+
+   }, {
+
+    id: 100,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Many climate modelers have decided to ignore the role of solar cycles in Earth's recent warming and subsequent cooling, even though there exists a 60-year solar cycle which coincides with these temperature changes.",
+    sourcename: null,
+
+    images: ["img/books/neglected-sun-schwabe-cycle.jpg", "img/books/neglected-sun-PDO-cycle.jpg", "img/books/neglected-sun-60-year-cycle.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/birkeland-terrella.png",
+    url: "http://www.amazon.com/Neglected-Sun-Precludes-Catastrophe-Independent-ebook/dp/B00I2O5WDQ/",
+    text: null,
+    highighter: null,
+    expert_ids: [43,44],
     postscript: null
 
  }];
@@ -3350,6 +3425,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@KatyaGeorgieva",
     title: "Climatology, Meteorology, Paleoclimatology, Bulgarian Academy of Sciences",
     image: "img/experts/katya-georgieva.jpg"
+
+  },{
+
+    id: 42,
+    name: "@DonScott",
+    title: "Professor Electrical Engineering / Electric Universe Theorist",
+    image: "img/experts/don-scott.jpg"
+
+  },{
+
+    id: 43,
+    name: "@FritzVahrenholt",
+    title: "German Politician, Industrialist and Environmentalist",
+    image: "img/experts/fritz-vahrenholt.jpg"
+
+  },{
+
+    id: 44,
+    name: "@SebastianLuening",
+    title: "German Geologist, Paleontologist",
+    image: "img/experts/sebastian-luening.jpg"
 
   }];
 
