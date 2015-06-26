@@ -514,7 +514,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     definition: "Plasma-coupled heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic plasma phenomena.",
     status: "Plasma-coupled heating is not widely known, has no particular conceptual label, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Plasma-coupled heating is a natural implication of the Electric Universe paradigm.",
     search_hit: null,
-    claim_ids: [1,2,3,4,5,6,7,8,9,10,94,104],
+    claim_ids: [1,2,3,4,5,6,7,104,8,9,10,94],
     critique_ids: [12,45,46],
     cmap_ids: [13,14,15,16,17,50,51,52,53,54,55,56,57,58,59],
     article_ids: [18,19,20,47,91],
@@ -722,15 +722,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Dipolar Vortices Suggest Electrical Plasmas",
+    title: "Double Polar Vortices Suggest Electrical Plasmas",
     sourcename: null,
 
-    images: null, // FILL!
+    images: ["img/headers/venus-polar-vortex.jpg", "img/headers/polar-vortex-split.jpg"],
     definition: "The observed splitting of the polar vortex on both Earth and Venus is an expected feature of laboratory plasmas when they are conducting electrical currents, yet climate and planetary scientists claim to not understand either observation.",
     status: null,
     search_hit: null,
 
-    claim_ids: null, // FILL!
+    claim_ids: [112,113],
     critique_ids: null,
     next: 9,
     avatar: "img/avatars/dipolar-vortex.jpg",
@@ -756,7 +756,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: [84,86,85,87,89,88,90],
+    claim_ids: [84,86,85,87,89,88,90,111],
     critique_ids: null,
     next: 10,
     avatar: "img/avatars/solar-wind-lightning.jpg",
@@ -3186,7 +3186,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "What is rarely mentioned about the polar vortex is that modelers have thus far struggled to replicate it's features.",
+    title: "What is rarely mentioned about the polar vortex is that modelers have thus far struggled to replicate its features.",
     sourcename: null,
 
     images: ["img/articles/polar-vortex-4.jpg"],
@@ -3314,7 +3314,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "The winds on Neptune and Venus might be anomalous for the very reason that planetary scientists are underestimating the role of electromagnetic forces in planetary winds.",
     sourcename: null,
 
-    images: ["img/articles/planetary-faraday-motor.jpg"],
+    images: ["img/articles/planetary-faraday-motor.jpg", "img/articles/electromotive-power.jpg"],
     definition: null,
     status: null,
     search_hit: null,
@@ -3377,6 +3377,81 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     text: null,
     highighter: null,
     expert_ids: [48],
+    postscript: null
+
+   }, {
+
+    id: 111,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "There exists a largely untested idea that since Earth is a small charged body embedded within the Sun's larger plasma environment that weather on Earth is the result of changes in its surrounding plasma's electromagnetic environment.",
+    sourcename: null,
+
+    images: ["img/articles/electric-weather.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/oceans.jpg",
+    url: "https://www.thunderbolts.info/tpod/2004/arch/040917electric-weather.htm",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    postscript: null
+
+   }, {
+
+    id: 112,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Planetary scientists who are certain that Venus' heat results from a runaway greenhouse effect nevertheless remain baffled with Venus' double polar vortex.",
+    sourcename: null,
+
+    images: ["img/articles/venus-dipolar-vortex.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/venus.jpg",
+    url: "http://www.holoscience.com/wp/global-warming-in-a-climate-of-ignorance/",
+    text: null,
+    highighter: null,
+    expert_ids: [9,49],
+    postscript: null
+
+   }, {
+
+    id: 113,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "A fundamental principle in electromagnetism is that two charge-carrying wires will tend to attract one another when carrying current in the same direction (when the movements of charge are aligned in parallel).",
+    sourcename: null,
+
+    images: ["img/audio-video/parallel-currents-1.jpg", "img/audio-video/parallel-currents-2.jpg", "img/audio-video/parallel-currents-3.jpg", "img/audio-video/parallel-currents-4.jpg", "img/audio-video/parallel-currents-5.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/Marklund-convection.jpg",
+    url: "http://techtv.mit.edu/tags/441-physics/videos/813-mit-physics-demo----forces-on-a-current-carrying-wire",
+    text: null,
+    highighter: null,
+    expert_ids: null,
     postscript: null
 
  }];
@@ -3723,6 +3798,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@JamesCLoPresto",
     title: "Professor of Astronomy at Edinboro University of Pennsylvania",
     image: "img/experts/james-c-lo-presto.png"
+
+  },{
+
+    id: 49,
+    name: "@FWTaylor",
+    title: "Venus Expert / Head of Atmospheric, Oceanic and Planetary Physics at Oxford for 21 years from 1979 / Currently Halley Professor Emeritus in Oxford Physics and an Emeritus Fellow at Jesus College / Formerly for 10 years at the Jet Propulsion Laboratory, California Institute of Technology",
+    image: "img/experts/f-w-taylor.jpg"
 
   }];
 
