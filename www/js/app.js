@@ -696,7 +696,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "The Polar Vortex is Tricky to Model",
+    title: "The Polar Vortex Has Proven Resistant to Conventional Modeling",
     sourcename: null,
 
     images: null, // FILL!
@@ -704,7 +704,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: null,
+    claim_ids: [101,102,103],
     critique_ids: null,
     next: 8,
     avatar: "img/avatars/polar-vortex.jpg",
@@ -3129,6 +3129,106 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     expert_ids: [43,44],
     postscript: null
 
+   }, {
+
+    id: 101,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "It's not uncommon for climate experts to discuss the polar vortex without any mention of the larger twisting geometry of the polar magnetic field, as if they are unrelated.",
+    sourcename: null,
+
+    images: ["img/articles/polar-vortex-1.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-vortex.jpg",
+    url: "http://www.slate.com/blogs/bad_astronomy/2014/09/15/polar_vortex_deep_meanders_in_vortex_linked_to_global_warming.html",
+    text: null,
+    highighter: null,
+    expert_ids: [45],
+    postscript: null
+
+   }, {
+
+    id: 102,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Some theorists have gone so far as to claim that the intense chill of the polar vortex results from global warming.",
+    sourcename: null,
+
+    images: ["img/articles/polar-vortex-2.jpg", "img/articles/polar-vortex-3.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-vortex.jpg",
+    url: "http://www.slate.com/blogs/bad_astronomy/2014/02/21/polar_vortex_weather_climate_and_meandering_jet_streams.html",
+    text: null,
+    highighter: null,
+    expert_ids: [45],
+    postscript: null
+
+   }, {
+
+    id: 103,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "What is rarely mentioned about the polar vortex is that modelers have thus far struggled to replicate it's features.",
+    sourcename: null,
+
+    images: ["img/articles/polar-vortex-4.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-vortex.jpg",
+    url: "http://wattsupwiththat.com/2014/01/07/a-sober-look-at-the-northern-polar-vortex/",
+    text: null,
+    highighter: null,
+    expert_ids: [46],
+    postscript: null
+
+   // }, {
+
+   //  id: 104,
+   //  controversy: false,
+   //  parent: true,
+   //  type: "Claim",
+   //  display: true,
+   //  title: "",
+   //  sourcename: null,
+
+   //  images: ["img/articles/polar-vortex-4.jpg"],
+   //  definition: null,
+   //  status: null,
+   //  search_hit: null,
+
+   //  claim_ids: null,
+   //  critique_ids: null,
+   //  next: null,
+   //  avatar: "img/avatars/polar-vortex.jpg",
+   //  url: "http://wattsupwiththat.com/2014/01/07/a-sober-look-at-the-northern-polar-vortex/",
+   //  text: null,
+   //  highighter: null,
+   //  expert_ids: [46],
+   //  postscript: null
+
  }];
 
 
@@ -3437,15 +3537,29 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 43,
     name: "@FritzVahrenholt",
-    title: "German Politician, Industrialist and Environmentalist",
+    title: "German Politician / Industrialist / Environmentalist",
     image: "img/experts/fritz-vahrenholt.jpg"
 
   },{
 
     id: 44,
     name: "@SebastianLuening",
-    title: "German Geologist, Paleontologist",
+    title: "German Geologist / Paleontologist",
     image: "img/experts/sebastian-luening.jpg"
+
+  },{
+
+    id: 45,
+    name: "@PhilPlait",
+    title: "Astronomer / Public Speaker / Science Evangelizer",
+    image: "img/experts/phil-plait.jpg"
+
+  },{
+
+    id: 46,
+    name: "@MargaretHurwitz",
+    title: "Atmospheric Chemistry / Dynamics",
+    image: "img/experts/anon.png"
 
   }];
 
