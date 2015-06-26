@@ -514,7 +514,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     definition: "Plasma-coupled heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic plasma phenomena.",
     status: "Plasma-coupled heating is not widely known, has no particular conceptual label, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Plasma-coupled heating is a natural implication of the Electric Universe paradigm.",
     search_hit: null,
-    claim_ids: [1,2,3,4,5,6,7,8,9,10,94],
+    claim_ids: [1,2,3,4,5,6,7,8,9,10,94,104],
     critique_ids: [12,45,46],
     cmap_ids: [13,14,15,16,17,50,51,52,53,54,55,56,57,58,59],
     article_ids: [18,19,20,47,91],
@@ -778,7 +778,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     sourcename: null,
 
     images: null, // FILL!
-    definition: "Both Show Up in Tandem, as a Variety of Overlapping Solar Cycles",
+    definition: "Both show up in tandem, as a variety of overlapping solar cycles.",
     status: null,
     search_hit: null,
 
@@ -3204,33 +3204,182 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     expert_ids: [46],
     postscript: null
 
-   // }, {
+   }, {
 
-   //  id: 104,
-   //  controversy: false,
-   //  parent: true,
-   //  type: "Claim",
-   //  display: true,
-   //  title: "",
-   //  sourcename: null,
+    id: 104,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Anomalously Fast Winds",
+    sourcename: null,
 
-   //  images: ["img/articles/polar-vortex-4.jpg"],
-   //  definition: null,
-   //  status: null,
-   //  search_hit: null,
+    images: ["img/headers/uranus-winds-two-day-timeframe-1.jpg", "img/headers/uranus-winds-two-day-timeframe-2.jpg"],
+    definition: "The winds are so unexpectedly fast on some planets that they raise questions about the underlying cause of winds on all planets.",
+    status: null,
+    search_hit: null,
 
-   //  claim_ids: null,
-   //  critique_ids: null,
-   //  next: null,
-   //  avatar: "img/avatars/polar-vortex.jpg",
-   //  url: "http://wattsupwiththat.com/2014/01/07/a-sober-look-at-the-northern-polar-vortex/",
-   //  text: null,
-   //  highighter: null,
-   //  expert_ids: [46],
-   //  postscript: null
+    claim_ids: [105,106,107,108,109,110],
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/uranus.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [9],
+    postscript: null
+
+   }, {
+
+    id: 105,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Uranus' extremely low temperatures and its enormous distance from the Sun cast doubt on a thermal driver for its incredible winds.",
+    sourcename: null,
+
+    images: ["img/articles/uranus-winds.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/uranus.jpg",
+    url: "https://www.thunderbolts.info/wp/2014/08/15/father-sky/",
+    text: null,
+    highighter: null,
+    expert_ids: [9],
+    postscript: null
+
+   }, {
+
+    id: 106,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Like Uranus, Neptune's anomalously fast winds remain a mystery in light of the amount of sunlight it receives.",
+    sourcename: null,
+
+    images: ["img/articles/neptune-winds.jpg", "img/articles/neptune-strongest-winds.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/neptune.jpg",
+    url: "https://www.thunderbolts.info/wp/2014/05/05/neptune-is-plugged-in-2/",
+    text: null,
+    highighter: null,
+    expert_ids: [9],
+    postscript: null
+
+   }, {
+
+    id: 107,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "A homopolar motor (aka Faraday disc, unipolar generator, acyclic generator or disk dynamo) spins due to the application of a voltage difference, which creates an electric current whose magnetic field curls according to the right-hand-rule.",
+    sourcename: null,
+
+    images: ["img/audio-video/homopolar-motor-1.jpg", "img/audio-video/homopolar-motor-2.jpg", "img/audio-video/homopolar-motor-3.jpg", "img/audio-video/homopolar-motor-4.jpg", "img/audio-video/homopolar-motor-5.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/homopolar-motor.jpg",
+    url: "https://www.youtube.com/watch?v=M8hm29KuyXk",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    postscript: null
+
+   }, {
+
+    id: 108,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The winds on Neptune and Venus might be anomalous for the very reason that planetary scientists are underestimating the role of electromagnetic forces in planetary winds.",
+    sourcename: null,
+
+    images: ["img/articles/planetary-faraday-motor.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/homopolar-motor.jpg",
+    url: "http://www.holoscience.com/wp/global-warming-in-a-climate-of-ignorance/",
+    text: null,
+    highighter: null,
+    expert_ids: [9],
+    postscript: null
+
+   }, {
+
+    id: 109,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The homopolar motor concept can possibly be used to explain Earth's latitudinal shifting and speeds of the jet streams, insofar as changes in the larger electromagnetic environment can conceivably alter the geometry and rotational speeds of the larger plasma features.",
+    sourcename: null,
+
+    images: ["img/audio-video/jet-stream-shifting.jpg", "img/papers/historical-trends-in-the-jet-streams.jpg", "img/papers/jet-streams-move-poleward.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/homopolar-motor.jpg",
+    url: "https://www.youtube.com/watch?t=65&v=UTFY9uDlhIE",
+    text: null,
+    highighter: null,
+    expert_ids: [47],
+    postscript: null
+
+   }, {
+
+    id: 110,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The homopolar motor concept can possibly be used to explain the Sun's rapid changes in rotation at the poles, and indeed these changes are observed to reflect sudden changes in its electromagnetic environment.",
+    sourcename: null,
+
+    images: ["img/papers/solar-polar-vortex.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/homopolar-motor.jpg",
+    url: "http://www4.nso.edu/press/newsletter/SolarPolarVortex.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [48],
+    postscript: null
 
  }];
-
 
   var experts = [{
     id: 0,
@@ -3561,7 +3710,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Atmospheric Chemistry / Dynamics",
     image: "img/experts/anon.png"
 
+  },{
+
+    id: 47,
+    name: "@ChristinaArcher",
+    title: "Department of Global Ecology at the Carnegie Institution of Washington / Assistant Professor at Stanford University",
+    image: "img/experts/christina-archer.jpg"
+
+  },{
+
+    id: 48,
+    name: "@JamesCLoPresto",
+    title: "Professor of Astronomy at Edinboro University of Pennsylvania",
+    image: "img/experts/james-c-lo-presto.png"
+
   }];
+
 
   // I'm going to maintain two separate data structures: The cards will be
   // kept separate from the constructs, so that I can use the constructs
