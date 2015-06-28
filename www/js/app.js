@@ -517,7 +517,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     claim_ids: [1,2,3,4,5,6,7,104,8,9,10,94],
     critique_ids: [12,45,46],
     cmap_ids: [13,14,15,16,17,50,51,52,53,54,55,56,57,58,59],
-    article_ids: [18,19,20,47,91],
+    article_ids: [115,91,18,19,20,47],
     forum_ids: [21],
     paper_ids: [22],
     book_ids: [23,24,25],
@@ -725,12 +725,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Double Polar Vortices Suggest Electrical Plasmas",
     sourcename: null,
 
-    images: ["img/headers/venus-polar-vortex.jpg", "img/headers/polar-vortex-split.jpg"],
+    images: ["img/headers/polar-vortex-split.jpg", "img/headers/venus-polar-vortex-2.jpg"],
     definition: "The observed splitting of the polar vortex on both Earth and Venus is an expected feature of laboratory plasmas when they are conducting electrical currents, yet climate and planetary scientists claim to not understand either observation.",
     status: null,
     search_hit: null,
 
-    claim_ids: [112,113],
+    claim_ids: [112,114,113,116,117,118,119],
     critique_ids: null,
     next: 9,
     avatar: "img/avatars/dipolar-vortex.jpg",
@@ -3411,7 +3411,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Planetary scientists who are certain that Venus' heat results from a runaway greenhouse effect nevertheless remain baffled with Venus' double polar vortex.",
+    title: "Planetary scientists who are certain that Venus' heat results from a runaway greenhouse effect nevertheless remain baffled with Venus' transient double polar vortex.",
     sourcename: null,
 
     images: ["img/articles/venus-dipolar-vortex.jpg"],
@@ -3454,7 +3454,158 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     expert_ids: null,
     postscript: null
 
+   }, {
+
+    id: 114,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Venus' polar vortex is, like Earth's, not stable; they both occasionally split.",
+    sourcename: null,
+
+    images: ["img/articles/venus-transient-polar-vortex.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-vortex.jpg",
+    url: "http://www.wired.com/2010/09/venus-polar-vortex/",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    postscript: null
+
+   }, {
+
+    id: 115,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "An epic battle now looms between the money-flush marketing might of the anthropogenic warming scientific community and an important US government project which was initially designed to monitor nuclear explosions.",
+    sourcename: null,
+
+    images: ["img/headers/ctbo-station.jpg", "img/articles/ctbto-weather-predictions.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/ctbo-station.jpg",
+    url: "https://www.ctbto.org/press-centre/press-releases/2015/nothing-escapes-the-global-ear-nuclear-tests-volcanoes-earthquakes-or-meteors/",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    postscript: null
+
+   }, {
+
+    id: 116,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Laboratory observations of plasmas conducting electric currents demonstrate that they tend to form into filaments which exhibit both a long-range attraction and short-range repulsion with one another, making double twisting filaments a common aspect of electrical currents over the plasma medium.",
+    sourcename: null,
+
+    images: ["img/articles/birkeland-currents-1.jpg", "img/articles/birkeland-currents-2.jpg", "img/articles/birkeland-currents-3.jpg", "img/articles/birkeland-currents-4.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/Marklund-convection.jpg",
+    url: "https://www.thunderbolts.info/wp/2012/01/04/essential-guide-to-the-eu-chapter-7/",
+    text: null,
+    highighter: null,
+    expert_ids: [3],
+    postscript: null
+
+   }, {
+
+    id: 117,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Renowned Venus expert, FW Taylor's, confusion on Venus' double polar vortex is an important tell insofar as he appears to not connect the flow of charged particles at Venus' pole to laboratory observations of conducting plasmas.",
+    sourcename: null,
+
+    images: ["img/articles/birkeland-currents-5.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-vortex.jpg",
+    url: "http://www.space.com/19209-venus-atmosphere-magnetic-ropes.html",
+    text: null,
+    highighter: null,
+    expert_ids: [50],
+    postscript: null
+
+   }, {
+
+    id: 118,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The confusion over Venus' Birkeland Currents and splitting polar vortex tells us that atmospheric scientists are not connecting the dots on Earth's splitting polar vortex either.",
+    sourcename: null,
+
+    images: ["img/articles/birkeland-currents-6.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-vortex.jpg",
+    url: "http://www.theguardian.com/science/2006/apr/09/starsgalaxiesandplanets.spaceexploration",
+    text: null,
+    highighter: null,
+    expert_ids: [49],
+    postscript: null
+
+   }, {
+
+    id: 119,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The fact that the electrical plasma explanation for Venus' polar vortex can fully explain all of its small-scale features is a strong predictor of what will come of Earth's climate and weather prediction models.",
+    sourcename: null,
+
+    images: ["img/headers/venus-polar-vortex.jpg", "img/articles/birkeland-currents-7.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-vortex.jpg",
+    url: "http://www.holoscience.com/wp/venus-isnt-our-twin/",
+    text: null,
+    highighter: null,
+    expert_ids: [9,49],
+    postscript: null
+
  }];
+
 
   var experts = [{
     id: 0,
@@ -3805,6 +3956,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@FWTaylor",
     title: "Venus Expert / Head of Atmospheric, Oceanic and Planetary Physics at Oxford for 21 years from 1979 / Currently Halley Professor Emeritus in Oxford Physics and an Emeritus Fellow at Jesus College / Formerly for 10 years at the Jet Propulsion Laboratory, California Institute of Technology",
     image: "img/experts/f-w-taylor.jpg"
+
+  },{
+
+    id: 50,
+    name: "@ElizabethHowell",
+    title: "Space.com Contributor",
+    image: "img/experts/elizabeth-howell.jpg"
 
   }];
 

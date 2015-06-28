@@ -234,6 +234,8 @@
                 </ion-item>
             </ion-list>
 
+            <div class="spacer" style="width: 300px; height: 10px;"></div>
+
             <div ng-show="getCardById(article).images" ng-repeat="image in getCardById(article).images">
                 <a href="{{getCardById(article).url}}"><img ng-src="{{image}}" width="100%"></a>
             </div>
