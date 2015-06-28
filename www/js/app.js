@@ -514,12 +514,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     definition: "Plasma-coupled heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic plasma phenomena.",
     status: "Plasma-coupled heating is not widely known, has no particular conceptual label, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Plasma-coupled heating is a natural implication of the Electric Universe paradigm.",
     search_hit: null,
-    claim_ids: [1,2,3,4,5,6,7,104,8,9,10,94],
+    claim_ids: [120,2,3,4,5,6,7,104,8,9,10,94,1],
     critique_ids: [12,45,46],
     cmap_ids: [13,14,15,16,17,50,51,52,53,54,55,56,57,58,59],
     article_ids: [115,91,18,19,20,47],
     forum_ids: [21],
-    paper_ids: [22],
+    paper_ids: null,
     book_ids: [23,24,25],
     media_ids: [26,27,28,29],
     question_ids: [0,1,2,3,4],
@@ -539,11 +539,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Cosmic Plasma Debate",
+    title: "The Largely Unknown Cosmic Plasma Debate",
     sourcename: null,
 
     images: ["img/headers/AJ-vs-IEEE.jpg"],
-    definition: "There has been a debate over how to model cosmic plasmas (such as the solar wind) for more than half a century between the Astrophysical Journal and IEEE's Transactions on Plasma Science.",
+    definition: "There has been a widely overlooked debate over how to model cosmic plasmas (such as the solar wind) for more than half a century between the Astrophysical Journal and IEEE's Transactions on Plasma Science.",
     status: null,
     search_hit: null,
 
@@ -566,7 +566,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Plasmas Are Not Fluids",
+    title: "Contrary to Many Mathematically Elegant Models in Use Today, Plasmas Are Not Simply Magnetized Fluids",
     sourcename: null,
 
     images: null, // FILL!
@@ -574,7 +574,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: [60,62,61,63,65,66,67,68,69,70],
+    claim_ids: [70,60,62,61,63,65,66,67,68,69],
     critique_ids: null,
     next: 3,
     avatar: "img/avatars/plasma-not-fluids.jpg",
@@ -618,11 +618,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Polar Hot Spots",
+    title: "Why Do Some Planets Exhibit Polar Hot Spots?",
     sourcename: null,
 
     images: null, // FILL!
-    definition: "The presence of hot spots at the poles of Enceladus, Neptune and Venus, in particular, are suggestive of the simple idea that these moving charged particles can heat up the planets.",
+    definition: "The presence of hot spots at the poles of Enceladus, Neptune and Venus, in particular, are suggestive of the simple idea that these moving charged particles can heat up the planets where planetary magnetic fields concentrate them.",
     status: null,    
     search_hit: null,
 
@@ -644,7 +644,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Warming Martian Ice Caps",
+    title: "Are the Martian Ice Caps Warming?",
     sourcename: null,
 
     images: ["img/headers/martian-polar-ice-cap.jpg"],
@@ -674,7 +674,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     sourcename: null,
 
     images: null,
-    definition: "Pluto has continued to warm up even as it moves away from the Sun.",
+    definition: "Although the data remains sparse, there's reason to suspect that Pluto might have continued to warm up even as it moves away from the Sun.",
     status: null,
     search_hit: null,
 
@@ -798,24 +798,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     id: 11,
     controversy: false,
     parent: false,
-    type: "Claim",
+    type: "Paper",
     display: true,
-    title: "Plasma-Coupled Heating Is Not Captured by Existing Models",
-    sourcename: null,
+    title: "Electric field variability can significantly increase the amount of Joule heating, yet existing general circulation models assume a smooth field in both space and time.  In other words, the current climate models do not take electric joule heating into account.",
+    sourcename: "Journal of Geophysical Research",
 
-    images: null, // FILL!
-    definition: "Electric field variability can significantly increase the amount of Joule heating, yet existing general circulation models assume a smooth field in both space and time.  In other words, the current climate models do not take electric joule heating into account.",
+    images: ["img/papers/electric-joule-heating.jpg"],
+    definition: null,
     status: null,
     search_hit: null,
 
     claim_ids: null,
     critique_ids: null,
     next: null,
-    avatar: "img/avatars/general-circulation-models.jpg",
-    url: null,
+    avatar: "img/journals/journal-geophysical-research.png",
+    url: "http://nldr.library.ucar.edu/repository/assets/osgc/OSGC-000-000-004-001.pdf",
     text: null,
     highighter: null,
-    expert_ids: [0],
+    expert_ids: [51],
     nodes: null,
     postscript: null
 
@@ -2964,12 +2964,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Top-of-the-Atmosphere Drivers Cannot Be Ignored",
     sourcename: null,
 
-    images: null,
-    definition: "Conventional meteorology assumes that weather drives weather, and it arguably minimizes the effect of top-of-the-atmosphere drivers.",
+    images: ["img/headers/stratosphere-ocean-circulation.jpg"],
+    definition: "Conventional meteorology assumes that weather drives weather, and it arguably minimizes the effect of top-of-the-atmosphere drivers.  But, new lines of investigation are today being funded to learn more about the role that the polar vortex has upon the Earth's weather and temperature.",
     status: null,
     search_hit: null,
 
-    claim_ids: [11],
+    claim_ids: [122,124,123,125,126,121,115,129,130,127,128,11],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/toa-model-tuning.jpg",
@@ -3211,7 +3211,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Anomalously Fast Winds",
+    title: "Anomalously Fast Winds Perplex Planetary Scientists",
     sourcename: null,
 
     images: ["img/headers/uranus-winds-two-day-timeframe-1.jpg", "img/headers/uranus-winds-two-day-timeframe-2.jpg"],
@@ -3336,7 +3336,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "The homopolar motor concept can possibly be used to explain Earth's latitudinal shifting and speeds of the jet streams, insofar as changes in the larger electromagnetic environment can conceivably alter the geometry and rotational speeds of the larger plasma features.",
+    title: "The homopolar motor concept can possibly be used to explain Earth's shifting latitudes and speeds of the jet streams, insofar as changes in the larger electromagnetic environment can conceivably alter the geometry and rotational speeds of the larger plasma features.",
     sourcename: null,
 
     images: ["img/audio-video/jet-stream-shifting.jpg", "img/papers/historical-trends-in-the-jet-streams.jpg", "img/papers/jet-streams-move-poleward.jpg"],
@@ -3602,6 +3602,292 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     text: null,
     highighter: null,
     expert_ids: [9,49],
+    postscript: null
+
+  }, {
+
+    id: 120,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "What is a Plasma and Why Does it Matter?",
+    sourcename: null,
+
+    images: null, // FILL!
+    definition: "Up until the late 1950's, it was commonly assumed that space was a vacuum.  All of our scientific theories which preceded the direct observation of the Van Allen radiation belts essentially based upon this premise.  Yet, today we recognize that space is filled with charged particles (known as plasma), that 99%+ of the observable universe is in this plasma state, and that the Earth itself is embedded within the Sun's plasma environment.  Although the implications for our weather and climate models have taken time to reflect these discoveries, a coherent view of how this plasma environment influences weather and climate is starting to come together.",
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/plasma-ball.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [9],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 121,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "There are recent hints that changes associated with the polar vortex known as sudden stratospheric warming (SSW) events can significantly alter not only the weather which follows, but also possibly ocean circulation.",
+    sourcename: null,
+
+    images: ["img/articles/stratosphere-ocean-circulation.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-vortex.jpg",
+    url: "http://phys.org/news/2012-09-north-atlantic-achilles-heel-upper.html",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 122,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Weather experts traditionally point to uncertainties in weather data as a primary cause for inaccuracurate weather predictions.",
+    sourcename: null,
+
+    images: ["img/articles/weather-predictions-1.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/oceans.jpg",
+    url: "http://unofficialnetworks.com/2014/01/weather-climate-longrange-forecasting-inaccurate",
+    text: null,
+    highighter: null,
+    expert_ids: [52],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 123,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Climate experts currently treat Earth's weather and climate systems as though the space weather which Earth is immersed in has minimal influence.",
+    sourcename: null,
+
+    images: ["img/articles/space-earth-weather.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/upper-atmosphere.jpg",
+    url: "http://www.ips.gov.au/Educational/1/3/3",
+    text: null,
+    highighter: null,
+    expert_ids: [53],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 124,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "There is a popular meme known as the Butterfly Effect that is occasionally invoked to explain closed systems which exhibit difficult-to-predict changes.  Scientists refer to these modeling phenomena as nonlinearities.",
+    sourcename: null,
+
+    images: ["img/articles/butterfly-effect.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/butterfly.png",
+    url: "http://unofficialnetworks.com/2014/01/weather-climate-longrange-forecasting-inaccurate",
+    text: null,
+    highighter: null,
+    expert_ids: [52],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 125,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "It's been claimed online that general circulation models tend to reflect similar results because climate change comes from energy imbalances at the top of the atmosphere, yet climate models all hand-tune the top-of-the-atmosphere (TOA) energy balance.",
+    sourcename: null,
+
+    images: ["img/forums/slashdot-toa-part4.jpg", "img/forums/slashdot-toa-part7.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/general-circulation-models.jpg",
+    url: "http://slashdot.org/comments.pl?sid=7511261&cid=49849281",
+    text: null,
+    highighter: null,
+    expert_ids: [7],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 126,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The IPCC freely admits to its practice of TOA tuning; it's not a secret.",
+    sourcename: null,
+
+    images: ["img/forums/slashdot-toa-part5.jpg", "img/forums/slashdot-toa-part6.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/experts/IPCC.jpg",
+    url: "http://www.ipcc.ch/pdf/assessment-report/ar5/wg1/WG1AR5_Chapter09_FINAL.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [54],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 127,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "NASA is today funding the creation of a new 'non-hydrostatic' model which will strive to more accurately model Earth's electrical interactions with space.",
+    sourcename: null,
+
+    images: ["img/articles/yue-deng-1.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/upper-atmosphere.jpg",
+    url: "http://www.uta.edu/news/releases/2014/02/Deng-NASAgrant.php",
+    text: null,
+    highighter: null,
+    expert_ids: [51],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 128,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "These new Global Ionosphere-Thermosphere Models (GITM's) will take into account the charge change phenomena that the IPCC has been ignoring.",
+    sourcename: null,
+
+    images: ["img/articles/yue-deng-2.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/upper-atmosphere.jpg",
+    url: "http://www.uta.edu/news/releases/2013/03/deng-nasagrant.php",
+    text: null,
+    highighter: null,
+    expert_ids: [51],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 129,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "High-speed vertical winds that switch direction and oscillate have been observed at the poles.  They are currently referred to as 'thermospheric vertical winds'.",
+    sourcename: null,
+
+    images: ["img/papers/thermospheric-vertical-winds-1.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/upper-atmosphere.jpg",
+    url: "http://arxiv.org/pdf/1412.0077.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [56],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 130,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Although the researchers noticed that the thermospheric vertical winds were more sustained during solar maximum, they caution that there is no obvious driver for them.",
+    sourcename: null,
+
+    images: ["img/papers/thermospheric-vertical-winds-2.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/upper-atmosphere.jpg",
+    url: "http://onlinelibrary.wiley.com/doi/10.1029/2012JA017843/abstract",
+    text: null,
+    highighter: null,
+    expert_ids: [55],
+    nodes: null,
     postscript: null
 
  }];
@@ -3963,6 +4249,48 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@ElizabethHowell",
     title: "Space.com Contributor",
     image: "img/experts/elizabeth-howell.jpg"
+
+  },{
+
+    id: 51,
+    name: "@YueDeng",
+    title: "UT Arlington Physicist / Co-developer of a New 3-D Global Ionosphere-Thermosphere Model, or GITM",
+    image: "img/experts/yue-deng.jpg"
+
+  },{
+
+    id: 52,
+    name: "@MattHarvey",
+    title: "(unknown)",
+    image: "img/experts/anon.jpg"
+
+  },{
+
+    id: 53,
+    name: "@JohnKennewell",
+    title: "Director of the Australian Space Academy",
+    image: "img/experts/john-kennewell.jpg"
+
+  },{
+
+    id: 54,
+    name: "@IPCC",
+    title: "Intergovernmental Panel on Climate Change",
+    image: "img/experts/IPCC.jpg"
+
+  },{
+
+    id: 55,
+    name: "@MFLarsen",
+    title: "Department of Physics, Clemson University",
+    image: "img/experts/anon.jpg"
+
+  },{
+
+    id: 56,
+    name: "@ErdalYigit",
+    title: "George Mason University / Space Weather Scientist",
+    image: "img/experts/erdal-yigit.jpg"
 
   }];
 
