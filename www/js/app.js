@@ -548,7 +548,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     search_hit: null,
 
     claim_ids: [41,42,43,44,48,49],
-    comment_ids: [0,1],
+    comment_ids: null, // [0,1],
     critique_ids: null,
     next: 2,
     avatar: "img/journals/IEEE.png",
@@ -2586,7 +2586,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "When a plasma has the same number of plus and minus charge, it is said to be quasi-neutral.  However, it is commonly mistakenly thought that quasi-neutrality is equivalent to non-conductivity.  This is not the case because in a plasma, unlike in a neutral solid, the charge carriers are free to move about.",
+    title: "When a plasma has the same number of plus and minus charge, it is said to be quasi-neutral.  However, a common mistake is to confuse quasi-neutrality for non-conductivity.  This is not the case because in a plasma, unlike in a neutral solid, the charge carriers are free to move about.",
     sourcename: null,
 
     images: ["img/articles/quasi-neutral.jpg"],
