@@ -3896,7 +3896,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   var experts = [{
     id: 0,
     name: "@ChrisReeve",
-    title: "Electric Universe Layperson Advocate",
+    title: "Social Networker (paradigmsareconstructed:@t:gmail)",
     image: "img/experts/chris-reeve.png"
 
   },{
