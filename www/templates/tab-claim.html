@@ -32,6 +32,14 @@
                         <img ng-src="{{image}}" width="100%">
                     </div>
 
+		            <div class="spacer" style="width: 300px; height: 10px;"></div>
+
+                    <div ng-show="text" ng-repeat="text in getCardById(point).text">
+                        <blockquote>
+                            <div ng-bind-html="text.quote | sanitize"></div>
+                        </blockquote>
+                    </div>
+
 	                <div ng-show="point.postscript" class="row">
 	                    <div class="col-10">
 	                        <i class="icon ion-asterisk"></i>

@@ -514,7 +514,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     definition: "Plasma-coupled heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic plasma phenomena.",
     status: "Plasma-coupled heating is not widely known, has no particular conceptual label, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Plasma-coupled heating is a natural implication of the Electric Universe paradigm.",
     search_hit: null,
-    claim_ids: [120,2,3,4,5,6,7,104,8,9,10,94,1],
+    claim_ids: [120,2,3,4,5,6,7,104,8,9,10,94,1,131],
     critique_ids: [12,45,46],
     cmap_ids: [13,14,15,16,17,50,51,52,53,54,55,56,57,58,59],
     article_ids: [115,91,18,19,20,47],
@@ -2983,7 +2983,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 95,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "The sunspot number has traditionally been used as an indicator of solar activity even though it does not fully represent solar activity.",
@@ -3008,7 +3008,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 96,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "Sunspots are not a consistent indicator of solar activity because there are particular phases of the solar cycle where coronal holes (CH's) emit very fast solar wind, and the sunspot activity would not reflect this activity.",
@@ -3033,7 +3033,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 97,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "When solar activity is represented by the ak index of geomagnetic activity rather than sunspots alone, the Earth's global temperature changes correlate surprisingly well with solar activity.",
@@ -3058,7 +3058,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 98,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "Sunspot numbers appear to generally correlate with lower stratosphere temperature anomalies, minus the temporal effects of volcanic eruptions -- suggesting that the sunspots are somehow related to these electrical flows.",
@@ -3083,7 +3083,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 99,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "The two fundamental modes of solar wind heating appear to correspond with two of the states observed by Kristian Birkeland's terrella experiments -- a fundamental electromagnetic laboratory plasma physics form which appears to apply to both the Sun and the Earth.",
@@ -3108,7 +3108,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 100,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "Many climate modelers have decided to ignore the role of solar cycles in Earth's recent warming and subsequent cooling, even though there exists a 60-year solar cycle which coincides with these temperature changes.",
@@ -3133,7 +3133,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 101,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "It's not uncommon for climate experts to discuss the polar vortex without any mention of the larger twisting geometry of the polar magnetic field, as if they are unrelated.",
@@ -3158,7 +3158,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 102,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "Some theorists have gone so far as to claim that the intense chill of the polar vortex results from global warming.",
@@ -3183,7 +3183,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 103,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "What is rarely mentioned about the polar vortex is that modelers have thus far struggled to replicate its features.",
@@ -3208,7 +3208,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 104,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "Anomalously Fast Winds Perplex Planetary Scientists",
@@ -3233,7 +3233,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 105,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "Uranus' extremely low temperatures and its enormous distance from the Sun cast doubt on a thermal driver for its incredible winds.",
@@ -3258,7 +3258,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 106,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "Like Uranus, Neptune's anomalously fast winds remain a mystery in light of the amount of sunlight it receives.",
@@ -3283,7 +3283,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 107,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "A homopolar motor (aka Faraday disc, unipolar generator, acyclic generator or disk dynamo) spins due to the application of a voltage difference, which creates an electric current whose magnetic field curls according to the right-hand-rule.",
@@ -3308,7 +3308,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 108,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "The winds on Neptune and Venus might be anomalous for the very reason that planetary scientists are underestimating the role of electromagnetic forces in planetary winds.",
@@ -3333,7 +3333,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 109,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "The homopolar motor concept can possibly be used to explain Earth's shifting latitudes and speeds of the jet streams, insofar as changes in the larger electromagnetic environment can conceivably alter the geometry and rotational speeds of the larger plasma features.",
@@ -3358,7 +3358,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 110,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "The homopolar motor concept can possibly be used to explain the Sun's rapid changes in rotation at the poles, and indeed these changes are observed to reflect sudden changes in its electromagnetic environment.",
@@ -3383,7 +3383,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 111,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "There exists a largely untested idea that since Earth is a small charged body embedded within the Sun's larger plasma environment that weather on Earth is the result of changes in its surrounding plasma's electromagnetic environment.",
@@ -3408,7 +3408,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 112,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "Planetary scientists who are certain that Venus' heat results from a runaway greenhouse effect nevertheless remain baffled with Venus' transient double polar vortex.",
@@ -3433,7 +3433,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 113,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "A fundamental principle in electromagnetism is that two charge-carrying wires will tend to attract one another when carrying current in the same direction (when the movements of charge are aligned in parallel).",
@@ -3458,7 +3458,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 114,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "Venus' polar vortex is, like Earth's, not stable; they both occasionally split.",
@@ -3483,10 +3483,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 115,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
-    title: "An epic battle now looms between the money-flush marketing might of the anthropogenic warming scientific community and an important US government project which was initially designed to monitor nuclear explosions.",
+    title: "Researchers using infrasound data from a US government project initially designed to monitor nuclear explosions are trying to create new weather prediction models that make accurate predictions several weeks or even months in advance.",
     sourcename: null,
 
     images: ["img/headers/ctbo-station.jpg", "img/articles/ctbto-weather-predictions.jpg"],
@@ -3508,7 +3508,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 116,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "Laboratory observations of plasmas conducting electric currents demonstrate that they tend to form into filaments which exhibit both a long-range attraction and short-range repulsion with one another, making double twisting filaments a common aspect of electrical currents over the plasma medium.",
@@ -3533,7 +3533,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 117,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "Renowned Venus expert, FW Taylor's, confusion on Venus' double polar vortex is an important tell insofar as he appears to not connect the flow of charged particles at Venus' pole to laboratory observations of conducting plasmas.",
@@ -3558,7 +3558,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 118,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "The confusion over Venus' Birkeland Currents and splitting polar vortex tells us that atmospheric scientists are not connecting the dots on Earth's splitting polar vortex either.",
@@ -3583,7 +3583,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 119,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "The fact that the electrical plasma explanation for Venus' polar vortex can fully explain all of its small-scale features is a strong predictor of what will come of Earth's climate and weather prediction models.",
@@ -3608,7 +3608,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 120,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "What is a Plasma and Why Does it Matter?",
@@ -3634,7 +3634,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 121,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "There are recent hints that changes associated with the polar vortex known as sudden stratospheric warming (SSW) events can significantly alter not only the weather which follows, but also possibly ocean circulation.",
@@ -3660,7 +3660,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 122,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "Weather experts traditionally point to uncertainties in weather data as a primary cause for inaccuracurate weather predictions.",
@@ -3686,7 +3686,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 123,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "Climate experts currently treat Earth's weather and climate systems as though the space weather which Earth is immersed in has minimal influence.",
@@ -3712,7 +3712,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 124,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "There is a popular meme known as the Butterfly Effect that is occasionally invoked to explain closed systems which exhibit difficult-to-predict changes.  Scientists refer to these modeling phenomena as nonlinearities.",
@@ -3738,7 +3738,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 125,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "It's been claimed online that general circulation models tend to reflect similar results because climate change comes from energy imbalances at the top of the atmosphere, yet climate models all hand-tune the top-of-the-atmosphere (TOA) energy balance.",
@@ -3764,7 +3764,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 126,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "The IPCC freely admits to its practice of TOA tuning; it's not a secret.",
@@ -3790,7 +3790,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 127,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "NASA is today funding the creation of a new 'non-hydrostatic' model which will strive to more accurately model Earth's electrical interactions with space.",
@@ -3816,7 +3816,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 128,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "These new Global Ionosphere-Thermosphere Models (GITM's) will take into account the charge change phenomena that the IPCC has been ignoring.",
@@ -3842,7 +3842,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 129,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "High-speed vertical winds that switch direction and oscillate have been observed at the poles.  They are currently referred to as 'thermospheric vertical winds'.",
@@ -3868,7 +3868,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     id: 130,
     controversy: false,
-    parent: true,
+    parent: false,
     type: "Claim",
     display: true,
     title: "Although the researchers noticed that the thermospheric vertical winds were more sustained during solar maximum, they caution that there is no obvious driver for them.",
@@ -3887,6 +3887,241 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     text: null,
     highighter: null,
     expert_ids: [55],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 131,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Solar Lunar Action Technique (SLAT)",
+    sourcename: null,
+
+    images: ["img/headers/piers-corbyn-beat-uk-govt-predictions.png"],
+    definition: "Maverick weather predictor, Piers Corbyn, has made a name for himself as the only person in the world who can sometimes accurately predict extreme weather phenomena 30-45 days in advance, to the day.",
+    status: null,
+    search_hit: null,
+
+    claim_ids: [135,136,133,132,137,138,134,139],
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/solar-wind.gif",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [2],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 132,
+    controversy: false,
+    parent: false,
+    type: "Video",
+    display: true,
+    title: "Is it possible that the two solar cycles are indicative of a reversal in the direction of net charge movement for the solar current sheet?",
+    sourcename: null,
+
+    images: ["img/audio-video/piers-corbyn-odd-even-solar-cycles.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/solar-wind.gif",
+    url: "https://youtu.be/6R26PXRrgds?t=640",
+    text: [{quote: "<b>Piers Corbyn:</b> 'What's going on, then, in terms of the Sun every 22 years? ... And I did this after a conversation with Dave on the phone ... You see, there's a current sheet coming from the equator ... it's a bit wavy thing ... But, it comes out from the Sun ... in the old cycle, you're gonna have positive current moving in, so it means the particles coming out are electrons in the old cycle.  In the even cycle, it's gonna be protons is the net charge coming out.  So, that could be important -- the difference.'"}],
+    highighter: null,
+    expert_ids: [2],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 133,
+    controversy: false,
+    parent: false,
+    type: "Video",
+    display: true,
+    title: "Piers Corbyn claims that the Moon is important to jet stream activity (and hence weather prediction) insofar as it can pass through the Earth's magnetic tail when the Moon is full and well-eclipsed.",
+    sourcename: null,
+
+    images: ["img/audio-video/piers-corbyn-varying-magnetic-sectors.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/solar-wind.gif",
+    url: "https://youtu.be/6R26PXRrgds?t=695",
+    text: [{quote: "<b>Piers Corbyn:</b> 'This is the current sheet, which is very wavy and it goes round and round.  And in fact, the direction of the field changes ... might be once a week even, as the magnetic sectors change ... These are fundamental to what happens to the jet stream and the circulation of the Earth. And the interesting one here is the magnetic tail, which is connected, way back there, which of course the Moon hits every full Moon, depending how close it is ... how close to an eclipse.'"}],
+    highighter: null,
+    expert_ids: [2],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 134,
+    controversy: false,
+    parent: false,
+    type: "Video",
+    display: true,
+    title: "Piers Corbyn attributes the 60-year solar cycle modulation to the orbit of the Moon interacting with the 22-year magnetic solar cycle.",
+    sourcename: null,
+
+    images: ["img/audio-video/piers-corbyn-60year-cycle.jpg", "img/audio-video/piers-corbyn-SLAM.jpg", "img/audio-video/piers-corbyn-SLAM-2.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/moon.jpg",
+    url: "https://youtu.be/6R26PXRrgds?t=602",
+    text: [{quote: "<b>Piers Corbyn:</b> 'Another very important thing is these 60-year modulation, which is beats between the rotation of the nodes of the orbit of the Moon, where it crosses the ecliptic, and the 22-year magnetic cycle'"},
+           {quote: "<b>Piers Corbyn:</b> 'In detail, how does this 60 year cycle work?  Well, don't take these things literally, but this graph, it shows these temperatures, see ... Now, the yellow is an odd cycle, so we've just marked the peak of an odd sunspot cycle to the minimum following.  So, that is just the maximum falling stage of the odd sunspot cycle.  Okay?  The blue arrow means that there was a nodal crossing -- an eclipse of the Sun -- ... in the first half of December of ... a year.  And you mark it if it happens.  And that's just a measure of saying where is the nodal rotation of that year ... So, that is a measure ... of when we're gonna get these extra warmings, explicable in astronomical terms.  And must be involving electricity, just because of certain things I've said anyway.'"}],
+    highighter: null,
+    expert_ids: [2],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 135,
+    controversy: false,
+    parent: false,
+    type: "Video",
+    display: true,
+    title: "Piers Corbyn claims that changes in the solar wind influence the complex system of electric currents that surround the Earth, which in turn alter the jet stream.",
+    sourcename: null,
+
+    images: ["img/audio-video/piers-corbyn-jet-stream-solar-wind.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-vortex.jpg",
+    url: "https://youtu.be/6R26PXRrgds?t=1007",
+    text: [{quote: "<b>Piers Corbyn:</b> 'Our revolution is we predict changes in the jet stream due to a solar-driven thing, which are driven by those currents above ... You know, the electrojet, lots of stuff going on.  And furthermore, we can say that sometimes the jet stream will wave around wildly, like it did when we predicted this, and give you these great big incursions of cold air ... And during periods of low solar activity, the jet stream is generally longer, and therefore it's got more wiggle room (which politicians like of course).  And [with] more wiggle room, it can go up and down more, but also, we think the solar wind changes actually MAKE it go up and down more.  So, you've got these wild changes, big extremes.'"}],
+    highighter: null,
+    expert_ids: [2],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 136,
+    controversy: false,
+    parent: false,
+    type: "Video",
+    display: true,
+    title: "CO2-based models are apparently unable to replicate the observable changes in the jet stream.",
+    sourcename: null,
+
+    images: ["img/audio-video/piers-corbyn-jet-stream-position.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/jet-streams.jpg",
+    url: "https://youtu.be/6R26PXRrgds?t=951",
+    text: [{quote: "<b>Piers Corbyn:</b> 'So, the key question is: What causes weather extremes and climate change?  And the answer to that is -- and all the standard meteorologists say -- yeesss, jet stream ... the position of the jet stream is fundamental.  And I was at a meeting in the Royal Society recently where the other side said ... oh, we're doing this loads of fantastic work on CO2, but unfortunately, we've put lots of CO2 into the models, and the jet stream just does what it always did.  It doesn't wave around wildly like it is now.  And I stood up and said, well, I'm not surprised.  We predicted that it would wave around wildly now because of solar activity.  Then, they sort of look a bit bemused, and said ... well, well, we could consider some of your inputs into our models, perhaps.  Perhaps, Mr. Corbyn.  Then, I thought that's insane: You cannot put sensible stuff into a model of madness.'"}],
+    highighter: null,
+    expert_ids: [2],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 137,
+    controversy: false,
+    parent: false,
+    type: "Video",
+    display: true,
+    title: "The Solar Lunar Action Technique (SLAT) has not been fully disclosed to the public, but it is based upon solar activity indicators, the Sun-Earth magnetic field link and lunar modulation.",
+    sourcename: null,
+
+    images: ["img/audio-video/piers-corbyn-SWT-TWS.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/solar-wind.gif",
+    url: "https://youtu.be/6R26PXRrgds?t=1117",
+    text: [{quote: "<b>Piers Corbyn:</b> 'Now, the key to all of this -- the basic idea is -- we're gonna have world temperatures, or indeed any world parameter, is going to be a result of solar activity, which is an 11-year cycle, modulated by magnetic links, which together, of course, gives primarily a 22-year cycle with some wobbles in it, and lunar modulation, which is about this rotation of the plane of the Moon's orbit -- which on a monthly basis is 27.2 days, but it's to do with the 18.6 year rotation.  Now, obviously we haven't got a computer big enough to solve any of this, even given the arguments about what equations to apply anyway.  So, what we've done is we've got these magic ... equations where I predict what are called weather action indicators which are essentially descriptions of solar activity, magnetic links, lunar modulation, the total Sun-Earth magnetic linkage state ... and there are a few parameters ... w1, w2, w3, and so on.  So, we say okay, these are varying.  What are they going to be at Christmas, and when were they last like that in the past around Christmas? ... This world is simple enough maybe to have one input give roughly one output ... And we use weather maps in the past as models for the future.  And we modify them a little bit ... because, ah hang on, there's an R5 ... Big storms ... But we can look in the past ... We can find where obviously there was a lot of activity going on.  And we can even make estimates of what the Sun was doing, but you've gotta be careful with that.'"}],
+    highighter: null,
+    expert_ids: [2],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 138,
+    controversy: false,
+    parent: false,
+    type: "Video",
+    display: true,
+    title: "Piers Corbyn claims to have had success predicting sudden stratospheric warming events.",
+    sourcename: null,
+
+    images: ["img/articles/sudden-stratospheric-warming-data.gif"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/solar-wind.gif",
+    url: "https://youtu.be/6R26PXRrgds?t=1239",
+    text: [{quote: "<b>Piers Corbyn:</b> 'We've also done predictions of sudden warmings of the stratosphere, known in the trade as sudden stratospheric warmings (SSW's).  And these were known about to astrophysicists years ago, in the 60's.  And they noticed that the jet stream actually started waving more a week or so after these things.  But they didn't tell the meteorologists, and the meteorologists wouldn't have been interested anyways.  It's only recently that this has come to light, and we've made successful predictions of them ... When they wave around in the winter, you get big waves in the jet stream, and then you might get shunting out of cold air and snow.'"}],
+    highighter: null,
+    expert_ids: [2],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 139,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Piers Corbyn's work is enormously controversial amongst meteorologists, and there are a number of caveats to his claims.",
+    sourcename: null,
+
+    images: ["img/forums/piers-corbyn-wuwt-1.jpg", "img/forums/piers-corbyn-wuwt-2.jpg", "img/forums/piers-corbyn-wuwt-3.jpg", "img/forums/piers-corbyn-wuwt-4.jpg", "img/forums/piers-corbyn-wuwt-5.jpg", "img/forums/piers-corbyn-wuwt-6.jpg", "img/forums/piers-corbyn-wuwt-7.jpg", "img/forums/piers-corbyn-wuwt-8.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/experts/piers-corbyn.jpg",
+    url: "http://wattsupwiththat.com/2012/07/05/putting-piers-corbyn-to-the-test/",
+    text: null,
+    highighter: null,
+    expert_ids: [2],
     nodes: null,
     postscript: null
 
