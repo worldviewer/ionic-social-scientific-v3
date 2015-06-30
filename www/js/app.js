@@ -3905,7 +3905,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: [135,136,133,132,137,138,134,139],
+    claim_ids: [91,135,136,133,132,137,138,134,139],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/solar-wind.gif",
