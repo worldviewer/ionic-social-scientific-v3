@@ -621,12 +621,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Why Do Some Planets Exhibit Polar Hot Spots?",
     sourcename: null,
 
-    images: null, // FILL!
-    definition: "The presence of hot spots at the poles of Enceladus, Neptune and Venus, in particular, are suggestive of the simple idea that these moving charged particles can heat up the planets where planetary magnetic fields concentrate them.",
+    images: ["img/headers/earth-dipole.gif"],
+    definition: "The presence of hot spots at the poles of Enceladus, Neptune and Saturn, among others, are suggestive of the simple idea that these moving charged particles can heat up the planets where planetary magnetic fields concentrate them.",
     status: null,    
     search_hit: null,
 
-    claim_ids: null, // FILL!
+    claim_ids: [140,141,142,143,144,145],
     critique_ids: null,
     next: 5,
     avatar: "img/avatars/polar-hotspots.jpg",
@@ -4122,6 +4122,162 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     text: null,
     highighter: null,
     expert_ids: [2],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 140,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "One of the most potentially clear-cut examples of planetary-scale electrical heating in the solar system is that of Saturn's moon, Enceladus.",
+    sourcename: "@NASA",
+
+    images: ["img/articles/saturn-enceladus-connection.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-hotspots.jpg",
+    url: "https://www.nasa.gov/multimedia/imagegallery/image_feature_2069.html",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 141,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The electrical connection between Saturn and Enceladus has been confirmed by Cassini.  It shows up in at least two different ways: in Saturn's electromagnetic field, and in the synchronicity between the Saturnian aurora and Enceladus' polar activity.",
+    sourcename: null,
+
+    images: ["img/articles/enceladus-saturn-auroral-footprint.jpg", "img/articles/enceladus-saturn-time-variable-emissions.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-hotspots.jpg",
+    url: "https://www.thunderbolts.info/wp/2011/10/19/electric-enceladus/",
+    text: null,
+    highighter: null,
+    expert_ids: [30],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 142,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Remarkably, despite the observation of an electrical connection between Saturn and Enceladus, NASA never even mentions the possibility of electric joule heating as a cause for Enceladus' unexpected polar hot spot.  It's an awkward disconnect in light of the fact that many people today commonly cook with electrically-heated filaments.",
+    sourcename: "@NASA",
+
+    images: ["img/articles/enceladus-hot-poles.jpg", "img/articles/enceladus-heat.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-hotspots.jpg",
+    url: "http://www.nasa.gov/mission_pages/cassini/multimedia/pia06432.html",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 143,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "NASA has observed a hot pole for Neptune as well.",
+    sourcename: "@NASA",
+
+    images: ["img/articles/neptune-hot-pole.jpg", "img/articles/neptune-hot-pole-2.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-hotspots.jpg",
+    url: "http://www.jpl.nasa.gov/spaceimages/details.php?id=PIA09927",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 144,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Planetary scientists attribute Neptune's hot poles to selective heating of Neptune's northern and southern hemispheres.",
+    sourcename: null,
+
+    images: ["img/articles/neptune-hot-pole-4.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-hotspots.jpg",
+    url: "https://www.thunderbolts.info/wp/2014/05/05/neptune-is-plugged-in-2/",
+    text: null,
+    highighter: null,
+    expert_ids: [30],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 145,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Planetary scientists admitted their surprise with their observation of a hot spot at Saturn's north pole.",
+    sourcename: null,
+
+    images: ["img/articles/saturn-hot-spot.jpg", "img/articles/saturn-hexagon.gif", "img/articles/saturn-pole.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-hotspots.jpg",
+    url: "https://www.thunderbolts.info/wp/2013/05/27/saturns-northern-hot-spot-2/",
+    text: null,
+    highighter: null,
+    expert_ids: [30],
     nodes: null,
     postscript: null
 
