@@ -1,7 +1,7 @@
 # ThePeer.Reviews Worldviewer
 
 > Please note that this app is a work-in-progress; there may be links which do
-> not work.  For a typical workflow, search on "electric joule heating", and 
+> not work.  For a typical workflow, search on "plasma-coupled heating", and 
 > click the controversy that pops up.
 
 This is a mobile app that helps people to think like a scientist about current events and ongoing scientific controversies.  It's based upon the premise that authentic scientific thinking is not possible when the answers are simply handed to you.  In order to truly think like a scientist, a person must become accustomed to the process of engaging ongoing scientific controversies.

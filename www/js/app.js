@@ -514,7 +514,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     definition: "Plasma-coupled heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic plasma phenomena.",
     status: "Plasma-coupled heating is not widely known, has no particular conceptual label, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Plasma-coupled heating is a natural implication of the Electric Universe paradigm.",
     search_hit: null,
-    claim_ids: [120,2,3,4,5,6,7,104,8,9,10,94,1,131],
+    claim_ids: [120,146,2,3,4,5,6,7,104,8,9,10,94,1,131],
     critique_ids: [12,45,46],
     cmap_ids: [13,14,15,16,17,50,51,52,53,54,55,56,57,58,59],
     article_ids: [115,91,18,19,20,47],
@@ -4281,6 +4281,136 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     nodes: null,
     postscript: null
 
+  }, {
+
+    id: 146,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Our Technology Chronology Tends to Undermine Innovation in the Sciences",
+    sourcename: null,
+
+    images: null,
+    definition: "The rarely mentioned problem of the space-based sciences is that technology has left us with a historical timeline for observations which pits the momentum of prior belief against the consideration of ideas which only became worthwhile in light of recent discoveries.",
+    status: null,
+    search_hit: null,
+
+    claim_ids: [147,148,149,150],
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/first-radio-telescope.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 147,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Our textbook theories for the Sun, the Earth's weather and climate, and the space that separates the planets and stars were all based upon a now-disproven premise that space was essentially a vacuum.  The fact that space is filled with charged particles, making it a plasma, was not definitively settled until we first sent rockets into space, in the late 1950's.",
+    sourcename: "The Electric Universe",
+
+    images: ["img/books/plasma-history.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/the-electric-universe.png",
+    url: "http://www.amazon.com/Electric-Universe-Wallace-Thornhill-Talbott/dp/0977285138/",
+    text: null,
+    highighter: null,
+    expert_ids: [9],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 148,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The existence of large-scale interstellar magnetic fields was realized and then gradually demonstrated over the course of two decades, from the early 50's to the late 60's.",
+    sourcename: "The Invisible Universe",
+
+    images: ["img/books/cosmic-magnetic-fields.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/the-invisible-universe.png",
+    url: "http://www.amazon.com/Invisible-Universe-Story-Radio-Astronomy/dp/1441921567/",
+    text: null,
+    highighter: null,
+    expert_ids: [57],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 149,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The first observations of radio waves coming from space was so antithetical to the theories at the time, in the 40's, when it was first observed by radio engineers, that the astronomers of the time assumed it was either a hoax or a mistake.  Radio astronomy would not be considered a legitimate discipline until the late 1950's.",
+    sourcename: "The Invisible Universe",
+
+    images: ["img/books/radio-waves-from-space.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/the-invisible-universe.png",
+    url: "http://www.amazon.com/Invisible-Universe-Story-Radio-Astronomy/dp/1441921567/",
+    text: null,
+    highighter: null,
+    expert_ids: [57],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 150,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Our ability to make observations throughout the electromagnetic spectrum did not come all at once.",
+    sourcename: "Physics of the Plasma Universe",
+
+    images: ["img/books/em-chronology.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/physics-plasma-universe.png",
+    url: "http://www.amazon.com/Physics-Plasma-Universe-Anthony-Peratt/dp/1461478189/",
+    text: null,
+    highighter: null,
+    expert_ids: [58],
+    nodes: null,
+    postscript: "From the text: 'Graph shows approximate years when new technology made possible observation in the different regions of the electromagnetic spectrum.  As shown, most of the spectrum was not accessible until the mid-1970's'"
+
  }];
 
 
@@ -4682,6 +4812,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@ErdalYigit",
     title: "George Mason University / Space Weather Scientist",
     image: "img/experts/erdal-yigit.jpg"
+
+  },{
+
+    id: 57,
+    name: "@GerritVerschuur",
+    title: "Radio Astronomer",
+    image: "img/experts/gerrit-verschuur.jpg"
+
+  },{
+
+    id: 58,
+    name: "@AnthonyPeratt",
+    title: "Plasma Physicist / IEEE Peer Reviewer / Government Researcher",
+    image: "img/experts/anthony-peratt.jpg"
 
   }];
 
