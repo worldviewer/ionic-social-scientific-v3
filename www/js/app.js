@@ -4296,7 +4296,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: [147,148,149,150],
+    claim_ids: [147,148,149,150,152,151],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/first-radio-telescope.jpg",
@@ -4340,7 +4340,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "The existence of large-scale interstellar magnetic fields was realized and then gradually demonstrated over the course of two decades, from the early 50's to the late 60's.",
+    title: "The existence of large-scale interstellar magnetic fields was realized and then gradually demonstrated over the course of two decades, from the early 50's to the late 60's, but to this day, attempts to explain this observation continue to evoke speculative notions.",
     sourcename: "The Invisible Universe",
 
     images: ["img/books/cosmic-magnetic-fields.jpg"],
@@ -4366,7 +4366,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "The first observations of radio waves coming from space was so antithetical to the theories at the time, in the 40's, when it was first observed by radio engineers, that the astronomers of the time assumed it was either a hoax or a mistake.  Radio astronomy would not be considered a legitimate discipline until the late 1950's.",
+    title: "The first observations of radio waves coming from space were so antithetical to the theories at the time, in the 40's, when they were first observed by radio engineers, that the astronomers of the time assumed it was either a hoax or a mistake.  Radio astronomy would not be considered a legitimate discipline until the late 1950's.",
     sourcename: "The Invisible Universe",
 
     images: ["img/books/radio-waves-from-space.jpg"],
@@ -4392,10 +4392,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "Our ability to make observations throughout the electromagnetic spectrum did not come all at once.",
-    sourcename: "Physics of the Plasma Universe",
+    title: "Our ability to make observations throughout the electromagnetic spectrum did not come all at once.  In fact, most of the spectrum was not accessible to us until the mid-1970's (!) -- long after most of our theories about space had solidified.",
+    sourcename: null,
 
-    images: ["img/books/em-chronology.jpg"],
+    images: ["img/books/em-chronology-2.jpg"],
     definition: null,
     status: null,
     search_hit: null,
@@ -4403,13 +4403,65 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     claim_ids: null,
     critique_ids: null,
     next: null,
-    avatar: "img/books/physics-plasma-universe.png",
-    url: "http://www.amazon.com/Physics-Plasma-Universe-Anthony-Peratt/dp/1461478189/",
+    avatar: "img/avatars/first-radio-telescope.jpg",
+    url: "https://books.google.com/books?id=ZSlJRAeL95sC&lpg=PA57&pg=PA56#v=onepage",
     text: null,
     highighter: null,
     expert_ids: [58],
     nodes: null,
     postscript: "From the text: 'Graph shows approximate years when new technology made possible observation in the different regions of the electromagnetic spectrum.  As shown, most of the spectrum was not accessible until the mid-1970's'"
+
+  }, {
+
+    id: 151,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Although there have certainly been numerous observations which already suggested it, it has only been with the launch of the Herschel telescope in 2009 designed to observe the EM wavelengths from far infrared to sub-millimeter that we can now claim with absolute confidence that the universe is in fact filamentary on all astronomical scales.  The Earth's atmosphere is the exception; not the rule.",
+    sourcename: null,
+
+    images: ["img/articles/herschel.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/experts/ESA.gif",
+    url: "http://sci.esa.int/herschel/55942-herschels-hunt-for-filaments-in-the-milky-way/",
+    text: null,
+    highighter: null,
+    expert_ids: [59],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 152,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The observable filamentary nature of the universe has yet to have any substantive impact upon our scientific theories.  Yet, filaments are indicators of charge/energy transfer within the plasma laboratory.",
+    sourcename: null,
+
+    images: ["img/books/plasma-filamentary-assumption.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/Marklund-convection.jpg",
+    url: "https://books.google.com/books?vid=ISBN079235527X&id=ZSlJRAeL95sC&pg=PA57&lpg=PA57#v=onepage",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
 
  }];
 
@@ -4826,6 +4878,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@AnthonyPeratt",
     title: "Plasma Physicist / IEEE Peer Reviewer / Government Researcher",
     image: "img/experts/anthony-peratt.jpg"
+
+  },{
+
+    id: 59,
+    name: "@ESA",
+    title: "European Space Agency",
+    image: "img/experts/ESA.gif"
 
   }];
 
