@@ -4296,7 +4296,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: [147,154,155,148,149,150,151,152],
+    claim_ids: [147,148,154,155,149,150,151,152],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/first-radio-telescope.jpg",
@@ -4444,7 +4444,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "The predicted filamentary nature of the universe has yet to have any substantive impact upon mainstream scientific theories.  Yet, filaments are indicators of charge/energy transfer within the plasma laboratory, so it is likely that they will come to be recognized as playing a similar role in space.",
+    title: "The filamentary nature of the universe was a fundamental prediction of a plasma-based universe, but the prediction was made so long before its vindication that mainstream theorists are largely no longer aware of it.  Thus, it has yet to have any substantive impact upon mainstream scientific theories.  Yet, filaments are indicators of charge/energy transfer within the plasma laboratory, so it is likely that they will come to be recognized as playing a similar role in space.",
     sourcename: null,
 
     images: ["img/books/plasma-filamentary-assumption.jpg"],
@@ -4478,7 +4478,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: null,
+    claim_ids: [156,157,158,159,160,161,162,163,164,165,166,167,168],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/upper-atmosphere.jpg",
@@ -4538,6 +4538,344 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     text: null,
     highighter: null,
     expert_ids: [61],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 156,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "There are some basic facts about plasma's prevalence which are important to know -- the first being that it is the dominant state of observable matter.",
+    sourcename: null,
+
+    images: ["img/books/plasma-99-1.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/plasma-99-1-cover.png",
+    url: "https://books.google.com/books?vid=ISBN079235527X&id=ZSlJRAeL95sC&pg=PA57&lpg=PA57&ots=jnEIJGfx6t#v=onepage&q&f=false",
+    text: null,
+    highighter: null,
+    expert_ids: [58],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 157,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "There is no longer debate over plasma's prevalence in the cosmos.  The debate today pertains to plasma's behavior, and how to model it.",
+    sourcename: null,
+
+    images: ["img/books/plasma-99-2.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/plasma-99-2-cover.png",
+    url: "https://books.google.com/books?vid=ISBN9812381554&id=v99GV71BNccC&pg=PA14&lpg=PA14&ots=nyCdxEoDvA#v=onepage&q&f=false",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 158,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Plasmas on Earth are somewhat rare, and the argument can be made that our attempts to understand our observations of space are complicated by our perspective from this slim non-plasma pocket of space.",
+    sourcename: null,
+
+    images: ["img/books/plasma-99-3.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/plasma-99-3-cover.png",
+    url: "https://books.google.com/books?vid=ISBN354065285X&id=4cHkd77TSHcC&pg=PA11&lpg=PA11&ots=xdaxcYVbbx&dq=plasma+99.9%25+universe&sig=m9CJtNeOS5UD_v8_C6OC-gxJ6Pk#v=onepage&q&f=false",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 159,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The natural sources of plasma that we are familiar with here on Earth tend to be high-energy, but it doesn't have to be that way.",
+    sourcename: null,
+
+    images: ["img/books/plasma-99-4.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/plasma-99-4-cover.png",
+    url: "https://books.google.com/books?vid=ISBN186094079X&id=e4yupcOzJxkC&pg=PP1&lpg=PP1&ots=6xtjT18iOQ&dq=plasma+99%25+universe&sig=i96aK5VoNeZsM9B3rN7igy2umyE#v=onepage&q=plasma%2099%25%20universe&f=false",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 160,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "It is curious that although plasmas play a major role in the universe, the popular science literature tends to mention them only in passing.",
+    sourcename: null,
+
+    images: ["img/books/plasma-99-5.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/plasma-99-5-cover.png",
+    url: "https://books.google.com/books?vid=ISBN0521364833&id=VcueZlunrbcC&pg=PA2&lpg=PA2&ots=SwBeJMiXx9&dq=plasma+99%25+universe&sig=YdQ9lsMb-JB1BK19STcBe_vumXw#v=onepage&q&f=false",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 161,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Notice how these texts admit that plasmas play a fundamental role in nature, and yet astrophysicists and cosmologists nevertheless insist that it is dark matter and dark energy which are responsible for most of what we see happening in space.  Do you see the contradiction?",
+    sourcename: null,
+
+    images: ["img/books/plasma-99-6.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/plasma-99-6-cover.png",
+    url: "https://books.google.com/books?vid=ISBN3540652841&id=wLN69UmwyJsC&pg=PP1&lpg=PP1&dq=plasma+99%25+universe&sig=DObg7XXvjV_CYCYIAGDnJd_PvDE#v=onepage&q&f=false",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 162,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The fact that we still call plasma the 'fourth' state of matter demonstrates the chronology of its discovery (and our legacy bias) rather than its importance to cosmic observations.",
+    sourcename: null,
+
+    images: ["img/books/plasma-99-7.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/plasma-99-7-cover.png",
+    url: "http://www.amazon.com/Spacecraft-power-technologies-Space-Technology/dp/1860941176/ref=sr_1_1?s=books&ie=UTF8&qid=1436332400&sr=1-1&keywords=9781860941177",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 163,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Astrophysicists and astronomers today only rarely discuss plasma's ability to conduct electrical currents within the astronomical context, but there is no doubt by now that it's true.",
+    sourcename: null,
+
+    images: ["img/books/plasma-99-8.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/plasma-99-8-cover.png",
+    url: "http://www.nap.edu/openbook.php?record_id=10816&page=188",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 164,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The fact is that there is only about 50 miles of atmosphere before the electron density starts to significantly increase, and it is virtually all plasma from there to the nearest rocks.",
+    sourcename: null,
+
+    images: ["img/books/plasma-99-9.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/plasma-99-9-cover.png",
+    url: "https://books.google.com/books?id=w1CJHagviVsC&dq=plasma%2099%20universe%20date%3A2003-2007&source=gbs_book_other_versions",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 165,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Part of the reason that there's a debate over how to model cosmic plasmas is that the plasma state is tricky to model, and the simplifications that are commonly deployed present an opportunity for theorists to impose the former pre-plasma worldview upon observations.",
+    sourcename: null,
+
+    images: ["img/books/plasma-99-10.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/plasma-99-10-cover.png",
+    url: "https://books.google.com/books?vid=ISBN3540206175&id=HnyPP4B4n-4C&pg=PA4&lpg=PA4&ots=JYLozZJ9Sq&dq=plasma+99+universe+date:2003-2007&num=50&sig=CsyG2Lat1MiND3usk1bMYyItd9Q#v=onepage&q&f=false",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 166,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The fact that we exist in an atmosphere which is largely not a plasma is unlikely to be an accident; after all, high-energy electricity also goes by the name of radiation.",
+    sourcename: null,
+
+    images: ["img/books/plasma-99-11.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/Marklund-convection.jpg",
+    url: "http://science.nasa.gov/science-news/science-at-nasa/1999/ast07sep99_1/",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 167,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Astrophysicists have a long history of referring to interstellar matter as gases dominated by gravitational forces, but we'd be wise to question that approach in light of the observed ionization of interstellar space.",
+    sourcename: "@NASA",
+
+    images: ["img/books/plasma-99-12.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/Marklund-convection.jpg",
+    url: "http://helios.gsfc.nasa.gov/qa_cr.html#plasma",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 168,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Is it not just a little bit odd how little discussion we see in the popular science press today in light of plasma's apparent prevalence and importance?  The contradiction raises numerous important questions -- and many of these questions pertain specifically to weather and climate.",
+    sourcename: null,
+
+    images: ["img/books/plasma-99-13.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/plasma-99-13-cover.png",
+    url: "https://books.google.co.uk/books?id=u8nvAAAAMAAJ&q=99%25+plasma+universe&dq=99%25+plasma+universe&hl=en&sa=X&ei=mfirUIu2DLG00QWy9YH4AQ",
+    text: null,
+    highighter: null,
+    expert_ids: null,
     nodes: null,
     postscript: null
 
