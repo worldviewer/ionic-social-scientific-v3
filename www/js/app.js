@@ -4296,7 +4296,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: [147,148,149,150,151,152],
+    claim_ids: [147,154,155,148,149,150,151,152],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/first-radio-telescope.jpg",
@@ -4486,6 +4486,58 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     text: null,
     highighter: null,
     expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 154,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The observation of cosmic magnetic fields as large as entire galaxies is difficult to reconcile without large-scale electric currents to cause them.",
+    sourcename: null,
+
+    images: ["img/articles/M51-magnetic-field.jpg", "img/articles/magnetic-fields-uncomfortable-silence-1.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cosmic-magnetic-fields.jpg",
+    url: "http://www.universetoday.com/85087/astronomy-without-a-telescope-cosmic-magnetic-fields/",
+    text: null,
+    highighter: null,
+    expert_ids: [60],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 155,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "It is increasingly recognized by astrophysicists and astronomers that electrical currents must be the cause for the magnetic fields which are associated with the arms of spiral galaxies.",
+    sourcename: null,
+
+    images: ["img/articles/milky-way-magnet-electrical-currents.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cosmic-magnetic-fields.jpg",
+    url: "http://www.space.com/29819-magnets-attract-from-deep-space-to-your-desktop.html",
+    text: null,
+    highighter: null,
+    expert_ids: [61],
     nodes: null,
     postscript: null
 
@@ -4911,6 +4963,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@ESA",
     title: "European Space Agency",
     image: "img/experts/ESA.gif"
+
+  },{
+
+    id: 60,
+    name: "@UniverseToday",
+    title: "Universe Today",
+    image: "img/experts/universe-today.png"
+
+  },{
+
+    id: 61,
+    name: "@BryanGaensler",
+    title: "Director, Dunlap Institute for Astronomy and Astrophysics at University of Toronto",
+    image: "img/experts/bryan-gaensler.jpg"
 
   }];
 
