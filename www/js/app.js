@@ -514,7 +514,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     definition: "Plasma-coupled heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic plasma phenomena.",
     status: "Plasma-coupled heating is not widely known, has no particular conceptual label, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Plasma-coupled heating is a natural implication of the Electric Universe paradigm.",
     search_hit: null,
-    claim_ids: [120,146,2,3,4,5,6,7,104,8,9,10,94,1,131],
+    claim_ids: [146,153,120,2,3,4,5,6,7,104,8,9,10,94,1,131],
     critique_ids: [12,45,46],
     cmap_ids: [13,14,15,16,17,50,51,52,53,54,55,56,57,58,59],
     article_ids: [115,91,18,19,20,47],
@@ -570,7 +570,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     sourcename: null,
 
     images: null, // FILL!
-    definition: "Conventional theory models this flow of charged particles fundamentally as a magnetized fluid, but these models have been in dispute since their inception.",
+    definition: "Conventional theorists will oftentimes model plasma's electrodynamic nature as a magnetized fluid, but these models have been in dispute since their inception.  In light of plasma's now-accepted prevalence in space, the general lack of critical discussion amongst established scientists about how to model it should be viewed as a bit of a red flag when contrasted with the eagerness with which far more exotic and hypothetical matters are conjectured.  If plasmas are so common, then it stands to reason that only minor modeling mistakes could have a profound effect upon our interpretations of cosmic phenomena.",
     status: null,
     search_hit: null,
 
@@ -596,7 +596,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     sourcename: null,
 
     images: null, // FILL!
-    definition: "Plasma-coupled heating stems from the idea that the solar wind can support the flow of electric currents, and advocates point to the fact that the solar wind is oftentimes guided by planetary magnetic fields into the poles.",
+    definition: "The solar wind is not actually a wind, like on Earth.  Unlike a wind of air, the solar wind is a highly conductive plasma medium that can support the transmission of electric currents.  It's vital to consider such currents because not only can they be difficult to observe, but they can also, in theory, suddenly dump energy into the Earth's weather and climate systems.",
     status: null,
     search_hit: null,
 
@@ -648,7 +648,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     sourcename: null,
 
     images: ["img/headers/martian-polar-ice-cap.jpg"],
-    definition: "It was noted in 2005 by NASA that Mars' ice caps had also been diminishing for three summers in a row.",
+    definition: "It was noted in 2005 by NASA that Mars' ice caps had also been diminishing for three summers in a row.  But, how much faith can we place in this claim?",
     status: null,
     search_hit: null,
 
@@ -700,7 +700,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     sourcename: null,
 
     images: null, // FILL!
-    definition: "Many atmospheric circulation models are unable to reproduce the observed polar stratospheric winds (aka the polar vortex).",
+    definition: "Many atmospheric circulation models are unable to reproduce the observed polar stratospheric winds (aka the polar vortex), and that is a huge problem for these models because things happening at the polar vortex can influence the entire planet's climate.",
     status: null,
     search_hit: null,
 
@@ -752,7 +752,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     sourcename: null,
 
     images: null, // FILL!
-    definition: "The solar wind intensity correlates with lightning strikes, raising questions about lightning's underlying cause, and suggesting that the Earth is part of a larger electrical circuit.",
+    definition: "The solar wind intensity correlates with lightning strikes, raising questions about lightning's underlying cause, and suggesting that the Earth is possibly part of a larger electrical circuit.",
     status: null,
     search_hit: null,
 
@@ -778,7 +778,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     sourcename: null,
 
     images: null, // FILL!
-    definition: "Both show up in tandem, as a variety of overlapping solar cycles.",
+    definition: "The Sun exhibits a variety of overlapping solar cycles, and there is a 60-year cycle which appears to coincide with recent temperature changes here on Earth.",
     status: null,
     search_hit: null,
 
@@ -3611,11 +3611,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "What is a Plasma and Why Does it Matter?",
+    title: "So, What is a Plasma and Why Does it Matter?",
     sourcename: null,
 
     images: null, // FILL!
-    definition: "Up until the late 1950's, it was commonly assumed that space was a vacuum.  All of our scientific theories which preceded the direct observation of the Van Allen radiation belts essentially based upon this premise.  Yet, today we recognize that space is filled with charged particles (known as plasma), that 99%+ of the observable universe is in this plasma state, and that the Earth itself is embedded within the Sun's plasma environment.  Although the implications for our weather and climate models have taken time to reflect these discoveries, a coherent view of how this plasma environment influences weather and climate is starting to come together.",
+    definition: "A plasma is a gas that has some percentage of unbound, charged particles.  Its behavior often fundamentally differs from that of a gas, yet the models we use in the space sciences today -- including our weather and climate models -- continue to largely disregard these differences as well as its pervasiveness.  It's taking a surprisingly long time for these space sciences discoveries to have an effect upon related domains.",
     status: null,
     search_hit: null,
 
@@ -3901,7 +3901,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     sourcename: null,
 
     images: ["img/headers/piers-corbyn-beat-uk-govt-predictions.png"],
-    definition: "Maverick weather predictor, Piers Corbyn, has made a name for himself as the only person in the world who can sometimes accurately predict extreme weather phenomena 30-45 days in advance, to the day.",
+    definition: "Maverick weather predictor, Piers Corbyn, has made a name for himself as the only person in the world who can sometimes accurately predict extreme weather phenomena 30-45 days in advance, to the day.  His technique is based upon intense solar events, which he predicts with the help of the 60-year solar cycle.",
     status: null,
     search_hit: null,
 
@@ -4288,15 +4288,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "Our Technology Chronology Tends to Undermine Innovation in the Sciences",
+    title: "Our Technology Chronology Complicates Innovation in the Space Sciences; And Our Weather and Climate Theories Can Become Confused as a Result",
     sourcename: null,
 
     images: null,
-    definition: "The rarely mentioned problem of the space-based sciences is that technology has left us with a historical timeline for observations which pits the momentum of prior belief against the consideration of ideas which only became worthwhile in light of recent discoveries.",
+    definition: "Up until the late 1950's, it was commonly assumed that space was a vacuum.  All of our scientific theories which preceded the direct observation of the Van Allen radiation belts in 1958 with the first space rockets essentially based upon this false premise.  This problem is in fact a pattern for the space sciences, and it repeatedly pits the momentum of textbook theory against the potential disruption of unexpected, novel observations.",
     status: null,
     search_hit: null,
 
-    claim_ids: [147,148,149,150,152,151],
+    claim_ids: [147,148,149,150,151,152],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/first-radio-telescope.jpg",
@@ -4444,7 +4444,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "The observable filamentary nature of the universe has yet to have any substantive impact upon our scientific theories.  Yet, filaments are indicators of charge/energy transfer within the plasma laboratory.",
+    title: "The predicted filamentary nature of the universe has yet to have any substantive impact upon mainstream scientific theories.  Yet, filaments are indicators of charge/energy transfer within the plasma laboratory, so it is likely that they will come to be recognized as playing a similar role in space.",
     sourcename: null,
 
     images: ["img/books/plasma-filamentary-assumption.jpg"],
@@ -4457,6 +4457,32 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     next: null,
     avatar: "img/avatars/Marklund-convection.jpg",
     url: "https://books.google.com/books?vid=ISBN079235527X&id=ZSlJRAeL95sC&pg=PA57&lpg=PA57#v=onepage",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 153,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Surprise: Plasma is the Universe's Fundamental State for Observable Matter",
+    sourcename: null,
+
+    images: null,
+    definition: "Although scientists and science journalists have (so far) failed to go out of their way to advertise the fact to the public, numerous academic textbooks today agree that the Earth's atmosphere is an exceedingly thin shell of largely neutral gas which is immersed within an immense sea of charged particles.  It stands to reason that this far larger sea of charged particles has a tremendous influence upon that thin shell of neutral gas embedded within it.",
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/upper-atmosphere.jpg",
+    url: null,
     text: null,
     highighter: null,
     expert_ids: null,
