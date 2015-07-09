@@ -545,6 +545,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/headers/AJ-vs-IEEE.jpg"],
     definition: "There has been a widely overlooked debate over how to model cosmic plasmas (such as the solar wind) for more than half a century between the Astrophysical Journal and IEEE's Transactions on Plasma Science.",
     status: null,
+    copy_text: null,
     search_hit: null,
 
     claim_ids: [41,42,43,44,48,49],
@@ -572,6 +573,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "Conventional theorists will oftentimes model plasma's electrodynamic nature as a magnetized fluid, but these models have been in dispute since their inception.  In light of plasma's now-accepted prevalence in space, the general lack of critical discussion amongst established scientists about how to model it should be viewed as a bit of a red flag when contrasted with the eagerness with which far more exotic and hypothetical matters are conjectured.  If plasmas are so common, then it stands to reason that only minor modeling mistakes could have a profound effect upon our interpretations of cosmic phenomena.",
     status: null,
+    copy_text: "Although it's rarely mentioned, many of the most popular theories for space phenomena today depend upon an untested assumption about cosmic plasmas that prioritizes mathematically elegant simplifications over many decades of laboratory plasma observations.<br><br>Astrophysicists and other scientists who study astronomical imagery commonly assert that cosmic plasmas, unlike their laboratory counterparts, are essentialy like <b>fluids with frozen-in magnetic fields</b>; that plasmas can be modeled as <b>superconductors, with infinite conductivity, that instantaneously charge-neutralize</b>; and because of this lack of electrical resistance, the cosmic plasmas <b>cannot sustain an electric field</b>.<br><br>Left out of the numerous popular science articles and peer-reviewed publications is any mention of the <b>questions which have been raised since the beginning of the space era whether this modeling approach -- known as magnetohydrodynamics (MHD) -- can correctly describe space plasmas</b>.<br><br>It's probably not a coincidence that the combined effect of these assumptions is to remove the cosmic plasma's ability to interact electromagnetically (an inescapable fact of the plasma laboratory), rendering the cosmic plasma much like a gas or fluid with a magnetic field embedded within it. It's a suspicious approach insofar as it puts off any need to reconsider the former gas-based theories.<br><br>Neither is it commonly mentioned that <b>the man who invented this approach in 1953 -- Hannes Alfven -- would subsequently distance himself from its widespread application within the astrophysical community to phenomena</b> which it clearly did not apply.  Astrophysicists would give Alfven the Nobel for his creation of MHD in 1970, and in what will one day surely be the subject of screenplays, <b>Alfven chose to use the occasion to lecture astrophysicists on why this MHD approach could not possibly succeed</b>.<br><br>What is astounding is that anybody who actually looks at plasma's behavior can intuitively distinguish it from that of a fluid: <b>Chances are that not a single person who has ever looked at a novelty plasma globe's long-lived filaments which are attracted to and twist around one another without combining, has likely ever remarked at how much it looks like a fluid!</b><br><br>It is a very curious (and unfortunate) fact that many avid enthusiasts of the abstract mathematics of fractals appear completely uninterested in contemplating the implications of a universe who's dominant state for matter exhibits these same self-similar tendencies.",
     search_hit: null,
 
     claim_ids: [70,60,62,61,63,65,66,67,68,69],
@@ -598,9 +600,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "The solar wind is not actually a wind, like on Earth.  Unlike a wind of air, the solar wind is a highly conductive plasma medium that can support the transmission of electric currents.  It's vital to consider such currents because not only can they be difficult to observe, but they can also, in theory, suddenly dump energy into the Earth's weather and climate systems.",
     status: null,
+    copy_text: "There exists a common misconception that the solar wind cannot carry electric currents for the simple reason that it generally exhibits the same number of electrons and protons.<br><br>And yet, throughout most of the volume of a glow discharge lamp (such as a high-pressure sodium bulb), the plasma just the same exhibits equal numbers of opposite charges.  <b>Yet, electrical currents plainly power these bulbs</b>.<br><br>Such a plasma with equal charges is said to be <b>quasi-neutral</b>.  Our tendency, based upon observations of solids under similar circumstances, is to imagine that the solar wind is therefore non-conductive.  However, this could not be further from the truth, for <b>conductivity is a measure of the freedom of charge carriers within a medium</b> -- and in that light, plasmas are clearly extremely conductive.<br><br><b>What surely confuses the discussion is the fact that astrophysicists tend to avoid usage of the term 'electric current' within the context of astronomical observations, even when the term clearly applies</b>.  Peer-reviewed papers instead point to the magnetic fields that we can see, and which we can expect to be associated with electric currents.  They refer to those fields variously as <b>magnetic ropes</b>, <b>flux tubes</b> or even in some instances, <b>elephant trunks</b>.",
     search_hit: null,
 
-    claim_ids: [80,78,81,79,82,83],
+    claim_ids: [80,78,81,79,82,169,83],
     critique_ids: null,
     next: 4,
     avatar: "img/avatars/solar-wind-current.jpg",
@@ -624,6 +627,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/headers/earth-dipole.gif"],
     definition: "The presence of hot spots at the poles of Enceladus, Neptune and Saturn, among others, are suggestive of the simple idea that these moving charged particles can heat up the planets where planetary magnetic fields concentrate them.",
     status: null,    
+    copy_text: null,
     search_hit: null,
 
     claim_ids: [140,141,142,143,144,145],
@@ -650,6 +654,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/headers/martian-polar-ice-cap.jpg"],
     definition: "It was noted in 2005 by NASA that Mars' ice caps had also been diminishing for three summers in a row.  But, how much faith can we place in this claim?",
     status: null,
+    copy_text: null,
     search_hit: null,
 
     claim_ids: [71,72,73,74,75,76,77],
@@ -676,6 +681,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null,
     definition: "Although the data remains sparse, there's reason to suspect that Pluto might have continued to warm up even as it moves away from the Sun.",
     status: null,
+    copy_text: null,
     search_hit: null,
 
     claim_ids: [92,93],
@@ -702,6 +708,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "Many atmospheric circulation models are unable to reproduce the observed polar stratospheric winds (aka the polar vortex), and that is a huge problem for these models because things happening at the polar vortex can influence the entire planet's climate.",
     status: null,
+    copy_text: null,
     search_hit: null,
 
     claim_ids: [101,102,103],
@@ -728,6 +735,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/headers/polar-vortex-split.jpg", "img/headers/venus-polar-vortex-2.jpg"],
     definition: "The observed splitting of the polar vortex on both Earth and Venus is an expected feature of laboratory plasmas when they are conducting electrical currents, yet climate and planetary scientists claim to not understand either observation.",
     status: null,
+    copy_text: null,
     search_hit: null,
 
     claim_ids: [112,114,113,116,117,118,119],
@@ -754,6 +762,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "The solar wind intensity correlates with lightning strikes, raising questions about lightning's underlying cause, and suggesting that the Earth is possibly part of a larger electrical circuit.",
     status: null,
+    copy_text: null,
     search_hit: null,
 
     claim_ids: [84,86,85,87,89,88,90,111],
@@ -780,6 +789,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "The Sun exhibits a variety of overlapping solar cycles, and there is a 60-year cycle which appears to coincide with recent temperature changes here on Earth.",
     status: null,
+    copy_text: null,
     search_hit: null,
 
     claim_ids: [98,95,96,97,99,100],
@@ -2967,6 +2977,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/headers/stratosphere-ocean-circulation.jpg"],
     definition: "Conventional meteorology assumes that weather drives weather, and it arguably minimizes the effect of top-of-the-atmosphere drivers.  But, new lines of investigation are today being funded to learn more about the role that the polar vortex has upon the Earth's weather and temperature.",
     status: null,
+    copy_text: null,
     search_hit: null,
 
     claim_ids: [122,124,123,125,126,121,115,129,130,127,128,11],
@@ -3217,6 +3228,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/headers/uranus-winds-two-day-timeframe-1.jpg", "img/headers/uranus-winds-two-day-timeframe-2.jpg"],
     definition: "The winds are so unexpectedly fast on some planets that they raise questions about the underlying cause of winds on all planets.",
     status: null,
+    copy_text: null,
     search_hit: null,
 
     claim_ids: [105,106,107,108,109,110],
@@ -3617,6 +3629,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "A plasma is a gas that has some percentage of unbound, charged particles.  Its behavior often fundamentally differs from that of a gas, yet the models we use in the space sciences today -- including our weather and climate models -- continue to largely disregard these differences as well as its pervasiveness.  It's taking a surprisingly long time for these space sciences discoveries to have an effect upon related domains.",
     status: null,
+    copy_text: null,
     search_hit: null,
 
     claim_ids: null,
@@ -3903,6 +3916,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/headers/piers-corbyn-beat-uk-govt-predictions.png"],
     definition: "Maverick weather predictor, Piers Corbyn, has made a name for himself as the only person in the world who can sometimes accurately predict extreme weather phenomena 30-45 days in advance, to the day.  His technique is based upon intense solar events, which he predicts with the help of the 60-year solar cycle.",
     status: null,
+    copy_text: null,
     search_hit: null,
 
     claim_ids: [91,135,136,133,132,137,138,134,139],
@@ -4294,6 +4308,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null,
     definition: "Up until the late 1950's, it was commonly assumed that space was a vacuum.  All of our scientific theories which preceded the direct observation of the Van Allen radiation belts in 1958 with the first space rockets essentially based upon this false premise.  This problem is in fact a pattern for the space sciences, and it repeatedly pits the momentum of textbook theory against the potential disruption of unexpected, novel observations.",
     status: null,
+    copy_text: "Our understanding of space physics has undergone dramatic changes over the past half-century, and these discoveries are only just now trickling into the other scientific domains.<br><br><b>Space was initially assumed to be a vacuum</b>; but in the late 50's, with the advent of rockets, it could no longer be denied that charged particles were zipping around.<br><br>In the 40's, when radio engineers first spotted the radio waves which astronomers never thought to look for, <b>the astronomers responded that it had to be a hoax or a mistake</b>. Radio astronomy would not be recognized as an actual discipline until the late 50's.<br><br>The observation of large-scale magnetic fields associated with objects as large as galaxies to this day evokes awkward silence and speculative explanations amongst theorists who were all taught in high school that magnetic fields tend to go hand-in-hand with electric currents.<br><br>We did not definitively understand that filaments are ubiquitous in the universe until the launch of Herschel in 2009. <b>Few people today realize that that was in fact one of Hannes Alfven's predictions for a plasma universe</b>.<br><br>Most of the electromagnetic spectrum was unavailable to us up until the mid-1970's.<br><br>The term 'plasma' was coined right around the time that the Big Bang was hypothesized (in the early 30's), but the concept of a 'Plasma Universe' was not proposed until the mid-1980's.<br><br>The Big Bang theory had a half-century head-start on the Plasma Universe, but <b>all of the most important astronomical discoveries over the past half-century have related to electromagnetism and plasmas</b>.<br><br>What is largely ignored is that <b>these recent discoveries were all made through the lens of that former non-electrical worldview</b>. So, it is not at all a surprise what is happening with the climate models today, but for those who are paying attention to the larger chronology which weather and climate theories fit into, it is clear that the most surprising recent astronomical discoveries are all pointing to energy flows through space -- flows of plasma which the Earth is of course embedded in.",
     search_hit: null,
 
     claim_ids: [147,148,154,155,149,150,151,152],
@@ -4476,6 +4491,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null,
     definition: "Although scientists and science journalists have (so far) failed to go out of their way to advertise the fact to the public, numerous academic textbooks today agree that the Earth's atmosphere is an exceedingly thin shell of largely neutral gas which is immersed within an immense sea of charged particles.  It stands to reason that this far larger sea of charged particles has a tremendous influence upon that thin shell of neutral gas embedded within it.",
     status: null,
+    copy_text: "Although you wouldn't know it from popular science journalism, <b>it is today recognized that more than 99% of all observable matter in the universe is in the plasma state</b>.<br><br>Scientists today do not actually debate that point. When questions are raised about plasmas, the arguments tend to focus more on plasma's <b>behavior and modeling</b> than its <b>prevalence</b>.<br><br>Plasma's prevalence should come as a shock to many avid fans of science for at least two reasons:<br><br>First, because our Earth's atmosphere does not fall into this 99%+ category, suggesting the possibility that we are applying phenomena which we are far more familiar with to astronomical observations where they oftentimes do not apply.<br><br>But, second, because most of the attempts we see in the astrophysical community to explain astronomical observations are far more focused upon the more speculative questions of dark matter and dark energy, than on the half-century-old debate over how to model the universe's fundamental state for matter. <b>How can it be that there would be no substantive discussion about the details of how to model the universe's most fundamental state for its observable matter?</b><br><br><b>The very fact that we tend to call plasma the 'fourth' state of matter, despite its acknowledged prevalence, is surely an indicator of its order of discovery in the cosmos, and arguably suggests a potential bias against the plasma state</b>.<br><br>It's likely not an accident that we exist in the 1% of the universe in which plasmas do not naturally occur; after all, cosmic plasma oftentimes goes by another more familiar term: radiation.",
     search_hit: null,
 
     claim_ids: [156,157,158,159,160,161,162,163,164,165,166,167,168],
@@ -4574,7 +4590,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "There is no longer debate over plasma's prevalence in the cosmos.  The debate today pertains to plasma's behavior, and how to model it.",
+    title: "Notice the lack of debate over plasma's prevalence; each of the sources in this list admit its prevalence.",
     sourcename: null,
 
     images: ["img/books/plasma-99-2.jpg"],
@@ -4626,7 +4642,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "The natural sources of plasma that we are familiar with here on Earth tend to be high-energy, but it doesn't have to be that way.",
+    title: "The natural sources of plasma that we are familiar with here on Earth tend to be brief and high energy, but in a vacuum, plasmas can also exhibit low-energy attributes.",
     sourcename: null,
 
     images: ["img/books/plasma-99-4.jpg"],
@@ -4704,7 +4720,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "The fact that we still call plasma the 'fourth' state of matter demonstrates the chronology of its discovery (and our legacy bias) rather than its importance to cosmic observations.",
+    title: "The fact that we still call plasma the 'fourth' state of matter demonstrates the chronology of its discovery (and arguably our legacy bias) rather than its importance to cosmic observations.",
     sourcename: null,
 
     images: ["img/books/plasma-99-7.jpg"],
@@ -4876,6 +4892,32 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     text: null,
     highighter: null,
     expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 169,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Birkeland currents are commonly referred to by astrophysicists in a variety of terms which disguise their electric current nature: magnetic ropes, flux tubes, even elephant trunks.",
+    sourcename: null,
+
+    images: ["img/articles/magnetic-ropes.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/Marklund-convection.jpg",
+    url: "https://www.thunderbolts.info/wp/2012/01/04/essential-guide-to-the-eu-chapter-7/",
+    text: null,
+    highighter: null,
+    expert_ids: [3],
     nodes: null,
     postscript: null
 
