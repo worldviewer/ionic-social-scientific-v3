@@ -71,3 +71,13 @@ div.col > a.small-button-anchor {
 	margin-top: 0px;
 	margin-bottom: 15px;
 }
+
+/* Would like to do something like this ...
+@media screen
+  and (min-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+	body {
+		width: 1200px;
+	}
+}
+*/

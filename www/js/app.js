@@ -654,7 +654,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/headers/martian-polar-ice-cap.jpg"],
     definition: "It was noted in 2005 by NASA that Mars' ice caps had also been diminishing for three summers in a row.  But, how much faith can we place in this claim?",
     status: null,
-    copy_text: null,
+    copy_text: "While claims that the Martian ice caps are melting deserve an open-minded investigation, critics are nevertheless correct that the data is far from strong enough to justify a confident claim.<br><br>What is interesting, however, is that experts implicate the global Martian dust storms in sudden alterations to the planet's albedo. <b>What is notably left out of this conversation is the fact that these global dust storms are observably filamentary</b>. In light of (1) the extraordinarily thin Martian atmosphere (<b>1% Earth's</b>), (2) the observation of <b>luminous cores within dust devils</b> observed up-close by rovers, and (3) the <b>black marks these dust devils etch into the Martian surface</b>, all of these observations should raise questions about the underlying cause for not only the global Martian dust storms, but also tornadoes here on Earth.<br><br>But, this claim that Mars might be warming should not be treated as a fact based upon the limited dataset that is currently available.",
     search_hit: null,
 
     claim_ids: [71,72,73,74,75,76,77],
@@ -681,7 +681,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null,
     definition: "Although the data remains sparse, there's reason to suspect that Pluto might have continued to warm up even as it moves away from the Sun.",
     status: null,
-    copy_text: null,
+    copy_text: "Claims that Pluto is warming are at this point just as speculative as claims that Mars is warming.<br><br>However, the rebuttal that warming should be observable on all of the planets assumes a cause of solar radiation for the warming.  And suggestions that any warming on Pluto might be the result of a greenhouse effect are just as speculative as the original claim.",
     search_hit: null,
 
     claim_ids: [92,93],
