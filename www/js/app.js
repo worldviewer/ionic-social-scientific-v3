@@ -627,7 +627,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/headers/earth-dipole.gif"],
     definition: "The presence of hot spots at the poles of Enceladus, Neptune and Saturn, among others, are suggestive of the simple idea that these moving charged particles can heat up the planets where planetary magnetic fields concentrate them.",
     status: null,    
-    copy_text: null,
+    copy_text: "In stark contrast with the Earth's temperature profile, a number of solar system planets and moons exhibit hot poles. It's a remarkable observation insofar as electrical currents traveling in and out of planetary bodies would be expected to concentrate at the poles, since they are typically guided by the planet's magnetic field lines. Hot poles raises the largely undiscussed possibility that in certain cases, the contribution of electrical plasma-based heating can dwarf the heating that would be expected from solar irradiance (light).<br><br><b>What is remarkable is that planetary scientists appear to avoid such an inference even in cases like Enceladus, where the electrical connection (with Saturn) to this same pole has already been confirmed.</b><br><br>The electrical inference is not even made for Neptune, the 8th and farthest planet from the Sun (<b>30 times the distance between Earth and the Sun!</b>).  Despite this enormous distance, Neptune's south pole is a full <b>50 degrees F warmer</b> than the rest of the planet. Yet, planetary scientists make no mention of magnetic fields or solar wind plasma when they speculate on its cause.<br><br>The hot spots at the poles of Saturn present similar difficulties for planetary scientists, particularly in light of the fact that <b>the northern polar hot spot had been deprived of sunlight for a full 13 years when it was observed!</b>",
     search_hit: null,
 
     claim_ids: [140,141,142,143,144,145],
@@ -681,7 +681,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null,
     definition: "Although the data remains sparse, there's reason to suspect that Pluto might have continued to warm up even as it moves away from the Sun.",
     status: null,
-    copy_text: "Claims that Pluto is warming are at this point just as speculative as claims that Mars is warming.<br><br>However, the rebuttal that warming should be observable on all of the planets assumes a cause of solar radiation for the warming.  And suggestions that any warming on Pluto might be the result of a greenhouse effect are just as speculative as the original claim.",
+    copy_text: "Claims that Pluto is warming are at this point just as speculative as claims that Mars is warming.<br><br>However, the rebuttal that warming should be observable on all of the planets assumes a specific cause of solar radiation for the warming (electrical warming could depend upon numerous unseen factors).  And suggestions that any warming on Pluto might be the result of a greenhouse effect are just as speculative as the original claim.",
     search_hit: null,
 
     claim_ids: [92,93],
@@ -708,7 +708,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "Many atmospheric circulation models are unable to reproduce the observed polar stratospheric winds (aka the polar vortex), and that is a huge problem for these models because things happening at the polar vortex can influence the entire planet's climate.",
     status: null,
-    copy_text: null,
+    copy_text: "It's today recognized that wild weather in North America and Europe can oftentimes be attributed to dramatic changes in the polar vortex.  Meteorologists and climate scientists frequently discuss the polar vortex in a manner that is completely divorced from the Earth's larger plasma environment. <b>There have even been attempts to speculate that the changes in the polar vortex which can result in intensely cold weather events are a side effect of global warming</b>.<br><br>But, what sense does it make to treat Earth's polar regions without regard for its larger plasma environment? <b>These are regions where the planet's magnetic field is known to concentrate the surrounding cosmic plasma medium into a funnel, where it makes its closest approach to the Earth's surface</b>.<br><br>When AGW advocates speculate on cooling caused by warming, what they tend to leave out is the fact that many atmospheric general circulation models and chemistry-climate models have <b>so far failed to reproduce in simulations the observations of the polar stratospheric winds</b>.  This failure to mention the failure to simulate does not inspire confidence in the speculations that are eagerly offered.",
     search_hit: null,
 
     claim_ids: [101,102,103],
