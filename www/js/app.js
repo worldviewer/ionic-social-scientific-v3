@@ -514,7 +514,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     definition: "Plasma-coupled heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic plasma phenomena.",
     status: "Plasma-coupled heating is not widely known, has no particular conceptual label, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Plasma-coupled heating is a natural implication of the Electric Universe paradigm.",
     search_hit: null,
-    claim_ids: [146,153,120,2,3,4,5,6,7,104,8,9,10,94,1,131],
+    claim_ids: [146,153,120,2,3,4,5,6,7,8,104,9,10,94,1,131],
     critique_ids: [12,45,46],
     cmap_ids: [13,14,15,16,17,50,51,52,53,54,55,56,57,58,59],
     article_ids: [115,91,18,19,20,47],
@@ -705,10 +705,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "The Polar Vortex Has Proven Resistant to Conventional Modeling",
     sourcename: null,
 
-    images: null, // FILL!
+    images: ["img/papers/magnetosphere-diagram.jpg", "img/papers/high-latitude-convection-diagram.jpg"],
     definition: "Many atmospheric circulation models are unable to reproduce the observed polar stratospheric winds (aka the polar vortex), and that is a huge problem for these models because things happening at the polar vortex can influence the entire planet's climate.",
     status: null,
-    copy_text: "It's today recognized that wild weather in North America and Europe can oftentimes be attributed to dramatic changes in the polar vortex.  Meteorologists and climate scientists frequently discuss the polar vortex in a manner that is completely divorced from the Earth's larger plasma environment. <b>There have even been attempts to speculate that the changes in the polar vortex which can result in intensely cold weather events are a side effect of global warming</b>.<br><br>But, what sense does it make to treat Earth's polar regions without regard for its larger plasma environment? <b>These are regions where the planet's magnetic field is known to concentrate the surrounding cosmic plasma medium into a funnel, where it makes its closest approach to the Earth's surface</b>.<br><br>When AGW advocates speculate on cooling caused by warming, what they tend to leave out is the fact that many atmospheric general circulation models and chemistry-climate models have <b>so far failed to reproduce in simulations the observations of the polar stratospheric winds</b>.  This failure to mention the failure to simulate does not inspire confidence in the speculations that are eagerly offered.",
+    copy_text: "It's today recognized that wild weather in North America and Europe can oftentimes be attributed to dramatic changes in the polar vortex.  Meteorologists and climate scientists frequently discuss the polar vortex in a manner that is completely divorced from the Earth's larger plasma environment. <b>There have even been attempts to speculate that the changes in the polar vortex which can result in intensely cold weather events are a side effect of global warming</b>.<br><br>But, what sense does it make to discuss Earth's polar regions without regard for its larger plasma environment? <b>These are regions where the planet's magnetic field is known to concentrate the surrounding cosmic plasma medium into a funnel, where the solar wind can make its closest approach to the Earth's surface</b>.<br><br>When AGW advocates speculate on cooling caused by warming, what they tend to leave out is the fact that many atmospheric general circulation models and chemistry-climate models have <b>so far failed to reproduce in simulations the observations of the polar stratospheric winds</b>.  This failure to mention the failure to simulate does not inspire confidence in the speculations that are eagerly offered.",
     search_hit: null,
 
     claim_ids: [101,102,103],
@@ -3147,7 +3147,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "It's not uncommon for climate experts to discuss the polar vortex without any mention of the larger twisting geometry of the polar magnetic field, as if they are unrelated.",
+    title: "It's not uncommon for weather and climate experts to discuss the polar vortex without any mention of the larger twisting geometry of the polar magnetic field and the electric currents moving in and out of this region -- as if the polar vortex is completely unrelated to that electromagnetic activity.",
     sourcename: null,
 
     images: ["img/articles/polar-vortex-1.jpg"],
@@ -3448,7 +3448,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "A fundamental principle in electromagnetism is that two charge-carrying wires will tend to attract one another when carrying current in the same direction (when the movements of charge are aligned in parallel).",
+    title: "A fundamental principle in electromagnetism is that two charge-carrying wires will tend to attract one another when carrying current in the same direction (when the movements of charge are aligned in parallel, meaning the currents flow in the same direction).",
     sourcename: null,
 
     images: ["img/audio-video/parallel-currents-1.jpg", "img/audio-video/parallel-currents-2.jpg", "img/audio-video/parallel-currents-3.jpg", "img/audio-video/parallel-currents-4.jpg", "img/audio-video/parallel-currents-5.jpg"],
