@@ -5,17 +5,17 @@
         <h3>{{proposition.title}}</h3>
 
 		<div>
+			<div ng-repeat="image in proposition.images" ng-show="proposition.images">
+				<img ng-src="{{image}}" width="100%">
+	            <div class="spacer" style="width: 300px; height: 10px;"></div>
+			</div>
+
 			<h4 ng-show="{{proposition.copy_text}}">The Gist</h4>
 			<div class="col-90" ng-bind-html="proposition.copy_text | sanitize"></div>
 			<!-- <p><strong>{{proposition.copy_text}}</strong></p> -->
             <div class="spacer" style="width: 300px; height: 20px;"></div>
 
 			<h4>The Sources</h4>
-
-			<div ng-repeat="image in proposition.images" ng-show="proposition.images">
-				<img ng-src="{{image}}" width="100%">
-	            <div class="spacer" style="width: 300px; height: 10px;"></div>
-			</div>
 
            <ion-list class="item-text-wrap">
 

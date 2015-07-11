@@ -762,7 +762,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "The solar wind intensity correlates with lightning strikes, raising questions about lightning's underlying cause, and suggesting that the Earth is possibly part of a larger electrical circuit.",
     status: null,
-    copy_text: null,
+    copy_text: "There's a rarely discussed approach in the planetary and astrophysical sciences which, despite its poor track record, is to this day applied with rigor: <b>Where evidence for electricity in space is observed, assume that it's an isolated, closed system</b>.<br><br>It didn't work for the aurora, but it's getting a second go today with lightning. Unfortunately, this attempt is turning out to be much like the last, because there are by now <b>three</b> outstanding issues with the idea which all appear to point to the same exact conclusion:<br><br>First, nobody can explain with any confidence what actually causes lightning, because <b>the textbook, closed-system worldview cannot produce an electric field that is sufficient to seed the discharge</b>.<br><br>But, second, <b>we can already plainly see that there is some sort of larger connection between lightning and space</b> -- and for more than one reason: because the Van Allen radiation belts thousands of miles above the Earth become cleared by lightning; because a correlation has already been observed between solar wind speeds and intensities with the rate of lightning strikes; and because we today understand that there are lightning phenomena which actually connect to space (aka sprites).<br><br>The third red flag for the closed lightning circuit is that <b>ordinary lightning should be an order of magnitude too weak to produce the energetic emmissions we see</b> -- like gamma rays, antimatter and neutrons, <b>phenomena typically associated with supernovae and solar flares</b>. Yet, there is a growing recognition that lightning emits all of these things.<br><br>It seems just a matter of time that lightning will become recognized as an aspect of Earth's interconnection with its larger plasma environment -- a conclusion which would resolve all three anomalies at once.",
     search_hit: null,
 
     claim_ids: [84,86,85,87,89,88,90,111],
@@ -3228,10 +3228,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/headers/uranus-winds-two-day-timeframe-1.jpg", "img/headers/uranus-winds-two-day-timeframe-2.jpg"],
     definition: "The winds are so unexpectedly fast on some planets that they raise questions about the underlying cause of winds on all planets.",
     status: null,
-    copy_text: null,
+    copy_text: "One of the best ways that we can push science forward is to attempt to re-frame questions on anomalous observations which textbook theory has simply failed to explain. These outlier observations are like keys to a future, better scientific theory -- but oddly enough, most science journalism today pays only occasional heed to them, lending the confident impression to science enthusiasts that it's all been figured out.  <b>No need to think, right?</b><br><br>The anomalous winds on both Uranus and Neptune give us an invaluable opportunity to question our textbook theories. After all, the winds of Uranus can move as fast as <b>560 miles per hour</b>, while winds on Neptune have been clocked at an astounding <b>1,500 miles per hour</b>! In neither case can the go-to source for energy input -- thermal energy from the Sun -- possible be the cause. The fact that Neptune is emitting 2.61 times more thermal energy than it receives from the Sun emphasizes the point.<br><br>Not only do such observations beg us to ask if there's another, yet-unaccounted-for source for energy in our solar system, but we should also be seeking to understand if there's more than one way to create a wind. <b>Right?</b><br><br>The wrong reaction is to confuse the speculative expert explanations offered as reason to avoid thinking and asking questions.",
     search_hit: null,
 
-    claim_ids: [105,106,107,108,109,110],
+    claim_ids: [105,106,170,107,108,109,110],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/uranus.jpg",
@@ -4918,6 +4918,32 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     text: null,
     highighter: null,
     expert_ids: [3],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 170,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Planetary scientists see no reason to ask big questions about how the winds on Neptune can move so fast, even as they note that Neptune apparently emits 2.61 times more energy than it receives from solar irradiance.",
+    sourcename: null,
+
+    images: ["img/articles/neptune-winds-explanations.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/neptune.jpg",
+    url: "http://www.universetoday.com/22067/weather-on-neptune/",
+    text: null,
+    highighter: null,
+    expert_ids: [60],
     nodes: null,
     postscript: null
 
