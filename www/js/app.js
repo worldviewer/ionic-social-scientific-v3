@@ -786,13 +786,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "The Sun's Electromagnetic Activity Can Be Correlated with the Earth's Temperature Anomalies",
     sourcename: null,
 
-    images: null, // FILL!
+    images: ["img/articles/kristian-birkeland-terrella.png", "img/articles/birkeland-terrella-2.jpg", "img/articles/solar-plasmoid-side.jpg", "img/articles/solar-plasmoid-top.jpg"],
     definition: "The Sun exhibits a variety of overlapping solar cycles, and there is a 60-year cycle which appears to coincide with recent temperature changes here on Earth.",
     status: null,
     copy_text: null,
     search_hit: null,
 
-    claim_ids: [98,95,96,97,99,100],
+    claim_ids: [171,98,95,96,97,99,100],
     critique_ids: null,
     next: 11,
     avatar: "img/avatars/sunspots-stratosphere.jpg",
@@ -4305,10 +4305,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Our Technology Chronology Complicates Innovation in the Space Sciences; And Our Weather and Climate Theories Can Become Confused as a Result",
     sourcename: null,
 
-    images: null,
+    images: ["img/articles/space-and-the-radiation-belt.jpg"],
     definition: "Up until the late 1950's, it was commonly assumed that space was a vacuum.  All of our scientific theories which preceded the direct observation of the Van Allen radiation belts in 1958 with the first space rockets essentially based upon this false premise.  This problem is in fact a pattern for the space sciences, and it repeatedly pits the momentum of textbook theory against the potential disruption of unexpected, novel observations.",
     status: null,
-    copy_text: "Our understanding of space physics has undergone dramatic changes over the past half-century, and these discoveries are only just now trickling into the other scientific domains.<br><br><b>Space was initially assumed to be a vacuum</b>; but in the late 50's, with the advent of rockets, it could no longer be denied that charged particles were zipping around.<br><br>In the 40's, when radio engineers first spotted the radio waves which astronomers never thought to look for, <b>the astronomers responded that it had to be a hoax or a mistake</b>. Radio astronomy would not be recognized as an actual discipline until the late 50's.<br><br>The observation of large-scale magnetic fields associated with objects as large as galaxies to this day evokes awkward silence and speculative explanations amongst theorists <b>who were all taught in either high school or college that magnetic fields tend to go hand-in-hand with electric currents</b>.<br><br>We did not definitively understand that filaments are ubiquitous in the universe until the launch of Herschel in 2009. <b>Few people today realize that that was in fact one of Hannes Alfven's predictions for a plasma universe</b>.<br><br>Most of the electromagnetic spectrum was unavailable to us up until the mid-1970's.<br><br>The term 'plasma' was coined right around the time that the Big Bang was hypothesized (in the early 30's), but the concept of a 'Plasma Universe' was not proposed until the mid-1980's.<br><br>The Big Bang theory therefore had a half-century head-start on the Plasma Universe to capture the public's imagination, but <b>all of the most important astronomical discoveries over the past half-century have related to electromagnetism and plasmas</b>.<br><br>What is largely ignored is that <b>these recent discoveries were all made through the lens of that former non-electrical worldview</b>. So, it is not at all a surprise what is happening with the climate models today. But for those who are paying attention to the larger chronology which weather and climate theories fit into, it is clear that the most surprising recent astronomical discoveries are collectively pointing to the possibility of energy flows through space -- flows of plasma which the Earth is of course embedded in.",
+    copy_text: "Our understanding of space physics has undergone dramatic changes over the past half-century, and these discoveries are only just now trickling into the other scientific domains.<br><br><b>Space was initially assumed to be a vacuum, and the notion of space-based rockets was considered absurd.</b> By the mid-40's, rockets were raining down on London.  By the late 50's, some of the first rockets to actually enter space conclusively demonstrated that space exhibited varying amounts of charged particles.<br><br>In the 40's, when radio engineers first spotted the radio waves which astronomers never thought to look for, <b>the astronomers responded that it had to be a hoax or a mistake</b>. Radio astronomy would not be recognized as an actual discipline until the late 50's.<br><br>The observation of large-scale magnetic fields associated with objects as large as galaxies to this day evokes awkward silence and speculative explanations amongst theorists <b>who were all taught in either high school or college that magnetic fields tend to go hand-in-hand with electric currents</b>.<br><br>We did not definitively understand that filaments are ubiquitous in the universe until the launch of Herschel in 2009. <b>Few people today realize that that was in fact one of Hannes Alfven's predictions for a plasma universe</b>.<br><br>Most of the electromagnetic spectrum was unavailable to us up until the mid-1970's. <b>People don't yet understand the significance of observing these filaments, nor that we've only recently developed an ability to see them</b>.<br><br>The term 'plasma' was coined right around the time that the Big Bang was hypothesized (in the early 30's), but the concept of a 'Plasma Universe' was not proposed until the mid-1980's.<br><br>The Big Bang theory therefore had a half-century head-start on the Plasma Universe to capture the public's imagination, but <b>all of the most important astronomical discoveries over the past half-century have related to electromagnetism and plasmas</b>.<br><br>What is largely ignored is that <b>these recent discoveries were all made through the lens of that former non-electrical worldview</b>. So, it is not at all a surprise what is happening with the climate models today. But for those who are paying attention to the larger chronology which weather and climate theories fit into, it is clear that the most surprising recent astronomical discoveries are collectively pointing to the possibility of energy flows through space -- flows of plasma which the Earth is of course embedded in.",
     search_hit: null,
 
     claim_ids: [147,148,154,155,149,150,151,152],
@@ -4947,6 +4947,58 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     nodes: null,
     postscript: null
 
+  }, {
+
+    id: 171,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "It's not entirely a secret that the weather correlates with solar activity; the problem is that nobody has yet unraveled the details of how it happens.",
+    sourcename: null,
+
+    images: ["img/articles/climate-puzzle.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/sunspots-stratosphere.jpg",
+    url: "http://www.holoscience.com/wp/global-warming-in-a-climate-of-ignorance/",
+    text: null,
+    highighter: null,
+    expert_ids: [62],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 172,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "",
+    sourcename: null,
+
+    images: ["img/articles/solar-jet-stream.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/sunspots-stratosphere.jpg",
+    url: "",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
  }];
 
 
@@ -5383,6 +5435,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@BryanGaensler",
     title: "Director, Dunlap Institute for Astronomy and Astrophysics at University of Toronto",
     image: "img/experts/bryan-gaensler.jpg"
+
+  },{
+
+    id: 62,
+    name: "@JohnGribbin",
+    title: "Astrophysicist / Science Writer",
+    image: "img/experts/john-gribbin.jpg"
 
   }];
 
