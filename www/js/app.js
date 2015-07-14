@@ -514,7 +514,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     definition: "Plasma-coupled heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic plasma phenomena.",
     status: "Plasma-coupled heating is not widely known, has no particular conceptual label, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Plasma-coupled heating is a natural implication of the Electric Universe paradigm.",
     search_hit: null,
-    claim_ids: [146,153,120,2,3,4,5,6,7,8,104,9,10,94,1,131],
+    claim_ids: [146,153,120,2,3,4,5,6,7,8,104,9,10,172,94,1,131],
     critique_ids: [12,45,46],
     cmap_ids: [13,14,15,16,17,50,51,52,53,54,55,56,57,58,59],
     article_ids: [115,91,18,19,20,47],
@@ -543,7 +543,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     sourcename: null,
 
     images: ["img/headers/AJ-vs-IEEE.jpg"],
-    definition: "There has been a widely overlooked debate over how to model cosmic plasmas (such as the solar wind) for more than half a century between the Astrophysical Journal and IEEE's Transactions on Plasma Science.",
+    definition: "There has been a widely overlooked debate over how to model cosmic plasmas (such as the solar wind) for more than half a century between the Astrophysical Journal and IEEE's Transactions on Plasma Science. This debate is important because it relates to the way we model the universe's most common state for matter -- which necessarily implies that it is relevant to numerous scientific disciplines beyond just astrophysics and cosmology. The climate debate cannot be fully understood without understanding this other controversy.",
     status: null,
     copy_text: null,
     search_hit: null,
@@ -711,7 +711,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     copy_text: "It's today recognized that wild weather in North America and Europe can oftentimes be attributed to dramatic changes in the polar vortex.  Meteorologists and climate scientists frequently discuss the polar vortex in a manner that is completely divorced from the Earth's larger plasma environment. <b>There have even been attempts to speculate that the changes in the polar vortex which can result in intensely cold weather events are a side effect of global warming</b>.<br><br>But, what sense does it make to discuss Earth's polar regions without regard for its larger plasma environment? <b>These are regions where the planet's magnetic field is known to concentrate the surrounding cosmic plasma medium into a funnel, where the solar wind can make its closest approach to the Earth's surface</b>.<br><br>When AGW advocates speculate on cooling caused by warming, what they tend to leave out is the fact that many atmospheric general circulation models and chemistry-climate models have <b>so far failed to reproduce in simulations the observations of the polar stratospheric winds</b>.  This failure to mention the failure to simulate does not inspire confidence in the speculations that are eagerly offered.",
     search_hit: null,
 
-    claim_ids: [101,102,103],
+    claim_ids: [173,101,102,103],
     critique_ids: null,
     next: 8,
     avatar: "img/avatars/polar-vortex.jpg",
@@ -762,7 +762,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null, // FILL!
     definition: "The solar wind intensity correlates with lightning strikes, raising questions about lightning's underlying cause, and suggesting that the Earth is possibly part of a larger electrical circuit.",
     status: null,
-    copy_text: "There's a rarely discussed approach in the planetary and astrophysical sciences which, despite its poor track record, is to this day applied with rigor: <b>Where evidence for electricity in space is observed, assume that it's an isolated, closed system</b>.<br><br>It didn't work for the aurora, but it's getting a second go today with lightning. Unfortunately, this attempt is turning out to be much like the last, because there are by now <b>three</b> outstanding issues with the idea which all appear to point to the same exact conclusion:<br><br>First, nobody can explain with any confidence what actually causes lightning, because <b>the textbook, closed-system worldview cannot produce an electric field that is sufficient to seed the discharge</b>.<br><br>But, second, <b>we can already plainly see that there is some sort of larger connection between lightning and space</b> -- and for more than one reason: because the Van Allen radiation belts thousands of miles above the Earth become cleared by lightning; because a correlation has already been observed between solar wind speeds and intensities with the rate of lightning strikes; and because we today understand that there are lightning phenomena which actually connect to space (aka sprites).<br><br>The third red flag for the closed lightning circuit is that <b>ordinary lightning should be an order of magnitude too weak to produce the energetic emmissions we see</b> -- like gamma rays, antimatter and neutrons, <b>phenomena typically associated with supernovae and solar flares</b>. Yet, there is a growing recognition that lightning emits all of these things.<br><br>It seems just a matter of time that lightning will become recognized as an aspect of Earth's interconnection with its larger plasma environment -- a conclusion which would resolve all three anomalies at once.",
+    copy_text: "There's a rarely discussed approach in the planetary and astrophysical sciences which, despite its poor track record, is to this day applied with rigor: <b>Where evidence for electricity in space is observed, assume that it's an isolated, closed system</b>.<br><br>This approach stalled research on the aurora for half a century, but it's getting a second go today with lightning. Unfortunately, this attempt is turning out to be much like the last, because there are by now <b>three</b> outstanding issues with the idea which all appear to point to the same exact conclusion -- that lightning is a charge-neutralization between Earth and Space.<br><br>First, nobody can explain with any confidence what actually causes lightning, because <b>the textbook, closed-system worldview cannot produce an electric field that is sufficient to seed the discharge</b>.<br><br>But, second, <b>we can already plainly see that there is some sort of larger connection between lightning and space</b> -- and for more than one reason: because the Van Allen radiation belts thousands of miles above the Earth become cleared by lightning; because a correlation has already been observed between solar wind speeds and intensities with the rate of lightning strikes; and because we today understand that there are lightning phenomena which actually connect to space (aka sprites).<br><br>The third red flag for the closed lightning circuit is that <b>ordinary lightning should be an order of magnitude too weak to produce the energetic emmissions we see</b> -- like gamma rays, antimatter and neutrons, <b>phenomena typically associated with supernovae and solar flares</b>. Yet, there is a growing recognition that lightning emits all of these things.<br><br>It seems just a matter of time that lightning will become recognized as an aspect of Earth's interconnection with its larger plasma environment -- a conclusion which would resolve all three anomalies at once.",
     search_hit: null,
 
     claim_ids: [84,86,85,87,89,88,90,111],
@@ -786,10 +786,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "The Sun's Electromagnetic Activity Can Be Correlated with the Earth's Temperature Anomalies",
     sourcename: null,
 
-    images: ["img/articles/kristian-birkeland-terrella.png", "img/articles/birkeland-terrella-2.jpg", "img/articles/solar-plasmoid-side.jpg", "img/articles/solar-plasmoid-top.jpg"],
+    images: ["img/articles/kristian-birkeland-terrella.png", "img/articles/birkeland-terrella-2.jpg", "img/headers/birkeland-terrella-1.jpg", "img/articles/solar-plasmoid-side.jpg", "img/articles/solar-plasmoid-top.jpg"],
     definition: "The Sun exhibits a variety of overlapping solar cycles, and there is a 60-year cycle which appears to coincide with recent temperature changes here on Earth.",
     status: null,
-    copy_text: null,
+    copy_text: "It's not entirely a secret that Earth's weather and temperature correlate with solar activity; the problem is that nobody has yet unraveled the intricate details of how it actually happens. <b>The puzzle is that the overall brightness of the Sun varies by less than 0.1% during the 11-year solar cycle, which is not enough to explain the observed changes in the weather.</b><br><br>Yet, consider what we <b>do</b> know:<br><br>(1) <b>Sunspot numbers generally correlate with lower stratosphere temperature anomalies, minus the temporal effects of volcanic eruptions.</b><br><br>(2) There are two fundamental modes by which the solar wind can influence the Earth's weather and temperature: over the mid-latitudinal closed magnetic field lines and the polar open magnetic field lines.<br><br>(3) The first laboratory astrophysicist, Kristian Birkeland, discovered that a magnetized sphere known as a terrella within a vacuum subjected to a voltage gradient can elicit fundamentally divergent modes of electromagnetic behavior which resemble the Sun's.<br><br>(4) Fluctuations in the Earth's temperature appear to follow a number of overlapping solar cycles which operate at different timespans, and whose duration appears to slightly change from one cycle to the next.<br><br>(5) <b>The recent warming hiatus around 2000 was not predicted by any of the IPCC models</b>, but it should have been expected as a consequence of natural solar cycles which have been observed over three stages: 1860-80, 1910-40 and 1975<b>-2000</b>. <b>In each of these solar magnetic maxima, the temperature increased by about 0.15 C per decade, and between them, the temperatures cooled</b>.",
     search_hit: null,
 
     claim_ids: [171,98,95,96,97,99,100],
@@ -2977,10 +2977,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/headers/stratosphere-ocean-circulation.jpg"],
     definition: "Conventional meteorology assumes that weather drives weather, and it arguably minimizes the effect of top-of-the-atmosphere drivers.  But, new lines of investigation are today being funded to learn more about the role that the polar vortex has upon the Earth's weather and temperature.",
     status: null,
-    copy_text: null,
+    copy_text: "Conventional wisdom suggests that weather reports typically become inaccurate at around two weeks because the atmosphere is chaotic, and because small rounding errors are known to produce different results on different computers.<br><br>However, there can be yet a third cause: space 'weather', or more formally, the Earth's electrically conductive solar plasma environment. Theorists like to point to the accepted fact that the Sun's total solar irradiance (TSI) does not vary by more than 0.1% over the entire solar cycle, and the Earth's magnetic field is extremely effective at deflecting or trapping this solar radiation. Yet, <b>some theorists will admit that this line of reasoning does not apply to solar radiation and solar plasma at the polar regions.</b><br><br>Nobody actually knows the energy balance at the top of the atmosphere (TOA), but what we can observe is that <b>climate models tend to be very sensitive to this TOA energy balance</b>. IPCC models accordingly make sweeping assumptions about this TOA energy balance -- the problem being that <b>any claims that are subsequently made about the cause for climate changes can simply reflect this assumption of an energy balance</b>. The IPCC does not generally discuss such assumptions within its Summary for Policymakers, but this problem of model tuning is indeed mentioned in its scientific assessments.<br><br>Such concerns are not without warrant, as <b>a link has been observed between sudden stratospheric warming (SSW) events at the poles with mile-deep oceanic circulation patterns</b>, which are in turn known to be associated with Earth's climate. <b>That's an enormously surprising observation in light of the fact that the ocean's energy content is on the order of a thousand times the atmospheric energy content.</b><br><br>There are several different groups currently studying the Sun's electrical influence upon the Earth's weather and climate. Piers Corbyn is already widely known for his occasional successes predicting extreme weather events a full four weeks in advance based upon lunar, magnetic and especially energetic solar patterns.<br><br>Less known is the fact that <b>NASA has recently invested almost a million dollars to-date into the creation of a new Global Ionosphere-Thermoshere Model (GITM), which like Corbyn's approach, will take into account sudden influxes of solar electrical energy at the poles</b>.<br><br>Yet another group, which is using infrasound data from the 300+ CTBTO network of sensors more commonly used to monitor nuclear explosions across the globe, believes that <b>they will eventually be able to predict the weather a full month or season in advance</b> by observing the same SSW events that both NASA and Corbyn are closely tracking.",
     search_hit: null,
 
-    claim_ids: [122,124,123,125,126,121,115,129,130,127,128,11],
+    claim_ids: [122,124,123,174,125,126,121,115,129,130,127,128,11],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/toa-model-tuning.jpg",
@@ -3728,7 +3728,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "There is a popular meme known as the Butterfly Effect that is occasionally invoked to explain closed systems which exhibit difficult-to-predict changes.  Scientists refer to these modeling phenomena as nonlinearities.",
+    title: "There is a popular meme known as the Butterfly Effect that is occasionally invoked to explain systems which exhibit difficult-to-predict changes.  Scientists refer to these modeling phenomena as nonlinearities, and they can potentially disguise the effects of foreign influences upon the Earth's weather system.",
     sourcename: null,
 
     images: ["img/articles/butterfly-effect.jpg"],
@@ -4980,10 +4980,36 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "",
+    title: "The Limits of Climate Models",
     sourcename: null,
 
-    images: ["img/articles/solar-jet-stream.jpg"],
+    images: ["img/articles/cray-gaea.jpg",  "img/articles/GCM-schematic.jpg", "img/articles/IPCC-predictions-vs-observations.png"],
+    definition: "There are some important limitations to climate models which anybody who expresses confidence in their predictive abilities should be fluent in.",
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/general-circulation-models.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 173,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "NASA announced only quite recently -- in 2007 -- that the major cause of different Arctic ice conditions were due to changing global wind patterns, alternatively referred to as Rossby or Planetary Waves.",
+    sourcename: null,
+
+    images: ["img/articles/rossby-waves-1.png", "img/articles/rossby-waves-3.jpg", "img/articles/rossby-waves-paper.jpg"],
     definition: null,
     status: null,
     search_hit: null,
@@ -4991,8 +5017,34 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     claim_ids: null,
     critique_ids: null,
     next: null,
-    avatar: "img/avatars/sunspots-stratosphere.jpg",
-    url: "",
+    avatar: "img/avatars/polar-vortex.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: [33],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 174,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "An important point that is not commonly emphasized amongst climate scientists is that the atmosphere's tropopause is significantly thinner at the poles than the equator; it varies between 7 and 10 km at the poles, but it's 17 to 18 km thick at the equator.",
+    sourcename: null,
+
+    images: ["img/articles/tropopause-height-1.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/polar-vortex.jpg",
+    url: null,
     text: null,
     highighter: null,
     expert_ids: null,
