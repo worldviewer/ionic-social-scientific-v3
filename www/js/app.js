@@ -545,7 +545,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/headers/AJ-vs-IEEE.jpg"],
     definition: "There has been a widely overlooked debate over how to model cosmic plasmas (such as the solar wind) for more than half a century between the Astrophysical Journal and IEEE's Transactions on Plasma Science. This debate is important because it relates to the way we model the universe's most common state for matter -- which necessarily implies that it is relevant to numerous scientific disciplines beyond just astrophysics and cosmology. The climate debate cannot be fully understood without understanding this other controversy.",
     status: null,
-    copy_text: null,
+    copy_text: "Although rarely mentioned in press releases or academic journals, <b>there has been a debate for more than half a century now between two respected journals over how to model the universe's most common state for matter</b>. It started with an assumption that would turn out to be wrong: that space is a vacuum. There could be no electrical currents through space without a medium over which those currents might travel. And it was with this line of reasoning that many of our textbook theories for space that persist to this day came to be.<br><br>It is remarkable that since the late 50's when it was realized that the electrically conductive medium of plasma was pervasive -- <b>essentially switching our perception of the universe's fundamental state for matter</b> -- <b>there was no substantive reaction within our textbook theories for how the universe works</b>.<br><br>In the laboratory, plasmas exhibit long-lived filaments which can conduct charge to limitless distances. Yet, with the observation of cosmic plasmas, theorists immediately suggested that the cosmic plasma could be modeled as a fluid -- <b>the principle difference being that fluids do not form such charge-carrying filaments</b>.<br><br>What is further remarkable is now that Herschel has confirmed that the universe is indeed criss-crossed by filaments -- <b>which only as of 2009 have been confirmed, beyond a dobut, as ubiquitous</b> -- <b>there is still a hostile resistance within journals like The Astrophysical Journal to consider that the cosmic plasma is behaving much like our observations of laboratory plasmas</b>.<br><br>If the public was aware of the full history of this debate, they'd be stunned -- for not only was a filamentary universe a fundamental prediction for a Plasma Universe, but <b>the inventor of the MHD cosmic plasma models used to this day by the astrophysical community, was overtly critical of their refusal to consider electric current causes for cosmic magnetic fields. Alfven even used the occasion of his 1970 Nobel lecture (for MHD) to distance himself from their approach</b>.<br><br>Claims that cosmic plasmas can be modeled as fluids, without the filaments that we today directly observe, have been controversial <b>from their inception</b>. Some of these critics have pointed to issues related to <b>the way in which we train astrophysicists today</b>; others have pointed to a <b>longstanding refusal to give credit to Kristian Birkeland</b>; yet more pin the blame on the ongoing astrophysical tendency, couched in a long history, of <b>favoring mathematics over laboratory observations</b>. At least one astrophysicist has pointed out that <b>galaxy experts (and one presumes most astrophysicists) do not actually read IEEE's Transactions on Plasma Science, where the more electrical cosmic plasma ideas are explored</b>.<br><br>What is clear is that this debate over how to model cosmic plasmas which rages between The Astrophysical Journal and IEEE's Transactions on Plasma Science <b>is not today taught to graduate students</b>, and this explains how it can be that when evidence supports the electrical view of cosmic plasmas, there is rarely any recognition within the scientific community.",
     search_hit: null,
 
     claim_ids: [41,42,43,44,48,49],
@@ -681,7 +681,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: null,
     definition: "Although the data remains sparse, there's reason to suspect that Pluto might have continued to warm up even as it moves away from the Sun.",
     status: null,
-    copy_text: "Claims that Pluto is warming are at this point just as speculative as claims that Mars is warming.<br><br>However, the rebuttal that warming should be observable on all of the planets assumes a specific cause of solar radiation for the warming (electrical warming could depend upon numerous unseen factors).  And suggestions that any warming on Pluto might be the result of a greenhouse effect are just as speculative as the original claim.",
+    copy_text: "Some people gravitate to claims of warming on other planets because of their simplicity.<br><br>Nevertheless, claims that Pluto is warming are at this point just as speculative as claims that Mars is warming.<br><br>However, the rebuttal that warming should be observable on all of the planets assumes a specific cause of solar radiation for the warming (electrical warming could depend upon numerous unseen factors).  And suggestions that any warming on Pluto might be the result of a greenhouse effect are just as speculative as the original claim.",
     search_hit: null,
 
     claim_ids: [92,93],
@@ -735,7 +735,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/headers/polar-vortex-split.jpg", "img/headers/venus-polar-vortex-2.jpg"],
     definition: "The observed splitting of the polar vortex on both Earth and Venus is an expected feature of laboratory plasmas when they are conducting electrical currents, yet climate and planetary scientists claim to not understand either observation.",
     status: null,
-    copy_text: null,
+    copy_text: "Scientists tend to view the quasi-stable rotating structures above the poles much like a stable cyclone very high in the sky -- <b>notably without consideration of Earth's larger electromagnetic plasma environment</b>. Yet, quite unlike hurricanes, <b>the polar vortices are occasionally observed to split into two separate vortices</b>. How is this possible?<br><br>What is rarely mentioned amongst climatologists is that a similar pattern is observed not only on Venus, but also on much smaller scales, within the plasma laboratory.<br><br>A fundamental principle in electromagnetism is that two-charge carrying wires will tend to attract one another when carrying current in the same direction. Yet, as they approach one another, they are oftentimes observed to resist combining.  Observations of laboratory plasmas, and even close inspection of novelty plasma globes, reveal similar behavior.  In that context, these twisting plasma filaments are called <b>Birkeland currents</b>.  Astrophysicists also observe such structures through telescopes, on far larger scales, and in that context, they are referred to as <b>magnetic ropes</b>, <b>flux tubes</b> or even <b>elephant trunks</b>.<br><br>Numerous aspects of the Venusian atmosphere can be explained in electrical terms, and this suggests that theorists will eventually do the same for Earth's atmospheric features.",
     search_hit: null,
 
     claim_ids: [112,114,113,116,117,118,119],
@@ -4984,7 +4984,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     sourcename: null,
 
     images: ["img/articles/cray-gaea.jpg",  "img/articles/GCM-schematic.jpg", "img/articles/IPCC-predictions-vs-observations.png"],
-    definition: "There are some important limitations to climate models which anybody who expresses confidence in their predictive abilities should be fluent in.",
+    definition: "There are some important limitations to climate models which everybody today should be fluent in.",
     status: null,
     search_hit: null,
 
@@ -5006,7 +5006,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "NASA announced only quite recently -- in 2007 -- that the major cause of different Arctic ice conditions were due to changing global wind patterns, alternatively referred to as Rossby or Planetary Waves.",
+    title: "NASA announced only quite recently -- in 2007 -- that a major cause of extreme, sometimes persistent, weather events is changing global wind patterns, alternatively referred to as Rossby or Planetary Waves.",
     sourcename: null,
 
     images: ["img/articles/rossby-waves-1.png", "img/articles/rossby-waves-3.jpg", "img/articles/rossby-waves-paper.jpg"],
