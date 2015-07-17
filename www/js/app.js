@@ -4824,7 +4824,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "The fact that we exist in an atmosphere which is largely not a plasma is unlikely to be an accident; after all, high-energy electricity also goes by the name of radiation.",
+    title: "The fact that we exist in an atmosphere which is largely not a plasma is unlikely to be an accident.",
     sourcename: null,
 
     images: ["img/books/plasma-99-11.jpg"],
