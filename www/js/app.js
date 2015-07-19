@@ -5136,7 +5136,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Solar physicist Willie Soon is under pressure by some scientists because he claims that sunspots generate high levels of energy which then heat the Earth's atmosphere.  What is striking about the reporting on and conversations about his claims is that there is oftentimes a failure to distinguish electromagnetic solar radiation (photons) from solar wind plasma (electrons and ions).  In this particular article, Soon's critic points to the total solar irradiance variation (TSI) -- which is not actually a response to Soon's claim.",
+    title: "Solar physicist Willie Soon is under pressure by some scientists because he claims that sunspots generate high levels of energy which then heat the Earth's atmosphere.  What is striking about the reporting on and conversations about his claims is that there is oftentimes a failure to distinguish electromagnetic solar radiation (photons) from solar wind plasma (electrons and ions).",
     sourcename: null,
 
     images: ["img/articles/willie-soon-sunspots-magnetism.jpg"],
