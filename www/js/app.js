@@ -792,7 +792,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     copy_text: "It's not entirely a secret that Earth's weather and temperature correlate with solar activity; the problem is that nobody has yet unraveled the intricate details of how it actually happens. <b>The puzzle is that the overall brightness of the Sun varies by less than 0.1% during the 11-year solar cycle, which is not enough to explain the observed changes in the weather.</b><br><br>Yet, consider what we <b>do</b> know:<br><br>(1) <b>Sunspot numbers generally correlate with lower stratosphere temperature anomalies, minus the temporal effects of volcanic eruptions.</b><br><br>(2) There are two fundamental modes by which the solar wind can influence the Earth's weather and temperature: over the equatorial closed magnetic field lines and the polar open magnetic field lines.<br><br>(3) The first laboratory astrophysicist, Kristian Birkeland, discovered that a magnetized sphere known as a terrella within a vacuum subjected to a voltage gradient can elicit fundamentally divergent modes of electromagnetic behavior which resemble the Sun's.<br><br>(4) Fluctuations in the Earth's temperature appear to follow a number of overlapping solar cycles which operate at different timespans, and whose duration appears to slightly change from one cycle to the next. These solar cycles apparently even exhibit resonances between one another -- <b>a characteristic feature of electrical transmission lines</b>.<br><br>(5) <b>The recent warming hiatus around 2000 was not predicted by any of the IPCC models</b>, but it should have been expected as a consequence of natural solar cycles which have been observed over three stages: 1860-80, 1910-40 and 1975<b>-2000</b>. <b>In each of these solar magnetic maxima, the temperature increased by about 0.15 C per decade, and between them, the temperatures cooled</b>.",
     search_hit: null,
 
-    claim_ids: [171,98,19,95,96,97,99,175,100],
+    claim_ids: [171,178,179,98,19,95,96,97,99,175,100],
     critique_ids: null,
     next: 11,
     avatar: "img/avatars/sunspots-stratosphere.jpg",
@@ -5129,6 +5129,58 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     nodes: null,
     postscript: null
 
+  }, {
+
+    id: 178,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Solar physicist Willie Soon is under pressure by some scientists because he claims that sunspots generate high levels of energy which then heat the Earth's atmosphere.  What is striking about the reporting on and conversations about his claims is that there is oftentimes a failure to distinguish electromagnetic solar radiation (photons) from solar wind plasma (electrons and ions).  In this particular article, Soon's critic points to the total solar irradiance variation (TSI) -- which is not actually a response to Soon's claim.",
+    sourcename: null,
+
+    images: ["img/articles/willie-soon-sunspots-magnetism.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/TSI.jpg",
+    url: "http://www.thecrimson.com/article/2009/4/14/sunspots-may-cause-climate-fluctuations-sunspot/",
+    text: null,
+    highighter: null,
+    expert_ids: [64],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 179,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The concepts of radiation and plasma are easy to confuse because plasma can create radiation, and radiation can in turn create plasma.  But, strictly speaking, radiation refers to electromagnetic radiation (photons), whereas plasma refers to a gas with some percentage of unbound charged particles (electrons and/or ions).",
+    sourcename: null,
+
+    images: ["img/forums/radiation-vs-plasma.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/TSI.jpg",
+    url: "https://www.physicsforums.com/threads/difference-between-plasma-and-radiation.588623/",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
  }];
 
 
@@ -5579,6 +5631,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@LucyJago",
     title: "Author / Documentary Producer / Director",
     image: "img/experts/lucy-jago.jpg"
+
+  },{
+
+    id: 64,
+    name: "@WillieSoon",
+    title: "Solar Researcher at the Smithsonian Astrophysical Observatory, part of the Harvard-Smithsonian Center for Astrophysics",
+    image: "img/experts/willie-soon.jpg"
 
   }];
 
