@@ -603,7 +603,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     copy_text: "There exists a common misconception that the solar wind cannot carry electric currents for the simple reason that it generally exhibits the same number of electrons and protons.<br><br>And yet, throughout most of the volume of a glow discharge lamp (such as a high-pressure sodium bulb), the plasma just the same exhibits equal numbers of opposite charges.  <b>Yet, electrical currents plainly power these bulbs</b>.<br><br>Such a plasma with equal charges is said to be <b>quasi-neutral</b>.  Our tendency, based upon observations of solids under similar circumstances, is to imagine that the solar wind is therefore non-conductive.  However, this could not be further from the truth, for <b>conductivity is a measure of the freedom of charge carriers within a medium</b> -- and in that light, plasmas are clearly extremely conductive.<br><br><b>What surely confuses the discussion is the fact that astrophysicists tend to avoid usage of the term 'electric current' within the context of astronomical observations, even when the term clearly applies</b>.  Peer-reviewed papers instead point to the magnetic fields that we can see, and which we can expect to be associated with electric currents.  They refer to those fields variously as <b>magnetic ropes</b>, <b>flux tubes</b> or even in some instances, <b>elephant trunks</b>.",
     search_hit: null,
 
-    claim_ids: [80,78,81,79,82,169,83],
+    claim_ids: [80,78,81,79,82,169,177,83],
     critique_ids: null,
     next: 4,
     avatar: "img/avatars/solar-wind-current.jpg",
@@ -765,7 +765,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     copy_text: "There's a rarely discussed approach in the planetary and astrophysical sciences which, despite its poor track record, is to this day applied with rigor: <b>Where evidence for electricity in space is observed, assume that it's an isolated, closed system</b>.<br><br>This approach stalled research on the aurora for half a century, but it's getting a second go today with lightning. Unfortunately, this attempt is turning out to be much like the last, because there are by now <b>three</b> outstanding issues with the idea which all appear to point to the same exact conclusion -- that lightning is a charge-neutralization between Earth and space.<br><br>First, nobody can explain with any confidence what actually causes lightning, because <b>the textbook, closed-system worldview cannot produce an electric field that is sufficient to seed the discharge</b>.<br><br>But, second, <b>we can already plainly see that there is some sort of larger connection between lightning and space</b> -- and for more than one reason: because the Van Allen radiation belts thousands of miles above the Earth become cleared by lightning; because a correlation has already been observed between solar wind speeds and intensities with the rate of lightning strikes; and because we today understand that there are lightning phenomena which actually connect to space (aka sprites).<br><br>The third red flag for the closed lightning circuit is that <b>ordinary lightning should be an order of magnitude too weak to produce the energetic emmissions we see</b> -- like gamma rays, antimatter and neutrons, <b>phenomena typically associated with supernovae and solar flares</b>. Yet, there is a growing recognition that lightning emits all of these things.<br><br>It seems just a matter of time that lightning will become recognized as an aspect of Earth's interconnection with its larger plasma environment -- a conclusion which would resolve all three anomalies at once.",
     search_hit: null,
 
-    claim_ids: [84,86,85,87,89,88,90,111],
+    claim_ids: [176,84,86,85,87,89,88,90,111],
     critique_ids: null,
     next: 10,
     avatar: "img/avatars/solar-wind-lightning.jpg",
@@ -792,7 +792,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     copy_text: "It's not entirely a secret that Earth's weather and temperature correlate with solar activity; the problem is that nobody has yet unraveled the intricate details of how it actually happens. <b>The puzzle is that the overall brightness of the Sun varies by less than 0.1% during the 11-year solar cycle, which is not enough to explain the observed changes in the weather.</b><br><br>Yet, consider what we <b>do</b> know:<br><br>(1) <b>Sunspot numbers generally correlate with lower stratosphere temperature anomalies, minus the temporal effects of volcanic eruptions.</b><br><br>(2) There are two fundamental modes by which the solar wind can influence the Earth's weather and temperature: over the equatorial closed magnetic field lines and the polar open magnetic field lines.<br><br>(3) The first laboratory astrophysicist, Kristian Birkeland, discovered that a magnetized sphere known as a terrella within a vacuum subjected to a voltage gradient can elicit fundamentally divergent modes of electromagnetic behavior which resemble the Sun's.<br><br>(4) Fluctuations in the Earth's temperature appear to follow a number of overlapping solar cycles which operate at different timespans, and whose duration appears to slightly change from one cycle to the next. These solar cycles apparently even exhibit resonances between one another -- <b>a characteristic feature of electrical transmission lines</b>.<br><br>(5) <b>The recent warming hiatus around 2000 was not predicted by any of the IPCC models</b>, but it should have been expected as a consequence of natural solar cycles which have been observed over three stages: 1860-80, 1910-40 and 1975<b>-2000</b>. <b>In each of these solar magnetic maxima, the temperature increased by about 0.15 C per decade, and between them, the temperatures cooled</b>.",
     search_hit: null,
 
-    claim_ids: [171,98,19,95,96,97,99,100],
+    claim_ids: [171,98,19,95,96,97,99,175,100],
     critique_ids: null,
     next: 11,
     avatar: "img/avatars/sunspots-stratosphere.jpg",
@@ -5051,6 +5051,84 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     nodes: null,
     postscript: null
 
+  }, {
+
+    id: 175,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Equatorial structures surprisingly similar to Kristian Birkeland's terrella experiments appear to validate the notion that the Earth is immersed in an electrical plasma environment.",
+    sourcename: null,
+
+    images: ["img/papers/ionization-by-sunlight.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/birkeland-terrella-2.jpg",
+    url: "http://arxiv.org/pdf/1504.06470v1.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 176,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "It's been claimed that Sydney Chapman's insistence that it was impossible for currents to cross space, and that such currents can only come from the Earth, slowed the advancement of geomagnetic and auroral physics for half of a century.  It's an important claim because theorists to this day continue to assert, where electricity is observed in space, that these electrical systems are isolated islands.",
+    sourcename: null,
+
+    images: ["img/books/birkeland-geomagnetic-physics-slowed.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/the-northern-lights.png",
+    url: "https://books.google.com/books?id=C9iVxsMjSp4C&pg=PT229&dq=%22but+rejection+of+his+theories+probably+slowed+the+advance+of+geomagnetic+and+auroral+physics+for+nearly+half+a+century%22&hl=en&sa=X&ved=0CB4Q6AEwAGoVChMIre2Ez5vmxgIVj6SICh2_sgFT#v=onepage&q&f=false",
+    text: null,
+    highighter: null,
+    expert_ids: [63],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 177,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Dusty interstellar filaments are sometimes called elephant trunks.",
+    sourcename: null,
+
+    images: ["img/articles/elephant-trunks.png"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/elephant-trunks.jpg",
+    url: "http://dictionary.obspm.fr/index.php?showAll=1&formSearchTextfield=elephant+trunk",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
  }];
 
 
@@ -5494,6 +5572,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@JohnGribbin",
     title: "Astrophysicist / Science Writer",
     image: "img/experts/john-gribbin.jpg"
+
+  },{
+
+    id: 63,
+    name: "@LucyJago",
+    title: "Author / Documentary Producer / Director",
+    image: "img/experts/lucy-jago.jpg"
 
   }];
 
