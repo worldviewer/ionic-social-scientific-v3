@@ -517,7 +517,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     claim_ids: [146,153,120,2,3,4,5,6,7,8,104,9,10,172,94,1,131],
     critique_ids: [12,45,46],
     cmap_ids: [13,14,15,16,17,50,51,52,53,54,55,56,57,58,59],
-    article_ids: [115,91,18,19,20,47],
+    article_ids: null,
     forum_ids: [21],
     paper_ids: null,
     book_ids: [23,24,25],
@@ -789,10 +789,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     images: ["img/articles/kristian-birkeland-terrella.png", "img/articles/birkeland-terrella-2.jpg", "img/headers/birkeland-terrella-1.jpg", "img/articles/solar-plasmoid-side.jpg", "img/articles/solar-plasmoid-top.jpg"],
     definition: "The Sun exhibits a variety of overlapping solar cycles, and there is a 60-year cycle which appears to coincide with recent temperature changes here on Earth.",
     status: null,
-    copy_text: "It's not entirely a secret that Earth's weather and temperature correlate with solar activity; the problem is that nobody has yet unraveled the intricate details of how it actually happens. <b>The puzzle is that the overall brightness of the Sun varies by less than 0.1% during the 11-year solar cycle, which is not enough to explain the observed changes in the weather.</b><br><br>Yet, consider what we <b>do</b> know:<br><br>(1) <b>Sunspot numbers generally correlate with lower stratosphere temperature anomalies, minus the temporal effects of volcanic eruptions.</b><br><br>(2) There are two fundamental modes by which the solar wind can influence the Earth's weather and temperature: over the mid-latitudinal closed magnetic field lines and the polar open magnetic field lines.<br><br>(3) The first laboratory astrophysicist, Kristian Birkeland, discovered that a magnetized sphere known as a terrella within a vacuum subjected to a voltage gradient can elicit fundamentally divergent modes of electromagnetic behavior which resemble the Sun's.<br><br>(4) Fluctuations in the Earth's temperature appear to follow a number of overlapping solar cycles which operate at different timespans, and whose duration appears to slightly change from one cycle to the next.<br><br>(5) <b>The recent warming hiatus around 2000 was not predicted by any of the IPCC models</b>, but it should have been expected as a consequence of natural solar cycles which have been observed over three stages: 1860-80, 1910-40 and 1975<b>-2000</b>. <b>In each of these solar magnetic maxima, the temperature increased by about 0.15 C per decade, and between them, the temperatures cooled</b>.",
+    copy_text: "It's not entirely a secret that Earth's weather and temperature correlate with solar activity; the problem is that nobody has yet unraveled the intricate details of how it actually happens. <b>The puzzle is that the overall brightness of the Sun varies by less than 0.1% during the 11-year solar cycle, which is not enough to explain the observed changes in the weather.</b><br><br>Yet, consider what we <b>do</b> know:<br><br>(1) <b>Sunspot numbers generally correlate with lower stratosphere temperature anomalies, minus the temporal effects of volcanic eruptions.</b><br><br>(2) There are two fundamental modes by which the solar wind can influence the Earth's weather and temperature: over the equatorial closed magnetic field lines and the polar open magnetic field lines.<br><br>(3) The first laboratory astrophysicist, Kristian Birkeland, discovered that a magnetized sphere known as a terrella within a vacuum subjected to a voltage gradient can elicit fundamentally divergent modes of electromagnetic behavior which resemble the Sun's.<br><br>(4) Fluctuations in the Earth's temperature appear to follow a number of overlapping solar cycles which operate at different timespans, and whose duration appears to slightly change from one cycle to the next. These solar cycles apparently even exhibit resonances between one another -- <b>a characteristic feature of electrical transmission lines</b>.<br><br>(5) <b>The recent warming hiatus around 2000 was not predicted by any of the IPCC models</b>, but it should have been expected as a consequence of natural solar cycles which have been observed over three stages: 1860-80, 1910-40 and 1975<b>-2000</b>. <b>In each of these solar magnetic maxima, the temperature increased by about 0.15 C per decade, and between them, the temperatures cooled</b>.",
     search_hit: null,
 
-    claim_ids: [171,98,95,96,97,99,100],
+    claim_ids: [171,98,19,95,96,97,99,100],
     critique_ids: null,
     next: 11,
     avatar: "img/avatars/sunspots-stratosphere.jpg",
@@ -1002,7 +1002,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Article",
     display: true,
-    title: "Solar Wind Surprise",
+    title: "Recent observations reveal the surprising observation that particle and field energies in the magnetosphere can vary by as much as ten times over timescales as short as a half hour.",
     sourcename: "Wattsupwiththat Blog",
 
     images: ["img/articles/wuwt-solar-wind-surprise.jpg"],
@@ -1028,7 +1028,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Article",
     display: true,
-    title: "Global Warming in a Climate of Ignorance",
+    title: "Solar experts do not understand the physics of the varying solar luminosity.",
     sourcename: "Holoscience",
 
     images: ["img/articles/sun-power-surge.jpg"],
@@ -1054,7 +1054,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Article",
     display: true,
-    title: "Science, Politics and Global Warming",
+    title: "Eddington's solar model assumed the Sun was isolated in the vacuum of space.",
     sourcename: "Holoscience",
 
     images: ["img/articles/thornhill-on-climatologists.jpg"],
@@ -2980,7 +2980,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     copy_text: "Conventional wisdom suggests that weather reports typically become inaccurate at around two weeks because the atmosphere is chaotic, and because small rounding errors are known to produce different results on different computers.<br><br>However, there can be yet a third cause: space 'weather', or more formally, the Earth's electrically conductive solar plasma environment. Theorists like to point to the accepted fact that the Sun's total solar irradiance (TSI) does not vary by more than 0.1% over the entire solar cycle, and the Earth's magnetic field is extremely effective at deflecting or trapping this solar radiation. Yet, <b>some theorists will admit that this line of reasoning does not apply to solar radiation and solar plasma at the polar regions.</b><br><br>Nobody actually knows the energy balance at the top of the atmosphere (TOA), but what we can observe is that <b>climate models tend to be very sensitive to this TOA energy balance</b>. IPCC models accordingly make sweeping assumptions about this TOA energy balance -- the problem being that <b>any claims that are subsequently made about the cause for climate changes can simply reflect this assumption of an energy balance</b>. The IPCC does not generally discuss such assumptions within its Summary for Policymakers, but this problem of model tuning is indeed mentioned in its scientific assessments.<br><br>Such concerns are not without warrant, as <b>a link has been observed between sudden stratospheric warming (SSW) events at the poles with mile-deep oceanic circulation patterns</b>, which are in turn known to be associated with Earth's climate. <b>That's an enormously surprising observation in light of the fact that the ocean's energy content is on the order of a thousand times the atmospheric energy content.</b><br><br>There are several different groups currently studying the Sun's electrical influence upon the Earth's weather and climate. Piers Corbyn is already widely known for his occasional successes predicting extreme weather events a full four weeks in advance based upon lunar, magnetic and especially energetic solar patterns.<br><br>Less known is the fact that <b>NASA has recently invested almost a million dollars to-date into the creation of a new Global Ionosphere-Thermoshere Model (GITM), which like Corbyn's approach, will take into account sudden influxes of solar electrical energy at the poles</b>.<br><br>Yet another group, which is using infrasound data from the 300+ CTBTO network of sensors more commonly used to monitor nuclear explosions across the globe, believes that <b>they will eventually be able to predict the weather a full month or season in advance</b> by observing the same SSW events that both NASA and Corbyn are closely tracking.",
     search_hit: null,
 
-    claim_ids: [122,124,123,174,125,126,121,115,129,130,127,128,11],
+    claim_ids: [122,124,123,174,125,126,18,121,115,129,130,127,128,11],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/toa-model-tuning.jpg",
@@ -4311,7 +4311,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     copy_text: "Our understanding of space physics has undergone dramatic changes over the past half-century, and these discoveries are only just now trickling into the other scientific domains.<br><br><b>Space was initially assumed to be a vacuum, and the notion of space-based rockets was considered absurd.</b> By the mid-40's, rockets were raining down on London.  By the late 50's, some of the first rockets to actually enter space conclusively demonstrated that space exhibited varying amounts of charged particles.<br><br>In the 40's, when radio engineers first spotted the radio waves which astronomers never thought to look for, <b>the astronomers responded that it had to be a hoax or a mistake</b>. Radio astronomy would not be recognized as an actual discipline until the late 50's.<br><br>The observation of large-scale magnetic fields associated with objects as large as galaxies to this day evokes awkward silence and speculative explanations amongst theorists <b>who were all taught in either high school or college that magnetic fields tend to go hand-in-hand with electric currents</b>.<br><br>We did not definitively understand that filaments are ubiquitous in the universe until the launch of Herschel in 2009. <b>Few people today realize that that was in fact one of Hannes Alfven's predictions for a plasma universe</b>.<br><br>Most of the electromagnetic spectrum was unavailable to us up until the mid-1970's. <b>People don't yet understand the significance of observing these filaments, nor that we've only recently developed an ability to see them</b>.<br><br>The term 'plasma' was coined right around the time that the Big Bang was hypothesized (in the early 30's), but the concept of a 'Plasma Universe' was not proposed until the mid-1980's.<br><br>The Big Bang theory therefore had a half-century head-start on the Plasma Universe to capture the public's imagination, but <b>many of the most important astronomical discoveries over the past half-century have related to electromagnetism and plasmas</b>.<br><br>What is largely ignored is that <b>these recent discoveries were all made through the lens of that former non-electrical worldview</b>. So, it is not at all a surprise what is happening with the climate models today. But for those who are paying attention to the larger chronology which weather and climate theories fit into, it is clear that the most surprising recent astronomical discoveries are collectively pointing to the possibility of energy flows through space -- flows of plasma which the Earth is of course embedded in.",
     search_hit: null,
 
-    claim_ids: [147,148,154,155,149,150,151,152],
+    claim_ids: [147,20,47,148,154,155,149,150,151,152],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/first-radio-telescope.jpg",
