@@ -514,7 +514,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     definition: "Plasma-coupled heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic plasma phenomena.",
     status: "Plasma-coupled heating is not widely known, has no particular conceptual label, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Plasma-coupled heating is a natural implication of the Electric Universe paradigm.",
     search_hit: null,
-    claim_ids: [146,153,120,2,3,4,5,6,7,8,104,9,10,172,94,1,131],
+    claim_ids: [146,153,120,2,3,4,5,6,7,8,104,9,10,184,172,94,1,131],
     critique_ids: [12,45,46],
     cmap_ids: [13,14,15,16,17,50,51,52,53,54,55,56,57,58,59],
     article_ids: null,
@@ -5259,6 +5259,345 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     nodes: null,
     postscript: null
 
+  }, {
+
+    id: 183,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The weight of a typical cloud is around a million pounds.  So, how can it be that the cloud simply hangs in the sky?  The answer may surprise you.",
+    sourcename: null,
+
+    images: ["img/articles/cloud-weight.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/oceans.jpg",
+    url: "http://mentalfloss.com/article/49786/how-much-does-cloud-weigh",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 184,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Water Has an Ordered Phase Between Liquid and Solid, and There Are Important Implications for Clouds",
+    sourcename: null,
+
+    images: null,
+    definition: "Some researchers have shifted their focus from the study of individual water molecules to the study of the collective behavior of water molecules.  What they've observed has not been expected: That water molecules frequently charge-separate themselves, and that these charge-separated structures actually do things of enormous importance.",
+    status: null,
+    search_hit: null,
+
+    claim_ids: [183,185,186,187,188,189,190,191,192,193,194,195],
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/oceans.jpg",
+    url: null,
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 185,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The riddle of how clouds stay up in the air seems foremost related to this issue of cloud density.  And this raises an important question: Why is it that water molecules converge into a cloud, yet not sufficiently so that they fall from the sky, due to their own weight?",
+    sourcename: null,
+
+    images: ["img/articles/fourth-state-of-water.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/oceans.jpg",
+    url: "http://faculty.washington.edu/ghp/research-themes/water-science/",
+    text: null,
+    highighter: null,
+    expert_ids: [65],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 186,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "University of Washington Professor Gerald Pollack focuses the question by asking why the evaporating water ends up as clouds, rather than simply a haze ...",
+    sourcename: null,
+
+    images: ["img/audio-video/gerald-pollack-on-clouds-1.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/oceans.jpg",
+    url: "https://youtu.be/i-T7tCMUDXU?t=107",
+    text: [{quote: "So, here's something that you see every day.  You see a cloud in the sky, and probably you haven't asked the question: How does the water get there?  Um, why -- I mean -- there's only one cloud sitting there ... and the water is evaporating everywhere.  Why does it go to this cloud, forming what you see there?"}],
+    fancy_text: [{quote: "So, here's something that you see every day.  You see a cloud in the sky, and probably you haven't asked the question: How does the water get there?  Um, why -- I mean -- <span class='highlighter'>there's only one cloud sitting there ... and the water is evaporating everywhere.  Why does it go to this cloud, forming what you see there?</span>"}],
+    highighter: null,
+    expert_ids: [65],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 187,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Detailed observations of water in the presence of hydrophilic materials reveals an 'exclusion zone' which forms a net charge opposite to the bulk water it forms from.",
+    sourcename: null,
+
+    images: ["img/audio-video/gerald-pollack-on-clouds-2.jpg", "img/audio-video/gerald-pollack-on-clouds-3.jpg", "img/audio-video/gerald-pollack-on-clouds-0.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/oceans.jpg",
+    url: "https://youtu.be/i-T7tCMUDXU?t=484",
+    text: [{quote: "What we found is that we stuck electrodes into the EZ water because we thought there might be some electrical potential.  It turned out that there's lots of negative charge in that zone.  And we used some dyes to see some positive charge, and we found that in the bulk water zone, there was an equal amount of positivity.  But, what's going on, it looked like, is that next to these interfaces, the water molecule was somehow splitting up into a negative part and a positive part.  And the negative part sat right next to the water-loving material, and the positive charges went out beyond that."}],
+    highighter: null,
+    expert_ids: [65],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 188,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The same exclusion zone (EZ) explanation holds for atmospheric water, but in a spherical geometry ...",
+    sourcename: null,
+
+    images: ["img/audio-video/gerald-pollack-on-clouds-4.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/oceans.jpg",
+    url: "https://youtu.be/i-T7tCMUDXU?t=560",
+    text: [{quote: "And, um, we found, actually, it's the same, you didn't need a straight interface, you could also have a sphere.  So, you put a sphere in the water, and any sphere that's suspended in the water develops one of these exclusion zones ... with a negative charge, and beyond that is all of the positive charge -- charge separation.  It didn't have to be only a material sphere, in fact, you could put a droplet in there -- a water droplet -- or, in fact, even a bubble.  You get the same result.  Surrounding each one of these entities is a negative charge, and the separated positive charge."}],
+    highighter: null,
+    expert_ids: [65],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 189,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Contrary to the textbook theory, two spheres of water with EZ layer surfaces will tend to attract to one another, despite the fact that they exhibit the same net electrical charge.  This explanation can explain how clouds stay in the air without any recourse to updrafts, because the electrical nature of this colloid structure leaves it susceptible to levitation by the Earth's electric field.",
+    sourcename: null,
+
+    images: ["img/audio-video/gerald-pollack-on-clouds-5.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/oceans.jpg",
+    url: "https://youtu.be/i-T7tCMUDXU?t=623",
+    text: [{quote: "So, here's a question for you: If you take two of these negatively charged entities, and you drop them in a beaker of water, near each other, what happens to the distance between them?<br><br>Now, I bet that 95% of you would say: Well, that's easy.  I learned in physics negative and negative repel each other, so therefore they're gonna go apart from one another, right?  Is that what you'd guess?<br><br>Well, the actual result -- if you think about it -- is that it's not only the ... negative charge, but you also have positive charge.  And the positive charge is especially concentrated in between those two spheres, because they come from contributions from both of those spheres.  So, there are a lot of them there.<br><br>When you have positive in between two negatives, what happens is that you get an attractive force.  And so you expect these two spheres to actually come together despite the fact that they have the same charge.  And that's exactly what happens.  It's been known for many years.<br><br>They come together.  If you have many of them instead of just two of them, you'll get something that looks like this.  They'll come together, and this is called a colloid crystal.  It's a stable structure ...<br><br>The same thing is true if you have droplets ... So, when you think of droplets and aerosol droplets in the air, and think about the cloud ... the reason these aerosol droplets come together is because of this opposite charge.  So, the droplets from the air, similarly charged, come together, coalesce, giving you that cloud in the sky."}],
+    highighter: null,
+    expert_ids: [65],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 190,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The electrical colloidial nature of clouds neatly explains why they are observed to vertically shift up and down, alongside changes in the electric field.",
+    sourcename: null,
+
+    images: ["img/articles/earths-electrical-heartbeat.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/oceans.jpg",
+    url: "http://phys.org/news/2013-03-revealed-earth-electrical-heartbeat-clouds.html",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 191,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "One type of upper-atmosphere clouds called noctilucent clouds originate at the periphery of the polar vortex.  These clouds have proven extremely useful to atmospheric researchers for decoding the global interconnections between different layers of the ionosphere.",
+    sourcename: null,
+
+    images: ["img/articles/noctilucent-clouds-polar-hole-1.jpg", "img/articles/noctilucent-1.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/oceans.jpg",
+    url: "https://www.thunderbolts.info/wp/2014/10/20/polar-mesospheric-clouds-2/",
+    text: null,
+    highighter: null,
+    expert_ids: [30],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 192,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Noctilucent clouds are frequently filamentary",
+    sourcename: null,
+
+    images: ["img/articles/noctilucent-clouds-filaments-1.jpg", "img/articles/noctilucent-clouds-filaments-2.jpg", "img/articles/noctilucent-clouds-filaments-3.jpg", "img/articles/noctilucent-clouds-stockholm.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/oceans.jpg",
+    url: "https://tr.wikipedia.org/wiki/Gece_parlayan_bulutlar",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 193,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Noctilucent clouds exhibit a curious anti-correlation with solar activity.",
+    sourcename: null,
+
+    images: ["img/articles/noctilucent-anticorrelation.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/oceans.jpg",
+    url: "http://science.nasa.gov/science-news/science-at-nasa/2013/07jun_nlcs/",
+    text: null,
+    highighter: null,
+    expert_ids: [33],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 194,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "It is by now fairly well known that cosmic rays (which originate outside of our solar system) can possibly seed clouds within Earth's atmosphere.",
+    sourcename: null,
+
+    images: ["img/books/the-neglected-sun-cosmic-ray-seeding.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/the-neglected-sun.png",
+    url: "http://www.amazon.com/Neglected-Sun-Precludes-Climate-Catastrophe/dp/1934791547/",
+    text: null,
+    highighter: null,
+    expert_ids: [43,44],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 195,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "What is much less known, however, is the magnitude of change in the flow of these incoming cosmic ray particles; it is quite significant, and we should expect consequences for the Earth's global electric circuit.",
+    sourcename: null,
+
+    images: ["img/articles/forbush-decrease-diagram.jpg", "img/articles/forbush-decrease.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/forbush-decrease.png",
+    url: "http://inspirehep.net/record/1228994/plots",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
  }];
 
 
@@ -5716,6 +6055,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@WillieSoon",
     title: "Solar Researcher at the Smithsonian Astrophysical Observatory, part of the Harvard-Smithsonian Center for Astrophysics",
     image: "img/experts/willie-soon.jpg"
+
+  },{
+
+    id: 65,
+    name: "@GeraldPollack",
+    title: "Water Researcher / Cell Biologist / University of Washington Professor",
+    image: "img/experts/gerald-pollack.jpg"
 
   }];
 
