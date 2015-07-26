@@ -5301,7 +5301,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     copy_text: null,
     search_hit: null,
 
-    claim_ids: [183,185,186,187,188,189,196,190,191,192,193,194,195],
+    claim_ids: [183,185,186,187,188,189,196,197,190,191,192,193,194,195],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/oceans.jpg",
@@ -5424,7 +5424,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Contrary to the textbook theory, two spheres of water with EZ layer surfaces will tend to attract to one another, despite the fact that they exhibit the same net electrical charge.  This explanation can explain how clouds stay in the air without any recourse to updrafts, because the electrical nature of this colloid structure leaves it susceptible to levitation by the Earth's electric field.",
+    title: "Two spheres of water with EZ layer surfaces will tend to attract to one another, despite the fact that they exhibit the same net electrical charge.  This explanation can explain how clouds stay in the air without any recourse to updrafts, because the electrical nature of this colloid structure leaves it susceptible to levitation by the Earth's electric field.",
     sourcename: null,
 
     images: ["img/audio-video/gerald-pollack-on-clouds-5.jpg"],
@@ -5622,6 +5622,32 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     text: null,
     highighter: null,
     expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 197,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The history of water research is a very dangerous line of investigation insofar as researchers have lost their careers over it, and there have been a couple of claims which ultimately did not stand up to scientific scrutiny.  Today, young scientists are sometimes warned about studying water.",
+    sourcename: null,
+
+    images: ["img/audio-video/gerald-pollack-speaking.jpg", "img/audio-video/gerald-pollack-speaking-2.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/water.jpg",
+    url: "https://youtu.be/XVBEwn6iWOo?t=1829",
+    text: [{quote: "It was suggested, not by me, but by Sir Thomas Hardy in 1912 -- almost a hundred years ago -- that there's a fourth phase.  And this is the liquid crystalline phase.  It's surprising how much work was done, um, over the years, a hundred years ago on this subject.  In fact, we recently dug up something that we can't read very well.  It's called The Depth of the Surface Zone of a Liquid.  And if you can read in the upper right, it says 1949.  This paper published in 1949 summarized all of the evidence for various liquids near surfaces, and there are more than a hundred references of studies done before 1949, that demonstrate that these liquids are organized, and they're organized for regions that are on the order of hundreds of microns from the surface.<br><br>What happened is that after around 1950, by around 1950, this was well-known.  For example, Albert Szent-Gyorgyi, who won the Nobel Prize for ... discovering vitamin C, made many other contributions.  In one of his several books, he said, ... 'Life is water dancing to the tune of macromolecules.'  So, at that time, it was really well known that water was critically important.  So, what happened?<br><br>Well, what happened is that there were a couple of debacles, you might say.  One of those involved something called polywater that was found originally by the Russians, and found to be an artifact -- almost a joke.  Then, 20 years after that, there was another event, and this one was called water memory.  And, again, this turned out to be another debacle.  So, someone lost his career by suggesting that water molecules might have memory.<br><br>And the advice I remember getting early in my career when I didn't know anything about water, except that ... it was good to drink, is that you can do research in any subject.  But, stay away from water, because it's really dangerous.  And I think ... that's what happened for a period of 50 years.  And that's why some of the information from the first half of the last century is completely lost."}],
+    highighter: null,
+    expert_ids: [65],
     nodes: null,
     postscript: null
 
