@@ -5295,12 +5295,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Water Has an Ordered Phase Between Liquid and Solid, and There Are Important Implications for Clouds",
     sourcename: null,
 
-    images: null,
+    images: ["img/audio-video/fourth-state-of-water-explains-a-lot.jpg"],
     definition: "Some researchers have shifted their focus from the study of individual water molecules to the study of the collective behavior of water molecules.  What they've observed has not been expected: That water molecules frequently charge-separate themselves, and that these charge-separated structures actually do things of enormous importance.",
     status: null,
+    copy_text: null,
     search_hit: null,
 
-    claim_ids: [183,185,186,187,188,189,190,191,192,193,194,195],
+    claim_ids: [183,185,186,187,188,189,196,190,191,192,193,194,195],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/oceans.jpg",
@@ -5475,7 +5476,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "One type of upper-atmosphere clouds called noctilucent clouds originate at the periphery of the polar vortex.  These clouds have proven extremely useful to atmospheric researchers for decoding the global interconnections between different layers of the ionosphere.",
+    title: "One type of upper-atmosphere clouds called noctilucent clouds originate at the periphery of the polar vortex.  These clouds have proven extremely useful to atmospheric researchers for decoding the global interconnections between different layers of the ionosphere, and their ability to 'teleconnect' over many thousands of miles is suggestive of a larger electrical circuit.",
     sourcename: null,
 
     images: ["img/articles/noctilucent-clouds-polar-hole-1.jpg", "img/articles/noctilucent-1.jpg"],
@@ -5592,6 +5593,32 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     next: null,
     avatar: "img/avatars/forbush-decrease.png",
     url: "http://inspirehep.net/record/1228994/plots",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 196,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "There is an enormously important implication of the simple observation that light can separate the charge in water, as the observation contradicts a critical assumption inherent to most astrophysical theories.",
+    sourcename: null,
+
+    images: ["img/articles/teaspoon-of-salt.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/teaspoon-of-salt.jpg",
+    url: "https://www.thunderbolts.info/tpod/2004/arch/040803charge-space.htm",
     text: null,
     highighter: null,
     expert_ids: null,
