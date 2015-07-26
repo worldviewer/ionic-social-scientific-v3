@@ -4988,7 +4988,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: null,
+    claim_ids: [182],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/general-circulation-models.jpg",
@@ -5227,6 +5227,32 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     next: null,
     avatar: "img/forums/gplus.png",
     url: "https://plus.google.com/106562040211983246504/posts/RDbBS61FLH6",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 182,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Plato's cave is a possible metaphor for what is happening with climate change simulations today: Simulators have control over enough 'free parameters' to influence the simulation's outcome, and the final simulation is much like the shadows in Plato's construct; the fire is their worldview; society's chains are its inability to technically critique the simulations.",
+    sourcename: null,
+
+    images: ["img/articles/platos-cave.jpg", "img/articles/platos-cave-explanation.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://faculty.washington.edu/smcohen/320/cave.htm",
     text: null,
     highighter: null,
     expert_ids: null,
