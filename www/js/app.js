@@ -520,7 +520,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     article_ids: null,
     forum_ids: [21],
     paper_ids: null,
-    book_ids: [23,24,25],
+    book_ids: [23,24,25,213],
     media_ids: [26,27,28,29],
     question_ids: [0,1,2,3,4],
     next: 1,
@@ -3632,7 +3632,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     copy_text: "<b>10 Things You Need to Know to Understand the Debate Over How to Model Cosmic Plasmas</b><br><br>1. A plasma is a gas with enough unbound charged particles (ions and/or electrons) that it behaves different from a gas. In some instances, <b>it may take as little as 1% unbound particles to induce a gas to behave as a plasma</b>. The plasma exhibits collective, yet inhomogeneous, behaviors as it interacts with the ambient electromagnetic fields. And as it interacts, it contributes new electromagnetic fields.<br><br>2. Plasmas are categorized into three fundamental states -- dark, glow and arc modes -- based upon the intensity of their photon emissions. Just as a wire can conduct a current without glowing, it's important to realize that <b>plasmas can conduct currents even when there are no photon emissions. An important implication of this observation is that electricity in space should in many instances be quite difficult to observe</b>.<br><br>3. A magnetic field (typically denoted by B) is a collective alignment of charged particles along field lines which can be drawn, and which tend to guide electric currents. These field lines are mathematical constructs, so the field lines should be distinguished from their underlying physical cause (which people still debate). An electric field (E-field) is an electric force that originates from a concentration of similar electric charges, which tend to repel one another. E-fields will tend to disperse the concentration of charge unless there is something which is replenishing it.<br><br>4. Electric currents and magnetic fields tend to go hand-in-hand, and are related by a construct known as the right hand rule. The right hand rule says that if a current is represented by the thumb, then the magnetic field will tend to wrap around the current in the direction of the fingers of a right hand, as the hand forms a closed thumbs up. <b>This is a fundamental construct in electrodynamics which is commonly ignored by astrophysicists when they observe large-scale cosmic magnetic fields</b>.<br><br>5. Plasmas exhibit a complex relationship between applied voltage or electric field with current density. One important observation to note is the leftmost portion of this graph, where the current density is zero. The V or E-field never actually goes to zero, even in the absence of an electric current. That's an important observation, becasue Ohm's Law (V = IR) suggests that the resistance (R) of a plasma must neither go to zero. There is always at least some tiny electrical resistance associated with a plasma. <b>This fact turns out to be very important to the debate over how to model cosmic plasmas, as the most popular cosmic plasma equations in use today (MHD) treat the plasma as a superconductor, free of any electrical resistance. That's significant because an E-field cannot exist within the plasma without some resistance.</b>.<br><br>6. <b>The concept of temperature is not the same for plasmas as it is for gases</b>. In a gas, temperature is a measure of the thermal energy of the particles in matter. That thermal energy is the kinetic energy of the particles’ random thermal motion. However, in a plasma, field-aligned electric currents can exhibit large non-random, collective motions. When this happens, the temperature may be lower, and the energy carried by the plasma is not simplistically represented by the plasma's temperature.<br><br>7. Observations of laboratory plasmas indicate that they can form into an unexpected structure called a double layer. <b>These are adjacent thin layers of positive and negative charge, separated by a relatively small distance</b>. Their presence in space remains a somewhat controversial or neglected matter, as they are in fact <b>electrodynamic</b> structures, and <b>it's really quite extraordinary that the opposite charges do not simply recombine</b>. The plasma distributions near a double layer are said to be 'non-Maxwellian', and are therefore <b>inaccessible to fluids-based modeling attempts</b>.<br><br>8. Double layers can lead to the formation of <b>complex wire-like structures</b> in plasmas <b>which can essentially extend to infinite distances, obviously long after the force of gravity becomes negligable</b>. When carrying current in the same direction, these plasma filaments can exhibit a <b>long-range attraction. Yet, they will oftentimes not combine at short distances because each plasma filament exhibits counter-rotating spiraling electrons. Such structures are observed in space, and go by a host of names</b> (such as Birkeland currents or magnetic ropes).<br><br>9. <b>Marklund convection</b> is a little-studied process observed in the plasma laboratory whereby a current-carrying plasma filament will tend to attract charged particles in the surrounding medium. As those particles are drawn into the filament, the neutral matter can be drawn in as a consequence. The resulting filaments can potentially exhibit extraordinary complexity, with <b>concentric tubes</b>, <b>separation of elements</b> and <b>neutral cores</b>.<br><br>10. Plasma filaments can induce extreme twisting of filaments, and extreme charge densities as a result. There comes a point where the state of this plasma can fundamentally change. Such transitions are called <b>pinches</b> (sometimes <b>z-pinches</b>). What is important to understand about this process is that <b>it closely matches observations of stellar formation, which Herschel has observed tend to form like beads along filaments -- in contradiction to the textbook nebular (aka core accretion) hypothesis for stellar birth</b>. It is conceivable that as the initial discharge recedes, gravity may take over, and all that might remain is a far more subtle electrical connection between those stars. Thus, laboratory plasma physics observations suggest an alternative way to create a star, which differs from the astrophysical textbook theory.<br><br>Plasmas are extraordinarily complex phenomena which even today, supercomputers still struggle to simulate. This short list is simply a Cliff's notes approach to understanding aspects of cosmic and laboratory plasmas which are relevant to the debate over how to model it. A more thorough treatment of these subjects is available online at both https://www.plasma-universe.com and the Essential Guide to the Electric Universe at https://www.thunderbolts.info/wp/eu-guides/eg-contents/.",
     search_hit: null,
 
-    claim_ids: null,
+    claim_ids: [210,211,212],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/plasma-ball.jpg",
@@ -5684,7 +5684,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "A vital aspect of advocating for public policy on the basis of scientific modeling is to understand, in basic terms, how those models work, and what critics are saying about the limitations of those models.  It's important to either do this yourself, or at least follow along with somebody else who has, for there is no other way to assess a scientific controversy.  You must follow the claims being made on both sides.",
+    title: "A vital aspect of studying scientific controversies on scientific models is to understand, in basic terms, how those models work, and what critics are saying about the limitations of those models.  It's important to either do this yourself, or at least follow along with somebody else who has, for there is no other way to assess a scientific controversy.  You must follow the claims being made on both sides.",
     sourcename: null,
 
     images: ["img/papers/climate-models-0.jpg", "img/papers/climate-models-1.jpg"],
@@ -5961,6 +5961,111 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     highighter: null,
     expert_ids: [67],
     nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 210,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "A gas can behave as a plasma with minimal ionization.",
+    sourcename: null,
+
+    images: ["img/books/1-percent-ionization-0.jpg", "img/books/1-percent-ionization-1.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/upper-atmosphere.jpg",
+    url: "http://farside.ph.utexas.edu/teaching/plasma/plasma.html",
+    text: null,
+    highighter: null,
+    expert_ids: [68],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 211,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The aurora is an example of a plasma that is only very weakly ionized, yet still exhibits many of the characteristic behaviors of plasmas.",
+    sourcename: null,
+
+    images: ["img/books/1-percent-ionization-2.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/upper-atmosphere.jpg",
+    url: "http://history.nasa.gov/SP-345/ch15.htm",
+    text: null,
+    highighter: null,
+    expert_ids: [22,69],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 212,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The basis for the claim that a plasma need only be 1% ionized to exhibit characteristic plasma attributes is based, in part, upon observations of the ionosphere.",
+    sourcename: null,
+
+    images: ["img/articles/ionosphere-layers.gif", "img/books/1-percent-ionization-3.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/the-environment-of-the-earth.png",
+    url: "https://books.google.co.uk/books?id=WbkLRSNB3uwC&pg=PA13&dq=%22degree+of+ionization%22+altitude+layer+ionosphere&sig=FT03x2evnPDFEhi_ZZmxJ9R-oEU&hl=en#v=onepage&q&f=false",
+    text: null,
+    highighter: null,
+    expert_ids: [70],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 213,
+    controversy: false,
+    parent: false,
+    type: "Book",
+    display: true,
+    title: "Primer on Gas Discharges (Plasma)",
+    sourcename: null,
+
+    images: null,
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/primer-on-gas-discharges.jpg",
+    url: "http://electric-cosmos.org/PrimerAboutGD.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [42],
+    nodes: null,
+    year: null, // FILL!
     postscript: null
 
  }];
@@ -6441,6 +6546,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@WilliamOKeefe",
     title: "CEO of George C. Marshall Institute (GMI), an Arlington, Virginia based conservative think tank",
     image: "img/experts/william-okeefe.jpg"
+
+  },{
+
+    id: 68,
+    name: "@RichardFitzpatrick",
+    title: "Professor of Physics at University of Texas / Expertise is the Macroscopic Stability of Plasmas in Magnetic Fusion Devices / Royal Astronomical Society Member",
+    image: "img/experts/richard-fitzpatrick.jpg"
+
+  },{
+
+    id: 69,
+    name: "@GustafArrhenius",
+    title: "Scripps Institution of Oceanography",
+    image: "img/experts/gustaf-arrhenius.jpg"
+
+  },{
+
+    id: 70,
+    name: "@FrancisDelobeau",
+    title: "Unknown",
+    image: "img/experts/anon.png"
 
   }];
 
