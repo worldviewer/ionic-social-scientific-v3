@@ -4988,7 +4988,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: [182,198,199,200,201,202,203,204,205,206,207,208,209],
+    claim_ids: [182,198,199,214,200,201,202,203,204,205,206,207,208,209],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/general-circulation-models.jpg",
@@ -6068,6 +6068,33 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     year: null, // FILL!
     postscript: null
 
+  }, {
+
+    id: 214,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "When models do not produce the correct observed results, they are tweaked to make it so.  Tweaking can be an arbitrary, or worse political, process akin to guessing, and is also extraordinarily common in the astrophysical and cosmological disciplines, where the worst consequence for an incorrect guess can be the production of another scientific paper.",
+    sourcename: null,
+
+    images: null,
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/deliberate-corruption-of-climate-science.png",
+    url: "http://www.amazon.com/Deliberate-Corruption-Climate-Science/dp/0988877740/",
+    text: [{quote: "There are two devastating reasons why the model output should not be used for anything, especially policy.  First, a standard and required test of a model is its ability to predict.  Earlier I gave this as the simple definition of science.  This is done in models by a process called validation.  You design a model based on a known period of climate and then have it recreate (predict) another known period.<br><br>No IPCC model has been validated -- they cannot recreate past climate conditions, therefore, they cannot make valid predictions or even reasonable scenarios.  They claim the models are validated but what they actually do is keep adding or adjusting variables until the model recreates the situation.  This has nothing to do with the actual processes and is called 'tweaking.'  The classic example was the attempts to make their models 'explain' the cooling from 1940 to 1980.  They did it by adding sulphates, ostensibly from human activities, to act as cooling agent in the atmosphere.  The problem was temperatures started to increase after 1980 but sulphur levels didn't decrease."}],
+    highighter: null,
+    expert_ids: [71],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
  }];
 
 
@@ -6567,6 +6594,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@FrancisDelobeau",
     title: "Unknown",
     image: "img/experts/anon.png"
+
+  },{
+
+    id: 71,
+    name: "@TimBall",
+    title: "PhD in Climatology from Queen Mary College, University of London (apparently disputed)",
+    image: "img/experts/tim-ball.jpg"
 
   }];
 
