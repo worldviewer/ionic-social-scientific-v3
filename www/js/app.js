@@ -4988,7 +4988,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: [182],
+    claim_ids: [182,198,199,200,201,202,203,204,205,206,207,208,209],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/general-circulation-models.jpg",
@@ -5240,7 +5240,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "Plato's cave is a possible metaphor for what is happening with climate change simulations today: Simulators have control over enough 'free parameters' to influence the simulation's outcome, and the final simulation is much like the shadows in Plato's construct; the fire is their worldview; society's chains are its inability to technically critique the simulations.",
+    title: "Plato's cave is a possible metaphor for what is happening with climate change simulations today: Simulators have control over enough 'free parameters' to influence the simulation's outcome, and the final simulation is much like the shadows in Plato's construct; the fire is the climate scientists' worldview; society's chains are its inability to technically critique the simulations.",
     sourcename: null,
 
     images: ["img/articles/platos-cave.jpg", "img/articles/platos-cave-explanation.jpg"],
@@ -5648,6 +5648,318 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     text: [{quote: "It was suggested, not by me, but by Sir Thomas Hardy in 1912 -- almost a hundred years ago -- that there's a fourth phase.  And this is the liquid crystalline phase.  It's surprising how much work was done, um, over the years, a hundred years ago on this subject.  In fact, we recently dug up something that we can't read very well.  It's called The Depth of the Surface Zone of a Liquid.  And if you can read in the upper right, it says 1949.  This paper published in 1949 summarized all of the evidence for various liquids near surfaces, and there are more than a hundred references of studies done before 1949, that demonstrate that these liquids are organized, and they're organized for regions that are on the order of hundreds of microns from the surface.<br><br>What happened is that after around 1950, by around 1950, this was well-known.  For example, Albert Szent-Gyorgyi, who won the Nobel Prize for ... discovering vitamin C, made many other contributions.  In one of his several books, he said, ... 'Life is water dancing to the tune of macromolecules.'  So, at that time, it was really well known that water was critically important.  So, what happened?<br><br>Well, what happened is that there were a couple of debacles, you might say.  One of those involved something called polywater that was found originally by the Russians, and found to be an artifact -- almost a joke.  Then, 20 years after that, there was another event, and this one was called water memory.  And, again, this turned out to be another debacle.  So, someone lost his career by suggesting that water molecules might have memory.<br><br>And the advice I remember getting early in my career when I didn't know anything about water, except that ... it was good to drink, is that you can do research in any subject.  But, stay away from water, because it's really dangerous.  And I think ... that's what happened for a period of 50 years.  And that's why some of the information from the first half of the last century is completely lost."}],
     highighter: null,
     expert_ids: [65],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 198,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "There is more entropy in the real world than there is in your computer; that dictates that simulations tend to be incomplete.  Yet, they can still be crucially useful as a tool for investigation.",
+    sourcename: null,
+
+    images: ["img/books/simulations-are-never-right.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://www.amazon.com/Simulation-Its-Discontents-Simplicity-Technology/dp/0262012707/",
+    text: null,
+    highighter: null,
+    expert_ids: [66],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 199,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "A vital aspect of advocating for public policy on the basis of scientific modeling is to understand, in basic terms, how those models work, and what critics are saying about the limitations of those models.  It's important to either do this yourself, or at least follow along with somebody else who has, for there is no other way to assess a scientific controversy.  You must follow the claims being made on both sides.",
+    sourcename: null,
+
+    images: ["img/papers/climate-models-0.jpg", "img/papers/climate-models-1.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://marshall.org/wp-content/uploads/2004/05/OKeefe-and-Kueter-Climate-Models-A-Primer.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [67],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 200,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Three-dimensional General Circulation Models (GCM's) are considered the most advanced, yet they still -- it is claimed -- treat cells 200 miles on a side as having uniform conditions.  Atmospheric Plasma researcher, Yue Deng, essentially argues that such a model is biased against electrical atmospheric energy flows, given the thin, filamentary nature of conducting plasmas.",
+    sourcename: null,
+
+    images: ["img/papers/climate-models-2.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://marshall.org/wp-content/uploads/2004/05/OKeefe-and-Kueter-Climate-Models-A-Primer.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [67],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 201,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Despite the simplifying assumption of uniformity per each cell within a GCM models, they remain very computationally expensive.  Where a problem is computationally intractable, further compromises on accuracy must be made.",
+    sourcename: null,
+
+    images: ["img/papers/climate-models-3.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://marshall.org/wp-content/uploads/2004/05/OKeefe-and-Kueter-Climate-Models-A-Primer.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [67],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 202,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "GCM's oftentimes smooth out the results of each 20-minute simulation timestep, in order to fit the start and end results for the initial simulation cells.  This smoothing process is yet another form of bias in the model which essentially obstructs any ability to use these models for any other purpose.",
+    sourcename: null,
+
+    images: ["img/papers/climate-models-4.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://marshall.org/wp-content/uploads/2004/05/OKeefe-and-Kueter-Climate-Models-A-Primer.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [67],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 203,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Professor Yue Deng of the University of Texas points out that the GCM smoothing will tend to wipe out any extreme energy events, like electricity.",
+    sourcename: null,
+
+    images: ["img/papers/electric-joule-heating-simulation.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://marshall.org/wp-content/uploads/2004/05/OKeefe-and-Kueter-Climate-Models-A-Primer.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [51],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 204,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "GCM's are already pushing the limits of our computational capabilities; fixing this problem with new models which can accommodate sudden changes in electric fields will prove a challenge.",
+    sourcename: null,
+
+    images: ["img/papers/climate-models-5.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://marshall.org/wp-content/uploads/2004/05/OKeefe-and-Kueter-Climate-Models-A-Primer.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [67],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 205,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "There are still disagreements between climate scientists on the physics of some key climate processes, and this leads to large differences in the results of different models, given the same forcing.",
+    sourcename: null,
+
+    images: ["img/papers/climate-models-7.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://marshall.org/wp-content/uploads/2004/05/OKeefe-and-Kueter-Climate-Models-A-Primer.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [67],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 206,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "It's important for the public to understand that most climate scientists today do not believe that the Sun can heat up the Earth with a mechanism other than solar radiation (light); neither plasma nor electricity are commonly considered as candidates.",
+    sourcename: null,
+
+    images: ["img/papers/climate-models-8.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://marshall.org/wp-content/uploads/2004/05/OKeefe-and-Kueter-Climate-Models-A-Primer.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [67],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 207,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "An important claim to follow is that the models have failed to accurately predict the vertical temperature profile of the mid- and upper troposphere; the models said that a hotspot should appear, but there is no sign of one thus far.",
+    sourcename: null,
+
+    images: ["img/articles/troposphere-hotspot.jpg", "img/papers/climate-models-9.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://marshall.org/wp-content/uploads/2004/05/OKeefe-and-Kueter-Climate-Models-A-Primer.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [67],
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 208,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "The importance of this claim stems from the fact that the most dire climate projections by the IPCC rely upon the creation of this water vapor which has not so far appeared.",
+    sourcename: null,
+
+    images: ["img/papers/climate-models-11b.jpg", "img/papers/climate-models-11.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://www.researchgate.net/profile/Thomas_Chase3/publication/246690588_Likelihood_of_rapidly_increasing_surface_temperatures_unaccompanied_by_strong_warming_in_the_free_troposphere/links/53d323710cf2a7fbb2e9ce07.pdf?disableCoverPage=true",
+    text: null,
+    highighter: null,
+    expert_ids: null,
+    nodes: null,
+    postscript: null
+
+  }, {
+
+    id: 209,
+    controversy: false,
+    parent: true,
+    type: "Claim",
+    display: true,
+    title: "Model development should proceed only as fast as theoretical understanding of the climate system and validation permit; as is, water vapor feedback is at best understood in qualitative terms.",
+    sourcename: null,
+
+    images: ["img/papers/climate-models-12.jpg"],
+    definition: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://marshall.org/wp-content/uploads/2004/05/OKeefe-and-Kueter-Climate-Models-A-Primer.pdf",
+    text: null,
+    highighter: null,
+    expert_ids: [67],
     nodes: null,
     postscript: null
 
@@ -6116,8 +6428,21 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Water Researcher / Cell Biologist / University of Washington Professor",
     image: "img/experts/gerald-pollack.jpg"
 
-  }];
+  },{
 
+    id: 66,
+    name: "@SherryTurkle",
+    title: "Joint Doctorate in Sociology and Personality Psychology from Harvard University / Licensed Clinical Psychologist / Author of Numerous Books on Technology",
+    image: "img/experts/sherry-turkle.jpg"
+
+  },{
+
+    id: 67,
+    name: "@WilliamOKeefe",
+    title: "CEO of George C. Marshall Institute (GMI), an Arlington, Virginia based conservative think tank",
+    image: "img/experts/william-okeefe.jpg"
+
+  }];
 
   // I'm going to maintain two separate data structures: The cards will be
   // kept separate from the constructs, so that I can use the constructs
