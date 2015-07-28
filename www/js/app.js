@@ -792,7 +792,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     copy_text: "It's not entirely a secret that Earth's weather and temperature correlate with solar activity; the problem is that nobody has yet unraveled the intricate details of how it actually happens. <b>The puzzle is that the overall brightness of the Sun varies by less than 0.1% during the 11-year solar cycle, which is not enough to explain the observed changes in the weather.</b><br><br>Yet, consider what we <b>do</b> know:<br><br>(1) <b>Sunspot numbers generally correlate with lower stratosphere temperature anomalies, minus the temporal effects of volcanic eruptions.</b><br><br>(2) There are two fundamental modes by which the solar wind can influence the Earth's weather and temperature: over the equatorial closed magnetic field lines and the polar open magnetic field lines.<br><br>(3) The first laboratory astrophysicist, Kristian Birkeland, discovered that a magnetized sphere known as a terrella within a vacuum subjected to a voltage gradient can elicit fundamentally divergent modes of electromagnetic behavior which resemble the Sun's.<br><br>(4) Fluctuations in the Earth's temperature appear to follow a number of overlapping solar cycles which operate at different timespans, and whose duration appears to slightly change from one cycle to the next. These solar cycles apparently even exhibit resonances between one another -- <b>a characteristic feature of electrical transmission lines</b>.<br><br>(5) <b>The recent warming hiatus around 2000 was not predicted by any of the IPCC models</b>, but it should have been expected as a consequence of natural solar cycles which have been observed over three stages: 1860-80, 1910-40 and 1975<b>-2000</b>. <b>In each of these solar magnetic maxima, the temperature increased by about 0.15 C per decade, and between them, the temperatures cooled</b>.",
     search_hit: null,
 
-    claim_ids: [171,178,179,98,19,95,96,97,99,175,100],
+    claim_ids: [171,178,179,216,98,19,95,96,97,99,175,100],
     critique_ids: null,
     next: 11,
     avatar: "img/avatars/sunspots-stratosphere.jpg",
@@ -4988,7 +4988,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     status: null,
     search_hit: null,
 
-    claim_ids: [182,198,199,214,200,201,202,203,204,205,206,207,208,209],
+    claim_ids: [215,198,182,199,214,200,201,202,203,204,205,206,207,208,209,217,218,219,220],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/general-circulation-models.jpg",
@@ -6095,6 +6095,168 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     year: null, // FILL!
     postscript: null
 
+  }, {
+
+    id: 215,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "It's important to realize that there exists a vast disparity in descriptions of climate model performance.  This is an example from The Huffington Post which suggests that they work well.  How accurate and useful is this assessment?",
+    sourcename: null,
+
+    images: ["img/articles/climate-models-long-pedigree.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/general-circulation-models.jpg",
+    url: "http://www.huffingtonpost.com/dr-james-hansen/multi-meter-sea-level-rise-is-an-issue-for-todays-public_b_7875828.html",
+    text: null,
+    highighter: null,
+    expert_ids: [72],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 216,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "What is remarkable is that even scientists who study space weather, the solar wind and the aurora are quick to suggest that changes in the solar magnetic field can only affect Earth's temperatures through solar radiation; no mention is made by these experts of the possibility that the solar plasma can affect the Earth's climate.",
+    sourcename: null,
+
+    images: ["img/articles/TSI-vs-plasma.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/sunspots-stratosphere.jpg",
+    url: "http://phys.org/news/2015-07-mini-iceage.html",
+    text: null,
+    highighter: null,
+    expert_ids: [73],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 217,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "A common critique of the IPCC's process is that it produces a document for scientists which the public never reads, and a document for the public and policymakers which the scientists never read.  The scientific assessment is indeed written by scientists, but the Summary for Policymakers, which reporters distill into headlines, is created by politicians.",
+    sourcename: null,
+
+    images: ["img/articles/summary-for-policymakers-scientists-do-not-read.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/experts/IPCC.jpg",
+    url: "http://wattsupwiththat.com/2015/02/22/the-disparity-between-ipcc-science-reports-summary-for-policymakers-and-reality-requires-a-political-science-solution/",
+    text: null,
+    highighter: null,
+    expert_ids: [71],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 218,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "We know that the IPCC's Summary for Policymakers is written BY policymakers because two prominent, well-respected climate science economists -- Richard Tol and Robert Stavins -- have publicly detailed the problem.",
+    sourcename: null,
+
+    images: ["img/articles/summary-for-policymakers-two-economists-object.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/experts/IPCC.jpg",
+    url: "http://instituteforenergyresearch.org/analysis/politics-vs-science-at-ipcc/",
+    text: null,
+    highighter: null,
+    expert_ids: [76],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 219,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Climate science economist Richard Toll wrote a scathing letter about the politics of the Summary for Policymakers.",
+    sourcename: null,
+
+    images: ["img/articles/summary-for-policymakers-richard-tol.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/experts/IPCC.jpg",
+    url: "http://richardtol.blogspot.nl/2014/04/ipcc-again.html",
+    text: null,
+    highighter: null,
+    expert_ids: [74],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 220,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Climate science economist Robert Stavins also publicly critiqued the politics of the Summary for Policymakers.",
+    sourcename: null,
+
+    images: ["img/articles/summary-for-policymakers-robert-stavins.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/experts/IPCC.jpg",
+    url: "http://www.robertstavinsblog.org/2014/04/25/is-the-ipcc-government-approval-process-broken-2/",
+    text: null,
+    highighter: null,
+    expert_ids: [75],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
  }];
 
 
@@ -6602,7 +6764,43 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "PhD in Climatology from Queen Mary College, University of London (apparently disputed)",
     image: "img/experts/tim-ball.jpg"
 
+  },{
+
+    id: 72,
+    name: "@JamesHansen",
+    title: "Controversial Climatologist / Former Venus Researcher",
+    image: "img/experts/james-hansen.png"
+
+  },{
+
+    id: 73,
+    name: "@JimWild",
+    title: "Professor of Space Physics at University of Leicester / Degree in Physics with Space Science and Technology / Doctorate in Solar-terrestrial Physics / Investigates Physics Behind the Aurora Borealis",
+    image: "img/experts/jim-wild.jpg"
+
+  },{
+
+    id: 74,
+    name: "@RichardTol",
+    title: "Professor of Economics at the University of Sussex / Professor of the Economics of Climate Change at the Vrije Universiteit Amsterdam",
+    image: "img/experts/richard-tol.jpg"
+
+  },{
+
+    id: 75,
+    name: "@RobertStavins",
+    title: "Former Chair of the U.S. Environmental Protection Agencys Environmental Economics Advisory Board / Director of the Harvard Environmental Economics Program / And much more ...",
+    image: "img/experts/robert-stavins.jpg"
+
+  },{
+
+    id: 76,
+    name: "@RobertPMurphy",
+    title: "Robert P. Murphy is a Senior Economist with the Institute for Energy Research Specializing in Climate Change",
+    image: "img/experts/robert-p-murphy.jpg"
+
   }];
+
 
   // I'm going to maintain two separate data structures: The cards will be
   // kept separate from the constructs, so that I can use the constructs
