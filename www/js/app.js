@@ -4980,13 +4980,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: true,
     type: "Claim",
     display: true,
-    title: "The Limits of Climate Models",
+    title: "The Limits of Climate Models and the IPCC Process",
     sourcename: null,
 
-    images: ["img/articles/cray-gaea.jpg",  "img/articles/GCM-schematic.jpg", "img/articles/IPCC-predictions-vs-observations.png"],
+    images: ["img/articles/cray-gaea.jpg", "img/articles/IPCC-predictions-vs-observations.png"],
     definition: "There are some important limitations to climate models which everybody today should be fluent in.",
     status: null,
     search_hit: null,
+    copy_text: "Despite a growing acceptance that IPCC predictions over-estimated its temperature predictions since 2000, James Hansen insists that general circulation models do a 'good job of simulating atmosphere and ocean circulations' and have a 'long pedigree.'<br><br>The models are only accurate if you do not care at all about clouds. They're accurate if you are willing to ignore the polar vortex winds, whose winds they've so far struggled to explain. They are accurate if you don't care about validating the models against a data set which is distinct from the one used to create it. They're also accurate if you are willing to ignore any dramatic changes in electric field which may occur at the poles, as such changes should not be expected to survive the smoothing process. They are accurate if you accept that weather is exactly the same for the volume of every 200-mile cell in a general circulation model.  And they're accurate if you have the most simple notions of a Hadley Cell imaginable.<br><br>If none of those things are relevant to the purpose of the model, then yes, they are in theory <b>very</b> accurate at demonstrating the modeler's point.  But, such models -- like the shadows in Plato's cave -- are also inherently incomplete in contrast to the complexity of the actual atmosphere.<br><br>Since atmospheric scientists are not today taught that the solar wind plasma can influence Earth's climate, the GCM models they've coded that knowledge into can say nothing at all about this other possible energy input.  The only way to test that hypothesis is to create new models which take such electrical inputs into account.  And given what we know today about the IPCC's process and purpose, there's no reason to believe that the IPCC will ever create models for that purpose.",
 
     claim_ids: [215,198,182,199,214,200,201,202,203,204,205,206,207,208,209,217,218,219,220],
     critique_ids: null,
@@ -5713,7 +5714,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "Three-dimensional General Circulation Models (GCM's) are considered the most advanced, yet they still -- it is claimed -- treat cells 200 miles on a side as having uniform conditions.  Atmospheric Plasma researcher, Yue Deng, essentially argues that such a model is biased against electrical atmospheric energy flows, given the thin, filamentary nature of conducting plasmas.",
     sourcename: null,
 
-    images: ["img/papers/climate-models-2.jpg"],
+    images: ["img/articles/GCM-schematic.jpg", "img/papers/climate-models-2.jpg"],
     definition: null,
     status: null,
     search_hit: null,
@@ -6210,7 +6211,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "Climate science economist Richard Toll wrote a scathing letter about the politics of the Summary for Policymakers.",
+    title: "Climate science economist Richard Tol wrote a scathing letter about the politics of the Summary for Policymakers.",
     sourcename: null,
 
     images: ["img/articles/summary-for-policymakers-richard-tol.jpg"],
