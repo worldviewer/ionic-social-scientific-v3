@@ -1,0 +1,98 @@
+The Unfilled Social Network Niche: Eliciting Wisdom from the Crowd
+
+The World Wide Web was initially conceived a quarter century ago at CERN as a means for universities and institutes to share scientific information.  It has obviously been put to a far broader use in the years since, as its endpoints have become increasingly dominated by the layperson "crowd."
+
+As the scope of this Internet experiment expanded, there were some early indicators of a brewing problem: This ability to connect the whole world with an instantaneous communication medium left the Internet's architects with a very serious problem:
+
+When the number of people interacting with a webpage increases from the manageably small scientific community into the millions, how does the information architect accommodate the desire of these newly-connected masses to communicate with -- and, vitally, learn -- from one another?
+
+Enter Larry Page
+
+Some of the first people to seek to understand and confront this problem have also become some of the most successful Internet pioneers.  Take, for example, Larry Page of Google:
+
+"Page was also seeking a dissertation topic. One idea he presented to Winograd, a collaboration with Brin, seemed more promising than the others: creating a system where people could make annotations and comments on websites.
+
+"But the more Page thought about annotation, the messier it got. For big sites, there would probably be a lot of people who wanted to mark up a page. How would you figure out who gets to comment or whose comment would be the one you’d see first? For that, he says, 'We needed a rating system.'
+
+"Having a human being determine the ratings was out of the question. First, it was inherently impractical. Further, humans were unreliable. Only algorithms—well drawn, efficiently executed, and based on sound data—could deliver unbiased results. So the problem became finding the right data to determine whose comments were more trustworthy, or interesting, than others. 
+
+"Page realized that such data already existed and no one else was really using it. He asked Brin, 'Why don’t we use the links on the web to do that?'
+Page, a child of academia, understood that web links were like citations in a scholarly article. It was widely recognized that you could identify which papers were really important without reading them —- simply tally up how many other papers cited them in notes and bibliographies. Page believed that this principle could also work with web pages."
+
+(from Steven Levy's In the Plex: How Google Thinks, Works and Shapes Our Lives, p15-16)
+
+Once PageRank was devised, Google's business model was discovered, and the original problem which inspired it -- how millions of people might annotate a single web page -- was essentially abandoned.  That problem remains the subject of the yearly iAnnotate conferences, and an active field of investigation to this day.
+
+Enter Marc Andreessen
+
+Around the same time, in 1993, yet another Internet pioneer was grappling with the same exact problem:
+
+"Only a handful of people know that the big missing feature from the web browser – the feature that was supposed to be in from the start but didn't make it – is the ability to annotate any page on the Internet with commentary and additional information.
+
+"Back in 1993, when Eric Bina and I were first building Mosaic, it seemed obvious to us that users would want to annotate all text on the web – our idea was that each web page would be a launchpad for insight and debate about its own contents. So we built a feature called 'group annotations' right into the browser – and it worked great – all users could comment on any page and discussions quickly ensued. Unfortunately, our implementation at that time required a server to host all the annotations, and we didn't have the time to properly build that server, which would obviously have had to scale to enormous size. And so we dropped the entire feature.
+
+"I often wonder how the Internet would have turned out differently if users had been able to annotate everything –- to add new layers of knowledge to all knowledge, on and on, ad infinitum."
+
+(See http://genius.com/Marc-andreessen-why-andreessen-horowitz-is-investing-in-rap-genius-annotated/)
+
+Have We Solved the Original Problem?
+
+Anybody who has spent any decent time in Internet forums today understands that we have not.  There has been much talk about the wisdom of the crowd, but very little observable effort to actually create a social networking platform where this wisdom can rise above the noise of less-deserving comments.
+
+Let's take for example the climate change debate.  An enormously common argument that is made today is that the consensus amongst climate scientists that man is today the dominant influence on the climate is so large that the public need not question it.
+
+Think about the message that is intended: That, despite access to an ability to communicate with the rest of the world on this subject, the public can safely ignore all of that activity, and instead place faith within the much smaller scientific community to make the right decision.  There seems to be a worldview implicit in this approach: That all knowledge implicitly originates from the scientific authorities, and that this consensus is not susceptible to the same politics which all other large organizations are susceptible to.
+
+What is the point of this Internet medium if we are unable to use it to elicit wisdom on the most challenging topics?  If society's decision is to avoid using the Internet as a tool for eliciting wisdom from the crowd, then what exactly have we created?  When Marc Andreessen and Larry Page identified this need to annotate web content, were they trying to envision a society where all knowledge originates from the top, so that it can enlighten the masses as it trickles down?
+
+Dramatically complicating this issue is a work which was published around 2000 by a whistleblower named Jeff Schmidt, who exposed in his critique of the university graduate programs -- Disciplined Minds -- how these programs intentionally create uniformity in ideology within their graduates.  Although his critique specifically discusses the physics discipline, his intent was to implicate all professional training:
+
+"At the end of the week the entire physics faculty gathers in a closed meeting to decide the fate of the students. Strange as it may seem, in most physics departments a student's score on the test is only one factor in the faculty's decision as to whether or not that student has passed the test.  Students are not usually told their scores: this gives faculty members the option of deciding that a student has failed the test even if that student has outscored someone they are going to pass. In arriving at their personal opinions on whether to pass or fail a student, individual faculty members consider anything and everything carried away from informal discussions with the student and with others around the department.
+
+"A faculty member who talks informally with a student in the hallway or at the weekly after-colloquium reception inevitably comes away with a feeling about whether or not that student 'thinks like a physicist.' The student's political outlook can easily make a difference in the faculty member's assessment. For example, in the usual informal discussion of an issue in the news, the student who rails against technical incompetence and confines his thoughts to the search for technical solutions within the given political framework builds a much more credible image as a professional physicist than does the student who emphasizes the need to alter the political framework as part of the solution. Indeed, the latter approach falls outside the work assignments given to professional physicists in industry and academe and so represents thinking unlike a physicist's." 
+
+(Jeff Schmidt, Disciplined Minds: A Critical Look at Salaried Professionals and the Soul-battering System That Shapes Their Lives, p134)
+
+Although the public has largely ignored Schmidt's critique, his employer -- Physics Today -- did not.  They immediately fired him, even though he had been their best editor, and had worked for them for almost two decades.
+
+It is really quite astounding that this common appeal to place faith in the scientific community's consensus only rarely elicits such pertinent quotes.  Many people have read Schmidt's critique, and 500 physicists signed a letter demanding he be given his job back, led by Noam Chomsky.  It was in fact the largest number of physicists ever to speak out on a freedom-of-expression issue in North America.
+
+It is enormously noteworthy that our system of communication is not fundamentally designed to raise this arguably effective rebuttal above the rest of the comments on this issue.
+
+Also consider these other very important historical moments which are neither mentioned above the back-and-forth commentary on this specific demand that we place faith in scientific consensus:
+
+1.  When radio waves were first observed coming from space by radio engineers, the astronomical community assumed it was either a mistake or a hoax.
+
+2.  When the maser, the laser's microwave precursor, was invented, the world's most prestigious quantum theorists claimed that the prototype -- which was already created -- was impossible due to the Heisenberg Uncertainty Principle.
+
+3.  It wasn't that long ago that the scientific community regarded meteorites in much the same way that modern scientists regard UFO abductions and psychic phenomena -- quaint superstitions which today would be labeled as pseudoscience, and only possible if there is some sort of conspiracy.
+
+4.  Rocket-powered spacecrafts were ridiculed virtually all the way up until 1944, when they started raining down on London during WWII.
+
+It's not at all irrelevant that the scientific community does not today strive to teach these stories as lessons which students of science and the public can learn from on the nature of scientific consensus.
+
+A Possible Future for Social Networking
+
+Social networking remains in a gestative state today.  While some sites have correctly identified that there are observable problems which demand correction in the civility of our online dialog, many, if not most, social network designers have yet to design these networks in such a way that either Jeff Schmidt's critique or these former failures of scientific consensus would predictably rise to the top of this discussion of faith in scientific consensus.
+
+In both cases, there are crucial values being serviced by these points:
+
+- the points very directly rebut the ideal of faith in scientific consensus as a desirable ideal
+- they focus us on a need to include historical lessons about scientific consensus in our discussions of it
+- Schmidt's critique raises an obvious need to discuss how scientists are trained and weeded out as a vital context for any discussion about scientific consensus
+
+How can a site which deploys a simplistic rating scheme -- like a thumb pointing up -- more prominently visualize these complex values which are associated with this scientific niche?
+
+Let me be blunt: They cannot.
+
+Clearly, if our goal is to actually elicit wisdom from the crowd, we must design our social networks to actually value wise comments by visualizing them above others.  But, which networks are authentically doing this today?
+
+This is why I say that social networking today is in a gestative state: We've completely lost focus of the enormous challenges which emerged when the web was transitioned from a tool for sharing information between scientists to one where billions of people might visit and want to comment on a single web page.  Few people today even understand the history of this problem.
+
+And to this day, social network designers have so far failed to design these networks in such a way that the wisdom will reliably percolate to the top, most visible, parts of the discourse.
+
+In a recent paper by Google titled, "Knowledge-Based Trust: Estimating the Trustworthiness of Web Sources", Google researchers claim that they can create a truth engine.  And to make their point, they feed the debate over Obama's nationality into their prototype.
+
+In the many Internet discussions of this idea, nobody appeared to even notice the shartp contrast between their enormously complex objective and the triviality of the example they used to make their point.  If social network designers want to do big things with their networks, their first order of business must be to meaningfully engage the true complexity of large, complex controversies.  This means meaningfully considering that experts can today -- much like in the past -- be even existentially wrong.  And it means designing our social networks to facilitate those difficult conversations.
+
+Did we really put all of this effort into building a global communications network so that we could use it to listen to the same people we were listening to before its construction?  Or, should we aspire higher to create a communications platform which actually elicits wisdom from the crowd?  If the latter, then why do we pretend like it will just happen without intentionally designing our social networks to make it so?

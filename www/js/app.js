@@ -4989,7 +4989,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     search_hit: null,
     copy_text: "Despite a growing acceptance that IPCC predictions over-estimated its temperature predictions since 2000, James Hansen insists that general circulation models do a 'good job of simulating atmosphere and ocean circulations' and have a 'long pedigree.'<br><br>The models are only accurate if you do not care at all about clouds. They're accurate if you are willing to ignore the polar vortex, whose winds they've so far struggled to explain. They are accurate if you don't care about validating the models against a data set which is distinct from the one used to create it. They're also accurate if you are willing to ignore any dramatic changes in electric field which may occur at the poles, as such changes should not be expected to survive the smoothing process. They are accurate if you accept that weather is exactly the same for the volume of every 200-mile cell in a general circulation model.  And they're accurate if you have the most simple notions of a Hadley Cell imaginable.<br><br>If none of those things are relevant to the purpose of the model, then yes, they are in theory <b>very</b> accurate at demonstrating the modeler's point.  But, such models -- like the shadows in Plato's cave -- are also inherently incomplete in contrast to the complexity of the actual atmosphere.<br><br>Since atmospheric scientists are not today taught that the solar wind plasma can influence Earth's climate, the GCM models they've coded that knowledge into can say nothing at all about this other possible energy input.  The only way to test that hypothesis is to create new models which take such electrical inputs into account.  And given what we know today about the IPCC's process and purpose, there's no reason to believe that the IPCC will ever create models for that purpose.",
 
-    claim_ids: [215,198,182,199,214,200,201,202,203,204,205,206,207,208,209,217,218,219,220],
+    claim_ids: [215,198,182,199,226,214,227,228,229,230,200,201,202,203,204,205,206,207,208,209,217,218,219,220],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/general-circulation-models.jpg",
@@ -6265,7 +6265,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     parent: false,
     type: "Claim",
     display: true,
-    title: "People have wondered at how clouds can simply hang in the air for centuries, despite their weight.",
+    title: "People have wondered at how clouds can simply hang in the air, despite their weight, for centuries.",
     sourcename: null,
 
     images: ["img/articles/cloud-mystery-history.jpg"],
@@ -6295,7 +6295,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     title: "The first disagreement over clouds occurs on this claim that the particles are too small to have any appreciable fall velocity.",
     sourcename: null,
 
-    images: ["img/articles/cloud-mystery-tiny-particles-1.jpg", "img/articles/cloud-mystery-spread-out.jpg"],
+    images: ["img/articles/cloud-mystery-tiny-particles-1.jpg"],
     definitions: null,
     status: null,
     search_hit: null,
@@ -6389,6 +6389,141 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     text: null,
     highighter: null,
     expert_ids: [79],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 226,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "A complaint filed with the IPCC over the failure to validate the models led to no significant change in their overall stance; their response was, instead, to simply switch the word 'validation' to 'evaluation.'",
+    sourcename: null,
+
+    images: ["img/articles/vincent-gray-on-climate-models-validation.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://globalwarmingscamandccsuperscam.blogspot.com/?view=sidebar",
+    text: null,
+    highighter: null,
+    expert_ids: [80],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 227,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Freeman Dyson points out that here is no reason to believe that the same fudge factors that are fitted to the existing climate models, to make them match with observations, would give the right behavior in a world with different chemistry (like increased CO2).",
+    sourcename: null,
+
+    images: ["img/articles/freeman-dyson-on-climate-models-1.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://www.canada.com/nationalpost/news/story.html?id=985641c9-8594-43c2-802d-947d65555e8e",
+    text: null,
+    highighter: null,
+    expert_ids: [81],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 228,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Freeman Dyson came to avoid placing faith in scientific models, based upon a former experience.",
+    sourcename: null,
+
+    images: ["img/articles/freeman-dyson-on-climate-models-2.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://www.canada.com/nationalpost/news/story.html?id=985641c9-8594-43c2-802d-947d65555e8e",
+    text: null,
+    highighter: null,
+    expert_ids: [81],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 229,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "John Cook's SkepticalScience site claims that we can't wait for 30 years to see if a model is any good or not; what he fails to mention is that we can already see that the claims made 25 years ago by the IPCC have proven to be wrong.",
+    sourcename: null,
+
+    images: ["img/articles/freeman-dyson-on-climate-models-rebuttal-1.jpg", "img/articles/freeman-dyson-on-climate-models-25-years.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "https://www.skepticalscience.com/climate-models.htm",
+    text: null,
+    highighter: null,
+    expert_ids: [31],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 230,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "John Cook pretends as though the climate models were not specifically designed to demonstrate that CO2 can potentially alter the climate when he suggests that since adding CO2 to these models led to warming, then CO2 must cause the warming.  Many people have failed to notice the serious problem with this claim: that these models can make no meaningful statement about alternative causes for warming, because they do not even strive to model all potential causes.  They are specifically designed to show that increasing CO2 can potentially lead to warming.",
+    sourcename: null,
+
+    images: ["img/articles/freeman-dyson-on-climate-models-rebuttal-2.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "https://www.skepticalscience.com/climate-models.htm",
+    text: null,
+    highighter: null,
+    expert_ids: [31],
     nodes: null,
     year: null, // FILL!
     postscript: null
@@ -6982,6 +7117,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@BillBeaty",
     title: "HV/Electrostatics Specialist / Lecturer / Science Exhibit Designer / Textbook Consultant / Amateur Physicist",
     image: "img/journals/bill-beaty.jpg"
+
+  },{
+
+    id: 80,
+    name: "@VincentGray",
+    title: "New Zealand-based chemist / Founder of the New Zealand Climate Science Coalition / He has commented on every publication of the Intergovernmental Panel on Climate Change, with 1,898 comments on the 2007 Report / He has published critical studies on all of the reports including a book 'The Greenhouse Delusion: A Critique of 'Climate Change 2001'' / Published 'Confessions of a Climate Sceptic'",
+    image: "img/journals/vincent-gray.jpg"
+
+  },{
+
+    id: 81,
+    name: "@FreemanDyson",
+    title: "BA in Mathematics from Cambridge University / Professor of Physics at Institute for Advanced Study in Princeton / American Physical Society Fellow / Member of the US National Academy of Sciences / Fellow of the Royal Society of London / Unified Three Versions of Quantum Electrodynamics / Developed TRIGA, A Safe Nucear Reactor Used by Hospitals and Universities for Production of Isotopes",
+    image: "img/journals/freeman-dyson.jpg"
 
   }];
 
