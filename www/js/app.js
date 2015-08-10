@@ -4989,7 +4989,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     search_hit: null,
     copy_text: "Despite a growing acceptance that IPCC predictions over-estimated its temperature predictions since 2000, James Hansen insists that general circulation models do a 'good job of simulating atmosphere and ocean circulations' and have a 'long pedigree.'<br><br>The models are only accurate if you do not care at all about clouds. They're accurate if you are willing to ignore the polar vortex, whose winds they've so far struggled to explain. They are accurate if you don't care about validating the models against a data set which is distinct from the one used to create it. They're also accurate if you are willing to ignore any dramatic changes in electric field which may occur at the poles, as such changes should not be expected to survive the smoothing process. They are accurate if you accept that weather is exactly the same for the volume of every 200-mile cell in a general circulation model.  And they're accurate if you have the most simple notions of a Hadley Cell imaginable.<br><br>If none of those things are relevant to the purpose of the model, then yes, they are in theory <b>very</b> accurate at demonstrating the modeler's point.  But, such models -- like the shadows in Plato's cave -- are also inherently incomplete in contrast to the complexity of the actual atmosphere.<br><br>Since atmospheric scientists are not today taught that the solar wind plasma can influence Earth's climate, the GCM models they've coded that knowledge into can say nothing at all about this other possible energy input.  The only way to test that hypothesis is to create new models which take such electrical inputs into account.  And given what we know today about the IPCC's process and purpose, there's no reason to believe that the IPCC will ever create models for that purpose.",
 
-    claim_ids: [231,215,198,182,199,226,214,227,228,229,230,200,201,202,203,204,232,233,234,205,206,207,208,209,235,217,218,219,220],
+    claim_ids: [231,215,198,182,199,226,214,227,228,229,230,200,201,202,203,204,232,233,236,237,234,205,206,207,208,209,235,217,218,219,220],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/general-circulation-models.jpg",
@@ -6659,6 +6659,60 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: "http://www.amazon.com/Deliberate-Corruption-Climate-Science/dp/0988877740/",
     highighter: null,
     expert_ids: [71],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 236,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "When climate models lack data, the blanks are simply filled in with guesses; this goes by the technical term of parameterization.",
+    sourcename: null,
+
+    images: null,
+    definitions: null,
+    status: null,
+    search_hit: null,
+    text: [{quote: "Parameterization is a fancy word for making up data when it doesn't exist.  Because of the lack of data, this occurs for a majority of the surface grids and virtually all of the layers above the surface.  This means they estimate average value for each grid and use those as the base for the model.  Computer models produce estimates, which they use as 'real' data in another.  Parameterization is probably applied to approximately 80 percent of the surface and at least 90 percent in the atmosphere.", page_start: 115, page_end: 115}],
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/deliberate-corruption-of-climate-science.png",
+    url: "http://www.amazon.com/Deliberate-Corruption-Climate-Science/dp/0988877740/",
+    highighter: null,
+    expert_ids: [71],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 237,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The use of the obscure term, parameterization, by the IPCC appears to obscure for the public the very serious coverage problem these models face.",
+    sourcename: null,
+
+    images: ["img/papers/parameterization.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+    text: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "img/papers/parameterization.jpg",
+    highighter: null,
+    expert_ids: [54],
     nodes: null,
     year: null, // FILL!
     postscript: null
