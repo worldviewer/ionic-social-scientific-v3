@@ -4989,7 +4989,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     search_hit: null,
     copy_text: "Despite a growing acceptance that IPCC predictions over-estimated its temperature predictions since 2000, James Hansen insists that general circulation models do a 'good job of simulating atmosphere and ocean circulations' and have a 'long pedigree.'<br><br>The models are only accurate if you do not care at all about clouds. They're accurate if you are willing to ignore the polar vortex, whose winds they've so far struggled to explain. They are accurate if you don't care about validating the models against a data set which is distinct from the one used to create it. They're also accurate if you are willing to ignore any dramatic changes in electric field which may occur at the poles, as such changes should not be expected to survive the smoothing process. They are accurate if you accept that weather is exactly the same for the volume of every 200-mile cell in a general circulation model.  And they're accurate if you have the most simple notions of a Hadley Cell imaginable.<br><br>If none of those things are relevant to the purpose of the model, then yes, they are in theory <b>very</b> accurate at demonstrating the modeler's point.  But, such models -- like the shadows in Plato's cave -- are also inherently incomplete in contrast to the complexity of the actual atmosphere.<br><br>Since atmospheric scientists are not today taught that the solar wind plasma can influence Earth's climate, the GCM models they've coded that knowledge into can say nothing at all about this other possible energy input.  The only way to test that hypothesis is to create new models which take such electrical inputs into account.  And given what we know today about the IPCC's process and purpose, there's no reason to believe that the IPCC will ever create models for that purpose.",
 
-    claim_ids: [215,198,182,199,226,214,227,228,229,230,200,201,202,203,204,205,206,207,208,209,217,218,219,220],
+    claim_ids: [231,215,198,182,199,226,214,227,228,229,230,200,201,202,203,204,232,233,234,205,206,207,208,209,235,217,218,219,220],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/general-circulation-models.jpg",
@@ -6528,6 +6528,141 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     year: null, // FILL!
     postscript: null
 
+  }, {
+
+    id: 231,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "A more public conversation about the limits of the climate models would predictably undermine the public's faith in the models.",
+    sourcename: null,
+
+    images: ["img/articles/gcm-model-problems-0.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://wattsupwiththat.com/2015/08/09/the-trouble-with-global-climate-models/",
+    text: null,
+    highighter: null,
+    expert_ids: [82],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 232,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The GCM rule of thumb for 2x spatial resolution is 10x the computational requirement; in other words, a full order of magnitude of computation!",
+    sourcename: null,
+
+    images: ["img/articles/gcm-model-problems-1.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://wattsupwiththat.com/2015/08/09/the-trouble-with-global-climate-models/",
+    text: null,
+    highighter: null,
+    expert_ids: [82],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 233,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Simulating out to the year 2100 at a resolution of 2.5 km (relative to the current standard of 25 km) would require 7 orders of magnitude beyond present computational abilities, and accurately simulating clouds would be a much larger jump beyond that!",
+    sourcename: null,
+
+    images: ["img/articles/gcm-model-problems-2.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://wattsupwiththat.com/2015/08/09/the-trouble-with-global-climate-models/",
+    text: null,
+    highighter: null,
+    expert_ids: [82],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 234,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Yet another issue with these GCM's is that it is not possible to parameterize correctly without knowing attribution -- how much observed past change is due to man vs. how much is due to natural variations; the IPCC simply assumes that the cause is man.",
+    sourcename: null,
+
+    images: ["img/articles/gcm-model-problems-3.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/cray-gaea.jpg",
+    url: "http://wattsupwiththat.com/2015/08/09/the-trouble-with-global-climate-models/",
+    text: null,
+    highighter: null,
+    expert_ids: [82],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 235,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "Computer climate modeling was controversial at climate conferences from the start.",
+    sourcename: null,
+
+    images: null,
+    definitions: null,
+    status: null,
+    search_hit: null,
+    text: [{quote: "Computer models came on the scene during my career.  Gradually climate conferences were dominated by modelers and most did it arrogantly.  They battled amongst themselves, with the person with the largest and fastest computer, dominating.  Very few of them knew anything about the climate but were apparently attracted by the challenge of modeling the complexity that is global climate.  Some mathematicians and statisticians test theories using very long records of natural phenomena.  However as AN Whitehead said:<br><br>'There is no more common error than to assume that because prolonged and accurate mathematical calculations have been made, the application of the result to some fact of nature is absolutely certain.'<br><br>I witnessed a good example early at a conference in Edmonton on Prairie Climate predictions and the implications for agriculture.  Climate modeler Michael Schlesinger dominated as the keynote speaker.  His presentation compared five major global models and their results.  He claimed that because they all showed warming they were valid.  Of course they did because they were programmed to that general result.  The problem is they varied enormously over vast regions.  For example, one showed North America cooling, while another showed warming.  The audience was looking for information adequate for planning and became agitated, especially in the question period.  It peaked when someone asked about the accuracy of his warmer and drier prediction for Alberta.  The answer was 50%.  The person replied that is useless, my Minister needs 95%.  The shouting intensified.<br><br>Eventually a man threw his shoe on the stage.  When the room went silent he said, 'I didn't have a towel.'  We learned he had a voice box and the shoe was the only way he could get attention.  He asked permission to go on stage where he explained his qualifications and put a formula on the blackboard.  He asked Schlesinger if this was the formula he used as the basis for his model of the atmosphere.  Schlesinger said yes.  The man then proceeded to eliminate variables asking Schlesinger if they were omitted in his work.  After a few eliminations he said one was probably enough, but you have no formula left and you certainly don't have a model.  It has been that way ever since with the computer models.", page_start: 116, page_end: 118}],
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/books/deliberate-corruption-of-climate-science.png",
+    url: "http://www.amazon.com/Deliberate-Corruption-Climate-Science/dp/0988877740/",
+    highighter: null,
+    expert_ids: [71],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
   // }, {
 
   //   id: 226,
@@ -7131,6 +7266,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     name: "@FreemanDyson",
     title: "BA in Mathematics from Cambridge University / Professor of Physics at Institute for Advanced Study in Princeton / American Physical Society Fellow / Member of the US National Academy of Sciences / Fellow of the Royal Society of London / Unified Three Versions of Quantum Electrodynamics / Developed TRIGA, A Safe Nucear Reactor Used by Hospitals and Universities for Production of Isotopes",
     image: "img/journals/freeman-dyson.jpg"
+
+  },{
+
+    id: 82,
+    name: "@RudIstvan",
+    title: "CEO of Third Stream Bioscience, and the principal of NanoCarbons LLC. / Rud was previously a Motorola SVP, General Manager of Future Businesses, and Director of its Corporate Strategy Offices / Prior to Motorola he was a senior partner at BCG / Rud holds a BA summa, JD, and MBA from Harvard University / He is a named inventor on 14 issued patents / He previously published Gaia’s Limits (on global carrying capacity) and The Arts of Truth (on ‘official’ misinformation, including in energy, climate, healthcare, public health, public education, and other important policy topics).",
+    image: "img/journals/rud-istvan.jpg"
 
   }];
 
