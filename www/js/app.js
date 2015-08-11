@@ -2980,7 +2980,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     copy_text: "Conventional wisdom suggests that weather reports typically become inaccurate at around two weeks because the atmosphere is chaotic, and because small rounding errors are known to produce different results on different computers.<br><br>However, there can be yet a third cause: space 'weather', or more formally, the Earth's electrically conductive solar plasma environment. Theorists like to point to the accepted fact that the Sun's total solar irradiance (TSI) does not vary by more than 0.1% over the entire solar cycle, and the Earth's magnetic field is extremely effective at deflecting or trapping this solar radiation. Yet, <b>some theorists will admit that this line of reasoning does not apply to solar radiation and solar plasma at the polar regions.</b><br><br>Nobody actually knows the energy balance at the top of the atmosphere (TOA), but what we can observe is that <b>climate models tend to be very sensitive to this TOA energy balance</b>. IPCC models accordingly make sweeping assumptions about this TOA energy balance -- the problem being that <b>any claims that are subsequently made about the cause for climate changes can simply reflect this assumption of an energy balance</b>. The IPCC does not generally discuss such assumptions within its Summary for Policymakers, but this problem of model tuning is indeed mentioned in its scientific assessments.<br><br>Such concerns are not without warrant, as <b>a link has been observed between sudden stratospheric warming (SSW) events at the poles with mile-deep oceanic circulation patterns</b>, which are in turn known to be associated with Earth's climate. <b>That's an enormously surprising observation in light of the fact that the ocean's energy content is on the order of a thousand times the atmospheric energy content.</b><br><br>There are several different groups currently studying the Sun's electrical influence upon the Earth's weather and climate. Piers Corbyn is already widely known for his occasional successes predicting extreme weather events a full four weeks in advance based upon lunar, magnetic and especially energetic solar patterns.<br><br>Less known is the fact that <b>NASA has recently invested almost a million dollars to-date into the creation of a new Global Ionosphere-Thermoshere Model (GITM), which like Corbyn's approach, will take into account sudden influxes of solar electrical energy at the poles</b>.<br><br>Yet another group, which is using infrasound data from the 300+ CTBTO network of sensors more commonly used to monitor nuclear explosions across the globe, believes that <b>they will eventually be able to predict the weather a full month or season in advance</b> by observing the same SSW events that both NASA and Corbyn are closely tracking.",
     search_hit: null,
 
-    claim_ids: [180,122,124,123,174,125,126,18,121,115,129,130,127,128,11],
+    claim_ids: [180,122,124,123,174,238,125,126,18,121,115,129,130,127,128,11],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/toa-model-tuning.jpg",
@@ -6710,9 +6710,36 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     critique_ids: null,
     next: null,
     avatar: "img/avatars/cray-gaea.jpg",
-    url: "img/papers/parameterization.jpg",
+    url: "https://www.ipcc.ch/publications_and_data/ar4/wg1/en/ch8s8-2.html",
     highighter: null,
     expert_ids: [54],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 238,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "The energy transfers induced by the solar wind plasma are not even on the climatologists' radar; in fact, they have yet to even formulate a consensus on the energy balance for light.",
+    sourcename: null,
+
+    images: ["img/articles/TOA-balance-2.png", "img/articles/TOA-balance-1.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+    text: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/upper-atmosphere.jpg",
+    url: "http://wattsupwiththat.com/2015/08/11/no-consensus-earths-top-of-atmosphere-energy-imbalance-in-cmip5-archived-ipcc-ar5-climate-models/",
+    highighter: null,
+    expert_ids: [83],
     nodes: null,
     year: null, // FILL!
     postscript: null
@@ -7305,28 +7332,35 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     id: 79,
     name: "@BillBeaty",
     title: "HV/Electrostatics Specialist / Lecturer / Science Exhibit Designer / Textbook Consultant / Amateur Physicist",
-    image: "img/journals/bill-beaty.jpg"
+    image: "img/experts/bill-beaty.jpg"
 
   },{
 
     id: 80,
     name: "@VincentGray",
     title: "New Zealand-based chemist / Founder of the New Zealand Climate Science Coalition / He has commented on every publication of the Intergovernmental Panel on Climate Change, with 1,898 comments on the 2007 Report / He has published critical studies on all of the reports including a book 'The Greenhouse Delusion: A Critique of 'Climate Change 2001'' / Published 'Confessions of a Climate Sceptic'",
-    image: "img/journals/vincent-gray.jpg"
+    image: "img/experts/vincent-gray.jpg"
 
   },{
 
     id: 81,
     name: "@FreemanDyson",
     title: "BA in Mathematics from Cambridge University / Professor of Physics at Institute for Advanced Study in Princeton / American Physical Society Fellow / Member of the US National Academy of Sciences / Fellow of the Royal Society of London / Unified Three Versions of Quantum Electrodynamics / Developed TRIGA, A Safe Nucear Reactor Used by Hospitals and Universities for Production of Isotopes",
-    image: "img/journals/freeman-dyson.jpg"
+    image: "img/experts/freeman-dyson.jpg"
 
   },{
 
     id: 82,
     name: "@RudIstvan",
     title: "CEO of Third Stream Bioscience, and the principal of NanoCarbons LLC. / Rud was previously a Motorola SVP, General Manager of Future Businesses, and Director of its Corporate Strategy Offices / Prior to Motorola he was a senior partner at BCG / Rud holds a BA summa, JD, and MBA from Harvard University / He is a named inventor on 14 issued patents / He previously published Gaia’s Limits (on global carrying capacity) and The Arts of Truth (on ‘official’ misinformation, including in energy, climate, healthcare, public health, public education, and other important policy topics).",
-    image: "img/journals/rud-istvan.jpg"
+    image: "img/experts/rud-istvan.jpg"
+
+  },{
+
+    id: 83,
+    name: "@BobTisdale",
+    title: "Author of 'Climate Models Fail'",
+    image: "img/experts/anon.png"
 
   }];
 
