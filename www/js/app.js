@@ -2980,7 +2980,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     copy_text: "Conventional wisdom suggests that weather reports typically become inaccurate at around two weeks because the atmosphere is chaotic, and because small rounding errors are known to produce different results on different computers.<br><br>However, there can be yet a third cause: space 'weather', or more formally, the Earth's electrically conductive solar plasma environment. Theorists like to point to the accepted fact that the Sun's total solar irradiance (TSI) does not vary by more than 0.1% over the entire solar cycle, and the Earth's magnetic field is extremely effective at deflecting or trapping this solar radiation. Yet, <b>some theorists will admit that this line of reasoning does not apply to solar radiation and solar plasma at the polar regions.</b><br><br>Nobody actually knows the energy balance at the top of the atmosphere (TOA), but what we can observe is that <b>climate models tend to be very sensitive to this TOA energy balance</b>. IPCC models accordingly make sweeping assumptions about this TOA energy balance -- the problem being that <b>any claims that are subsequently made about the cause for climate changes can simply reflect this assumption of an energy balance</b>. The IPCC does not generally discuss such assumptions within its Summary for Policymakers, but this problem of model tuning is indeed mentioned in its scientific assessments.<br><br>Such concerns are not without warrant, as <b>a link has been observed between sudden stratospheric warming (SSW) events at the poles with mile-deep oceanic circulation patterns</b>, which are in turn known to be associated with Earth's climate. <b>That's an enormously surprising observation in light of the fact that the ocean's energy content is on the order of a thousand times the atmospheric energy content.</b><br><br>There are several different groups currently studying the Sun's electrical influence upon the Earth's weather and climate. Piers Corbyn is already widely known for his occasional successes predicting extreme weather events a full four weeks in advance based upon lunar, magnetic and especially energetic solar patterns.<br><br>Less known is the fact that <b>NASA has recently invested almost a million dollars to-date into the creation of a new Global Ionosphere-Thermoshere Model (GITM), which like Corbyn's approach, will take into account sudden influxes of solar electrical energy at the poles</b>.<br><br>Yet another group, which is using infrasound data from the 300+ CTBTO network of sensors more commonly used to monitor nuclear explosions across the globe, believes that <b>they will eventually be able to predict the weather a full month or season in advance</b> by observing the same SSW events that both NASA and Corbyn are closely tracking.",
     search_hit: null,
 
-    claim_ids: [180,122,124,123,174,238,125,126,18,121,115,129,130,127,128,11],
+    claim_ids: [180,122,124,123,174,238,125,126,18,121,115,129,130,127,128,11,239],
     critique_ids: null,
     next: null,
     avatar: "img/avatars/toa-model-tuning.jpg",
@@ -6740,6 +6740,33 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: "http://wattsupwiththat.com/2015/08/11/no-consensus-earths-top-of-atmosphere-energy-imbalance-in-cmip5-archived-ipcc-ar5-climate-models/",
     highighter: null,
     expert_ids: [83],
+    nodes: null,
+    year: null, // FILL!
+    postscript: null
+
+  }, {
+
+    id: 239,
+    controversy: false,
+    parent: false,
+    type: "Claim",
+    display: true,
+    title: "It is commonly assumed that energetic events happening at the periphery of the Earth's climate system can simply be ignored when modeling Earth's climate, as if there is some sort of physical wall which separates the two over this modest distance.  Adherents to this belief seem plainly unconcerned about any observable electrical fluxes at the top of the atmosphere, and they go out of their way to distinguish space weather from Earth's weather.  A key question, moving forward, must be: What is the basis for this assumption that these two adjacent systems cannot possibly interact with one another?",
+    sourcename: null,
+
+    images: ["img/forums/plasma-vs-climate-models.jpg"],
+    definitions: null,
+    status: null,
+    search_hit: null,
+    text: null,
+
+    claim_ids: null,
+    critique_ids: null,
+    next: null,
+    avatar: "img/avatars/upper-atmosphere.jpg",
+    url: "http://phys.org/news/2015-08-consensus-climate.html",
+    highighter: null,
+    expert_ids: null,
     nodes: null,
     year: null, // FILL!
     postscript: null
